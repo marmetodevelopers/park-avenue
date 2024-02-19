@@ -1,0 +1,114 @@
+<style>
+  .container {
+    padding: 64px;
+  }
+  .container .image_box img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1.96;
+  }
+  .title {
+    text-align: center;
+  }
+</style>
+
+<div class="container">
+  <div class="splide page-width" id="{{ section.id }}">
+    <div class="splide__track">
+      <div class="splide__list">
+        {% for block in section.blocks %}
+          {%- case block.type -%}
+            {%- when 'image_text' -%}
+              <div class="splide__slide">
+                <div class="image_box">
+                  {% render 'picture',
+                    class: '',
+                    mobileSrc: block.settings.mobile_image,
+                    desktopSrc: block.settings.desktop_image
+                  %}
+                </div>
+                <p class="title">{{ block.settings.title }}</p>
+              </div>
+          {%- endcase -%}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    new Splide('#{{ section.id }}', {
+      type: 'slide',
+      rewind: true,
+      rewindSpeed: 1000,
+      start: 1,
+      perPage: 2.2,
+      classes: {
+        pagination: 'splide__pagination ibc_pagination',
+        page: 'splide__pagination__page ibc_page',
+      },
+      breakpoints: {
+        749: {
+          perPage: 1.2,
+        },
+      },
+      gap: '20px',
+      padding: '0px',
+      arrows: true,
+      focus: 'left',
+    }).mount();
+  });
+</script>
+
+{% stylesheet %}
+  .splide__arrow {
+    top: 100%;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Image text carousal",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Enter heading text"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "image text",
+      "type": "image_text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "mobile_image",
+          "label": "Select desktop image"
+        },
+        {
+          "type": "image_picker",
+          "id": "desktop_image",
+          "label": "Select mobile image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Enter title"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Choose url"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image text carousal"
+    }
+  ]
+}
+{% endschema %}
