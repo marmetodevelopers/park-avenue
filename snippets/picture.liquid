@@ -1,11 +1,11 @@
-{% comment %}
+{% comment %} 
   Render an responsive image.
-  Accepts:
-  - class: {String} Class to add to the image.
-  - mobileSrc: {Object} Image object for mobile
+  Accepts: 
+  - class: {String} Class to add to the image. 
+  - mobileSrc: {Object} Image object for mobile 
   - desktopSrc: {Object} Image object for desktop
   Usage:
-  {% render 'image', class: '', mobileSrc: source, desktopSrc: source %}
+  {% render 'picture', class: '', mobileSrc: source, desktopSrc: source %} 
 {% endcomment %}
 
 <picture class="{{ class }}">
@@ -33,12 +33,11 @@
           {{ mobileSrc | image_url: width: 3840 }} 3840w,{%- endif -%}
         {{ mobileSrc | image_url }} {{ mobileSrc.width }}w
       "
-      sizes="{{ mobileSize | default: '100vw' }}"
-    >
+      sizes="{{ mobileSize | default: '100vw' }}">
   {% endif %}
   <source
     {% if mobileSrc %}
-      media="(min-width: 750px)"
+    media="(min-width: 750px)"
     {% endif %}
     srcset="
       {%- if desktopSrc.width >= 375 -%}
@@ -61,14 +60,12 @@
         {{ desktopSrc | image_url: width: 3840 }} 3840w,{%- endif -%}
       {{ desktopSrc | image_url }} {{ desktopSrc.width }}w
     "
-    sizes="{{ desktopSize | default: '100vw' }}"
-  >
+    sizes="{{ desktopSize | default: '100vw' }}">
 
   <img
     src="{{ desktopSrc | image_url: width: 1500 }}"
     loading="lazy"
     width="{{ desktopSrc.width }}"
     height="{{ desktopSrc.width | divided_by: desktopSrc.aspect_ratio | round }}"
-    alt="{{ alt | default: desktopSrc.alt | escape }}"
-  >
+    alt="{{ alt | default: desktopSrc.alt | escape }}">
 </picture>
