@@ -12,7 +12,7 @@
   }
 {%- endstyle -%}
 <div class="section-{{ section.id }}-padding">
-  <div class="image_banner_carousel_main">
+  <div class="hotspot_carousel_main">
     {% if section.settings.heading != blank %}
       {% render "text-with-logo"
         , text: section.settings.heading
@@ -58,37 +58,30 @@
 </div>
 
 <script>
-    {% assign variablename = section.id |  split: '_' | last %}
-  
-    let {{ variablename }}_count = {{ section.blocks | size }} >= 2 ? true : false;
-    let {{ variablename }}_arrows = {{ section.settings.carousel_arrows }};
-  document.addEventListener("DOMContentLoaded", function() {
-    const slider = new Splide('#{{section.id}}', {
-        type: 'fade',
-        perPage: 1,
-        perMove: 1,
-        arrows: {{ variablename }}_arrows,
-        pagination: {{ variablename }}_count,
-        focus: 'left',
-        autoplay: 'pause',
-        classes: {
-  		pagination: 'splide__pagination ibc_pagination',
-  		page      : 'splide__pagination__page ibc_page',
-  },
-        breakpoints: {
-            750: {
-                perPage: 1,
-  
-            }
-        }
+    document.addEventListener("DOMContentLoaded", function() {
+      const slider = new Splide('#{{section.id}}', {
+          type: 'fade',
+          perPage: 1,
+          perMove: 1,
+          focus: 'left',
+          autoplay: 'pause',
+          classes: {
+            pagination: 'splide__pagination ibc_pagination',
+            page      : 'splide__pagination__page ibc_page',
+                   },
+          breakpoints: {
+              750: {
+                  perPage: 1,
+                   }
+                       }
+      });
+      slider.mount();
     });
-    slider.mount();
-  });
 </script>
 
 {% schema %}
   {
-    "name": "Image Banner Carousel",
+    "name": "Hotspot Carousel",
     "tag": "section",
     "settings": [
       {
@@ -181,7 +174,7 @@
     ],
     "presets": [
       {
-        "name": "Image Banner Carousel"
+        "name": "Hotspot Carousel"
       }
     ]
   }

@@ -9,8 +9,38 @@ a {
 		margin-bottom: 2.4rem;
 	}
 }
+
 .flex {
 	display: flex;
+}
+
+/* overlay classes */
+.pos_relative {
+	position: relative;
+}
+
+.pos_absolute {
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+}
+
+/* gradient overlay */
+.dg_img_container {
+	position: relative;
+}
+
+.dg_img_container::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 136.7%);
+	z-index: 1;
 }
 
 /* image-banner-carousel css */
@@ -58,7 +88,7 @@ button.splide__pagination__page.ibc_page {
 
 .splide__arrows.splide__arrows--ltr {
 	position: absolute;
-	bottom: -7px;
+	bottom: -0.5rem;
 	display: flex;
 	margin: 0px auto !important;
 	width: 100%;
@@ -80,6 +110,7 @@ button.splide__pagination__page.ibc_page {
 
 @media screen and (max-width: 768px) {
 	.splide__arrows.splide__arrows--ltr {
+		bottom: -1.5rem;
 		padding-inline: 1.5rem;
 	}
 	button.splide__pagination__page.ibc_page {
@@ -87,9 +118,15 @@ button.splide__pagination__page.ibc_page {
 		height: 0.43rem;
 	}
 	.splide__track {
-		margin-bottom: 1.6rem;
+		margin-bottom: 2.6rem;
 	}
 	.banner_text {
 		padding-inline: 1.55rem 1.65rem;
 	}
+	.splide__arrow {
+		height: 4rem;
+		width: 4rem;
+	}
 }
+
+/* hotspot carousel css */
