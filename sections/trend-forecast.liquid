@@ -1,0 +1,62 @@
+{% style %}
+    .padding-{{ section.id }} {
+        padding-top: {{ section.settings.padding-top }}px;
+        padding-bottom: {{ section.settings.padding-bottom  }}px;
+    }
+{% endstyle %}
+
+<div class="page-width padding-{{ section.id }}">
+    {% if section.settings.title != blank %}
+        {% render "section-heading", text: section.settings.title, css_class: "h2" %}
+    {% endif %}
+    <div class="trend-forecast-container mt-3">
+        <div class="splide__track">
+            <div class="splide__list">
+                <div class="spl"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "Trend forecast",
+        "settings": [
+            {
+                "type": "richtext",
+                "id": "title",
+                "label": "Enter section title",
+                "info": "Enter $ symbol wherever you want to include brand logo"
+            },
+            {
+                "type": "header",
+                "content": "Padding settings"
+            },
+            {
+                "type": "range",
+                "id": "padding-top",
+                "label": "Top padding",
+                "min": 0,
+                "max": 150,
+                "step": 5,
+                "unit": "px",
+                "default": 0
+                },
+                {
+                "type": "range",
+                "id": "padding-bottom",
+                "label": "Bottom padding",
+                "min": 0,
+                "max": 150,
+                "step": 5,
+                "unit": "px",
+                "default": 0
+                }
+        ],
+        "presets": [
+            {
+                "name": "Trend forecast"
+            }
+        ]
+    }
+{% endschema %}

@@ -1,0 +1,13 @@
+{
+  "sections": {
+    "trend-forecast": {
+      "type": "trend-forecast",
+      "settings": {
+        "title": "<p>TREND $ FORECAST<\/p>"
+      }
+    }
+  },
+  "order": [
+    "trend-forecast"
+  ]
+}
