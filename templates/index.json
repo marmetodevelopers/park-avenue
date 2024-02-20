@@ -67,41 +67,41 @@
         "padding_bottom": 36
       }
     },
-    "image_text_carousel_jYP3GC": {
+    "image_text_carousel_zKGphm": {
       "type": "image-text-carousel",
       "blocks": {
-        "image_text_neTHLa": {
+        "image_text_XxdcW4": {
           "type": "image_text",
           "settings": {
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
             "title": "Time to explore",
-            "link": "shopify:\/\/pages\/category-1"
+            "link": "shopify:\/\/collections\/all"
           }
         },
-        "image_text_BJpdep": {
+        "image_text_HXQXdc": {
           "type": "image_text",
           "settings": {
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
             "title": "Time to explore",
-            "link": "shopify:\/\/pages\/category-1"
+            "link": "shopify:\/\/collections\/all"
           }
         },
-        "image_text_nXkLtn": {
+        "image_text_ggAJXC": {
           "type": "image_text",
           "settings": {
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
             "title": "Time to explore",
-            "link": "shopify:\/\/pages\/category-1"
+            "link": "shopify:\/\/collections\/all"
           }
         }
       },
       "block_order": [
-        "image_text_neTHLa",
-        "image_text_BJpdep",
-        "image_text_nXkLtn"
+        "image_text_XxdcW4",
+        "image_text_HXQXdc",
+        "image_text_ggAJXC"
       ],
       "settings": {
         "heading": "New $ news",
@@ -113,6 +113,6 @@
   "order": [
     "image_banner",
     "featured_collection",
-    "image_text_carousel_jYP3GC"
+    "image_text_carousel_zKGphm"
   ]
 }
