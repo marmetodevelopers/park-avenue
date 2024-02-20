@@ -2511,7 +2511,10 @@ product-info .loading__spinner:not(.hidden) ~ *,
 
 .header__heading-logo {
   height: auto;
-  max-width: 100%;
+  max-width: var(--mobile-logo-width);
+  @media screen and (min-width: 990px){
+    max-width: var(--desktop-logo-width);
+  }
 }
 
 .header__heading-logo-wrapper {
