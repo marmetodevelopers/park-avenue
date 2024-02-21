@@ -29,7 +29,7 @@
               <p class="media-grid--content-subheading-{{ block.id }}">{{ block.settings.subheading }}</p>
             {% endif %}
             {% if block.settings.heading != blank %}
-              <h4 class="media-grid--content-heading-{{ block.id }}">{{ block.settings.heading }}</h4>
+              <h4 class="media-grid--content-heading-{{ block.id }} fw_5_7">{{ block.settings.heading }}</h4>
             {% endif %}
             {% if block.settings.button_text != blank %}
               <a href="{{ block.settings.button_link }}" class="text-button media-grid-button-{{ block.id }}">
@@ -56,7 +56,7 @@
     {% for block in section.blocks %}
       .media-grid--grid-{{ section.id }} {
         display: grid;
-        grid-template-columns: repeat(4,minmax(0,1fr));
+        grid-template-columns: repeat(10,minmax(0,1fr));
         grid-template-rows: repeat( {{ section.blocks.size | divided_by: 2 }} ,minmax(0,{{ section.settings.desktop_height }}px) );
         gap: {{ section.settings.col_spacing }}px;
         grid-auto-rows: minmax({{ section.settings.desktop_height }}px,auto);
@@ -131,7 +131,6 @@
       .media-grid--content-heading-{{ block.id }} {
         margin: 0;
         font-size: {{ block.settings.heading_size }}px;
-        font-weight: 700;
         letter-spacing: -0.02em;
         line-height: {{ block.settings.heading_size | plus: 8}}px;
       }
@@ -203,11 +202,11 @@
       }
       {% for block in section.blocks %}
         .media-grid--grid-{{ section.id }} {
-          gap: 3.2rem;
-          grid-template-rows: repeat( {{section.blocks.size}}, {{section.settings.mobile_height}}px );
+          gap: {{ section.settings.row_spacing }}px ;
+          grid-template-rows: repeat( {{ section.settings.row_mobile }}, {{section.settings.mobile_height}}px );
         }
         .media-grid--grid-item-{{block.id}} {
-          grid-column: span {{ block.settings.col_count | times: 2 }};
+          grid-column: span 10;
           padding: 25px;
         }
         .media-grid--content-heading-{{ block.id }} {
@@ -255,7 +254,7 @@
       },
       {
         "type": "header",
-        "content": "Row height"
+        "content": "Row height and number"
       }, {
         "type": "range",
         "id": "desktop_height",
@@ -274,7 +273,15 @@
         "unit": "px",
         "label": "mobile row height",
         "default": 600
-      }, {
+      },{
+        "type": "range",
+        "id": "row_mobile",
+        "min": 1,
+        "max": 10,
+        "step": 1,
+        "label": "Mobile row number",
+        "default": 4
+      } ,{
         "type": "select",
         "id": "col_spacing",
         "label": "Column spacing",
@@ -291,6 +298,23 @@
           }
         ],
         "default": "17.5"
+      },{
+        "type": "select",
+        "id": "row_spacing",
+        "label": "Row spacing mobile",
+        "options": [
+          {
+            "value": "10",
+            "label": "Small"
+          }, {
+            "value": "16",
+            "label": "Medium"
+          }, {
+            "value": "32",
+            "label": "Large"
+          }
+        ],
+        "default": "16"
       }, {
         "type": "checkbox",
         "id": "media_hover",
@@ -351,7 +375,7 @@
             "type": "range",
             "id": "col_count",
             "min": 1,
-            "max": 4,
+            "max": 8,
             "step": 1,
             "unit": "px",
             "label": "Column",
@@ -360,7 +384,7 @@
             "type": "range",
             "id": "row_count",
             "min": 1,
-            "max": 4,
+            "max": 8,
             "step": 1,
             "unit": "px",
             "label": "Row",

@@ -9,6 +9,12 @@ a {
 		margin-bottom: 2.4rem;
 	}
 }
+.fw_5_7 {
+	font-weight: 700;
+	@media screen and (max-width: 768px) {
+		font-weight: 500;
+	}
+}
 
 .flex {
 	display: flex;
@@ -22,7 +28,7 @@ a {
 .pos_absolute {
 	position: absolute;
 	left: 0;
-	right: 0;
+	top: 0;
 	height: 100%;
 	width: 100%;
 }
@@ -47,10 +53,15 @@ a {
 .ibc_image_container img {
 	width: 100%;
 	height: auto;
-	aspect-ratio: 2.4;
+	object-fit: 2.3;
 	@media screen and (max-width: 778px) {
 		aspect-ratio: 0.55;
+		height: auto;
 	}
+}
+.height_100 {
+	height: auto;
+	object-fit: cover;
 }
 
 .ibc_pagination {
@@ -107,6 +118,24 @@ button.splide__pagination__page.ibc_page {
 	justify-content: center;
 	text-align: center;
 }
+.pos_absolute_alt {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+}
+.p_32 {
+	padding: 3.2rem;
+}
+.height_96 {
+	height: 96.5%;
+}
+.image_banner_carousel_main .banner_text_inner {
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
+}
 
 @media screen and (max-width: 768px) {
 	.splide__arrows.splide__arrows--ltr {
@@ -130,3 +159,68 @@ button.splide__pagination__page.ibc_page {
 }
 
 /* hotspot carousel css */
+
+.pos_custom_bottom {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.hotspot_carousel_main .splide__track {
+	overflow: visible;
+	@media screen and (min-width: 750px) {
+		margin-bottom: 19.4rem;
+	}
+}
+.hotspot_carousel_main .banner_text_inner {
+	position: absolute;
+	display: flex;
+	padding: 5.6rem 15.3rem;
+	flex-direction: column;
+	bottom: -10%;
+	background: #f8f8f8;
+	box-shadow: 0px 0px 12px 0px rgba(2, 108, 72, 0.2);
+	@media screen and (min-width: 750px) {
+		width: 78.6rem;
+	}
+}
+
+.pos_custom_top {
+	justify-content: center;
+	position: absolute;
+	top: -20%;
+	left: 0;
+	display: flex;
+	width: 100%;
+}
+
+.hotspot_carousel_main .banner_title_inner {
+	color: white;
+	background-color: #000;
+	padding: 1.4rem 6.4rem;
+}
+
+@media screen and (max-width: 750px) {
+	.hotspot_carousel_main .splide__arrows.splide__arrows--ltr {
+		justify-content: flex-end;
+		gap: 1.5rem;
+	}
+	.hotspot_carousel_main .ibc_pagination {
+		justify-content: flex-start;
+	}
+	.hotspot_carousel_main .ibc_image_container {
+		height: 100%;
+	}
+	.hotspot_carousel_main .ibc_image_container img {
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+/* image-text-custom */
+.it_img_container img {
+	height: auto;
+	width: 100%;
+	aspect-ratio: 1.8;
+}
