@@ -1,52 +1,13 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "button"
-      ],
-      "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "inverse",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
     "image_text_carousel_zKGphm": {
       "type": "image-text-carousel",
       "blocks": {
         "image_text_XxdcW4": {
           "type": "image_text",
           "settings": {
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
             "title": "Time to explore",
             "link": "shopify:\/\/collections\/all"
           }
@@ -54,8 +15,8 @@
         "image_text_HXQXdc": {
           "type": "image_text",
           "settings": {
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
             "title": "Time to explore",
             "link": "shopify:\/\/collections\/all"
           }
@@ -63,8 +24,8 @@
         "image_text_ggAJXC": {
           "type": "image_text",
           "settings": {
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
             "title": "Time to explore",
             "link": "shopify:\/\/collections\/all"
           }
@@ -132,11 +93,53 @@
         "padding_top": 32,
         "padding_bottom": 36
       }
+    },
+    "park_latest_colletions_carousel_Njpnb6": {
+      "type": "park-latest-colletions-carousel",
+      "blocks": {
+        "image_text_67WF8e": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
+            "title": "Suits",
+            "link": "shopify:\/\/collections"
+          }
+        },
+        "image_text_pJKYah": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
+            "title": "Shirts",
+            "link": "shopify:\/\/collections"
+          }
+        },
+        "image_text_bVPLN4": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
+            "title": "T-Shirts & Polos",
+            "link": "shopify:\/\/collections"
+          }
+        }
+      },
+      "block_order": [
+        "image_text_67WF8e",
+        "image_text_pJKYah",
+        "image_text_bVPLN4"
+      ],
+      "settings": {
+        "heading": "LATEST $ COLLECTION'S",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
     }
   },
   "order": [
-    "image_banner",
     "image_text_carousel_zKGphm",
-    "park_categories_carousel_4C9XfP"
+    "park_categories_carousel_4C9XfP",
+    "park_latest_colletions_carousel_Njpnb6"
   ]
 }
