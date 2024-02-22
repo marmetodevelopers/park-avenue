@@ -135,11 +135,54 @@
         "padding_top": 32,
         "padding_bottom": 32
       }
+    },
+    "park_trending_carousel_6K9LAL": {
+      "type": "park-trending-carousel",
+      "blocks": {
+        "image_text_bFGj79": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4265.png",
+            "title": "DREAMY FORMALS",
+            "link": ""
+          }
+        },
+        "image_text_VgmnFm": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4265_1.png",
+            "title": "IDEAL CHOICES",
+            "link": ""
+          }
+        },
+        "image_text_Kegmdr": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265_2.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4265_2.png",
+            "title": "ILLUSION DRESS",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_text_bFGj79",
+        "image_text_VgmnFm",
+        "image_text_Kegmdr"
+      ],
+      "settings": {
+        "heading": "TRENDING $ WEEK",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
     }
   },
   "order": [
     "image_text_carousel_zKGphm",
     "park_categories_carousel_4C9XfP",
-    "park_latest_colletions_carousel_Njpnb6"
+    "park_latest_colletions_carousel_Njpnb6",
+    "park_trending_carousel_6K9LAL"
   ]
 }
