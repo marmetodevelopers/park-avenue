@@ -1,52 +1,15 @@
+{{ 'home-custom.css' | asset_url | stylesheet_tag }}
+
 <style>
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
-  .park_latest_collection_image_text_carousel .park_latest_collection_image_box img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 0.77;
-  }
-  .park_latest_collection_image_text_carousel .park_latest_collection_image_box {
-    margin-bottom: -3px;    
-  }
-  .park_latest_collection_title_box {
-    display: flex;
-    background-color: black;
-    align-items: center;
-    padding-left: 22px;
-  }
-  .park_latest_collection_title {
-    color: #FFF;
-    text-align: left;
-    margin: 14px 16px 14px 0px;
-  }
-  .pd_r_0{
-    padding-right: 0;
-  }
-  .park_latest_pd_il{
-    padding: 0rem !important;
-  }
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-    .park_latest_pd_il{
-      padding: 0rem !important;
-      bottom: -52px !important;
-    }
-    .park_latest_collection_image_text_carousel .park_latest_collection_image_box img {
-      width: 100%;
-      height: auto;
-      aspect-ratio: 0.8;
-    }
-    .park_latest_collection_title_box {
-      padding-left: 24px;
-    }
-    .park_latest_collection_title {
-      margin: 19px 16px 19px 0px;
     }
   }
 </style>
@@ -117,6 +80,7 @@
         pagination: 'splide__pagination ibc_pagination',
         page: 'splide__pagination__page ibc_page',
       },
+      pagination: true,
       breakpoints: {
         749: {
           perPage: 1,
