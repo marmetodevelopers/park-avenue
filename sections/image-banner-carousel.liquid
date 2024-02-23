@@ -64,9 +64,13 @@
         , text: section.settings.heading
         , css_class: "h2 page-width mb-3" %}
     {% endif %}
-    <div
+    {% assign blocksCount = section.blocks | size %}
+    <my-splide
       class="splide color-{{ section.settings.section_color_scheme }}"
       id="{{section.id}}"
+      data-arrows="{{ section.settings.carousel_arrows }}"
+      data-pagination="{% if blocksCount >= 2 %} true  {% else %} false {% endif %}"
+      data-fixed-height="{{ section.settings.splide_height }}"
       aria-label="Splide Basic HTML Example">
       {% render 'splide-arrows' %}
       <div class="splide__track">
@@ -103,39 +107,39 @@
           {% endfor %}
         </ul>
       </div>
-    </div>
+    </my-splide>
   </div>
 </div>
 
-<script>
-    {% assign variablename = section.id |  split: '_' | last %}
-  
-    let {{ variablename }}_count = {{ section.blocks | size }} >= 2 ? true : false;
-    let {{ variablename }}_arrows = {{ section.settings.carousel_arrows }};
-    let {{ variablename }}_height = {{ section.settings.splide_height }};
-  document.addEventListener("DOMContentLoaded", function() {
-    const slider = new Splide('#{{section.id}}', {
-        type: 'fade',
-        perPage: 1,
-        perMove: 1,
-        arrows: {{ variablename }}_arrows,
-        pagination: {{ variablename }}_count,
-        focus: 'left',
-        fixedHeight: '{{ variablename }}_height',
-        autoplay: 'pause',
-        classes: {
-  		pagination: 'splide__pagination ibc_pagination',
-  		page      : 'splide__pagination__page ibc_page',
-  },
-        breakpoints: {
-            750: {
-                perPage: 1,
-                 }
-        }
+{% comment %} <script>
+      {% assign variablename = section.id |  split: '_' | last %}
+    
+      let {{ variablename }}_count = {{ section.blocks | size }} >= 2 ? true : false;
+      let {{ variablename }}_arrows = {{ section.settings.carousel_arrows }};
+      let {{ variablename }}_height = {{ section.settings.splide_height }};
+    document.addEventListener("DOMContentLoaded", function() {
+      const slider = new Splide('#{{section.id}}', {
+          type: 'fade',
+          perPage: 1,
+          perMove: 1,
+          arrows: {{ variablename }}_arrows,
+          pagination: {{ variablename }}_count,
+          focus: 'left',
+          fixedHeight: '{{ variablename }}_height',
+          autoplay: 'pause',
+          classes: {
+    		pagination: 'splide__pagination ibc_pagination',
+    		page      : 'splide__pagination__page ibc_page',
+    },
+          breakpoints: {
+              750: {
+                  perPage: 1,
+                   }
+          }
+      });
+      slider.mount();
     });
-    slider.mount();
-  });
-</script>
+</script> {% endcomment %}
 
 {% schema %}
   {

@@ -27,32 +27,32 @@
         <ul class="splide__list">
           {% for block in section.blocks %}
             <li class="splide__slide">
-              <a href="{{block.settings.image_link}}" class="pos_relative">
+              <a href="{{block.settings.image_link}}">
                 <div class="ibc_image_container">
                   {% render 'picture'
                     , class: ''
                     , mobileSrc: block.settings.image_small
                     , desktopSrc: block.settings.image_desktop %}
                 </div>
-                {% if block.settings.title != blank or block.settings.subtitle != blank %}
-                  <div class="banner_text pos_absolute pos_custom_bottom small-hide">
-                    <div class="banner_text_inner">
-                      {% if block.settings.title != blank %}
-                        <div class="banner_title flex custom_center pos_custom_top {{ block.settings.title_size }}">
-                          <div class="banner_title_inner">
-                            {{ block.settings.title }}
-                          </div>
-                        </div>
-                      {% endif %}
-                      {% if block.settings.subtitle != blank %}
-                        <div class="banner_subtitle flex custom_center subtitle">
-                          {{ block.settings.subtitle }}
-                        </div>
-                      {% endif %}
-                    </div>
-                  </div>
-                {% endif %}
               </a>
+              {% if block.settings.title != blank or block.settings.subtitle != blank %}
+                <div class="banner_text pos_absolute pos_custom_bottom small-hide" style="height: 94%;">
+                  <div class="banner_text_inner">
+                    {% if block.settings.title != blank %}
+                      <div class="banner_title flex custom_center pos_custom_top {{ block.settings.title_size }}">
+                        <div class="banner_title_inner">
+                          {{ block.settings.title }}
+                        </div>
+                      </div>
+                    {% endif %}
+                    {% if block.settings.subtitle != blank %}
+                      <div class="banner_subtitle flex custom_center subtitle">
+                        {{ block.settings.subtitle }}
+                      </div>
+                    {% endif %}
+                  </div>
+                </div>
+              {% endif %}
             </li>
           {% endfor %}
         </ul>
@@ -68,7 +68,7 @@
           perPage: 1,
           perMove: 1,
           focus: 'left',
-          fixedHeight: '720px',
+          fixedHeight: '837px',
           autoplay: 'pause',
           classes: {
             pagination: 'splide__pagination ibc_pagination',

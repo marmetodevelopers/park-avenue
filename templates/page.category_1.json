@@ -361,10 +361,10 @@
             "title": "Find Your Store"
           }
         },
-        "subtitle_8hAJCb": {
-          "type": "subtitle",
+        "description_gVPy7L": {
+          "type": "description",
           "settings": {
-            "subtitle": "The store locator helps customers easily find their nearest Raymond retail store or shop-in-shop.It allows users to search by city, pincode or current location to pull up results on a map.Users can input the city or pincode in the search bar to view all Raymond outlets within that location.When accessing from a mobile device, it automatically detects the user's current location for nearby stores."
+            "subtitle": "<ul><li>The store locator helps customers easily find their nearest Raymond retail store or shop-in-shop.<\/li><li>It allows users to search by city, pincode or current location to pull up results on a map.<\/li><li>Users can input the city or pincode in the search bar to view all Raymond outlets within that location.<\/li><li>When accessing from a mobile device, it automatically detects the user's current location for nearby stores.<\/li><\/ul>"
           }
         },
         "button_WwtCik": {
@@ -377,7 +377,7 @@
       },
       "block_order": [
         "title_DRDT7V",
-        "subtitle_8hAJCb",
+        "description_gVPy7L",
         "button_WwtCik"
       ],
       "settings": {
@@ -385,7 +385,7 @@
         "section_color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36,
-        "image_small": "shopify:\/\/shop_images\/Vector_d851ce7c-979a-403c-a521-55ef42ba8f71.png",
+        "image_small": "shopify:\/\/shop_images\/Group_1000003007.png",
         "image_desktop": "shopify:\/\/shop_images\/Vector_d851ce7c-979a-403c-a521-55ef42ba8f71.png"
       }
     }
