@@ -131,3 +131,53 @@
         border: 1px solid black;
     }
 }
+
+/* Park trending carousel style */
+
+.park_trending_image_text_carousel {
+    padding: 0px;
+}
+
+.park_trending_image_text_carousel .park_trending_image_box img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 0.68;
+}
+
+.trending_slides {
+    border: 1px solid gray;
+}
+
+.park_trending_image_text_carousel .park_trending_image_box {
+    padding: 0 20px;
+    margin-top: -16px;
+}
+
+.park_trending_title_box {
+    text-align: center;
+}
+
+.park_trending_title {
+    margin: 14px 16px 14px 0px;
+}
+
+.park_trending_image_text_carousel .park_trending_pd_il {
+    padding: 0rem !important;
+}
+
+@media screen and (min-width: 750px) {
+
+    .park_trending_image_text_carousel .park_trending_image_box img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 0.68;
+    }
+
+    .park_trending_title_box {
+        padding-left: 24px;
+    }
+
+    .park_trending_title {
+        margin: 27px;
+    }
+}

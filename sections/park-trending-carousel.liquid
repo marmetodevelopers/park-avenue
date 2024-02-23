@@ -1,68 +1,28 @@
+{{ 'home-custom.css' | asset_url | stylesheet_tag }}
+
 <style>
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
-  .park_trending_image_text_carousel {
-    padding: 0px;
-  }
-
-  .park_trending_image_text_carousel .park_trending_image_box img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 0.68;
-  }
-  .trending_slides {
-    border: 1px solid gray;
-  }
-  .park_trending_image_text_carousel .park_trending_image_box {
-    padding: 0 20px;
-    margin-top: -16px;
-  }
-  .park_trending_title_box {
-    text-align: center;
-  }
-  .park_trending_title {
-    margin: 14px 16px 14px 0px;
-  }
-  .pd_r_0{
-    padding-right: 0;
-  }
-  .park_trending_image_text_carousel .splide__track{
-  overflow:visible;
-  }
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
-    .park_trending_image_text_carousel .pd_il{
-      padding: 0rem !important;
-    }
-    .park_trending_image_text_carousel .park_trending_image_box img {
-      width: 100%;
-      height: auto;
-      aspect-ratio: 0.68;
-    }
-    .park_trending_title_box {
-      padding-left: 24px;
-    }
-    .park_trending_title {
-      margin: 27px;
-    }
   }
 </style>
 
 <div class="section-{{ section.id }}-padding">
-  <div class="page-width pd_r_0">
+  <div class="page-width">
     <div class="park_trending_image_text_carousel">
       {% if section.settings.heading != blank %}
         {% render 'text-with-logo', text: section.settings.heading, css_class: 'h1 mb-3' %}
       {% endif %}
 
       <div class="splide" id="{{ section.id }}">
-        <div class="splide__arrows img_txt_carousel_arrows pd_il">
+        <div class="splide__arrows img_txt_carousel_arrows park_trending_pd_il">
           <button class="splide__arrow splide__arrow--prev">
             {% render 'splide-left-arrow' %}
           </button>
