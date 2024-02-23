@@ -1,0 +1,15 @@
+/* Image text carousel style */
+
+.image_text_carousel .image_box img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1.96;
+}
+
+.title {
+    text-align: center;
+}
+
+.image_text_pd_il {
+    padding: 0 !important;
+}
