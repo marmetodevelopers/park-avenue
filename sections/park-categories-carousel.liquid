@@ -1,47 +1,9 @@
+{{ 'home-custom.css' | asset_url | stylesheet_tag }}
+
 <style>
   .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
       padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-  .park_category_carousel_content {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-  }
-
-  .park_category_carousel_content .park_category_image_box {
-    line-height: 0;
-  }
-
-  .park_category_carousel_content .park_category_image_box img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 0.52;
-  }
-
-  .park_category_carousel_content .carousel_box {
-    position: relative;
-  }
-
-  .park_category_carousel_content .category_text {
-    position: absolute;
-    left: 50%;
-    bottom: 48px;
-    transform: translateX(-50%);
-    z-index: 2;
-    text-align: center;
-    color: #FFF;
-  }
-
-  .carousel_box .overlay {
-    position: absolute;
-    display: block !important;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    bottom: 0%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
   }
 
   @media screen and (min-width: 750px) {
@@ -49,24 +11,6 @@
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
-
-    .park_category_carousel_content {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto;
-      gap: 15px;
-    }
-
-    .park_category_carousel_content .park_category_image_box img {
-      width: 100%;
-      height: auto;
-      aspect-ratio: 0.968;
-    }
-
-    .park_category_carousel_content .category_text {
-      bottom: 57px;
-    }
-
   }
 </style>
 
