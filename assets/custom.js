@@ -1,3 +1,4 @@
+//banner-splide initialisation
 class MySplide extends HTMLElement {
 	constructor() {
 		super();
@@ -30,7 +31,7 @@ class MySplide extends HTMLElement {
 					},
 				},
 			});
-			slider.mount();
+			this.slider.mount();
 		});
 	}
 }
