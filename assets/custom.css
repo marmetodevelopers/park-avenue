@@ -30,7 +30,7 @@ a {
 .splide__track {
 	margin-bottom: 2.4rem;
 }
-button.splide__pagination__page.ibc_page {
+.splide__pagination__page.ibc_page {
 	width: 10rem;
 	border-radius: 0px;
 	height: 0.7rem;
@@ -39,7 +39,7 @@ button.splide__pagination__page.ibc_page {
 	opacity: 1;
 }
 .ibc_page.is-active {
-	background: linear-gradient(90deg, rgba(0, 0, 0, 1) 60%, rgba(255, 255, 255, 1) 60%) !important;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 1) 60%, rgba(255, 255, 255, 1) 60%);
 	transform: scale(1);
 }
 
@@ -60,7 +60,7 @@ button.splide__pagination__page.ibc_page {
 	position: absolute;
 	bottom: -7px;
 	display: flex;
-	margin: 0px auto !important;
+	margin: 0px auto;
 	width: 100%;
 	justify-content: space-between;
 	padding-inline: 12.2rem;

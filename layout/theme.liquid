@@ -32,11 +32,11 @@
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'custom-park-sanjeev.js' | asset_url }}" async></script>
 
-    {% comment %} splide cdn {% endcomment %}
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
-
+    {% comment %} splide {% endcomment %}
+    <script src="{{ 'splide.js' | asset_url }}" async></script>
+    <link href="{{ 'splide.css' | asset_url }}" rel="stylesheet"/>
     {%- if settings.animations_reveal_on_scroll -%}
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}

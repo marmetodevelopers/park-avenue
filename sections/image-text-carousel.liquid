@@ -1,20 +1,23 @@
 {{ 'home-custom.css' | asset_url | stylesheet_tag }}
 
 <style>
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-    }
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
 
-    @media screen and (min-width: 750px) {
-      .section-{{ section.id }}-padding {
-        padding-top: {{ section.settings.padding_top }}px;
-        padding-bottom: {{ section.settings.padding_bottom }}px;
-      }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
     }
+  }
 </style>
 
-<div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
+<image-text-carousel
+  data-section-id="{{ section.id }}"
+  class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}"
+>
   <div class="page-width">
     <div class="image_text_carousel">
       {% if section.settings.heading != blank %}
@@ -54,30 +57,9 @@
       </div>
     </div>
   </div>
-</div>
+</image-text-carousel>
 
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    new Splide('#{{ section.id }}', {
-      type: 'slide',
-      rewind: true,
-      rewindSpeed: 1000,
-      start: 1,
-      perPage: 2.2,
-      classes: {
-        pagination: 'splide__pagination ibc_pagination',
-        page: 'splide__pagination__page ibc_page',
-      },
-      breakpoints: {
-        749: {
-          perPage: 1.2,
-        },
-      },
-      gap: '20px',
-      arrows: true,
-    }).mount();
-  });
-</script>
+
 
 {% schema %}
 {

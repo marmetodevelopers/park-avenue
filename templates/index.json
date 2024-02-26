@@ -1,301 +1,160 @@
 {
   "sections": {
-    "image_text_carousel_zKGphm": {
+    "image_text_carousel_Hrc3Am": {
       "type": "image-text-carousel",
       "blocks": {
-        "image_text_XxdcW4": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
-            "title": "Time to explore",
-            "link": "shopify:\/\/collections\/all"
-          }
-        },
-        "image_text_HXQXdc": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
-            "title": "Time to explore",
-            "link": "shopify:\/\/collections\/all"
-          }
-        },
-        "image_text_ggAJXC": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
-            "title": "Time to explore",
-            "link": "shopify:\/\/collections\/all"
-          }
-        },
-        "image_text_GNjpeb": {
+        "image_text_WyR8mJ": {
           "type": "image_text",
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
-            "title": "Time to explore",
-            "link": "shopify:\/\/pages\/category-1"
+            "title": "Time to express",
+            "link": "shopify:\/\/blogs\/all-blogs"
           }
         },
-        "image_text_QE9DxJ": {
+        "image_text_iEJmwN": {
           "type": "image_text",
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
-            "title": "Time to explore",
-            "link": "shopify:\/\/collections"
+            "title": "Time to express",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_gMJhe4": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to express",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_KNft7T": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to express",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_iGK68r": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to express",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_X88AqL": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to express",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_9Wfxzp": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to express",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_Ve9TQC": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to express",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_QG6zgz": {
+          "type": "image_text",
+          "settings": {
+            "title": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "image_text_XxdcW4",
-        "image_text_HXQXdc",
-        "image_text_ggAJXC",
-        "image_text_GNjpeb",
-        "image_text_QE9DxJ"
+        "image_text_WyR8mJ",
+        "image_text_iEJmwN",
+        "image_text_gMJhe4",
+        "image_text_KNft7T",
+        "image_text_iGK68r",
+        "image_text_X88AqL",
+        "image_text_9Wfxzp",
+        "image_text_Ve9TQC",
+        "image_text_QG6zgz"
       ],
       "settings": {
         "heading": "New $ news",
-        "padding_top": 32,
+        "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "park_categories_carousel_4C9XfP": {
-      "type": "park-categories-carousel",
-      "blocks": {
-        "image_text_8NUG3G": {
-          "type": "image-text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4259desktop.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4304mob.png",
-            "category_text": "BUSINESS FORMAL",
-            "category_url": "shopify:\/\/collections"
-          }
-        },
-        "image_text_LJqHrF": {
-          "type": "image-text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4259desktop.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4304mob.png",
-            "category_text": "BUSINESS FORMAL",
-            "category_url": "shopify:\/\/collections"
-          }
-        },
-        "image_text_dPJjNL": {
-          "type": "image-text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4259desktop.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4304mob.png",
-            "category_text": "BUSINESS FORMAL",
-            "category_url": "shopify:\/\/collections"
-          }
-        },
-        "image_text_EctHEe": {
-          "type": "image-text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4259desktop.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4304mob.png",
-            "category_text": "BUSINESS FORMAL",
-            "category_url": "shopify:\/\/collections"
-          }
-        }
-      },
-      "block_order": [
-        "image_text_8NUG3G",
-        "image_text_LJqHrF",
-        "image_text_dPJjNL",
-        "image_text_EctHEe"
-      ],
-      "settings": {
-        "category_heading": "PARK $ CATEGORIES",
-        "padding_top": 32,
-        "padding_bottom": 36
-      }
-    },
-    "park_latest_colletions_carousel_Njpnb6": {
-      "type": "park-latest-colletions-carousel",
-      "blocks": {
-        "image_text_67WF8e": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "title": "Suits",
-            "link": "shopify:\/\/collections"
-          }
-        },
-        "image_text_pJKYah": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "title": "Shirts",
-            "link": "shopify:\/\/collections"
-          }
-        },
-        "image_text_bVPLN4": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "title": "T-Shirts & Polos",
-            "link": "shopify:\/\/collections"
-          }
-        },
-        "image_text_CBADbN": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "title": "Suits",
-            "link": "shopify:\/\/collections\/all"
-          }
-        },
-        "image_text_x4HiBi": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "title": "Shirts",
-            "link": "shopify:\/\/collections\/all"
-          }
-        },
-        "image_text_GKHPRT": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "title": "T-shirts & polos",
-            "link": "shopify:\/\/collections\/all"
-          }
-        },
-        "image_text_kDY6WH": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "title": "T-shirts & polos",
-            "link": "shopify:\/\/collections\/all"
-          }
-        }
-      },
-      "block_order": [
-        "image_text_67WF8e",
-        "image_text_pJKYah",
-        "image_text_bVPLN4",
-        "image_text_CBADbN",
-        "image_text_x4HiBi",
-        "image_text_GKHPRT",
-        "image_text_kDY6WH"
-      ],
-      "settings": {
-        "heading": "LATEST $ COLLECTION'S",
-        "padding_top": 32,
-        "padding_bottom": 32
-      }
-    },
-    "park_trending_carousel_6K9LAL": {
+    "park_trending_carousel_zpaQxH": {
       "type": "park-trending-carousel",
       "blocks": {
-        "image_text_bFGj79": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4265.png",
-            "title": "DREAMY FORMALS",
-            "link": ""
-          }
-        },
-        "image_text_VgmnFm": {
+        "image_text_PqKJd3": {
           "type": "image_text",
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265_1.png",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4265_1.png",
-            "title": "IDEAL CHOICES",
+            "title": "",
             "link": ""
           }
         },
-        "image_text_Kegmdr": {
+        "image_text_JLTKhV": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4265_1.png",
+            "title": "Shirts",
+            "link": ""
+          }
+        },
+        "image_text_VFGQD6": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4265.png",
+            "title": "Suits",
+            "link": ""
+          }
+        },
+        "image_text_QpfmpR": {
           "type": "image_text",
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265_2.png",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4265_2.png",
-            "title": "ILLUSION DRESS",
+            "title": "Styles",
             "link": ""
           }
         }
       },
       "block_order": [
-        "image_text_bFGj79",
-        "image_text_VgmnFm",
-        "image_text_Kegmdr"
+        "image_text_PqKJd3",
+        "image_text_JLTKhV",
+        "image_text_VFGQD6",
+        "image_text_QpfmpR"
       ],
       "settings": {
-        "heading": "TRENDING $ WEEK",
-        "padding_top": 32,
-        "padding_bottom": 32
-      }
-    },
-    "park_collections_carousel_4k8nfg": {
-      "type": "park-collections-carousel",
-      "blocks": {
-        "image_text_Ym8WNd": {
-          "type": "image-text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4244_08b0ff69-7c71-4245-a685-7391dc8aa189.png",
-            "collections_text": "Lorem ipsum",
-            "collections_url": ""
-          }
-        },
-        "image_text_PHrp8x": {
-          "type": "image-text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "collections_text": "Lorem ipsum",
-            "collections_url": ""
-          }
-        },
-        "image_text_h3Lq8H": {
-          "type": "image-text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "collections_text": "Lorem ipsum",
-            "collections_url": ""
-          }
-        },
-        "image_text_T7PPFM": {
-          "type": "image-text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "collections_text": "Lorem ipsum",
-            "collections_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_text_Ym8WNd",
-        "image_text_PHrp8x",
-        "image_text_h3Lq8H",
-        "image_text_T7PPFM"
-      ],
-      "settings": {
-        "collections_heading": "",
+        "heading": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
     }
   },
   "order": [
-    "image_text_carousel_zKGphm",
-    "park_categories_carousel_4C9XfP",
-    "park_latest_colletions_carousel_Njpnb6",
-    "park_trending_carousel_6K9LAL",
-    "park_collections_carousel_4k8nfg"
+    "image_text_carousel_Hrc3Am",
+    "park_trending_carousel_zpaQxH"
   ]
 }
