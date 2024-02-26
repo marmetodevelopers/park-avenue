@@ -29,12 +29,32 @@
             "title": "Time to explore",
             "link": "shopify:\/\/collections\/all"
           }
+        },
+        "image_text_GNjpeb": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to explore",
+            "link": "shopify:\/\/pages\/category-1"
+          }
+        },
+        "image_text_QE9DxJ": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to explore",
+            "link": "shopify:\/\/collections"
+          }
         }
       },
       "block_order": [
         "image_text_XxdcW4",
         "image_text_HXQXdc",
-        "image_text_ggAJXC"
+        "image_text_ggAJXC",
+        "image_text_GNjpeb",
+        "image_text_QE9DxJ"
       ],
       "settings": {
         "heading": "New $ news",
@@ -123,12 +143,52 @@
             "title": "T-Shirts & Polos",
             "link": "shopify:\/\/collections"
           }
+        },
+        "image_text_CBADbN": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
+            "title": "Suits",
+            "link": "shopify:\/\/collections\/all"
+          }
+        },
+        "image_text_x4HiBi": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
+            "title": "Shirts",
+            "link": "shopify:\/\/collections\/all"
+          }
+        },
+        "image_text_GKHPRT": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
+            "title": "T-shirts & polos",
+            "link": "shopify:\/\/collections\/all"
+          }
+        },
+        "image_text_kDY6WH": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
+            "title": "T-shirts & polos",
+            "link": "shopify:\/\/collections\/all"
+          }
         }
       },
       "block_order": [
         "image_text_67WF8e",
         "image_text_pJKYah",
-        "image_text_bVPLN4"
+        "image_text_bVPLN4",
+        "image_text_CBADbN",
+        "image_text_x4HiBi",
+        "image_text_GKHPRT",
+        "image_text_kDY6WH"
       ],
       "settings": {
         "heading": "LATEST $ COLLECTION'S",
@@ -177,12 +237,65 @@
         "padding_top": 32,
         "padding_bottom": 32
       }
+    },
+    "park_collections_carousel_4k8nfg": {
+      "type": "park-collections-carousel",
+      "blocks": {
+        "image_text_Ym8WNd": {
+          "type": "image-text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4244_08b0ff69-7c71-4245-a685-7391dc8aa189.png",
+            "collections_text": "Lorem ipsum",
+            "collections_url": ""
+          }
+        },
+        "image_text_PHrp8x": {
+          "type": "image-text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
+            "collections_text": "Lorem ipsum",
+            "collections_url": ""
+          }
+        },
+        "image_text_h3Lq8H": {
+          "type": "image-text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
+            "collections_text": "Lorem ipsum",
+            "collections_url": ""
+          }
+        },
+        "image_text_T7PPFM": {
+          "type": "image-text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
+            "collections_text": "Lorem ipsum",
+            "collections_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_text_Ym8WNd",
+        "image_text_PHrp8x",
+        "image_text_h3Lq8H",
+        "image_text_T7PPFM"
+      ],
+      "settings": {
+        "collections_heading": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_text_carousel_zKGphm",
     "park_categories_carousel_4C9XfP",
     "park_latest_colletions_carousel_Njpnb6",
-    "park_trending_carousel_6K9LAL"
+    "park_trending_carousel_6K9LAL",
+    "park_collections_carousel_4k8nfg"
   ]
 }
