@@ -18,8 +18,11 @@
         , text: section.settings.heading
         , css_class: "h2 page-width mb-3" %}
     {% endif %}
-    <div
+    <my-splide
       class="splide"
+      data-arrows="true"
+      data-pagination="true"
+      data-fixed-height="837px"
       id="{{section.id}}"
       aria-label="Splide Basic HTML Example">
       {% render 'splide-arrows' %}
@@ -57,32 +60,9 @@
           {% endfor %}
         </ul>
       </div>
-    </div>
+    </my-splide>
   </div>
 </div>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const slider = new Splide('#{{section.id}}', {
-          type: 'fade',
-          perPage: 1,
-          perMove: 1,
-          focus: 'left',
-          fixedHeight: '837px',
-          autoplay: 'pause',
-          classes: {
-            pagination: 'splide__pagination ibc_pagination',
-            page      : 'splide__pagination__page ibc_page',
-                   },
-          breakpoints: {
-              750: {
-                  perPage: 1,
-                   }
-                       }
-      });
-      slider.mount();
-    });
-</script>
 
 {% schema %}
   {

@@ -8,7 +8,7 @@
 
     <div class="media-grid--grid-{{ section.id }}">
       {% for block in section.blocks %}
-        <a href="{{ block.settings.button_link }}" class="media-grid--grid-item-{{block.id}}">
+        <a href="{{ block.settings.button_link }}" class="media-grid--grid-item-{{block.id}} {{ block.settings.content_position }}">
           <div class="media-grid--bg-{{ block.id }}">
             {% if block.settings.background_video %}
               <div class="media-grid--bg-video-{{ block.id }}">
@@ -64,6 +64,7 @@
       .media-grid--grid-item-{{block.id}} {
         position: relative;
         display: flex;
+        flex-direction: column;
         padding: 5.7rem 0;
         border-radius: {{ block.settings.border_radius }}px;
         overflow: hidden;
@@ -138,53 +139,6 @@
         font-size: 15px;
         line-height: 15px;
       }
-      {% case block.settings.content_position %}
-        {% when 'top-left' %}
-          .media-grid--grid-item-{{block.id}} {
-            justify-content: flex-start;
-            align-items: flex-start;
-          }
-        {% when 'top-center' %}
-          .media-grid--grid-item-{{block.id}} {
-            justify-content: center;
-            align-items: flex-start;
-          }
-        {% when 'top-right' %}
-          .media-grid--grid-item-{{block.id}} {
-            justify-content: flex-end;
-            align-items: flex-start;
-          }
-        {% when 'middle-left' %}
-          .media-grid--grid-item-{{block.id}} {
-            justify-content: flex-start;
-            align-items: center;
-          }
-        {% when 'middle-center' %}
-          .media-grid--grid-item-{{block.id}} {
-            justify-content: center;
-            align-items: center;
-          }
-        {% when 'middle-right' %}
-          .media-grid--grid-item-{{block.id}} {
-            justify-content: flex-end;
-            align-items: center;
-          }
-        {% when 'bottom-left' %}
-          .media-grid--grid-item-{{block.id}} {
-            justify-content: flex-start;
-            align-items: flex-end;
-          }
-        {% when 'bottom-center' %}
-          .media-grid--grid-item-{{block.id}} {
-            justify-content: center;
-            align-items: flex-end;
-          }
-        {% when 'bottom-right' %}
-          .media-grid--grid-item-{{block.id}} {
-            justify-content: flex-end;
-            align-items: flex-end;
-          }
-      {% endcase %}
     {% endfor %}
     
     @media only screen and (min-width: 768px) and (max-width: 1067px) {

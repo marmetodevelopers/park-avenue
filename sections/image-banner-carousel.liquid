@@ -3,59 +3,13 @@
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
-  {% case section.settings.content_position %}
-  {% when 'top-left' %}
-  .media-grid--grid-item-{{ section.id }} {
-    justify-content: flex-start;
-    align-items: flex-start;
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
   }
-{% when 'top-center' %}
-.media-grid--grid-item-{{ section.id }} {
-  justify-content: flex-start;
-  align-items: center;
-}
-{% when 'top-right' %}
-.media-grid--grid-item-{{ section.id }} {
-  justify-content: flex-start;
-  align-items: flex-end;
-}
-{% when 'middle-left' %}
-.media-grid--grid-item-{{ section.id }} {
-  justify-content: center;
-  align-items: flex-start;
-}
-{% when 'middle-center' %}
-.media-grid--grid-item-{{ section.id }} {
-  justify-content: center;
-  align-items: center;
-}
-{% when 'middle-right' %}
-.media-grid--grid-item-{{ section.id }} {
-  justify-content: center;
-  align-items: flex-end;
-}
-{% when 'bottom-left' %}
-.media-grid--grid-item-{{ section.id }} {
-  justify-content: flex-end;
-  align-items: flex-start;
-}
-{% when 'bottom-center' %}
-.media-grid--grid-item-{{ section.id }} {
-  justify-content: flex-end;
-  align-items: center;
-}
-{% when 'bottom-right' %}
-.media-grid--grid-item-{{ section.id }} {
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-{% endcase %}
-@media screen and (min-width: 750px) {
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top }}px;
-    padding-bottom: {{ section.settings.padding_bottom }}px;
-  }
-}
 {%- endstyle -%}
 <div class="section-{{ section.id }}-padding">
   <div class="image_banner_carousel_main">
@@ -85,7 +39,7 @@
                     , desktopSrc: block.settings.image_desktop %}
                 </div>
                 {% if block.settings.title != blank or block.settings.subtitle != blank %}
-                  <div class="banner_text {% if section.settings.layout == true %} pos_absolute flex p_32 height_96 media-grid--grid-item-{{ section.id }} {% endif %}">
+                  <div class="banner_text {% if section.settings.layout == true %} pos_absolute flex p_32 height_96 {{ section.settings.content_position }} {% endif %}">
                     <div class="banner_text_inner">
                       {% if block.settings.title != blank %}
                         <div class="banner_title flex custom_center {{ block.settings.title_size }}">

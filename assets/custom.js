@@ -9,8 +9,6 @@ class MySplide extends HTMLElement {
 		this.arrows = this.dataset.arrows;
 		this.pagination = this.dataset.pagination;
 		this.fixedHeight = this.dataset.fixedHeight;
-
-		console.log(this.id);
 		document.addEventListener('DOMContentLoaded', () => {
 			this.slider = new Splide('#' + this.id, {
 				type: 'fade',
