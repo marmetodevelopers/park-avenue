@@ -21,7 +21,17 @@
         {% render 'text-with-logo', text: section.settings.heading, css_class: 'h1 mb-3' %}
       {% endif %}
 
-      <div class="splide" id="{{ section.id }}">
+      <splide-carousel 
+        class="splide" 
+        id="{{ section.id }}"
+        data-desktop-per-page="3"
+        data-mobile-per-page="1"
+        data-gap="29"
+        data-desktop-arrow="true"
+        data-mobile-arrow="true"
+        data-desktop-pagination="true"
+        data-mobile-pagination="true"
+      >
         <div class="splide__arrows img_txt_carousel_arrows park_latest_pd_il">
           <button class="splide__arrow splide__arrow--prev">
             {% render 'splide-left-arrow' %}
@@ -63,33 +73,10 @@
             {% endfor %}
           </div>
         </div>
-      </div>
+      </splide-carousel>
     </div>
   </div>
 </div>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    new Splide('#{{ section.id }}', {
-      type: 'slide',
-      rewind: true,
-      rewindSpeed: 1000,
-      start: 1,
-      perPage: 3,
-      classes: {
-        pagination: 'splide__pagination ibc_pagination',
-        page: 'splide__pagination__page ibc_page',
-      },
-      pagination: true,
-      breakpoints: {
-        749: {
-          perPage: 1,
-        },
-      },
-      gap: '29px',
-    }).mount();
-  });
-</script>
 
 {% schema %}
 {
