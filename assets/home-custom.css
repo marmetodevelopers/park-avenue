@@ -157,14 +157,13 @@
     margin-top: 20px;
     padding: 0px 20px 0px 20px;
     border: 1px solid gray;
-}
-
-.park_trending_title_box {
-    text-align: center;
+    border-bottom: none;
 }
 
 .park_trending_title {
-    margin: 16px;
+    padding: 16px;
+    margin: 0px;
+    text-align: center;
 }
 
 /* To override the splide default style important required */
@@ -182,7 +181,9 @@
     }
 
     .park_trending_title {
-        margin: 27px;
+        padding: 27px;
+        border: 1px solid gray;
+        border-top: none;
     }
-    
+
 }
