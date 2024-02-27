@@ -39,7 +39,6 @@ customElements.define('park-trending-carousel', ParkTrendingCarousel);
 class SplideCarousel extends HTMLElement {
     constructor() {
         super();
-        debugger
         this.id = this.getAttribute('id');
         this.perPageDesktop = this.dataset.desktopPerPage;
         this.perpageMobile = this.dataset.mobilePerPage;

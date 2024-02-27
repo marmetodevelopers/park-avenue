@@ -47,7 +47,7 @@
                 {%- when 'image_text' -%}
                   <div class="splide__slide trending_slides">
                     <a href="{{ block.settings.link }}">
-                      <div class="park_trending_overflow_image">
+                      <div class="park_trending_overflow_image" style="background: {{ section.settings.image_background }}">
                         <div class="park_trending_image_box">
                           {% render 'picture',
                             class: '',
@@ -55,11 +55,9 @@
                             desktopSrc: block.settings.desktop_image
                           %}
                         </div>
-                        <div class="park_trending_title_box">
-                          <p class="h2 park_trending_title">{{ block.settings.title }}</p>
-                        </div>
                       </div>
                     </a>
+                    <p class="h2 park_trending_title">{{ block.settings.title }}</p>
                   </div>
               {%- endcase -%}
             {% endfor %}
@@ -98,7 +96,12 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
-    }
+    },
+    {
+      "type": "color_background",
+      "id": "image_background",
+      "label": "Background color"
+    }    
   ],
   "blocks": [
     {
