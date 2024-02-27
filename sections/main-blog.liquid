@@ -40,8 +40,8 @@
       </div>
       <div class="recent-article-data">
         <div class="date-container">{{ article.published_at | date: '%d %b %y' }}</div>
-        <div>{{ article.title }}</div>
-        <div>{{ article.content |  truncatewords: 9, "..." }}</div>
+        <div> <a href="{{ article.url }}" class="recent-article-title-container main-blog-title">{{ article.title }} <span class="blog-arrow"> {% render 'blog-arrow' %}</span></a></div>
+        <div class="article-desc"">{{ article.content |  truncatewords: 9, "..." }}</div>
 
       </div>
     </div>
@@ -65,14 +65,14 @@
         <div class="main-article-data">
           <div class="date-container">{{ article.published_at | date: '%d %b %y' }}</div>
           <div class="">
-            <a href="{{article.url}}" class="main-blog-title h4">
+            <a href="{{article.url}}" class="main-blog-title ">
               {{ article.title }}
               <span class="blog-arrow">
                 {% render 'blog-arrow' %}
               </span>
             </a>
           </div>
-          <div>{{ article.content |  truncatewords: 9, "..."}}</div>
+          <div class="article-desc">{{ article.content |  truncatewords: 9, "..."}}</div>
 
         </div>
 
