@@ -8,10 +8,30 @@
 
   <div class="main-article-container">
 
-    <div class="date-container">
-      Posted on {{ article.published_at | date: '%d %b %y' }}</div>
-    <div>{{ article.title }}</div>
+    <div class="article-top-container">
 
+      <div class="date-container h5">
+        Posted on {{ article.published_at | date: '%d %b %Y' }}
+      </div>
+      <div class="h2 article-title-heading">{{ article.title }}</div>
+      <div class="blog-information h5">
+        {{ article.metafields.custom.blog_post_information }}
+      </div>
+      <div class="popular-tag-container">
+        {% for tag in blog.all_tags %}
+          {% if tag contains "popular__" %}
+            {% assign tag_name = tag | remove_first: "popular__" | remove: "__"  |  capitalize %}
+              
+            <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="caption">
+              {{ tag_name }}
+            </a>
+           
+        
+          {% endif %}
+        {% endfor %}
+
+      </div>
+    </div>
 
     <div class="article-image-container">
       {% render 'image-snippet'
@@ -19,23 +39,23 @@
         , desktopSrc: article.metafields.custom.blog_post_image %}
 
     </div>
-    <div>
+    <div class="content-svg-container">
       <div class="article-content-container">
         {{ article.content }}
-        
+
 
       </div>
       <div class="svg-icons-container">
         {% for block in section.blocks %}
-        <a href="{{ block.settings.url }}">
-          {% render 'instagram-icon' %}
-        </a>
-        <a href="{{ block.settings.url2 }}">
-          {% render 'pintest-icon' %}
-        </a>
-        <a href="{{ block.settings.url3 }}">
-          {% render 'twitter-icon' %}
-        </a>
+          <a href="{{ block.settings.url }}">
+            {% render 'instagram-icon' %}
+          </a>
+          <a href="{{ block.settings.url2 }}">
+            {% render 'pintest-icon' %}
+          </a>
+          <a href="{{ block.settings.url3 }}">
+            {% render 'twitter-icon' %}
+          </a>
 
 
         {% endfor %}
@@ -43,6 +63,64 @@
       </div>
     </div>
   </div>
+
+  {% assign current_tags = article.tags %}
+  {% assign related_articles = '' %}
+
+
+  <div class="article-related-heading">
+    <span class="h2">RELATED</span>
+    <span>
+      {% render 'park-icon' %}</span>
+    <span class="h2">BLOGS</span>
+  </div>
+
+
+  <div class="grid grid--1-col grid--2-col-tablet grid--3-col-desktop article-grid">
+
+    {% for post in blog.articles %}
+
+      {% if post.id != article.id %}
+        {% assign is_related = false %}
+        {% for post_tag in post.tags %}
+          {% assign post_value = post_tag | split: '__' | last %}
+          {% for current_tag in current_tags %}
+            {% assign current_value = current_tag | split: '__' | last %}
+            {% if post_value == current_value %}
+              {% assign is_related = true %}
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+        {% if is_related %}
+
+          <div class="grid__item related-items">
+            <div class="recent-article-image-container">
+              {% render 'image-snippet'
+                , mobileSrc: post.image
+                , desktopSrc: post.image %}
+            </div>
+            <div class="main-article-data">
+              <div class="article-date-container">
+                <span class="date">{{ post.published_at | date: '%d %b %Y' }}</span>
+                <span class="blog-arrow">
+                  {% render 'blog-arrow' %}
+                </span>
+              </div>
+              <div class="related-article-title">
+                <a href="{{post.url}}" class="main-blog-title h4">
+                  {{ post.title }}
+
+                </a>
+              </div>
+              <div class="h4">{{ post.content | truncatewords: 9, "..." }}</div>
+
+            </div>
+          </div>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
 
 </article>
 
@@ -89,18 +167,16 @@
             "type": "url",
             "id": "url",
             "label": "add Instagram url"
-          },
-          {
+          }, {
             "type": "url",
             "id": "url2",
             "label": "add Pintest url"
-          },
-          {
+          }, {
             "type": "url",
             "id": "url3",
             "label": "add Twitter url"
           }
-         
+
         ]
       }
 

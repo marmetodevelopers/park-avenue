@@ -52,6 +52,7 @@
 }
 .recentpost-container .item:nth-child(1) .recent-article-image-container {
     width: 100%;
+    height: auto;
 }
 
 .recentpost-container .item:nth-child(2) .recent-article-image-container {
@@ -88,6 +89,9 @@
 }
 .recent-article-data{
     width: 58%;
+}
+.item:nth-child(1) .recent-article-data{
+    width: 100%;
 }
 .main-blog-container{
     margin-top: 6.4rem;
