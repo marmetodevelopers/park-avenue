@@ -10,6 +10,8 @@
     text-align: center;
 }
 
+/* To override the splide default style important required */
+
 .image_text_pd_il {
     padding: 0 !important;
 }
@@ -102,6 +104,8 @@
     margin: 14px 16px 14px 0px;
 }
 
+/* To override the splide default style important required */
+
 .park_latest_pd_il {
     padding: 0rem !important;
 }
@@ -144,13 +148,15 @@
     aspect-ratio: 0.68;
 }
 
-.trending_slides {
-    border: 1px solid gray;
+.park_trending_image_text_carousel .park_trending_image_box {
+    position: relative;
+    bottom: 20px;
 }
 
-.park_trending_image_text_carousel .park_trending_image_box {
-    padding: 0 20px;
-    margin-top: -16px;
+.park_trending_overflow_image {
+    margin-top: 20px;
+    padding: 0px 20px 0px 20px;
+    border: 1px solid gray;
 }
 
 .park_trending_title_box {
@@ -158,8 +164,10 @@
 }
 
 .park_trending_title {
-    margin: 14px 16px 14px 0px;
+    margin: 16px;
 }
+
+/* To override the splide default style important required */
 
 .park_trending_image_text_carousel .park_trending_pd_il {
     padding: 0rem !important;
@@ -173,11 +181,8 @@
         aspect-ratio: 0.68;
     }
 
-    .park_trending_title_box {
-        padding: 24px;
-    }
-
     .park_trending_title {
         margin: 27px;
     }
+    
 }
