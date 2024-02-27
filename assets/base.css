@@ -2600,8 +2600,9 @@ menu-drawer + .header__search {
 }
 
 .header > .header__search {
-	grid-area: left-icons;
-	justify-self: start;
+	grid-area: icons;
+	justify-self: end;
+	margin-right: 4.4rem;
 }
 
 .header--top-center.drawer-menu > .header__search {

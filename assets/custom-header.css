@@ -1,0 +1,62 @@
+.header__icon:not(.header__icon--summary),
+.header__icon span {
+	justify-content: space-between;
+	width: 100%;
+	margin: 0;
+}
+.header_right_icons a {
+	text-decoration: none;
+}
+.header_right_icons {
+	display: flex;
+	flex-direction: row-reverse;
+	gap: 2.4rem;
+}
+.header__icon span {
+	white-space: nowrap;
+}
+.header__icon:not(.header__icon--summary) {
+	gap: 1rem;
+}
+
+@media screen and (max-width: 750px) {
+	header-drawer {
+		margin: 0 !important;
+	}
+}
+.brands_dropdown {
+	grid-area: left-icons;
+	width: fit-content;
+}
+.brands_dropdown summary {
+	display: flex;
+	gap: 1rem;
+	padding: 11px 37px;
+	border: 1px solid;
+}
+.brands_dropdown details {
+	width: fit-content;
+}
+@media screen and (min-width: 750px) {
+	.header__inline-menu {
+		width: 100%;
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		padding-top: 1.6rem;
+		margin-top: 1.6rem;
+	}
+	.header:not(.header--middle-left, .header--middle-center) .header__inline-menu {
+		margin-top: 0;
+	}
+	sticky-header {
+		position: relative;
+	}
+	.nav_bdr_top {
+		height: 0.02rem;
+		width: 100%;
+		background: black;
+		position: absolute;
+		top: 55%;
+	}
+}
