@@ -14,17 +14,21 @@
   }
 </style>
 
-<image-text-carousel
-  data-section-id="{{ section.id }}"
-  class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}"
->
+<div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
   <div class="page-width">
     <div class="image_text_carousel">
       {% if section.settings.heading != blank %}
         {% render 'text-with-logo', text: section.settings.heading, css_class: 'h1 mb-3' %}
       {% endif %}
 
-      <div class="splide" id="{{ section.id }}">
+      <splide-carousel
+        class="splide" 
+        id="{{ section.id }}"
+        data-desktop-pagination="2.2"
+        data-mobile-pagination="1.2"
+        data-gap="20"
+        data-desktop-arrow="true"
+      >
         <div class="splide__arrows img_txt_carousel_arrows image_text_pd_il">
           <button class="splide__arrow splide__arrow--prev">
             {% render 'splide-left-arrow' %}
@@ -54,12 +58,10 @@
             {% endfor %}
           </div>
         </div>
-      </div>
+      </splide-carousel>
     </div>
   </div>
-</image-text-carousel>
-
-
+</div>
 
 {% schema %}
 {
