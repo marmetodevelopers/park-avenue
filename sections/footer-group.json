@@ -46,6 +46,20 @@
             "heading": "Inspired by the all-time MVP",
             "subtext": "<p>Donec dictum tristique porta. Etiam convallis lorem lobortis nulla molestie, nec tincidunt ex ullamcorper. Quisque ultrices lobortis elit sed euismod. Duis in ultrices dolor, ac rhoncus odio. Suspendisse tempor sollicitudin dui sed lacinia. Nulla quis enim posuere, congue libero quis, commodo purus. Cras iaculis massa ut elit tempor malesuada. Pellentesque dictum elit quis diam tristique, sed tincidunt velit ullamcorper. Suspendisse potenti. Nam varius varius erat. Aliquam pulvinar elit ut orci egestas tincidunt. Morbi ornare orci ante, mollis posuere lacus accumsan sit amet. Cras ut dignissim ipsum.<\/p>"
           }
+        },
+        "contact_text_QhV4LD": {
+          "type": "contact-text",
+          "settings": {
+            "contact_heading": "Heading",
+            "contact_subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+          }
+        },
+        "contact_text_krmEym": {
+          "type": "contact-text",
+          "settings": {
+            "contact_heading": "Heading",
+            "contact_subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -54,13 +68,16 @@
         "link_list_PKmXQn",
         "text_rAkfAT",
         "text_wE4fEh",
-        "text_jUCM3b"
+        "text_jUCM3b",
+        "contact_text_QhV4LD",
+        "contact_text_krmEym"
       ],
       "settings": {
         "color_scheme": "accent-1",
         "color_scheme_bottom": "scheme-48a6c905-34be-4173-a010-534bb2d8295d",
         "newsletter_enable": true,
         "newsletter_heading": "Newsletter",
+        "newsletter_subheading": "Subscribe to our emails",
         "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": true,

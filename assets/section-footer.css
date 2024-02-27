@@ -25,12 +25,6 @@
 	.footer-block.grid__item:first-child {
 		margin-top: 0;
 	}
-
-	.footer__content-top {
-		padding-bottom: 3rem;
-		padding-left: calc(4rem / var(--font-body-scale));
-		padding-right: calc(4rem / var(--font-body-scale));
-	}
 }
 
 @media screen and (min-width: 750px) {
@@ -165,12 +159,7 @@
 	text-align: center;
 }
 
-.footer__list-social.list-social:only-child {
-	justify-content: center;
-}
-
 .footer-block__newsletter {
-	text-align: center;
 	flex-grow: 1;
 }
 
@@ -236,6 +225,8 @@
 
 	.footer-block__newsletter {
 		flex-direction: column;
+		padding-block: 3.3rem;
+		gap: 1.6rem;
 	}
 }
 
@@ -538,12 +529,67 @@
 .newsletter-form__field-wrapper .field::after {
 	box-shadow: none;
 }
-footer .logo_container {
-	padding: 2rem 13rem;
+.contact_block p {
+	margin: 0;
+}
+.align_center {
+	align-self: center;
+	margin-left: 0.6rem;
+}
+.app_img_container {
+	width: 12.2rem;
+	height: 4.1rem;
+}
+.flex_column {
+	display: flex;
+	flex-direction: column;
+}
+.gap_16 {
+	gap: 1.6rem;
+}
+@media screen and (max-width: 750px) {
+	footer .logo_container {
+		display: flex;
+		justify-content: center;
+		padding-block: 3.2rem;
+	}
+	.footer-block__details-content {
+		margin-bottom: 0;
+	}
+	.list-menu__item--link {
+		line-height: normal;
+	}
+	.newsletter-form__field-wrapper button#Subscribe {
+		padding: 0.7rem 2.4rem;
+	}
+	.align_center {
+		margin: 0;
+	}
+	.contact_container {
+		margin-bottom: 3.2rem;
+	}
+	.gap_12 {
+		gap: 1.2rem;
+	}
+	.footer__list-social.list-social {
+		justify-content: flex-start;
+	}
+}
+.app_link_images {
+	display: flex;
+	gap: 1.2rem;
+}
+.social_icons_container {
+	display: flex;
+	flex-direction: column;
+	gap: 2.4rem;
 }
 @media screen and (min-width: 750px) {
 	.custom_footer_bdr_pd {
 		padding-block: 3.8rem;
+	}
+	footer .logo_container {
+		padding: 2rem 13rem;
 	}
 	.gap_96 {
 		gap: 9.6rem;
@@ -557,14 +603,31 @@ footer .logo_container {
 	.newsletter-form {
 		max-width: 45rem !important;
 	}
-	.flex_column {
-		display: flex;
-		flex-direction: column;
-	}
 	.gap_1 {
 		gap: 1.4rem;
 	}
 	.gap_2 {
 		gap: 2.4rem;
+	}
+	.contact_block {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: end;
+		gap: 16.2rem;
+	}
+	.contact_container {
+		padding-right: 2rem;
+	}
+	.address_phone .contact_container:first-child {
+		border-bottom: 1px solid white;
+		padding-bottom: 2.4rem;
+	}
+	.address_phone .contact_container:last-child {
+		padding-top: 2.4rem;
+	}
+	.social_icons_container {
+		flex-direction: row;
+		gap: 6.7rem;
 	}
 }
