@@ -21,15 +21,15 @@
         {% render 'text-with-logo', text: section.settings.heading, css_class: 'h1 mb-3' %}
       {% endif %}
 
-      <park-trending-carousel
+      <splide-carousel
         class="splide" 
         id="{{ section.id }}"
         data-desktop-per-page="3"
         data-mobile-per-page="1"
         data-gap="79"
-        data-desktop-arrow="false"
+        data-desktop-arrow=""
         data-mobile-arrow="true"
-        data-desktop-pagination="false"
+        data-desktop-pagination=""
         data-mobile-pagination="true"
       >
         <div class="splide__arrows img_txt_carousel_arrows park_trending_pd_il">
@@ -63,7 +63,7 @@
             {% endfor %}
           </div>
         </div>
-      </park-trending-carousel>
+      </splide-carousel>
     </div>
   </div>
 </div>
