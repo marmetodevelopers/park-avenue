@@ -55,7 +55,7 @@
   <div class="main-blog-heading"><span class="h2">All</span><span>{%  render 'park-icon' %}</span> <span class="h2">Posts</span></div>
   <div class="grid grid--1-col grid--3-col-desktop grid--2-col-tablet blog-page-width">
     {% assign all_posts_except_recent = blog.articles | sort: 'published_at' | reverse %}
-    {% for article in all_posts_except_recent offset: 1 %}
+    {% for article in all_posts_except_recent offset: 4 %}
       <div class="grid__item blog-article-container">
         <div class="recent-article-image-container">
           {% render 'image-snippet'

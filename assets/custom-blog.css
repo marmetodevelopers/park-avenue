@@ -6,6 +6,9 @@
   background: #f5f5f5;
   gap: 2.4rem;
 }
+p{
+  margin: 0;
+}
 
 .recentpost-container p {
   margin: 0;
