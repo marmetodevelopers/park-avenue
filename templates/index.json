@@ -1,75 +1,160 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "image_text_carousel_Hrc3Am": {
+      "type": "image-text-carousel",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "image_text_WyR8mJ": {
+          "type": "image_text",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to express",
+            "link": "shopify:\/\/blogs\/all-blogs"
           }
         },
-        "button": {
-          "type": "buttons",
+        "image_text_iEJmwN": {
+          "type": "image_text",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to express",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_gMJhe4": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to express",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_KNft7T": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to express",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_iGK68r": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to express",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_X88AqL": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to express",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_9Wfxzp": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to express",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_Ve9TQC": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to express",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_QG6zgz": {
+          "type": "image_text",
+          "settings": {
+            "title": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "heading",
-        "button"
+        "image_text_WyR8mJ",
+        "image_text_iEJmwN",
+        "image_text_gMJhe4",
+        "image_text_KNft7T",
+        "image_text_iGK68r",
+        "image_text_X88AqL",
+        "image_text_9Wfxzp",
+        "image_text_Ve9TQC",
+        "image_text_QG6zgz"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "inverse",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "heading": "New $ news",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "park_trending_carousel_zpaQxH": {
+      "type": "park-trending-carousel",
+      "blocks": {
+        "image_text_PqKJd3": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4265_1.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "image_text_JLTKhV": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4265_1.png",
+            "title": "Shirts",
+            "link": ""
+          }
+        },
+        "image_text_VFGQD6": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4265.png",
+            "title": "Suits",
+            "link": ""
+          }
+        },
+        "image_text_QpfmpR": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265_2.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4265_2.png",
+            "title": "Styles",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_text_PqKJd3",
+        "image_text_JLTKhV",
+        "image_text_VFGQD6",
+        "image_text_QpfmpR"
+      ],
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
+        "heading": "",
+        "padding_top": 36,
         "padding_bottom": 36
       }
     }
   },
   "order": [
-    "image_banner",
-    "featured_collection"
+    "image_text_carousel_Hrc3Am",
+    "park_trending_carousel_zpaQxH"
   ]
 }
