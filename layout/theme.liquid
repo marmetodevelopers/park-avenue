@@ -41,11 +41,12 @@
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'custom-park.js' | asset_url }}" defer="defer"></script>
 
-    {% comment %} splide cdn {% endcomment %}
-    <script src="{{ 'splide.js' | asset_url }}"></script>
-    {{ 'splide.css' | asset_url | stylesheet_tag }}
 
+    {% comment %} splide {% endcomment %}
+    <script src="{{ 'splide.js' | asset_url }}" async></script>
+    <link href="{{ 'splide.css' | asset_url }}" rel="stylesheet"/>
 
     {%- if settings.animations_reveal_on_scroll -%}
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>

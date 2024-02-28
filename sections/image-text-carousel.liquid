@@ -1,0 +1,133 @@
+{{ 'home-custom.css' | asset_url | stylesheet_tag }}
+
+<style>
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+</style>
+
+<div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
+  <div class="page-width">
+    <div class="image_text_carousel">
+      {% if section.settings.heading != blank %}
+        {% render 'text-with-logo', text: section.settings.heading, css_class: 'h1 mb-3' %}
+      {% endif %}
+
+      <splide-carousel
+        class="splide" 
+        id="{{ section.id }}"
+        data-desktop-per-page="2.2"
+        data-mobile-per-page="1.2"
+        data-gap="20"
+        data-desktop-arrow="true"
+        data-mobile-arrow="true"
+        data-desktop-pagination="true"
+        data-mobile-pagination="true"
+      >
+        <div class="splide__arrows img_txt_carousel_arrows image_text_pd_il">
+          <button class="splide__arrow splide__arrow--prev">
+            {% render 'splide-left-arrow' %}
+          </button>
+          <button class="splide__arrow splide__arrow--next">
+            {% render 'splide-right-arrow' %}
+          </button>
+        </div>
+        <div class="splide__track">
+          <div class="splide__list">
+            {% for block in section.blocks %}
+              {%- case block.type -%}
+                {%- when 'image_text' -%}
+                  <div class="splide__slide">
+                    <a href="{{ block.settings.link }}">
+                      <div class="image_box">
+                        {% render 'picture',
+                          class: '',
+                          mobileSrc: block.settings.mobile_image,
+                          desktopSrc: block.settings.desktop_image
+                        %}
+                      </div>
+                    </a>
+                    <p class="h2 title">{{ block.settings.title }}</p>
+                  </div>
+              {%- endcase -%}
+            {% endfor %}
+          </div>
+        </div>
+      </splide-carousel>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Image text carousal",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Enter heading text"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "name": "image text",
+      "type": "image_text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "desktop_image",
+          "label": "Select desktop image"
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile_image",
+          "label": "Select mobile image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Enter title"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Choose url"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image text carousal"
+    }
+  ]
+}
+{% endschema %}

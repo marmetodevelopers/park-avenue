@@ -135,7 +135,7 @@ a {
 		bottom: -1.5rem;
 		padding-inline: 1.5rem;
 	}
-	button.splide__pagination__page.ibc_page {
+	.splide__pagination__page.ibc_page {
 		width: 6.1rem;
 		height: 0.43rem;
 	}
