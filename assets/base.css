@@ -3545,9 +3545,6 @@ details-disclosure > details {
   .animate--hover-vertical-lift .button:not([disabled]).button--secondary:hover:after {
     --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
   }
-<<<<<<< HEAD
-}
-=======
 }
 .justify-start{
   justify-content: flex-start;
@@ -3590,4 +3587,3 @@ details-disclosure > details {
     margin-top: 4rem;
   }
 }
->>>>>>> 7b35e0a3097ec7e59c035875d309de8111a74892
