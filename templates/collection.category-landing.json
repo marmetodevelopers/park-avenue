@@ -1,0 +1,122 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "image_text_carousel_fKiyHn": {
+      "type": "image-text-carousel",
+      "blocks": {
+        "image_text_6ziGtw": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to express",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_EzpH7W": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to express",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_Qn4ETP": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to express",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_9tjUXT": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to express",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_ekbqpC": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to express",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        }
+      },
+      "block_order": [
+        "image_text_6ziGtw",
+        "image_text_EzpH7W",
+        "image_text_Qn4ETP",
+        "image_text_9tjUXT",
+        "image_text_ekbqpC"
+      ],
+      "settings": {
+        "heading": "New $ news",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "park_trending_carousel_JhGKch": {
+      "type": "park-trending-carousel",
+      "blocks": {
+        "image_text_mybLiX": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4265.png",
+            "title": "DREAMY FORMAL",
+            "link": "shopify:\/\/blogs\/news"
+          }
+        },
+        "image_text_GLnw7f": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4265_1.png",
+            "title": "IDEAL CHOICE",
+            "link": "shopify:\/\/blogs\/news"
+          }
+        },
+        "image_text_3aAnYf": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265_2.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4265_2.png",
+            "title": "ILLUSION DRESS",
+            "link": "shopify:\/\/blogs\/news"
+          }
+        }
+      },
+      "block_order": [
+        "image_text_mybLiX",
+        "image_text_GLnw7f",
+        "image_text_3aAnYf"
+      ],
+      "settings": {
+        "heading": "VISIBLE $ CHOICES",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "image_background": "#EDEDED"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "image_text_carousel_fKiyHn",
+    "park_trending_carousel_JhGKch"
+  ]
+}
