@@ -6,13 +6,13 @@
     aspect-ratio: 1.96;
 }
 
-.title {
+.image_text_carousel .title {
     text-align: center;
 }
 
 /* To override the splide default style important required */
 
-.image_text_pd_il {
+.image_text_carousel .image_text_pd_il {
     padding: 0 !important;
 }
 
@@ -91,14 +91,14 @@
     margin-bottom: -3px;
 }
 
-.park_latest_collection_title_box {
+.park_latest_collection_image_text_carousel .park_latest_collection_title_box {
     display: flex;
     background-color: black;
     align-items: center;
     padding-left: 22px;
 }
 
-.park_latest_collection_title {
+.park_latest_collection_image_text_carousel .park_latest_collection_title {
     color: #FFF;
     text-align: left;
     margin: 14px 16px 14px 0px;
@@ -106,13 +106,13 @@
 
 /* To override the splide default style important required */
 
-.park_latest_pd_il {
+.park_latest_collection_image_text_carousel .park_latest_pd_il {
     padding: 0rem !important;
 }
 
 @media screen and (min-width: 750px) {
 
-    .park_latest_pd_il {
+    .park_latest_collection_image_text_carousel .park_latest_pd_il {
         padding: 0rem !important;
     }
 
@@ -122,15 +122,15 @@
         aspect-ratio: 0.8;
     }
 
-    .park_latest_collection_title_box {
+    .park_latest_collection_image_text_carousel .park_latest_collection_title_box {
         padding-left: 24px;
     }
 
-    .park_latest_collection_title {
+    .park_latest_collection_image_text_carousel .park_latest_collection_title {
         margin: 19px 16px 19px 0px;
     }
 
-    .splide__arrow:disabled {
+    .park_latest_collection_image_text_carousel .splide__arrow:disabled {
         opacity: 1;
         border: 1px solid black;
     }
@@ -153,15 +153,17 @@
     bottom: 20px;
 }
 
-.park_trending_overflow_image {
+.park_trending_image_text_carousel .park_trending_overflow_image {
     margin-top: 20px;
     padding: 0px 20px 0px 20px;
     border: 1px solid gray;
     border-bottom: none;
 }
 
-.park_trending_title {
+.park_trending_image_text_carousel .park_trending_title {
     padding: 16px;
+    border: 1px solid gray;
+    border-top: none;
     margin: 0px;
     text-align: center;
 }
@@ -180,7 +182,7 @@
         aspect-ratio: 0.68;
     }
 
-    .park_trending_title {
+    .park_trending_image_text_carousel .park_trending_title {
         padding: 27px;
         border: 1px solid gray;
         border-top: none;
