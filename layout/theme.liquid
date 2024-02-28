@@ -262,6 +262,11 @@
     {% comment %} splide cdn {% endcomment %}
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://unpkg.com/@splidejs/splide/dist/css/themes/splide-default.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@splidejs/splide-extension-thumbnail/dist/css/splide-extension-thumbnail.min.css">
+    <script src="https://unpkg.com/@splidejs/splide/dist/js/splide.min.js"></script>
+    <script src="https://unpkg.com/@splidejs/splide-extension-thumbnail/dist/js/splide-extension-thumbnail.min.js"></script>
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>

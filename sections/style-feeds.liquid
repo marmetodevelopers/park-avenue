@@ -1,4 +1,5 @@
-{{ "trend-forecast.css" |  asset_url |  stylesheet_tag }}
+{{ 'style-feeds.css' |  asset_url |  stylesheet_tag }}
+{% comment %} {{ 'custom.css' |  asset_url |  stylesheet_tag }} {% endcomment %}
 <script src="{{ 'custom.js' |  asset_url }}" defer="defer"></script>
 {% style %}
     .padding-{{ section.id }} {
@@ -11,30 +12,48 @@
     }
 {% endstyle %}
 
-<div class="page-width padding-{{ section.id }}">
-    {% if section.settings.title != blank %}
-        {% render "section-heading", text: section.settings.title, css_class: "h2" %}
-    {% endif %}
-    <div class="trend-forecast-container splide mt-3">
+<div class="padding-{{ section.id }}">
+    <div class="page-width">
+        {% if section.settings.title != blank %}
+            {% render "section-heading", text: section.settings.title, css_class: "h2" %}
+        {% endif %}
+    </div>
+    <div class="page-width main-style-feed-slider splide mt-3" id="main-slider">
         <div class="splide__track">
-            <div class="splide__list">
+            <ul class="splide__list">
                 {% for block in section.blocks %}
-                    <div class="splide__slide" style="background-color: {{ block.settings.card-background-color  }};">
-                        <div class="image-container">
-                            {% render "picture", class: "media media--portrait", mobileSrc: block.settings.image, desktopSrc: block.settings.image %}
-                        </div>
-                        <div class="body label-container" style="background-color: {{ block.settings.background-color  }};">
-                            <a href="{{ block.settings.button_url }}" style="color: {{ block.settings.text-color }}">
-                                {{ block.settings.text }}
-                            </a>
-                        </div>
-                    </div>
+                    <li class="splide__slide">
+                        {% if block.settings.image != blank and block.settings.mobile_image != blank %}
+                            {% render "picture", class: "media media--16-9 desktop-image", desktopSrc: block.settings.image %}
+                            {% render "picture", class: "media media--portrait mobile-image", mobileSrc: block.settings.mobile_image %}
+                        {%elsif block.settings.video != blank %}
+                            <div class="video_container">
+                                {{ block.settings.video | video_tag: autoplay: false, loop: true, muted: true, controls: true }}
+                            </div>
+                        {% endif %}
+                    </li>
                 {% endfor %}
-            </div>
+            </ul>
         </div>
     </div>
-</div>
 
+    <div class="page-width main-style-feed-thumbnail-slider splide" id="thumbnail-slider">
+        <div class="splide__track">
+            {% render "splide-arrows" %}
+            <ul class="splide__list">
+                {% for block in section.blocks %}
+                    <li class="splide__slide">
+                        {% if block.settings.image != blank and block.settings.mobile_image != blank %}
+                            {% render "picture", class: "media media--square", mobileSrc: block.settings.image, desktopSrc: block.settings.image  %}
+                        {% elsif block.settings.video != blank %}
+                            {% render "picture", class: "media media--square", mobileSrc: block.settings.video.poster, desktopSrc: block.settings.video.poster %}
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>   
+</div>
 {% schema %}
     {
         "name": "Trend forecast",
@@ -96,50 +115,31 @@
         ],
         "blocks": [
             {
-                "type": "image-width-text",
-                "name": "Image and text",
-                "limit": 4,
+                "type": "slide-media",
+                "name": "Slide media",
                 "settings": [
-                    {
-                        "type": "color",
-                        "id": "card-background-color",
-                        "label": "Select card background color",
-                        "default": "#D0EAFF"
-                    },
                     {
                         "type": "image_picker",
                         "id": "image",
                         "label": "Select image"
                     },
                     {
-                        "type": "text",
-                        "id": "text",
-                        "label": "Enter text",
-                        "default": "Blue Formal Shirt"
+                        "type": "image_picker",
+                        "id": "mobile_image",
+                        "label": "Select image for mobile"
                     },
                     {
-                        "type": "color",
-                        "id": "background-color",
-                        "label": "Select text background color",
-                        "default": "#005AA5"
-                    },
-                    {
-                        "type": "color",
-                        "id": "text-color",
-                        "label": "Select text color",
-                        "default": "#fff"
-                    },
-                    {
-                        "type": "url",
-                        "id": "button_url",
-                        "label": "Enter url"
+                        "type": "video",
+                        "id": "video",
+                        "label": "Select video",
+                        "info": "If image is already selected, based on priority image will be shown"
                     }
                 ]
             }
         ],
         "presets": [
             {
-                "name": "Trend forecast"
+                "name": "Style feeds"
             }
         ]
     }

@@ -1,0 +1,21 @@
+.trend-forecast-container .splide__slide{
+    padding: 1.46rem;
+    @media screen and (min-width: 750px){
+        padding: 1.4rem;
+    }
+}
+.trend-forecast-container .image-container{
+    margin-bottom: 1.6rem;
+}
+.label-container{
+    padding: 1.9rem 5rem;
+    @media screen and (min-width: 750px){
+        padding: 1.8rem 7.8rem;
+    }
+}
+.label-container a{
+    text-decoration: none;
+    text-wrap: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}

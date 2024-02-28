@@ -1,0 +1,117 @@
+{{ "image-comparision.css" | asset_url | stylesheet_tag }}
+<script src="{{ 'image-comparision.js' | asset_url }}" defer="defer"></script>
+
+<style>
+.image-comparision-product-container{
+  position: relative;
+}
+.image-comparision-product-container__item{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 30px;
+  display: flex;
+  align-items: flex-end;
+  color: #1c1c1c; 
+}
+.image-comparision-product-container__item p{
+  margin-bottom: 8px;
+}
+.image-comparision-product-container__item.item2{
+  justify-content: flex-end;
+  text-align: right;
+}
+</style>
+<div style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
+  <div class="page-width">
+    <div>
+      {% if section.settings.title != blank %}
+        {% render "section-heading", text: section.settings.title, css_class: "h2" %}
+    {% endif %}
+    </div>
+    <div class="mt-3">
+      <image-comparison class="image-comparison" data-layout="horizontal" style="animate --percent: 3%">
+        <span class="image-comparison__animate"></span>
+        <div class="image-comparison__before image-comparison__item-start">
+          <div class="image-comparision-product-container">
+            {% if section.settings.first_image != blank %}
+                {% render "picture", class: "media media--custom", desktopSrc: section.settings.first_image, mobileSrc: section.settings.first_image %}
+            {% endif %}
+          </div>
+        </div>
+        <div class="image-comparison__after image-comparison__item--start">
+          <div class="image-comparision-product-container">
+            {% if section.settings.second_image != blank %}
+              {% render "picture", class: "media media--custom", mobileSrc: section.settings.second_image, desktopSrc: section.settings.second_image %}
+            {% endif %}
+          </div>
+        </div>
+            <button type="button" class="image-comparison__button">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="33" viewBox="0 0 24 33" fill="none">
+                  <rect x="0.00183105" y="0.489502" width="23.2769" height="32.1061" fill="white"/>
+                  <line x1="4.81824" y1="7.71419" x2="19.266" y2="7.71419" stroke="black" stroke-width="1.60531"/>
+                  <line x1="4.81824" y1="15.7396" x2="19.266" y2="15.7396" stroke="black" stroke-width="1.60531"/>
+                  <line x1="4.81824" y1="23.7669" x2="19.266" y2="23.7669" stroke="black" stroke-width="1.60531"/>
+              </svg>
+             </span>
+          </button>
+      </image-comparison>
+    </div>
+  </div>
+</div>
+  
+{% schema %}
+  {
+    "name": "Image comparision",
+    "settings": [
+      {
+        "type": "richtext",
+        "id": "title",
+        "label": "Enter heading",
+        "default": "<p>OUTFIT $ INSPO</p>"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 120,
+        "step": 5,
+        "label": "Select top padding",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 120,
+        "step": 5,
+        "label": "Select top padding",
+        "default": 0
+      },
+      {
+        "type": "image_picker",
+        "id": "first_image",
+        "label": "Select first comparision image"
+      },
+      {
+        "type": "image_picker",
+        "id": "second_image",
+        "label": "Select second comparision image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image comparision"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

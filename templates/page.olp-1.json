@@ -2,12 +2,218 @@
   "sections": {
     "trend-forecast": {
       "type": "trend-forecast",
+      "blocks": {
+        "image_width_text_bgAGhh": {
+          "type": "image-width-text",
+          "settings": {
+            "card-background-color": "#d0eaff",
+            "image": "shopify:\/\/shop_images\/Rectangle_4170.png",
+            "text": "Blue Formal Shirt",
+            "background-color": "#005aa5",
+            "text-color": "#ffffff",
+            "button_url": ""
+          }
+        },
+        "image_width_text_mBpmNL": {
+          "type": "image-width-text",
+          "settings": {
+            "card-background-color": "#ffd2d2",
+            "image": "shopify:\/\/shop_images\/image_8.png",
+            "text": "Blue Formal Shirt",
+            "background-color": "#db5353",
+            "text-color": "#ffffff",
+            "button_url": ""
+          }
+        },
+        "image_width_text_nnFXLy": {
+          "type": "image-width-text",
+          "settings": {
+            "card-background-color": "#fffdcd",
+            "image": "shopify:\/\/shop_images\/Rectangle_4172.png",
+            "text": "Blue Formal Shirt",
+            "background-color": "#e2dc3e",
+            "text-color": "#000000",
+            "button_url": ""
+          }
+        },
+        "image_width_text_HtCmTQ": {
+          "type": "image-width-text",
+          "settings": {
+            "card-background-color": "#ffe9c9",
+            "image": "shopify:\/\/shop_images\/Rectangle_4173.png",
+            "text": "Blue Formal Shirt",
+            "background-color": "#ffc163",
+            "text-color": "#000000",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_width_text_bgAGhh",
+        "image_width_text_mBpmNL",
+        "image_width_text_nnFXLy",
+        "image_width_text_HtCmTQ"
+      ],
       "settings": {
-        "title": "<p>TREND $ FORECAST<\/p>"
+        "title": "<p>TREND $ FORECAST<\/p>",
+        "mobile-padding-top": 48,
+        "mobile-padding-bottom": 0,
+        "padding-top": 44,
+        "padding-bottom": 0
+      }
+    },
+    "style_feeds_4NcKBp": {
+      "type": "style-feeds",
+      "blocks": {
+        "slide_media_4T9j9h": {
+          "type": "slide-media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/c6bd703ef51650b96947a3ee3efd0f83.png",
+            "mobile_image": "shopify:\/\/shop_images\/40df26294a60afeee9bce95cd84da054.png"
+          }
+        },
+        "slide_media_twMkAY": {
+          "type": "slide-media",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/Nature Beautiful short video 720p HD.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "slide_media_4T9j9h",
+        "slide_media_twMkAY"
+      ],
+      "settings": {
+        "title": "<p>STYLE $ FEEDS<\/p>",
+        "mobile-padding-top": 48,
+        "mobile-padding-bottom": 48,
+        "padding-top": 64,
+        "padding-bottom": 64
+      }
+    },
+    "image_comparisions_nahq9q": {
+      "type": "image-comparisions",
+      "settings": {
+        "title": "<p>OUTFIT $ INSPO<\/p>",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "first_image": "shopify:\/\/shop_images\/Rectangle_841_cea65cce-a7bb-4322-bef9-a1e8de8c9143.png",
+        "second_image": "shopify:\/\/shop_images\/Rectangle_22.jpg"
+      }
+    },
+    "image_with_text_slider_FMXiwU": {
+      "type": "image-with-text-slider",
+      "blocks": {
+        "image_text_slide_gbkxRJ": {
+          "type": "image-text-slide",
+          "settings": {
+            "height": "adapt",
+            "desktop_image_width": "medium",
+            "layout": "image_first",
+            "desktop_content_position": "top",
+            "desktop_content_alignment": "left",
+            "image_behavior": "none",
+            "mobile_content_alignment": "left",
+            "content_layout": "no-overlap",
+            "heading": "Image with text",
+            "heading_size": "h1",
+            "caption": "Add a tagline",
+            "caption_text_style": "caption-with-letter-spacing",
+            "text_size": "medium",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "image_text_slide_nVt6T8": {
+          "type": "image-text-slide",
+          "settings": {
+            "height": "adapt",
+            "desktop_image_width": "medium",
+            "layout": "image_first",
+            "desktop_content_position": "top",
+            "desktop_content_alignment": "left",
+            "image_behavior": "none",
+            "mobile_content_alignment": "left",
+            "content_layout": "no-overlap",
+            "heading": "Image with text",
+            "heading_size": "h1",
+            "caption": "Add a tagline",
+            "caption_text_style": "caption-with-letter-spacing",
+            "text_size": "medium",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "image_text_slide_gbkxRJ",
+        "image_text_slide_nVt6T8"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "gift_card_banner_X4DYXM": {
+      "type": "gift-card-banner",
+      "blocks": {
+        "heading_C4D8wm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Gift cards",
+            "heading_size": "h1"
+          }
+        },
+        "text_KNqzwQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The store locator helps customers easily find their nearest Raymond retail store or shop-in-shop. The store locator helps customers easily find their nearest Raymond retail store or shop-in-shop.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_8mMwzF": {
+          "type": "button",
+          "settings": {
+            "button_label": "Gift Now",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_C4D8wm",
+        "text_KNqzwQ",
+        "button_8mMwzF"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/gift.png",
+        "mobile_image": "shopify:\/\/shop_images\/gift-mobile.jpg",
+        "color_scheme": "background-2",
+        "padding-top": 40,
+        "padding-bottom": 40
+      }
+    },
+    "offer_timer_q4AabV": {
+      "type": "offer-timer",
+      "settings": {
+        "banner_image": "shopify:\/\/shop_images\/timer.png",
+        "date": "31\/12\/2025"
       }
     }
   },
   "order": [
-    "trend-forecast"
+    "trend-forecast",
+    "style_feeds_4NcKBp",
+    "image_comparisions_nahq9q",
+    "image_with_text_slider_FMXiwU",
+    "gift_card_banner_X4DYXM",
+    "offer_timer_q4AabV"
   ]
 }

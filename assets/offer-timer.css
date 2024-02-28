@@ -1,0 +1,14 @@
+.countdown-image-container{
+    position: relative;
+}
+.countdown-timer-container{
+    position: absolute;
+    top: 0;
+    left: 40%;
+}
+.media--countdown{
+    padding-bottom: 36.6%;
+    @media screen and (min-width: 750px){
+        padding-bottom: 36.8%;
+    }
+}

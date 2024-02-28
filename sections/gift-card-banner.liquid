@@ -1,0 +1,256 @@
+{{ "gift-card-banner.css" |  asset_url |  stylesheet_tag }}
+
+{%  style  %} 
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="color-{{ section.settings.color_scheme }} section--{{ section.id }}-padding">
+    <div class="git-banner-container">
+        {% if section.settings.image != blank %}
+          {% render "picture", class: "media media--custom-gift", mobileSrc: section.settings.mobile_image, desktopSrc: section.settings.image %}
+        {% endif %}
+        <div class="git-banner-content">
+          <div class="git-banner-content-container">
+            {%- for block in section.blocks -%}
+              {% case block.type %}
+                {%- when 'heading' -%}
+                  <div
+                    class="inline-richtext {{ block.settings.heading_size }}"
+                    {{ block.shopify_attributes }}
+                  >
+                    {{ block.settings.heading }}
+                  </div>
+                {%- when 'caption' -%}
+                  <p
+                    class="image-with-text__text image-with-text__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}"
+                    {{ block.shopify_attributes }}
+                  >
+                    {{ block.settings.caption | escape }}
+                  </p>
+                {%- when 'text' -%}
+                  <div class="git-banner-content__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+                    {{ block.settings.text }}
+                  </div>
+                {%- when 'button' -%}
+                  {%- if block.settings.button_label != blank -%}
+                    <div>
+                      <a
+                        {% if block.settings.button_link == blank %}
+                          role="link" aria-disabled="true"
+                        {% else %}
+                          href="{{ block.settings.button_link }}"
+                        {% endif %}
+                        class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+                        {{ block.shopify_attributes }}
+                      >
+                        {{ block.settings.button_label | escape }}
+                      </a>
+                    </div>
+                  {%- endif -%}
+              {%- endcase -%}
+            {%- endfor -%}
+          </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "Gift card banner",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Select desktop image"
+            },
+            {
+                "type": "image_picker",
+                "id": "mobile_image",
+                "label": "Select mobile image"
+            },
+            {
+                "type": "color_scheme",
+                "id": "color_scheme",
+                "default": "scheme_2",
+                "label": "Color Scheme"
+            },
+            {
+                "type": "header",
+                "content": "Section padding "
+            },
+            {
+                "type": "range",
+                "id": "padding-top",
+                "label": "Top padding",
+                "min": 0,
+                "max": 150,
+                "step": 5,
+                "unit": "px",
+                "default": 40
+            },
+            {
+                "type": "range",
+                "id": "padding-bottom",
+                "label": "Bottom padding",
+                "min": 0,
+                "max": 150,
+                "step": 5,
+                "unit": "px",
+                "default": 40
+            }
+        ],
+        "blocks": [
+            {
+            "type": "heading",
+            "name": "t:sections.image-with-text.blocks.heading.name",
+            "limit": 1,
+            "settings": [
+                {
+                "type": "inline_richtext",
+                "id": "heading",
+                "default": "Gift Cards",
+                "label": "t:sections.image-with-text.blocks.heading.settings.heading.label"
+                },
+                {
+                "type": "select",
+                "id": "heading_size",
+                "options": [
+                    {
+                    "value": "h2",
+                    "label": "t:sections.all.heading_size.options__1.label"
+                    },
+                    {
+                    "value": "h1",
+                    "label": "t:sections.all.heading_size.options__2.label"
+                    },
+                    {
+                    "value": "h0",
+                    "label": "t:sections.all.heading_size.options__3.label"
+                    }
+                ],
+                "default": "h2",
+                "label": "t:sections.all.heading_size.label"
+                }
+            ]
+            },
+            {
+                "type": "caption",
+                "name": "t:sections.image-with-text.blocks.caption.name",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "caption",
+                        "default": "Add a tagline",
+                        "label": "t:sections.image-with-text.blocks.caption.settings.text.label"
+                    },
+                    {
+                        "type": "select",
+                        "id": "text_style",
+                        "options": [
+                            {
+                            "value": "subtitle",
+                            "label": "t:sections.image-with-text.blocks.caption.settings.text_style.options__1.label"
+                            },
+                            {
+                            "value": "caption-with-letter-spacing",
+                            "label": "t:sections.image-with-text.blocks.caption.settings.text_style.options__2.label"
+                            }
+                        ],
+                        "default": "caption-with-letter-spacing",
+                        "label": "t:sections.image-with-text.blocks.caption.settings.text_style.label"
+                    },
+                {
+                "type": "select",
+                "id": "text_size",
+                "options": [
+                    {
+                    "value": "caption",
+                    "label": "t:sections.image-with-text.blocks.caption.settings.caption_size.options__1.label"
+                    },
+                    {
+                    "value": "h5",
+                    "label": "t:sections.image-with-text.blocks.caption.settings.caption_size.options__2.label"
+                    },
+                    {
+                    "value": "h4",
+                    "label": "t:sections.image-with-text.blocks.caption.settings.caption_size.options__3.label"
+                    }
+                ],
+                "default": "h5",
+                "label": "t:sections.image-with-text.blocks.caption.settings.caption_size.label"
+                }
+            ]
+            },
+            {
+                "type": "text",
+                "name": "t:sections.image-with-text.blocks.text.name",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "default": "<p>The store locator helps customers easily find their nearest Raymond retail store or shop-in-shop. The store locator helps customers easily find their nearest Raymond retail store or shop-in-shop.</p>",
+                        "label": "t:sections.image-with-text.blocks.text.settings.text.label"
+                    },
+                    {
+                        "type": "select",
+                        "id": "text_style",
+                        "options": [
+                            {
+                            "value": "body",
+                            "label": "t:sections.image-with-text.blocks.text.settings.text_style.options__1.label"
+                            },
+                            {
+                            "value": "subtitle",
+                            "label": "t:sections.image-with-text.blocks.text.settings.text_style.options__2.label"
+                            }
+                        ],
+                        "default": "body",
+                        "label": "t:sections.image-with-text.blocks.text.settings.text_style.label"
+                    }
+                ]
+            },
+            {
+                "type": "button",
+                "name": "t:sections.image-with-text.blocks.button.name",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "button_label",
+                        "default": "Gift Now",
+                        "label": "t:sections.image-with-text.blocks.button.settings.button_label.label",
+                        "info": "t:sections.image-with-text.blocks.button.settings.button_label.info"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_link",
+                        "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
+                    },
+                    {
+                        "type": "checkbox",
+                        "id": "button_style_secondary",
+                        "default": false,
+                        "label": "t:sections.image-with-text.blocks.button.settings.outline_button.label"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "Git card banner"
+            }
+        ]
+    }
+{% endschema %}
