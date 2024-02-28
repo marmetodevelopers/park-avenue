@@ -4,10 +4,80 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "link_list_b7VV9M": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
+        },
+        "link_list_LQD6FF": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
+        },
+        "link_list_pQbhR6": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
+        },
+        "text_naRNq4": {
+          "type": "text",
+          "settings": {
+            "heading": "Heading",
+            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+          }
+        },
+        "text_JLxz8b": {
+          "type": "text",
+          "settings": {
+            "heading": "Heading",
+            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+          }
+        },
+        "text_ggrzMF": {
+          "type": "text",
+          "settings": {
+            "heading": "Heading",
+            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+          }
+        },
+        "contact_text_6ifQxb": {
+          "type": "contact-text",
+          "settings": {
+            "contact_heading": "Heading",
+            "contact_subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+          }
+        },
+        "contact_text_9QF7TC": {
+          "type": "contact-text",
+          "settings": {
+            "contact_heading": "Heading",
+            "contact_subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "link_list_b7VV9M",
+        "link_list_LQD6FF",
+        "link_list_pQbhR6",
+        "text_naRNq4",
+        "text_JLxz8b",
+        "text_ggrzMF",
+        "contact_text_6ifQxb",
+        "contact_text_9QF7TC"
+      ],
       "settings": {
-        "color_scheme": "background-1",
+        "color_scheme": "accent-1",
+        "color_scheme_bottom": "",
         "newsletter_enable": true,
         "newsletter_heading": "Subscribe to our emails",
+        "newsletter_subheading": "Subscribe to our emails",
         "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": true,
