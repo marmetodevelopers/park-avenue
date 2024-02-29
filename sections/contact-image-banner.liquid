@@ -1,0 +1,61 @@
+
+{{ 'contact.css' | asset_url | stylesheet_tag }}
+
+<div class="contact-main-container contact-page-width">
+    <div class="contact-heading-wrapper">
+
+   
+     {% if section.settings.show_heading %}
+    <div class="contact-heading">
+        <span class="h2"> HOW CAN</span><span> </span><span class="h2">WE HELP ?</span>
+    </div>
+    {% endif %}
+
+    <div class="contact-text-container h5">
+        {{ section.settings.text }}
+    </div>
+    </div>
+    <div class="contact-image-container">
+        {% render 'image-snippet',
+        mobileSrc: section.settings.add_image_banner2,
+        desktopSrc: section.settings.add_image_banner
+      %}
+    </div>
+</div>
+
+{% schema %}
+    {
+      "name": "image-banner",
+      "tag": "section",
+      "settings": [
+        {
+        "type": "checkbox",
+        "id": "show_heading",
+        "label": "Show heading",
+        "default": true
+        },
+        {
+          "type": "text",
+          "label": "Enter Banner Text",
+          "id": "text"
+        },
+        {
+          "type": "image_picker",
+          "label": "Add Image Banner",
+          "id": "add_image_banner"
+        },
+        {
+          "type": "image_picker",
+          "label": "Add Image Banner For Mobile",
+          "id": "add_image_banner2"
+        }
+      ],
+      "blocks": [],
+      "presets": [
+        {
+          "name": "contact-banner"
+        }
+      ]
+    }
+    {% endschema %}
+    

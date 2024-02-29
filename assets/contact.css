@@ -1,0 +1,97 @@
+.contact-page-width{
+    padding: 0 12.2rem;
+}
+
+.contact-image-container img{
+    width: 100%;
+    height: auto;
+
+}
+.contact-heading{
+    padding-bottom: 3rem;
+    
+}
+.contact-text-container{
+    padding-bottom: 3rem;
+    max-width: 63.6rem;
+    text-align: center;
+}
+.contact-heading-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* contact form css */
+
+.telephone-input{
+    display: none;
+}
+.form-width{
+    max-width: 95.4rem;
+    margin: 0 auto;
+    padding: 0;
+}
+input#ContactForm-name, input#ContactForm-email {
+    height: 48px;
+} 
+textarea#ContactForm-body{
+    height: 16rem;
+
+}
+.message-field label{
+    top: 0;
+    padding-top: 2.1rem;
+
+}
+
+.form-input-heading , .contact .field{
+    margin-bottom: 2.4rem;
+}
+.contact__button{
+    text-align: center;
+}
+.contact__button{
+    margin-top: 0;
+}
+.contact .form-status{
+    margin-bottom: 1.6rem;
+    margin-top: 3.6rem;
+}
+
+
+
+@media screen and (max-width:749px){
+    .contact-page-width{
+        padding: 0 1.6rem;
+    }
+    .contact-heading{
+        padding-bottom: 2.8rem;
+    }
+    .contact-text-container{
+        padding-bottom: 2.8rem;
+    }
+
+
+
+
+/* 
+    form css */
+
+    textarea#ContactForm-body{
+        height: 14.8rem;
+    
+    }
+    .message-field label{
+        padding-top: 1.9rem;
+    }
+    
+    .form-input-heading , .contact .field{
+        margin-bottom: 1.9rem;
+    }
+    .form-width{
+        padding: 0 1.6rem;
+    }
+}
