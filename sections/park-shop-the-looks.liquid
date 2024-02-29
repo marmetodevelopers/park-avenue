@@ -6,39 +6,10 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
-  .park_shop_the_look {
-    position: relative;
-  }
-
-  .svg_first {
-    position: absolute;
-    top: 216px;
-    left: 139px;
-  }
-
-  .svg_second {
-    position: absolute;
-    right: 55.9px;
-    bottom: 250px;
-  }
-
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-    .svg_first {
-      position: absolute;
-      left: 480px;
-      bottom: 124px;
-      cursor: pointer;
-    }
-
-    .svg_second {
-      position: absolute;
-      right: 314px;
-      top: 235px;
-      cursor: pointer;
     }
   }
 </style>
@@ -108,6 +79,44 @@
                       <path d="M21.0092 35.4375C13.5586 35.4375 7.50089 29.4032 7.50089 21.9375C7.50089 14.4718 13.5586 8.4375 21.0092 8.4375C28.4599 8.4375 34.5176 14.4718 34.5176 21.9375C34.5176 29.4032 28.4599 35.4375 21.0092 35.4375Z" stroke="#7FFF79" stroke-opacity="0.212827" stroke-width="15"/>
                       <path d="M21.0092 35.4375C13.5586 35.4375 7.50089 29.4032 7.50089 21.9375C7.50089 14.4718 13.5586 8.4375 21.0092 8.4375C28.4599 8.4375 34.5176 14.4718 34.5176 21.9375C34.5176 29.4032 28.4599 35.4375 21.0092 35.4375Z" stroke="white" stroke-width="15"/>
                     </svg>
+                    <svg
+                      class="svg_third"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 384 512"
+                      width="25.47"
+                      height="30px"
+                    >
+                      <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
+                    </svg>
+                    <svg
+                      class="svg_fourth"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 384 512"
+                      width="25.47"
+                      height="30px"
+                    >
+                      <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
+                    </svg>
+                    <div class="first_popup_box">
+                      <div class="first_popup_pic">
+                        {% render 'picture',
+                          class: '',
+                          mobileSrc: block.settings.first_popup_image,
+                          desktopSrc: block.settings.first_popup_image
+                        %}
+                      </div>
+                      <p class="body">{{ block.settings.first_popup_title }}</p>
+                    </div>
+                    <div class="second_popup_box">
+                      <div class="second_popup_pic">
+                        {% render 'picture',
+                          class: '',
+                          mobileSrc: block.settings.second_popup_image,
+                          desktopSrc: block.settings.second_popup_image
+                        %}
+                      </div>
+                      <p class="body">{{ block.settings.second_popup_title }}</p>
+                    </div>
                   </div>
               {%- endcase -%}
             {% endfor %}
@@ -167,6 +176,26 @@
           "type": "url",
           "id": "link",
           "label": "Choose url"
+        },
+        {
+          "type": "image_picker",
+          "id": "first_popup_image",
+          "label": "first popup image"
+        },
+        {
+          "type": "text",
+          "id": "first_popup_title",
+          "label": "Popup 1 title text"
+        },
+        {
+          "type": "image_picker",
+          "id": "second_popup_image",
+          "label": "Second popup image"
+        },
+        {
+          "type": "text",
+          "id": "second_popup_title",
+          "label": "Popup 2 title text"
         }
       ]
     }

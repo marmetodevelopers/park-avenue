@@ -311,3 +311,95 @@
     }
 
 }
+
+/* Park shop the look style */
+
+  .park_shop_the_look {
+    position: relative;
+  }
+
+  .park_shop_the_look .svg_first {
+    position: absolute;
+    top: 216px;
+    left: 139px;
+  }
+
+  .park_shop_the_look .svg_second {
+    position: absolute;
+    right: 55.9px;
+    bottom: 250px;
+  }
+
+  .park_shop_the_look .svg_third {
+    position: absolute;
+    top: 225px;
+    left: 113px;
+    cursor: pointer;
+    fill: white;
+  }
+
+  .park_shop_the_look .first_popup_pic img {
+    width: 189px;
+    height: auto;
+    aspect-ratio: 0.84;
+  }
+
+  .park_shop_the_look .second_popup_pic img {
+    width: 189px;
+    height: auto;
+    aspect-ratio: 0.84;
+  }
+
+  .park_shop_the_look .svg_fourth {
+    position: absolute;
+    right: 100px;
+    bottom: 254px;
+    cursor: pointer;
+    fill: white;
+  }
+
+  .park_shop_the_look .first_popup_box {
+    position: absolute;
+    top: 130px;
+    left: 267px;
+  }
+
+  .park_shop_the_look .second_popup_box {
+    position: absolute;
+    right: 381px;
+    bottom: 115px;
+  }
+
+  @media screen and (min-width: 750px) {
+
+    .park_shop_the_look .svg_first {
+      position: absolute;
+      left: 480px;
+      bottom: 124px;
+      cursor: pointer;
+    }
+
+    .park_shop_the_look .svg_second {
+      position: absolute;
+      right: 314px;
+      top: 235px;
+      cursor: pointer;
+    }
+
+    .park_shop_the_look .svg_third {
+      position: absolute;
+      left: 454px;
+      bottom: 124px;
+      cursor: pointer;
+      fill: white;
+    }
+
+    .park_shop_the_look .svg_fourth {
+      fill: white;
+      position: absolute;
+      right: 358px;
+      top: 244px;
+      cursor: pointer;
+      fill: white;
+    }
+  }
