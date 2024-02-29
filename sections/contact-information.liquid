@@ -1,0 +1,81 @@
+{{ 'contact.css' | asset_url | stylesheet_tag }}
+
+<div class="contact-information">
+   
+    <div class="contact-information-container" >
+        <div class="contact-information-subcontainer">
+        {% if section.settings.heading != blank %}
+        <div class="h2 information-heading"> {{ section.settings.heading  }}</div>
+        {% endif %}
+        {% if section.settings.Information1 != blank %}
+        <div class="caption information-address"> {{ section.settings.Information1 }} </div>
+         {% endif %}
+         {% if section.settings.Information2 != blank %}
+        <div class="caption information-address"> {{ section.settings.Information2 }}</div>
+        {% endif %}
+
+        {% if section.settings.mobile_number != blank %}
+        <div class="caption information-contact"> +91 {{ section.settings.mobile_number }}</div>
+        {% endif %}
+       
+        {% if section.settings.email_address != blank %}
+        <div class="caption information-contact">{{ section.settings.email_address }}</div>
+        {% endif %}
+        </div>
+
+    </div>
+    <div class="contactmap-container">
+      {{ section.settings.map }}
+
+    </div>
+</div>
+
+
+
+{% schema %}
+    {
+      "name": "contact information",
+      "tag": "section",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Contact Heading",
+          "id": "heading",
+          "default": "Contact Us"
+        },
+        {
+          "type": "text",
+          "label": "  Add Address Information",
+          "id": "Information1"
+        },
+        {
+          "type": "text",
+          "label": "Add Address Information",
+          "id": "Information2"
+        },
+        {
+          "type": "number",
+          "label": "Add Mobile Number",
+          "id": "mobile_number"
+        },
+        {
+          "type": "text",
+          "label": "Add Email Address",
+          "id": "email_address"
+        },
+        {
+          "type": "textarea",
+          "label": "Add Google Address",
+          "id": "map"
+        }
+
+      ],
+      "blocks": [],
+      "presets": [
+        {
+          "name": "contact information"
+        }
+      ]
+    }
+    {% endschema %}
+    

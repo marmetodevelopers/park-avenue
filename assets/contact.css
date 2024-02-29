@@ -1,4 +1,4 @@
-.contact-page-width{
+.contact-page-width ,.contact-information{
     padding: 0 12.2rem;
 }
 
@@ -59,8 +59,57 @@ textarea#ContactForm-body{
 .contact .form-status{
     margin-bottom: 1.6rem;
     margin-top: 3.6rem;
+    align-items: center;
+    gap: 2.3rem;
+}
+.message-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sucess-msg{
+    text-align: center;
+}
+.msg-heading{
+    color: #5DB63E;
+}
+.form-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+
+/* information */
+.contact-information{
+    display: flex;
+}
+.contactmap-container{
+    width: 61%;
+    height: 514px;
+}
+.contactmap-container iframe{
+    width: 100%;
+    height: 100%;
+}
+.contact-information-container{
+    width: 39%;
+    display: flex;
+    align-items: center;
+}
+.contact-information-subcontainer{
+    max-width: 37.1rem;
+    margin: 0 auto;
+}
+.information-heading{
+    padding-bottom: 1.6rem;
+}
+.information-address{
+    padding-bottom: 3.6rem;
+}
+.information-contact{
+    padding-bottom: 1.6rem;
+}
 
 
 @media screen and (max-width:749px){
@@ -93,5 +142,29 @@ textarea#ContactForm-body{
     }
     .form-width{
         padding: 0 1.6rem;
+    }
+    .contact-btn{
+        width: 100%;
+    }
+    .form-heading{
+        display: block;
+    }
+
+
+
+    /* information */
+    .contact-information{
+        padding: 0;
+        flex-direction: column;
+    }
+    .contact-information-container, .contactmap-container{
+        width: 100%;
+    }
+    .contactmap-container{
+        max-height: 32rem;
+    }
+    .contact-information-subcontainer{
+        padding: 0 2.1rem;
+        margin-bottom: 2rem;
     }
 }

@@ -122,12 +122,13 @@
       </div>
       </div>
       <div class="contact__button ">
-        <button type="submit" class="button button--medium">
+        <button type="submit" class="button contact-btn button--medium">
           {{ 'templates.contact.form.send' | t }}
         </button>
       </div>
+      <div class="message-box">
       {%- if form.posted_successfully? -%}
-        <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
+        <h2 class="form-status msg-heading form-status-list form__message h4" tabindex="-1" autofocus>
           {% render 'icon-success' %}
           {{ 'templates.contact.form.post_success' | t }}
         </h2>
@@ -148,6 +149,7 @@
           </li>
         </ul>
       {%- endif -%}
+      </div>
     {%- endform -%}
   </div>
 </div>
