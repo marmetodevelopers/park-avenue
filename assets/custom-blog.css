@@ -6,7 +6,8 @@
   background: #f5f5f5;
   gap: 2.4rem;
 }
-p{
+
+p {
   margin: 0;
 }
 
@@ -16,12 +17,17 @@ p{
 
 .blog-heading {
   padding-top: 8.5rem;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .blog-content {
   padding-bottom: 8.5rem;
   max-width: 51.4%;
   text-align: center;
+  line-height: 160%;
 }
 
 .recentpost-container {
@@ -38,6 +44,10 @@ p{
 
 .recent-blog-heading {
   padding: 6.4rem 0 3.2rem 0;
+  color: #0e0e10;
+  font-weight: 700;
+  line-height: 145%;
+  letter-spacing: -0.2px;
 }
 
 .item:nth-child(1) {
@@ -65,6 +75,7 @@ p{
 .recent-article-image-container img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .recentpost-container .item:nth-child(1) .recent-article-image-container {
@@ -106,10 +117,10 @@ p{
   gap: 2.8rem;
   text-decoration: none;
   color: #0e0e10;
-  font-size: 24px;
   font-weight: 500;
   line-height: 140%;
   letter-spacing: -0.2px;
+  padding-bottom: 1.2rem;
 }
 
 .recent-article-data {
@@ -133,12 +144,26 @@ p{
   padding-bottom: 3.4rem;
 }
 
+.main-blog-heading span {
+  color: #0e0e10;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
 .blog-arrow {
   padding: 1rem;
 }
 
 .date-container {
-  color: #7a7a7a;
+  color: #231f20;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0.07px;
+  text-transform: uppercase;
+  opacity: 0.6;
+  padding-bottom: .8rem;
 }
 
 .recent-article-title-container {
@@ -147,12 +172,24 @@ p{
   justify-content: space-between;
   color: #0e0e10;
 }
+
 .article-desc {
   color: #231f20;
-  font-size: 20px;
   font-weight: 400;
   line-height: 160%;
   letter-spacing: 1px;
+}
+
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .recentpost-container {
+    padding: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .item:nth-child(n) {
+    grid-area: auto;
+  }
 }
 
 @media screen and (max-width: 749px) {
@@ -166,6 +203,8 @@ p{
 
   .recent-blog-heading {
     padding: 4.8rem 0 2.4rem 0;
+    line-height: 130%;
+    letter-spacing: 1px;
   }
 
   .recentpost-container {
@@ -228,6 +267,7 @@ p{
   .recent-article-image-container img {
     width: 100%;
     height: auto;
+    object-fit: cover;
   }
 
   .recentpost-container .item:nth-child(2) .recent-article-image-container,
@@ -241,15 +281,21 @@ p{
     width: 51%;
     position: relative;
   }
+
   .main-blog-title {
     color: #000;
-    font-size: 16px;
     font-weight: 500;
     line-height: 145%;
+    padding-bottom: .4rem;
   }
+
   .article-desc {
     overflow: hidden;
     color: #000;
-    font-size: 14px;
+    padding-bottom: .6rem;
+  }
+  .date-container {
+    color: #7a7a7a;
+    opacity: 1;
   }
 }

@@ -54,6 +54,11 @@
 .date {
   color: #231f20;
   opacity: 0.6;
+  padding-bottom: 0.8rem;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0.07px;
+  text-transform: uppercase;
 }
 
 .article-related-heading svg {
@@ -69,6 +74,7 @@
   display: flex;
   gap: 2.4rem;
   overflow: scroll;
+  max-width: 100%;
 }
 .popular-tag-container::-webkit-scrollbar {
   display: none;
@@ -89,6 +95,7 @@
   font-weight: 500;
   line-height: 140%;
   letter-spacing: -0.2px;
+  padding-bottom: 1.2rem;
 }
 .article-desc {
   color: #231f20;
@@ -162,9 +169,16 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 145%;
+    padding-bottom: .6rem;
   }
   .article-desc {
     font-size: 14px;
     color: #000;
+  }
+  .date{
+    color: #7A7A7A;
+    opacity: 1;
+    text-transform: uppercase;
+    padding-bottom: .6rem;
   }
 }
