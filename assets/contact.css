@@ -1,0 +1,36 @@
+.contact-page-width{
+    padding: 0 12.2rem;
+}
+
+.contact-image-container img{
+    width: 100%;
+    height: auto;
+
+}
+.contact-heading{
+    padding-bottom: 3rem;
+}
+.contact-text-container{
+    padding-bottom: 3rem;
+}
+.contact-heading-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+@media screen and (max-width:749px){
+    .contact-page-width{
+        padding: 0 1.6rem;
+    }
+    .contact-heading{
+        padding-bottom: 2.8rem;
+    }
+    .contact-text-container{
+        padding-bottom: 2.8rem;
+    }
+    
+}
