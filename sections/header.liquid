@@ -13,7 +13,9 @@
   href="{{ 'component-menu-drawer.css' | asset_url }}"
   media="print"
   onload="this.media='all'">
-<link
+<!-- Uncomment the below line to use the Cart CSS  -->
+
+{% comment %} <link
   rel="stylesheet"
   href="{{ 'component-cart-notification.css' | asset_url }}"
   media="print"
@@ -22,7 +24,8 @@
   rel="stylesheet"
   href="{{ 'component-cart-items.css' | asset_url }}"
   media="print"
-  onload="this.media='all'">
+  onload="this.media='all'"> {% endcomment %}
+
 {%- if settings.predictive_search_enabled -%}
   <link
     rel="stylesheet"
@@ -50,8 +53,10 @@
 <noscript>{{ 'component-list-menu.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-search.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-menu-drawer.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}</noscript>
+<!-- Uncomment the below lines to use cart functionality 
+ -->
+{% comment %} <noscript>{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}</noscript> {% endcomment %}
 
 <style>
   header-drawer {
@@ -574,7 +579,9 @@
 
     closeSearchModal() {
       this.searchModal = this.searchModal || this.header.querySelector('details-modal');
-      this.searchModal.close(false);
+      if(this.searchModal){
+        this.searchModal.close(false);
+      }
     }
   }
 

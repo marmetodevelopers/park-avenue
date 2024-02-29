@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "shopify theme dev -s parkavenue-india.myshopify.com",
-    "dev-sync": "shopify theme dev --theme-editor-sync -s parkavenue-india.myshopify.com",
+    "dev-sync": "shopify theme dev --theme-editor-sync -s parkavenue-india.myshopify.com --live-reload hot-reload",
     "pull": "shopify theme pull -s parkavenue-india.myshopify.com",
     "pull-json": "shopify theme pull -d -o *.json -s parkavenue-india.myshopify.com",
     "share": "shopify theme share -s parkavenue-india.myshopify.com"

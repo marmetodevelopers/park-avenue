@@ -149,6 +149,7 @@
 }
 
 .footer-block__heading {
+	color: #fff;
 	margin-bottom: 2rem;
 	margin-top: 0;
 	font-size: calc(var(--font-heading-scale) * 1.6rem);
@@ -183,6 +184,7 @@
 	.footer-block__newsletter:not(:only-child) {
 		text-align: left;
 		margin-right: auto;
+		width: 100%;
 	}
 
 	.footer-block__newsletter:not(:only-child) .footer__newsletter {
@@ -315,6 +317,7 @@
 }
 
 .footer-block__details-content {
+	color: #fff;
 	margin-bottom: 4rem;
 }
 
@@ -607,7 +610,7 @@
 		padding-block: 1.3rem;
 	}
 	.newsletter-form {
-		max-width: 45rem !important;
+		
 	}
 	.gap_1 {
 		gap: 1.4rem;

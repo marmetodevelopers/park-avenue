@@ -45,10 +45,10 @@
 details svg {
     transition: all .5s linear;
 }
-details[open] summary ~ * {
+.brands_dropdown details[open] summary ~ * {
 	animation: sweep .5s ease-in-out;
 }
-details[open] svg {
+.brands_dropdown details[open] svg {
 	transform: rotate(-180deg);
 }
 
