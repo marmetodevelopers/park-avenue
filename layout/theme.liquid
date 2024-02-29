@@ -59,6 +59,12 @@
       {{ body_font_bold_italic | font_face: font_display: 'swap' }}
       {{ settings.type_header_font | font_face: font_display: 'swap' }}
 
+      @font-face {
+        font-display: swap;
+        font-family: "Jost";
+        src: url('https://cdn.shopify.com/s/files/1/0850/0402/6136/files/Jost-Bold.ttf?v=1709113308') format("opentype");
+      }
+
       {% for scheme in settings.color_schemes -%}
         {% assign scheme_classes = scheme_classes | append: ', .color-' | append: scheme.id %}
         {% if forloop.index == 1 -%}
@@ -129,19 +135,19 @@
       }
 
       :root {
-        --font-body-family: {{ settings.type_body_font.family }}, 
-        {{ settings.type_body_font.fallback_families }};
+        --font-body-family: jost;
         --font-body-style: {{ settings.type_body_font.style }};
         --font-body-weight: {{ settings.type_body_font.weight }};
         --font-body-weight-bold: {{ settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
-
-        --font-heading-family: {{ settings.type_header_font.family }}, 
-        {{ settings.type_header_font.fallback_families }};
+        --font-heading-family: jost;
         --font-heading-style: {{ settings.type_header_font.style }};
         --font-heading-weight: {{ settings.type_header_font.weight }};
 
         --font-body-scale: {{ settings.body_scale | divided_by: 100.0 }};
         --font-heading-scale: {{ settings.heading_scale | times: 1.0 | divided_by: settings.body_scale }};
+
+        --mobile-logo-width: {{ settings.mobile_logo_width }}px;
+        --desktop-logo-width: {{ settings.logo_width }}px;
 
         --media-padding: {{ settings.media_padding }}px;
         --media-border-opacity: {{ settings.media_border_opacity | divided_by: 100.0 }};
