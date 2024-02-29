@@ -1,0 +1,180 @@
+{{ 'home-custom.css' | asset_url | stylesheet_tag }}
+
+<style>
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  .park_shop_the_look {
+    position: relative;
+  }
+
+  .svg_first {
+    position: absolute;
+    top: 216px;
+    left: 139px;
+  }
+
+  .svg_second {
+    position: absolute;
+    right: 55.9px;
+    bottom: 250px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+    .svg_first {
+      position: absolute;
+      left: 480px;
+      bottom: 124px;
+      cursor: pointer;
+    }
+
+    .svg_second {
+      position: absolute;
+      right: 314px;
+      top: 235px;
+      cursor: pointer;
+    }
+  }
+</style>
+
+<div class="section-{{ section.id }}-padding">
+  <div class="page-width">
+    <div class="park_shop_image_text_carousel">
+      {% if section.settings.heading != blank %}
+        {% render 'text-with-logo', text: section.settings.heading, css_class: 'h1 mb-3' %}
+      {% endif %}
+
+      <splide-carousel
+        class="splide"
+        id="{{ section.id }}"
+        data-desktop-per-page="1"
+        data-mobile-per-page="1"
+        data-gap="0"
+        data-desktop-arrow=""
+        data-mobile-arrow="true"
+        data-desktop-pagination="true"
+        data-mobile-pagination="true"
+      >
+        <div class="splide__arrows img_txt_carousel_arrows park_latest_pd_il">
+          <button class="splide__arrow splide__arrow--prev">
+            {% render 'splide-left-arrow' %}
+          </button>
+          <button class="splide__arrow splide__arrow--next">
+            {% render 'splide-right-arrow' %}
+          </button>
+        </div>
+        <div class="splide__track">
+          <div class="splide__list">
+            {% for block in section.blocks %}
+              {%- case block.type -%}
+                {%- when 'image_text' -%}
+                  <div class="splide__slide park_shop_the_look">
+                    <a href="{{ block.settings.link }}">
+                      <div class="park_latest_collection_image_box">
+                        {% render 'picture',
+                          class: '',
+                          mobileSrc: block.settings.mobile_image,
+                          desktopSrc: block.settings.desktop_image
+                        %}
+                      </div>
+                    </a>
+                    <svg
+                      class="svg_first"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="43"
+                      height="43"
+                      viewBox="0 0 43 43"
+                      fill="none"
+                    >
+                      <path d="M21.0092 35.4375C13.5586 35.4375 7.50089 29.4032 7.50089 21.9375C7.50089 14.4718 13.5586 8.4375 21.0092 8.4375C28.4599 8.4375 34.5176 14.4718 34.5176 21.9375C34.5176 29.4032 28.4599 35.4375 21.0092 35.4375Z" fill="white"/>
+                      <path d="M21.0092 35.4375C13.5586 35.4375 7.50089 29.4032 7.50089 21.9375C7.50089 14.4718 13.5586 8.4375 21.0092 8.4375C28.4599 8.4375 34.5176 14.4718 34.5176 21.9375C34.5176 29.4032 28.4599 35.4375 21.0092 35.4375Z" stroke="#7FFF79" stroke-opacity="0.212827" stroke-width="15"/>
+                      <path d="M21.0092 35.4375C13.5586 35.4375 7.50089 29.4032 7.50089 21.9375C7.50089 14.4718 13.5586 8.4375 21.0092 8.4375C28.4599 8.4375 34.5176 14.4718 34.5176 21.9375C34.5176 29.4032 28.4599 35.4375 21.0092 35.4375Z" stroke="white" stroke-width="15"/>
+                    </svg>
+                    <svg
+                      class="svg_second"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="43"
+                      height="43"
+                      viewBox="0 0 43 43"
+                      fill="none"
+                    >
+                      <path d="M21.0092 35.4375C13.5586 35.4375 7.50089 29.4032 7.50089 21.9375C7.50089 14.4718 13.5586 8.4375 21.0092 8.4375C28.4599 8.4375 34.5176 14.4718 34.5176 21.9375C34.5176 29.4032 28.4599 35.4375 21.0092 35.4375Z" fill="white"/>
+                      <path d="M21.0092 35.4375C13.5586 35.4375 7.50089 29.4032 7.50089 21.9375C7.50089 14.4718 13.5586 8.4375 21.0092 8.4375C28.4599 8.4375 34.5176 14.4718 34.5176 21.9375C34.5176 29.4032 28.4599 35.4375 21.0092 35.4375Z" stroke="#7FFF79" stroke-opacity="0.212827" stroke-width="15"/>
+                      <path d="M21.0092 35.4375C13.5586 35.4375 7.50089 29.4032 7.50089 21.9375C7.50089 14.4718 13.5586 8.4375 21.0092 8.4375C28.4599 8.4375 34.5176 14.4718 34.5176 21.9375C34.5176 29.4032 28.4599 35.4375 21.0092 35.4375Z" stroke="white" stroke-width="15"/>
+                    </svg>
+                  </div>
+              {%- endcase -%}
+            {% endfor %}
+          </div>
+        </div>
+      </splide-carousel>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Park shop the looks",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Enter heading text"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "name": "image text",
+      "type": "image_text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "desktop_image",
+          "label": "Select desktop image"
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile_image",
+          "label": "Select mobile image"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Choose url"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Park shop the looks"
+    }
+  ]
+}
+{% endschema %}
