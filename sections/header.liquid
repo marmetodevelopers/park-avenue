@@ -230,7 +230,16 @@
           <span>Explore Brands</span>
           <span> {% render 'icon-dropdown' %} </span>
         </summary>
-        asfsadfsdf
+        <div class="brands__wrapper">
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {% when 'brand_logos' %}
+                <div class="img__container">
+                  {% render 'image-element', desktopImage: block.settings.brand_logo %}
+                </div>
+            {% endcase %}
+          {% endfor %}
+        </div>
       </details>
     </div>
     {%- if section.settings.logo_position != 'middle-center' -%}
@@ -616,7 +625,7 @@
   {
     "name": "t:sections.header.name",
     "class": "section-header",
-    "max_blocks": 3,
+    "max_blocks": 5,
     "settings": [
       {
         "type": "select",
@@ -776,6 +785,21 @@
     "blocks": [
       {
         "type": "@app"
+      },
+      {
+        "type": "brand_logos",
+        "name": "Brand Logos",
+        "settings": [
+          {
+            "type": "header",
+            "content": "Brand Logos As Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "brand_logo",
+            "label": "Brand Logo"
+          }
+        ]
       }
     ]
   }
