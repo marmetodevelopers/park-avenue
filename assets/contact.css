@@ -21,6 +21,18 @@
 }
 
 
+/* contact form css */
+
+.telephone-input{
+    display: none;
+}
+.form-width{
+    max-width: 95.4rem;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
 
 @media screen and (max-width:749px){
     .contact-page-width{

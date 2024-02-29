@@ -1,4 +1,5 @@
 {{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
+{{ 'contact.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -14,8 +15,8 @@
   }
 {%- endstyle -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient">
-  <div class="contact page-width page-width--narrow section-{{ section.id }}-padding">
+<div class="color-{{ section.settings.color_scheme }} gradient form-width">
+  <div class="contact contact-form-main   section-{{ section.id }}-padding">
     {%- if section.settings.heading != blank -%}
       <h2 class="title title-wrapper--no-top-margin inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         {{ section.settings.heading }}
@@ -52,6 +53,9 @@
         </ul>
       {%- endif -%}
       <div class="contact__fields">
+
+      <div>
+        <div>name</div>
         <div class="field">
           <input
             class="field__input"
@@ -64,6 +68,11 @@
           >
           <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
         </div>
+      </div>
+      <div>
+        <div>Email</div>
+
+      
         <div class="field field--with-error">
           <input
             autocomplete="email"
@@ -96,8 +105,9 @@
             </small>
           {%- endif -%}
         </div>
+        </div>
       </div>
-      <div class="field">
+      <div class="field telephone-input">
         <input
           type="tel"
           id="ContactForm-phone"
@@ -110,6 +120,11 @@
         >
         <label class="field__label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
       </div>
+
+      <div>
+        <div>Message</div>
+
+      
       <div class="field">
         <textarea
           rows="10"
@@ -123,6 +138,7 @@
         <label class="form__label field__label" for="ContactForm-body">
           {{- 'templates.contact.form.comment' | t -}}
         </label>
+      </div>
       </div>
       <div class="contact__button">
         <button type="submit" class="button">
