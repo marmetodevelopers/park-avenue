@@ -8,14 +8,14 @@
         <div class="h2 information-heading"> {{ section.settings.heading  }}</div>
         {% endif %}
         {% if section.settings.Information1 != blank %}
-        <div class="caption information-address"> {{ section.settings.Information1 }} </div>
+        <div class="caption information-address informatiion-first-address"> {{ section.settings.Information1 }} </div>
          {% endif %}
          {% if section.settings.Information2 != blank %}
         <div class="caption information-address"> {{ section.settings.Information2 }}</div>
         {% endif %}
 
         {% if section.settings.mobile_number != blank %}
-        <div class="caption information-contact"> +91 {{ section.settings.mobile_number }}</div>
+        <div class="caption information-contact"> <span>{%  render 'mobile-icon' %}</span> +91 {{ section.settings.mobile_number }}</div>
         {% endif %}
        
         {% if section.settings.email_address != blank %}

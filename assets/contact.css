@@ -9,6 +9,9 @@
 }
 .contact-heading{
     padding-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
     
 }
 .contact-text-container{
@@ -110,6 +113,9 @@ textarea#ContactForm-body{
 .information-contact{
     padding-bottom: 1.6rem;
 }
+.informatiion-first-address{
+    max-width: 331px;
+}
 
 
 @media screen and (max-width:749px){
@@ -167,4 +173,8 @@ textarea#ContactForm-body{
         padding: 0 2.1rem;
         margin-bottom: 2rem;
     }
+    .contact-information-subcontainer{
+        max-width: 100%;
+    }
+    
 }
