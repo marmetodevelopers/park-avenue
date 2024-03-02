@@ -2507,7 +2507,10 @@ product-info .loading__spinner:not(.hidden) ~ *,
 
 .header__heading-logo {
   height: auto;
-  max-width: 100%;
+  max-width: var(--mobile-logo-width);
+  @media screen and (min-width: 990px){
+    max-width: var(--desktop-logo-width);
+  }
 }
 
 .header__heading-logo-wrapper {
@@ -3538,6 +3541,33 @@ details-disclosure > details {
   .animate--hover-vertical-lift .button:not([disabled]).button--secondary:hover:after {
     --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
   }
+}
+.justify-start{
+  justify-content: flex-start;
+}
+.justify-center{
+  justify-content: center;
+}
+.justify-end{
+  justify-content: flex-end;
+}
+.align-start{
+  align-items: flex-start;
+}
+.align-center{
+  align-items: center;
+}
+.align-end{
+  align-items: flex-end;
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+.text-left{
+  text-align: left;
 }
 .mt-3{
   margin-top: 2.4rem;
