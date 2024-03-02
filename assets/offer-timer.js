@@ -41,4 +41,4 @@ class CountdownTimer extends HTMLElement{
     }
   }
   
-//   customElements.define("timer-element", CountdownTimer)
+  customElements.define("timer-element", CountdownTimer)

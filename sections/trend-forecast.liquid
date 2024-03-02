@@ -1,5 +1,5 @@
 {{ "trend-forecast.css" |  asset_url |  stylesheet_tag }}
-<script src="{{ 'custom.js' |  asset_url }}" defer="defer"></script>
+{{ "custom.css" |  asset_url |  stylesheet_tag }}
 {% style %}
     .padding-{{ section.id }} {
         padding-top: {{ section.settings.mobile-padding-top }}px;
@@ -15,11 +15,11 @@
     {% if section.settings.title != blank %}
         {% render "section-heading", text: section.settings.title, css_class: "h2" %}
     {% endif %}
-    <div class="trend-forecast-container splide mt-3">
+    <div class="trend-forecast-container splide splide-container mt-3">
         <div class="splide__track">
-            <div class="splide__list">
+            <ul class="splide__list">
                 {% for block in section.blocks %}
-                    <div class="splide__slide" style="background-color: {{ block.settings.card-background-color  }};">
+                    <li class="splide__slide" style="background-color: {{ block.settings.card-background-color  }};">
                         <div class="image-container">
                             {% render "picture", class: "media media--portrait", mobileSrc: block.settings.image, desktopSrc: block.settings.image %}
                         </div>
@@ -28,9 +28,9 @@
                                 {{ block.settings.text }}
                             </a>
                         </div>
-                    </div>
+                    </li>
                 {% endfor %}
-            </div>
+            </ul>
         </div>
     </div>
 </div>

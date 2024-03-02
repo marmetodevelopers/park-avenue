@@ -23,33 +23,16 @@
             >
                 <div class="timer">
                     <div class="timer-digits">
-                        <div>
-                            <p>
-                            <span id="countdownDays">00</span>
-                                {% render "timer-arrow" %}
-                            </p>
-                        </div>
-                        <span class="text">DAYS</span>
+                        <div id="countdownDays" class="time">00</div>
+                        <span class="text">Days</span>
                     </div>
-                    <span class="dot">:</span>
                     <div class="timer-digits">
-                        <div>
-                            <p>
-                                <span id="countdownHours">00</span>
-                                {% render "timer-arrow" %}
-                            </p>
-                        </div>
-                        <span class="text">HOURS</span>
+                        <div id="countdownHours" class="time">00</div>
+                        <span class="text">Hours</span>
                     </div>
-                    <span class="dot">:</span>
                     <div class="timer-digits">
-                        <div>
-                            <p>
-                                <span id="countdownMinutes">00</span>
-                                {% render "timer-arrow" %}
-                            </p>
-                        </div>
-                        <span class="text">MINUTES</span>
+                        <div id="countdownMinutes" class="time">00</div>
+                        <span class="text">Minutes</span>
                     </div>
                 </div>
             </timer-element>

@@ -1,6 +1,6 @@
 {{ 'style-feeds.css' |  asset_url |  stylesheet_tag }}
 {% comment %} {{ 'custom.css' |  asset_url |  stylesheet_tag }} {% endcomment %}
-<script src="{{ 'custom.js' |  asset_url }}" defer="defer"></script>
+<script src="{{ 'splide-slider.js' |  asset_url }}" defer="defer"></script>
 {% style %}
     .padding-{{ section.id }} {
         padding-top: {{ section.settings.mobile-padding-top }}px;
@@ -29,6 +29,7 @@
                         {%elsif block.settings.video != blank %}
                             <div class="video_container">
                                 {{ block.settings.video | video_tag: autoplay: false, loop: true, muted: true, controls: true }}
+                                <button class="play-pause-button"> </button>
                             </div>
                         {% endif %}
                     </li>
@@ -46,7 +47,7 @@
                         {% if block.settings.image != blank and block.settings.mobile_image != blank %}
                             {% render "picture", class: "media media--square", mobileSrc: block.settings.image, desktopSrc: block.settings.image  %}
                         {% elsif block.settings.video != blank %}
-                            {% render "picture", class: "media media--square", mobileSrc: block.settings.video.poster, desktopSrc: block.settings.video.poster %}
+                            {% render "picture", class: "media media--square", mobileSrc: block.settings.video_cover_image, desktopSrc: block.settings.video_cover_image %}
                         {% endif %}
                     </li>
                 {% endfor %}
@@ -133,6 +134,11 @@
                         "id": "video",
                         "label": "Select video",
                         "info": "If image is already selected, based on priority image will be shown"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "video_cover_image",
+                        "label": "Select cover thumbnail image for image"
                     }
                 ]
             }
