@@ -6,10 +6,34 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
+  .park_shop_the_look .hotspot_first {
+    position: absolute;
+    top: {{ section.settings.first_hotspot_top | times: 4 | round: 0 }}px;
+    left: {{ section.settings.first_hotspot_left }}px;
+  }
+
+  .park_shop_the_look .hotspot_second {
+    position: absolute;
+    top: {{ section.settings.second_hotspot_top | times: 4 | round: 0 }}px;
+    right: {{ section.settings.second_hotspot_right }}px;
+  }
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+
+    .park_shop_the_look .hotspot_first {
+      position: absolute;
+      top: {{ section.settings.first_hotspot_top }}px;
+      left: {{ section.settings.first_hotspot_left | times: 2 | round: 0  }}px;
+    }
+
+    .park_shop_the_look .hotspot_second {
+      position: absolute;
+      top: {{ section.settings.second_hotspot_top }}px;
+      right: {{ section.settings.second_hotspot_right | times: 1.5 }}px;
     }
   }
 </style>
@@ -55,67 +79,75 @@
                         %}
                       </div>
                     </a>
-                    <svg
-                      class="svg_first"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="43"
-                      height="43"
-                      viewBox="0 0 43 43"
-                      fill="none"
-                    >
-                      <path d="M21.0092 35.4375C13.5586 35.4375 7.50089 29.4032 7.50089 21.9375C7.50089 14.4718 13.5586 8.4375 21.0092 8.4375C28.4599 8.4375 34.5176 14.4718 34.5176 21.9375C34.5176 29.4032 28.4599 35.4375 21.0092 35.4375Z" fill="white"/>
-                      <path d="M21.0092 35.4375C13.5586 35.4375 7.50089 29.4032 7.50089 21.9375C7.50089 14.4718 13.5586 8.4375 21.0092 8.4375C28.4599 8.4375 34.5176 14.4718 34.5176 21.9375C34.5176 29.4032 28.4599 35.4375 21.0092 35.4375Z" stroke="#7FFF79" stroke-opacity="0.212827" stroke-width="15"/>
-                      <path d="M21.0092 35.4375C13.5586 35.4375 7.50089 29.4032 7.50089 21.9375C7.50089 14.4718 13.5586 8.4375 21.0092 8.4375C28.4599 8.4375 34.5176 14.4718 34.5176 21.9375C34.5176 29.4032 28.4599 35.4375 21.0092 35.4375Z" stroke="white" stroke-width="15"/>
-                    </svg>
-                    <svg
-                      class="svg_second"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="43"
-                      height="43"
-                      viewBox="0 0 43 43"
-                      fill="none"
-                    >
-                      <path d="M21.0092 35.4375C13.5586 35.4375 7.50089 29.4032 7.50089 21.9375C7.50089 14.4718 13.5586 8.4375 21.0092 8.4375C28.4599 8.4375 34.5176 14.4718 34.5176 21.9375C34.5176 29.4032 28.4599 35.4375 21.0092 35.4375Z" fill="white"/>
-                      <path d="M21.0092 35.4375C13.5586 35.4375 7.50089 29.4032 7.50089 21.9375C7.50089 14.4718 13.5586 8.4375 21.0092 8.4375C28.4599 8.4375 34.5176 14.4718 34.5176 21.9375C34.5176 29.4032 28.4599 35.4375 21.0092 35.4375Z" stroke="#7FFF79" stroke-opacity="0.212827" stroke-width="15"/>
-                      <path d="M21.0092 35.4375C13.5586 35.4375 7.50089 29.4032 7.50089 21.9375C7.50089 14.4718 13.5586 8.4375 21.0092 8.4375C28.4599 8.4375 34.5176 14.4718 34.5176 21.9375C34.5176 29.4032 28.4599 35.4375 21.0092 35.4375Z" stroke="white" stroke-width="15"/>
-                    </svg>
-                    <svg
-                      class="svg_third"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 384 512"
-                      width="25.47"
-                      height="30px"
-                    >
-                      <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                    </svg>
-                    <svg
-                      class="svg_fourth"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 384 512"
-                      width="25.47"
-                      height="30px"
-                    >
-                      <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
-                    </svg>
-                    <div class="first_popup_box">
-                      <div class="first_popup_pic">
-                        {% render 'picture',
-                          class: '',
-                          mobileSrc: block.settings.first_popup_image,
-                          desktopSrc: block.settings.first_popup_image
-                        %}
+                    <div class="hotspot_first">
+                      <div class="hotspot_first_content">
+                        <svg
+                          class="svg_first hotspot_circle"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="43"
+                          height="43"
+                          viewBox="0 0 43 43"
+                          fill="none"
+                        >
+                          <path d="M21.0092 35.4375C13.5586 35.4375 7.50089 29.4032 7.50089 21.9375C7.50089 14.4718 13.5586 8.4375 21.0092 8.4375C28.4599 8.4375 34.5176 14.4718 34.5176 21.9375C34.5176 29.4032 28.4599 35.4375 21.0092 35.4375Z" fill="white"/>
+                          <path d="M21.0092 35.4375C13.5586 35.4375 7.50089 29.4032 7.50089 21.9375C7.50089 14.4718 13.5586 8.4375 21.0092 8.4375C28.4599 8.4375 34.5176 14.4718 34.5176 21.9375C34.5176 29.4032 28.4599 35.4375 21.0092 35.4375Z" stroke="#7FFF79" stroke-opacity="0.212827" stroke-width="15"/>
+                          <path d="M21.0092 35.4375C13.5586 35.4375 7.50089 29.4032 7.50089 21.9375C7.50089 14.4718 13.5586 8.4375 21.0092 8.4375C28.4599 8.4375 34.5176 14.4718 34.5176 21.9375C34.5176 29.4032 28.4599 35.4375 21.0092 35.4375Z" stroke="white" stroke-width="15"/>
+                        </svg>
+                        <svg
+                          class="svg_third"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 384 512"
+                          width="25.47"
+                          height="30px"
+                        >
+                          <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
+                        </svg>
+                        <div class="first_popup_box">
+                          <div class="first_popup_pic">
+                            {% render 'picture',
+                              class: '',
+                              mobileSrc: block.settings.first_popup_image,
+                              desktopSrc: block.settings.first_popup_image
+                            %}
+                          </div>
+                          <p class="body">{{ block.settings.first_popup_title }}</p>
+                        </div>
                       </div>
-                      <p class="body">{{ block.settings.first_popup_title }}</p>
                     </div>
-                    <div class="second_popup_box">
-                      <div class="second_popup_pic">
-                        {% render 'picture',
-                          class: '',
-                          mobileSrc: block.settings.second_popup_image,
-                          desktopSrc: block.settings.second_popup_image
-                        %}
+                    <div class="hotspot_second">
+                      <div class="hotspot_second_content">
+                        <svg
+                          class="svg_second hotspot_circle"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="43"
+                          height="43"
+                          viewBox="0 0 43 43"
+                          fill="none"
+                        >
+                          <path d="M21.0092 35.4375C13.5586 35.4375 7.50089 29.4032 7.50089 21.9375C7.50089 14.4718 13.5586 8.4375 21.0092 8.4375C28.4599 8.4375 34.5176 14.4718 34.5176 21.9375C34.5176 29.4032 28.4599 35.4375 21.0092 35.4375Z" fill="white"/>
+                          <path d="M21.0092 35.4375C13.5586 35.4375 7.50089 29.4032 7.50089 21.9375C7.50089 14.4718 13.5586 8.4375 21.0092 8.4375C28.4599 8.4375 34.5176 14.4718 34.5176 21.9375C34.5176 29.4032 28.4599 35.4375 21.0092 35.4375Z" stroke="#7FFF79" stroke-opacity="0.212827" stroke-width="15"/>
+                          <path d="M21.0092 35.4375C13.5586 35.4375 7.50089 29.4032 7.50089 21.9375C7.50089 14.4718 13.5586 8.4375 21.0092 8.4375C28.4599 8.4375 34.5176 14.4718 34.5176 21.9375C34.5176 29.4032 28.4599 35.4375 21.0092 35.4375Z" stroke="white" stroke-width="15"/>
+                        </svg>
+                        <svg
+                          class="svg_fourth"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 384 512"
+                          width="25.47"
+                          height="30px"
+                        >
+                          <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
+                        </svg>
+                        <div class="second_popup_box">
+                          <div class="second_popup_pic">
+                            {% render 'picture',
+                              class: '',
+                              mobileSrc: block.settings.second_popup_image,
+                              desktopSrc: block.settings.second_popup_image
+                            %}
+                          </div>
+                          <p class="body">{{ block.settings.second_popup_title }}</p>
+                        </div>
                       </div>
-                      <p class="body">{{ block.settings.second_popup_title }}</p>
                     </div>
                   </div>
               {%- endcase -%}
@@ -127,6 +159,28 @@
   </div>
 </div>
 
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const allCircles = document.querySelectorAll('.hotspot_circle');
+
+    allCircles.forEach((element) => {
+
+      element.nextElementSibling.style.display = 'none';
+      element.nextElementSibling.nextElementSibling.style.display = 'none';
+
+      element.addEventListener('mouseover', (event) => {
+        event.target.nextElementSibling.style.display = 'block';
+        event.target.nextElementSibling.nextElementSibling.style.display = 'block';
+      });
+
+      element.addEventListener('mouseleave', (event) => {
+        event.target.nextElementSibling.style.display = 'none';
+        event.target.nextElementSibling.nextElementSibling.style.display = 'none';
+      });
+
+    });
+  });
+</script>
 {% schema %}
 {
   "name": "Park shop the looks",
@@ -155,6 +209,46 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "range",
+      "id": "first_hotspot_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "First hotspot top",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "first_hotspot_left",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "First hotspot left",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "second_hotspot_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Second hotspot top",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "second_hotspot_right",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Second hotspot right",
+      "default": 70
     }
   ],
   "blocks": [

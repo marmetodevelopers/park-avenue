@@ -278,12 +278,30 @@
         "padding_bottom": 36,
         "image_background": ""
       }
+    },
+    "demo_section_ApfVfw": {
+      "type": "demo-section",
+      "blocks": {
+        "image_text_Yn3aep": {
+          "type": "image-text",
+          "settings": {
+            "add_a_image": "shopify:\/\/shop_images\/efb0d59540d694d81f1322783e91c878.png",
+            "add_a_text_for_mobile": "Hello world"
+          }
+        }
+      },
+      "block_order": [
+        "image_text_Yn3aep"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "image_text_carousel_igph46",
     "park_categories_carousel_P3DmhU",
     "park_latest_colletions_carousel_gaz8Me",
-    "park_trending_carousel_zpaQxH"
+    "park_trending_carousel_zpaQxH",
+    "demo_section_ApfVfw"
   ]
 }
