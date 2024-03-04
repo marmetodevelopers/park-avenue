@@ -19,7 +19,7 @@
         {% endif %}
        
         {% if section.settings.email_address != blank %}
-        <div class="caption information-contact">{{ section.settings.email_address }}</div>
+        <div class="caption information-contact"> {% render 'email@-icon' %} {{ section.settings.email_address }}</div>
         {% endif %}
         </div>
 

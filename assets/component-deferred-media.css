@@ -96,3 +96,29 @@
 .deferred-media__poster-button .icon-play {
   margin-left: 0.2rem;
 }
+#cover-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+.cover-text{
+  color: #FFF;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 82px;
+  letter-spacing: -0.54px;
+  text-transform: uppercase;
+ }
+ @media screen and  (max-width:749px){
+  .cover-text{
+    font-size: 12px;
+    line-height: 21.44px;
+
+  }
+  #cover-container svg{
+    height: 30px;
+    width: 30px;
+  }
+  
+ }

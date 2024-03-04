@@ -1,0 +1,161 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "about_image_banner_fmgyV4": {
+      "type": "about-image-banner",
+      "settings": {
+        "add_image_for_desktop": "shopify:\/\/shop_images\/about-banner1_1.jpg",
+        "add_image_for_mobile": "shopify:\/\/shop_images\/about-banner1_1_1.jpg",
+        "heading_text": "Revolutionizing men’s clothing since 1900s",
+        "heading_para": "Over 40 Years of Creating Quality Clothing"
+      }
+    },
+    "about_storecount_zLWaTy": {
+      "type": "about-storecount",
+      "blocks": {
+        "image_text_CWBMt8": {
+          "type": "image-text",
+          "settings": {
+            "add_image": "shopify:\/\/shop_images\/pseudo.jpg",
+            "text1": "1000+",
+            "text2": "Stores"
+          }
+        },
+        "image_text_8HiYfT": {
+          "type": "image-text",
+          "settings": {
+            "add_image": "shopify:\/\/shop_images\/pseudo_1.jpg",
+            "text1": "10,00,000+",
+            "text2": "Loyal Customers"
+          }
+        },
+        "image_text_Wxr7XH": {
+          "type": "image-text",
+          "settings": {
+            "add_image": "shopify:\/\/shop_images\/pseudo_2.jpg",
+            "text1": "50+",
+            "text2": "Years"
+          }
+        }
+      },
+      "block_order": [
+        "image_text_CWBMt8",
+        "image_text_8HiYfT",
+        "image_text_Wxr7XH"
+      ],
+      "settings": {
+        "enter_text1": "Trust $ QUALITY & EXCELLENCE",
+        "enter_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+        "padding_top": 64,
+        "padding_bottom": 82,
+        "padding_top2": 36,
+        "padding_bottom2": 52
+      }
+    },
+    "about_image_text_DgXzU7": {
+      "type": "about-image-text",
+      "blocks": {
+        "image_text_azgfkV": {
+          "type": "image-text",
+          "settings": {
+            "text": "Raymond, A Diversified Group Shaping A Stronger & Better Tomorrow.",
+            "paragraph": "<p>With roots dating back to 1925, as a small woollen mill in Thane (Maharashtra), manufacturing coarse woollen blankets, Raymond Brand has evolved into a leading manufacturer of the finest fabrics in the world. Reckoned for its pioneering innovations and having enjoyed the patronage of millions of consumers, Raymond is amongst the trusted brands in India.<\/p>",
+            "name": "",
+            "position": "",
+            "readmore": "",
+            "link": "",
+            "text_alignment": "right",
+            "select_image": "shopify:\/\/shop_images\/image_306.png",
+            "image_alignment": "row"
+          }
+        },
+        "image_text_mRNVzE": {
+          "type": "image-text",
+          "settings": {
+            "text": "From the Chairman",
+            "paragraph": "<p>The future lies in imagining the unimaginable! At Re-imagined Raymond, we aspire to achieve just the same. We aim to create not just offerings but an organisation that is built for the future.<\/p>",
+            "name": "GAUTAM HARI SINGHANIA",
+            "position": "CHAIRMAN & MANAGING DIRECTOR,",
+            "readmore": "Read More",
+            "link": "shopify:\/\/pages\/contact",
+            "text_alignment": "right",
+            "select_image": "shopify:\/\/shop_images\/Frame_1000004976.jpg",
+            "image_alignment": "row-reverse"
+          }
+        }
+      },
+      "block_order": [
+        "image_text_azgfkV",
+        "image_text_mRNVzE"
+      ],
+      "settings": {
+      }
+    },
+    "about_blogpost_fPp7AM": {
+      "type": "about-blogpost",
+      "blocks": {
+        "blogpost_npgyNQ": {
+          "type": "blogpost",
+          "settings": {
+            "add_your_article": "all-blogs\/lorem-ipusm-lorem-ipusm-dor-lorem-ipusm-lorem-ipusm-1"
+          }
+        },
+        "blogpost_n4m9GD": {
+          "type": "blogpost",
+          "settings": {
+            "add_your_article": "all-blogs\/lorem-ipusm-lorem-ipusm-lorem-ipusm-lorem-ipusm-1"
+          }
+        },
+        "blogpost_megJqC": {
+          "type": "blogpost",
+          "settings": {
+            "add_your_article": "all-blogs\/lorem-ipusm-lorem-ipusm-dor-lorem-ipusm-lorem-ipusm-9"
+          }
+        }
+      },
+      "block_order": [
+        "blogpost_npgyNQ",
+        "blogpost_n4m9GD",
+        "blogpost_megJqC"
+      ],
+      "settings": {
+        "enter_text1": "REVOLUTIONIZING THE $ WORLD OF STYLE",
+        "padding_top": 64,
+        "padding_bottom": 64,
+        "padding_top2": 48,
+        "padding_bottom2": 38
+      }
+    },
+    "video_m3VUXY": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify:\/\/shop_images\/Rectangle_4241.jpg",
+        "cover_text": "Watch how we came in to inception",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "about_image_banner_fmgyV4",
+    "about_storecount_zLWaTy",
+    "about_image_text_DgXzU7",
+    "about_blogpost_fPp7AM",
+    "video_m3VUXY"
+  ]
+}

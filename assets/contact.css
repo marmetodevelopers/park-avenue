@@ -1,6 +1,9 @@
 .contact-page-width ,.contact-information{
     padding: 0 12.2rem;
 }
+.contact-main-container{
+    margin-top: 6.4rem;
+}
 
 .contact-image-container img{
     width: 100%;
@@ -25,6 +28,10 @@
     justify-content: center;
     flex-direction: column;
 }
+.field__input:focus ~ .contact-msg-icon{
+    top: -1rem;
+
+}
 
 
 /* contact form css */
@@ -35,7 +42,7 @@
 .form-width{
     max-width: 95.4rem;
     margin: 0 auto;
-    padding: 0;
+    padding: 6.4rem 0 0 0;
 }
 input#ContactForm-name, input#ContactForm-email {
     height: 48px;
@@ -112,6 +119,7 @@ textarea#ContactForm-body{
 }
 .information-contact{
     padding-bottom: 1.6rem;
+    display: flex;
 }
 .informatiion-first-address{
     max-width: 331px;
@@ -119,14 +127,31 @@ textarea#ContactForm-body{
 
 
 @media screen and (max-width:749px){
+    .contact-main-container{
+        margin-top: 4.6rem;
+    }
     .contact-page-width{
         padding: 0 1.6rem;
     }
     .contact-heading{
         padding-bottom: 2.8rem;
+        display: inline-block;
+        width: 60%;
     }
     .contact-text-container{
         padding-bottom: 2.8rem;
+    }
+    .contact-heading-wrapper{
+        align-items: flex-start;
+    }
+    .svg-container{
+        position: relative;
+        top: -7px;
+    }
+    .contact-heading span svg{
+        margin-left: 8px;
+        width: 24px;
+        height: 6px;
     }
 
 
@@ -147,7 +172,7 @@ textarea#ContactForm-body{
         margin-bottom: 1.9rem;
     }
     .form-width{
-        padding: 0 1.6rem;
+        padding: 3.6rem 1.6rem 0 1.6rem;
     }
     .contact-btn{
         width: 100%;

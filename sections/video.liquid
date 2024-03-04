@@ -103,9 +103,14 @@
         {%- else -%}
           {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
         {%- endif -%}
-        <span class="deferred-media__poster-button motion-reduce">
+        <div id="cover-container">
+
+        <span class=" motion-reduce">
           {%- render 'icon-play' -%}
         </span>
+        <div class="cover-text">{{ section.settings.cover_text }}</div>
+        </div>
+
       </button>
       <template>
         {%- if section.settings.video == null and section.settings.video_url != null -%}
@@ -218,6 +223,12 @@
       "type": "image_picker",
       "id": "cover_image",
       "label": "t:sections.video.settings.cover_image.label"
+    },
+    {
+      "type": "text",
+      "id": "cover_text",
+      "label": " Enter Cover Text"
+
     },
     {
       "type": "text",
