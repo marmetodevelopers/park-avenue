@@ -12,51 +12,50 @@
   }
 {%- endstyle -%}
 <div class="section-{{ section.id }}-padding">
-  <div class="image_banner_carousel_main">
+  <div class="hotspot_carousel_main">
     {% if section.settings.heading != blank %}
       {% render "text-with-logo"
         , text: section.settings.heading
         , css_class: "h2 page-width mb-3" %}
     {% endif %}
-    {% assign blocksCount = section.blocks | size %}
     <my-splide
-      class="splide color-{{ section.settings.section_color_scheme }}"
+      class="splide"
+      data-arrows="true"
+      data-pagination="true"
+      data-fixed-height="837px"
       id="{{section.id}}"
-      data-arrows="{{ section.settings.carousel_arrows }}"
-      data-pagination="{% if blocksCount >= 2 %} true  {% else %} false {% endif %}"
-      data-fixed-height="{{ section.settings.splide_height }}"
       aria-label="Splide Basic HTML Example">
       {% render 'splide-arrows' %}
       <div class="splide__track">
         <ul class="splide__list">
           {% for block in section.blocks %}
             <li class="splide__slide">
-              <a href="{{block.settings.image_link}}" class="pos_relative">
-                <div class="ibc_image_container {% if section.settings.banner_content_check == true %} height_100 {% endif %}">
+              <a href="{{block.settings.image_link}}">
+                <div class="ibc_image_container">
                   {% render 'picture'
                     , class: ''
                     , mobileSrc: block.settings.image_small
                     , desktopSrc: block.settings.image_desktop %}
                 </div>
-                {% if block.settings.title != blank or block.settings.subtitle != blank %}
-                  <div class="banner_text {% if section.settings.layout == true %} pos_absolute flex p_32 height_96 {{ section.settings.content_position }} {% endif %}">
-                    <div class="banner_text_inner">
-                      {% if block.settings.title != blank %}
-                        <div class="banner_title flex custom_center {{ block.settings.title_size }}">
-                          <div class="banner_title_inner">
-                            {{ block.settings.title }}
-                          </div>
-                        </div>
-                      {% endif %}
-                      {% if block.settings.subtitle != blank %}
-                        <div class="banner_subtitle flex custom_center subtitle">
-                          {{ block.settings.subtitle }}
-                        </div>
-                      {% endif %}
-                    </div>
-                  </div>
-                {% endif %}
               </a>
+              {% if block.settings.title != blank or block.settings.subtitle != blank %}
+                <div class="banner_text pos_absolute pos_custom_bottom small-hide" style="height: 94%;">
+                  <div class="banner_text_inner">
+                    {% if block.settings.title != blank %}
+                      <div class="banner_title flex custom_center pos_custom_top {{ block.settings.title_size }}">
+                        <div class="banner_title_inner">
+                          {{ block.settings.title }}
+                        </div>
+                      </div>
+                    {% endif %}
+                    {% if block.settings.subtitle != blank %}
+                      <div class="banner_subtitle flex custom_center subtitle">
+                        {{ block.settings.subtitle }}
+                      </div>
+                    {% endif %}
+                  </div>
+                </div>
+              {% endif %}
             </li>
           {% endfor %}
         </ul>
@@ -67,18 +66,12 @@
 
 {% schema %}
   {
-    "name": "Image Banner Carousel",
+    "name": "Hotspot Carousel",
     "tag": "section",
     "settings": [
       {
         "type": "header",
         "content": "t:sections.all.padding.section_padding_heading"
-      },
-      {
-        "type": "color_scheme",
-        "id": "section_color_scheme",
-        "label": "Splide Color Scheme",
-        "default": "background-1"
       },
       {
         "type": "range",
@@ -99,22 +92,8 @@
         "unit": "px",
         "label": "t:sections.all.padding.padding_bottom",
         "default": 36
-      }, {
-        "type": "range",
-        "id": "splide_height",
-        "min": 400,
-        "max": 800,
-        "step": 10,
-        "unit": "px",
-        "label": "Carousel Height",
-        "default": 600
-      }, {
-        "type": "checkbox",
-        "label": "Banner Text Content",
-        "id": "banner_content_check",
-        "default": false,
-        "info": "check if banner has text content"
-      }, {
+      },
+      {
         "type": "checkbox",
         "label": "Carousel Arrows",
         "id": "carousel_arrows",
@@ -126,51 +105,6 @@
         "id": "heading",
         "default": "Exclusive $ Collections ",
         "info": "add $ symbol to show Park Avenue logo"
-      }, {
-        "type": "checkbox",
-        "label": "Content Overlap",
-        "id": "layout",
-        "default": false,
-        "info": "check if text content should overlap image or not."
-      }, {
-        "type": "select",
-        "id": "content_position",
-        "label": "Content position",
-        "options": [
-          {
-            "value": "top-left",
-            "label": "Top left"
-          },
-          {
-            "value": "top-right",
-            "label": "Top right"
-          },
-          {
-            "value": "top-center",
-            "label": "Top center"
-          },
-          {
-            "value": "middle-left",
-            "label": "Middle left"
-          }, {
-            "value": "middle-center",
-            "label": "Middle center"
-          }, {
-            "value": "middle-right",
-            "label": "Middle right"
-          }, {
-            "value": "bottom-left",
-            "label": "Bottom left"
-          }, {
-            "value": "bottom-center",
-            "label": "Bottom center"
-          }, {
-            "value": "bottom-right",
-            "label": "Bottom right"
-          }
-        ],
-        "default": "top-left",
-        "info": "select only if content overlay is checked"
       }
     ],
     "blocks": [
@@ -225,7 +159,7 @@
     ],
     "presets": [
       {
-        "name": "Image Banner Carousel"
+        "name": "Hotspot Carousel"
       }
     ]
   }
