@@ -120,9 +120,7 @@
 
 {%- style -%}
   .header {
-    padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}
-    px 3rem{{ section.settings.padding_bottom | times: 0.5 | round: 0 }}
-    px 3rem;
+    padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
   }
 
   .section-header {
@@ -229,7 +227,7 @@
       endif
     -%}
 
-    <div class="brands_dropdown small-hide medium-hide">
+    <div class="brands_dropdown">
       <details>
         <summary class="">
           <span>Explore Brands</span>
@@ -247,6 +245,7 @@
         </div>
       </details>
     </div>
+    <span class="hr__line"></span>
     {%- if section.settings.logo_position != 'middle-center' -%}
       {%- if request.page_type == 'index' -%}
         <h1 class="header__heading">
@@ -436,7 +435,7 @@
         </a>
         <a
           href="/"
-          class="header__icon header__icon--cart link focus-inset small-hide medium-hide"
+          class="header__icon header__icon--cart link focus-inset store__locator"
           id="cart-icon-bubble">
           <span>
             {% render 'icon-store' %}
@@ -754,7 +753,14 @@
         ],
         "default": "center",
         "label": "t:sections.header.settings.mobile_logo_position.label"
-      }, {
+      },
+      {
+        "type": "image_picker",
+        "id": "cover_image",
+        "label": "Cover Image",
+        "info": "Note: Only applies to mobile screens"
+      },
+      {
         "type": "header",
         "content": "t:sections.all.spacing"
       }, {
@@ -804,7 +810,12 @@
           {
             "type": "image_picker",
             "id": "brand_logo",
-            "label": "Brand Logo"
+            "label": "Desktop Brand Logo"
+          },
+          {
+            "type": "image_picker",
+            "id": "mobile_brand_logo",
+            "label": "Mobile Brand Logo"
           }
         ]
       }

@@ -52,6 +52,9 @@
   -%}
     <div class="logo_container page-width">
       {% render 'image-element', desktopImage: section.settings.footer_logo %}
+      <a href="#" class="whatsapp__icon">
+        {% render 'whatsapp-icon' %}
+      </a>
     </div>
     {%- unless only_empty_brand -%}
       <div class="footer__content-top page-width">
@@ -231,11 +234,11 @@
                         {% elsif form.posted_successfully? %}
                           aria-describedby="ContactFooter-success"
                         {% endif %}
-                        placeholder="{{ 'newsletter.label' | t }}"
+                        placeholder="Enter your Email Address"
                         required
                       >
                       <label class="field__label caption" for="NewsletterForm--{{ section.id }}">
-                        {{ 'newsletter.label' | t }}
+                        Enter your Email Address
                       </label>
                       <button
                         type="submit"
