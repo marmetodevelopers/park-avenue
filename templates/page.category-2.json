@@ -213,6 +213,51 @@
         "content_position": "top-left"
       }
     },
+    "hotspot_carousel_tcbte9": {
+      "type": "hotspot-carousel",
+      "blocks": {
+        "slide_KgNceM": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4293_3d2b4313-48ba-488d-9991-a1ab2e8a90aa.png",
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_841_2dd1ae46-fb18-4ee0-933a-5dcf8c5ca29b.png",
+            "image_link": "",
+            "title": "Classic Shirts",
+            "title_size": "h2",
+            "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+          }
+        },
+        "slide_3LMcTm": {
+          "type": "slide",
+          "settings": {
+            "image_link": "",
+            "title": "CORPORATE SELECTIONS",
+            "title_size": "h2",
+            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
+          }
+        },
+        "slide_A7V7JE": {
+          "type": "slide",
+          "settings": {
+            "image_link": "",
+            "title": "CORPORATE SELECTIONS",
+            "title_size": "h2",
+            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
+          }
+        }
+      },
+      "block_order": [
+        "slide_KgNceM",
+        "slide_3LMcTm",
+        "slide_A7V7JE"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "carousel_arrows": true,
+        "heading": "LOOK $ BOOK"
+      }
+    },
     "dynamic_grid_BrCNMw": {
       "type": "dynamic-grid",
       "blocks": {
@@ -309,51 +354,6 @@
         "media_hover": true
       }
     },
-    "hotspot_carousel_tcbte9": {
-      "type": "hotspot-carousel",
-      "blocks": {
-        "slide_KgNceM": {
-          "type": "slide",
-          "settings": {
-            "image_small": "shopify:\/\/shop_images\/Rectangle_4293.png",
-            "image_desktop": "shopify:\/\/shop_images\/Rectangle_841.png",
-            "image_link": "",
-            "title": "Classic Shirts",
-            "title_size": "h2",
-            "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-          }
-        },
-        "slide_3LMcTm": {
-          "type": "slide",
-          "settings": {
-            "image_link": "",
-            "title": "CORPORATE SELECTIONS",
-            "title_size": "h2",
-            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
-          }
-        },
-        "slide_A7V7JE": {
-          "type": "slide",
-          "settings": {
-            "image_link": "",
-            "title": "CORPORATE SELECTIONS",
-            "title_size": "h2",
-            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
-          }
-        }
-      },
-      "block_order": [
-        "slide_KgNceM",
-        "slide_3LMcTm",
-        "slide_A7V7JE"
-      ],
-      "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "carousel_arrows": true,
-        "heading": "LOOK $ BOOK"
-      }
-    },
     "image_text_custom_JAQWH4": {
       "type": "image-text-custom",
       "blocks": {
@@ -398,8 +398,8 @@
     "image_banner_carousel_UymXp9",
     "dynamic_grid_pwKUdJ",
     "image_banner_carousel_EVPagW",
-    "dynamic_grid_BrCNMw",
     "hotspot_carousel_tcbte9",
+    "dynamic_grid_BrCNMw",
     "image_text_custom_JAQWH4"
   ]
 }
