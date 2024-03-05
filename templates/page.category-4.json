@@ -198,6 +198,78 @@
         "media_hover": true
       }
     },
+    "dynamic_grid_pwKUdJ": {
+      "type": "dynamic-grid",
+      "blocks": {
+        "image_with_text_overlay_bmzqzt": {
+          "type": "image-with-text-overlay",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4259_2754d64f-0f19-4a65-ae9a-9dc7f3fa2388.png",
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4304_c3cdf8d1-831b-4c55-b447-d991b6393602.png",
+            "block_link": "",
+            "background_video": false,
+            "autoplay_video": true,
+            "col_count": 5,
+            "row_count": 1,
+            "border_radius": 0,
+            "subheading": "",
+            "heading": "COTTON",
+            "heading_size": "36",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "bottom-center",
+            "content_align": "left",
+            "content_width": "360",
+            "background_color": "#69679c",
+            "background_gradient": "",
+            "body_text_color": "#ffffff",
+            "button_link_color": "#ffffff",
+            "overlay_color": "#ffffff"
+          }
+        },
+        "image_with_text_overlay_7Axe4x": {
+          "type": "image-with-text-overlay",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4259.png",
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4305.png",
+            "block_link": "",
+            "background_video": false,
+            "autoplay_video": true,
+            "col_count": 5,
+            "row_count": 1,
+            "border_radius": 0,
+            "subheading": "",
+            "heading": "KNIT",
+            "heading_size": "36",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "bottom-center",
+            "content_align": "center",
+            "content_width": "360",
+            "background_color": "#69679c",
+            "background_gradient": "",
+            "body_text_color": "#ffffff",
+            "button_link_color": "#ffffff",
+            "overlay_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_overlay_bmzqzt",
+        "image_with_text_overlay_7Axe4x"
+      ],
+      "settings": {
+        "heading": "",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "desktop_height": 610,
+        "mobile_height": 720,
+        "row_mobile": 2,
+        "col_spacing": "17.5",
+        "row_spacing": "32",
+        "media_hover": true
+      }
+    },
     "image_banner_carousel_EVPagW": {
       "type": "image-banner-carousel",
       "blocks": {
@@ -237,77 +309,6 @@
         "heading": "",
         "layout": false,
         "content_position": "top-left"
-      }
-    },
-    "dynamic_grid_pwKUdJ": {
-      "type": "dynamic-grid",
-      "blocks": {
-        "image_with_text_overlay_bmzqzt": {
-          "type": "image-with-text-overlay",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_4259_2754d64f-0f19-4a65-ae9a-9dc7f3fa2388.png",
-            "block_link": "",
-            "background_video": false,
-            "autoplay_video": true,
-            "col_count": 5,
-            "row_count": 1,
-            "border_radius": 0,
-            "subheading": "",
-            "heading": "BUSINESS FORMAL",
-            "heading_size": "36",
-            "button_text": "",
-            "button_link": "",
-            "content_position": "bottom-center",
-            "content_align": "left",
-            "content_width": "360",
-            "background_color": "#69679c",
-            "background_gradient": "",
-            "body_text_color": "#ffffff",
-            "button_link_color": "#ffffff",
-            "overlay_color": "#ffffff"
-          }
-        },
-        "image_with_text_overlay_7Axe4x": {
-          "type": "image-with-text-overlay",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_4259.png",
-            "image_small": "shopify:\/\/shop_images\/Rectangle_4304.png",
-            "block_link": "",
-            "background_video": false,
-            "autoplay_video": true,
-            "col_count": 5,
-            "row_count": 1,
-            "border_radius": 0,
-            "subheading": "",
-            "heading": "SEMI - FORMAL",
-            "heading_size": "36",
-            "button_text": "",
-            "button_link": "",
-            "content_position": "bottom-center",
-            "content_align": "center",
-            "content_width": "360",
-            "background_color": "#69679c",
-            "background_gradient": "",
-            "body_text_color": "#ffffff",
-            "button_link_color": "#ffffff",
-            "overlay_color": "#ffffff"
-          }
-        }
-      },
-      "block_order": [
-        "image_with_text_overlay_bmzqzt",
-        "image_with_text_overlay_7Axe4x"
-      ],
-      "settings": {
-        "heading": "",
-        "padding_top": 40,
-        "padding_bottom": 40,
-        "desktop_height": 610,
-        "mobile_height": 720,
-        "row_mobile": 2,
-        "col_spacing": "17.5",
-        "row_spacing": "32",
-        "media_hover": true
       }
     },
     "hotspot_carousel_tcbte9": {
@@ -398,8 +399,8 @@
     "image_banner_carousel_x8JDPe",
     "image_banner_carousel_UymXp9",
     "dynamic_grid_BrCNMw",
-    "image_banner_carousel_EVPagW",
     "dynamic_grid_pwKUdJ",
+    "image_banner_carousel_EVPagW",
     "hotspot_carousel_tcbte9",
     "image_text_custom_JAQWH4"
   ]
