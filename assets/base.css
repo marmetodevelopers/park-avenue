@@ -349,6 +349,9 @@ blockquote {
 .color-accent-1 .caption {
 	color: #fff;
 }
+.color-background-1 .caption {
+  color: #000;
+}
 .caption-with-letter-spacing {
 	font-size: 1.4rem;
 	letter-spacing: 0.13rem;
