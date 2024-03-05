@@ -362,6 +362,24 @@ class MenuDrawer extends HTMLElement {
     this.querySelectorAll('button:not(.localization-selector)').forEach((button) =>
       button.addEventListener('click', this.onCloseButtonClick.bind(this))
     );
+
+    /* ---- CUSTOM JS FUNCTION TO CLOSE MENU DRAWER ---- */
+    
+    this.querySelectorAll('.menu-close-icon').forEach((button) =>
+      button.addEventListener('click', this.onCloseButtonClick.bind(this))
+    );
+    this.querySelector('.menu-close-icon').addEventListener('click', ()=>{
+      this.mainDetailsToggle.classList.remove('menu-opening');
+      this.mainDetailsToggle.querySelectorAll('details').forEach((details) => {
+        details.removeAttribute('open');
+        details.classList.remove('menu-opening');
+      });
+      this.mainDetailsToggle.querySelectorAll('.submenu-open').forEach((submenu) => {
+        submenu.classList.remove('submenu-open');
+      });
+      document.body.classList.remove(`overflow-hidden-${this.dataset.breakpoint}`);
+      this.closeAnimation(this.mainDetailsToggle);
+    });
   }
 
   onKeyUp(event) {
