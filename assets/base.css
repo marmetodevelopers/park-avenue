@@ -94,9 +94,9 @@ html.no-js .no-js-hidden {
 }
 
 .page-width {
-  max-width: var(--page-width);
-  margin: 0 auto;
-  padding: 0 1.6rem;
+	max-width: var(--page-width);
+	margin: 0 auto;
+	padding: 0 1.5rem;
 }
 
 body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
@@ -2669,6 +2669,7 @@ menu-drawer + .header__search {
 .header--top-center header-drawer {
 	grid-column: span 1 !important;
     order: 2;
+
 	grid-area: left-icons;
 }
 
@@ -3555,9 +3556,9 @@ details-disclosure > details {
 			0 0 0 var(--buttons-border-width) rgba(var(--color-button), var(--alpha-button-background));
 	}
 
-	.animate--hover-vertical-lift .button:not([disabled]).button--secondary:hover:after {
-		--border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
-	}
+  .animate--hover-vertical-lift .button:not([disabled]).button--secondary:hover:after {
+    --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
+  }
 }
 .justify-start{
   justify-content: flex-start;
