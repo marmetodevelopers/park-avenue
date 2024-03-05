@@ -66,10 +66,62 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "image_banner_carousel_kHh3er": {
+      "type": "image-banner-carousel",
+      "blocks": {
+        "slide_JDtQ8t": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_4192_ed362d36-992e-4765-bcdb-afa417aefdeb.png",
+            "image_link": "",
+            "title": "CORPORATE SELECTIONS",
+            "title_size": "h2",
+            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
+          }
+        },
+        "slide_rtYjiU": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_4192_ed362d36-992e-4765-bcdb-afa417aefdeb.png",
+            "image_link": "",
+            "title": "CORPORATE SELECTIONS",
+            "title_size": "h2",
+            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
+          }
+        },
+        "slide_Wy6LVY": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_4192_ed362d36-992e-4765-bcdb-afa417aefdeb.png",
+            "image_link": "",
+            "title": "CORPORATE SELECTIONS",
+            "title_size": "h2",
+            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
+          }
+        }
+      },
+      "block_order": [
+        "slide_JDtQ8t",
+        "slide_rtYjiU",
+        "slide_Wy6LVY"
+      ],
+      "settings": {
+        "section_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "splide_height": 600,
+        "banner_content_check": false,
+        "carousel_arrows": false,
+        "heading": "Exclusive $ Collections",
+        "layout": false,
+        "content_position": "top-left"
+      }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "image_banner_carousel_kHh3er"
   ]
 }
