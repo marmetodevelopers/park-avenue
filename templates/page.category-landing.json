@@ -13,10 +13,32 @@
             "title_size": "h2",
             "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
           }
+        },
+        "slide_qaiFbg": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4256_ee0aed95-8594-4390-9dc0-2d4dabe2ee1b.png",
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3_ac05e808-d999-410e-8aa1-f39f33b4f7ba.png",
+            "image_link": "",
+            "title": "CORPORATE SELECTIONS",
+            "title_size": "h2",
+            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
+          }
+        },
+        "slide_VNhcJA": {
+          "type": "slide",
+          "settings": {
+            "image_link": "",
+            "title": "CORPORATE SELECTIONS",
+            "title_size": "h2",
+            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
+          }
         }
       },
       "block_order": [
-        "slide_NdpxbK"
+        "slide_NdpxbK",
+        "slide_qaiFbg",
+        "slide_VNhcJA"
       ],
       "settings": {
         "section_color_scheme": "",
