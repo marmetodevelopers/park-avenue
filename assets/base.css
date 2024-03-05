@@ -402,10 +402,12 @@ blockquote {
   }
 }
 .caption {
-  font-size: 1.4rem;
-  font-weight: 400;
-  color: #fff;
+	font-size: 1.4rem;
+	font-weight: 400;
 }
+.color-accent-1 .caption {
+	color: #fff;
+}	
 .caption-with-letter-spacing {
   font-size: 1.4rem;
   letter-spacing: 0.13rem;
