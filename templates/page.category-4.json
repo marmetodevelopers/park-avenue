@@ -270,55 +270,14 @@
         "content_position": "bottom-center"
       }
     },
-    "image_banner_carousel_EVPagW": {
-      "type": "image-banner-carousel",
-      "blocks": {
-        "slide_FVUEXc": {
-          "type": "slide",
-          "settings": {
-            "image_small": "shopify:\/\/shop_images\/Rectangle_4302.png",
-            "image_desktop": "shopify:\/\/shop_images\/Rectangle_4192.png",
-            "image_link": "",
-            "title": "CORPORATE SELECTIONS",
-            "title_size": "h2",
-            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
-          }
-        },
-        "slide_i3xxdi": {
-          "type": "slide",
-          "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3.png",
-            "image_link": "",
-            "title": "CORPORATE SELECTIONS",
-            "title_size": "h2",
-            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
-          }
-        }
-      },
-      "block_order": [
-        "slide_FVUEXc",
-        "slide_i3xxdi"
-      ],
-      "settings": {
-        "section_color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "splide_height": 600,
-        "banner_content_check": false,
-        "carousel_arrows": true,
-        "heading": "",
-        "layout": false,
-        "content_position": "top-left"
-      }
-    },
     "hotspot_carousel_tcbte9": {
       "type": "hotspot-carousel",
       "blocks": {
         "slide_KgNceM": {
           "type": "slide",
           "settings": {
-            "image_small": "shopify:\/\/shop_images\/Rectangle_4293.png",
-            "image_desktop": "shopify:\/\/shop_images\/Rectangle_841.png",
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4293_5ffb86c1-36cb-40f9-ac5c-e6546d36aa8c.png",
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_4293_76fea695-c2cb-47cf-87af-2da4d8dc0b26.png",
             "image_link": "",
             "title": "Classic Shirts",
             "title_size": "h2",
@@ -354,6 +313,47 @@
         "padding_bottom": 36,
         "carousel_arrows": true,
         "heading": "LOOK $ BOOK"
+      }
+    },
+    "image_banner_carousel_EVPagW": {
+      "type": "image-banner-carousel",
+      "blocks": {
+        "slide_FVUEXc": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4192_35420127-3f12-4315-a70c-ec7c7352bd2e.png",
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_4192_ed362d36-992e-4765-bcdb-afa417aefdeb.png",
+            "image_link": "",
+            "title": "TEXTURE - TWEETED",
+            "title_size": "h2",
+            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
+          }
+        },
+        "slide_i3xxdi": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3.png",
+            "image_link": "",
+            "title": "CORPORATE SELECTIONS",
+            "title_size": "h2",
+            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
+          }
+        }
+      },
+      "block_order": [
+        "slide_FVUEXc",
+        "slide_i3xxdi"
+      ],
+      "settings": {
+        "section_color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "splide_height": 600,
+        "banner_content_check": false,
+        "carousel_arrows": true,
+        "heading": "",
+        "layout": false,
+        "content_position": "top-left"
       }
     },
     "image_text_custom_JAQWH4": {
@@ -400,8 +400,8 @@
     "dynamic_grid_BrCNMw",
     "dynamic_grid_pwKUdJ",
     "image_banner_carousel_UymXp9",
-    "image_banner_carousel_EVPagW",
     "hotspot_carousel_tcbte9",
+    "image_banner_carousel_EVPagW",
     "image_text_custom_JAQWH4"
   ]
 }
