@@ -8,29 +8,241 @@
         "color_scheme": "background-1"
       }
     },
-    "product-grid": {
-      "type": "main-collection-product-grid",
+    "park_collections_carousel_VTJmi8": {
+      "type": "park-collections-carousel",
+      "blocks": {
+        "image_text_3eC6n3": {
+          "type": "image-text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Image.png",
+            "mobile_image": "shopify:\/\/shop_images\/Frame_1000005387_1.png",
+            "category_text": "BLAZERS",
+            "category_url": "shopify:\/\/collections"
+          }
+        },
+        "image_text_rjTi6V": {
+          "type": "image-text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Image_ef8fe242-8b52-4100-a840-f42d72111125.png",
+            "mobile_image": "shopify:\/\/shop_images\/Frame_1000005387_1.png",
+            "category_text": "JACKETS",
+            "category_url": "shopify:\/\/collections"
+          }
+        },
+        "image_text_CKwWpJ": {
+          "type": "image-text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Image_ef8fe242-8b52-4100-a840-f42d72111125.png",
+            "mobile_image": "shopify:\/\/shop_images\/Frame_1000005387_1.png",
+            "category_text": "SWEATER",
+            "category_url": "shopify:\/\/collections"
+          }
+        },
+        "image_text_YFTYPA": {
+          "type": "image-text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Image_69387712-a853-4f95-81c3-bac07610f62d.png",
+            "mobile_image": "shopify:\/\/shop_images\/Frame_1000005387_1.png",
+            "category_text": "SHIRTS",
+            "category_url": "shopify:\/\/collections"
+          }
+        }
+      },
+      "block_order": [
+        "image_text_3eC6n3",
+        "image_text_rjTi6V",
+        "image_text_CKwWpJ",
+        "image_text_YFTYPA"
+      ],
       "settings": {
-        "products_per_page": 16,
-        "columns_desktop": 4,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "enable_filtering": true,
-        "filter_type": "horizontal",
-        "enable_sorting": true,
-        "columns_mobile": "2",
+        "category_heading": "PARK $ COLLECTION'S",
         "padding_top": 36,
         "padding_bottom": 36
       }
-    }
-  },
-  "order": [
-    "banner",
-    "product-grid"
-  ]
+    },
+    "image_text_carousel_fKiyHn": {
+      "type": "image-text-carousel",
+      "blocks": {
+        "image_text_6ziGtw": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to express",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_EzpH7W": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to express",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_Qn4ETP": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to express",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_9tjUXT": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to express",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_ekbqpC": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to express",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        }
+      },
+      "block_order": [
+        "image_text_6ziGtw",
+        "image_text_EzpH7W",
+        "image_text_Qn4ETP",
+        "image_text_9tjUXT",
+        "image_text_ekbqpC"
+      ],
+      "settings": {
+        "heading": "New $ news",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "park_shop_the_looks_yETinB": {
+      "type": "park-shop-the-looks",
+      "blocks": {
+        "image_text_8yEd8B": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Placeholder.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4298.png",
+            "link": "shopify:\/\/blogs\/all-blogs",
+            "first_popup_image": "shopify:\/\/shop_images\/item.png",
+            "first_popup_title": "Formal Suit",
+            "second_popup_image": "shopify:\/\/shop_images\/item.png",
+            "second_popup_title": "Formal Suit"
+          }
+        },
+        "image_text_B9bm3n": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Placeholder.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4298.png",
+            "link": "shopify:\/\/blogs\/all-blogs",
+            "first_popup_image": "shopify:\/\/shop_images\/item.png",
+            "first_popup_title": "Formal Suit",
+            "second_popup_image": "shopify:\/\/shop_images\/item.png",
+            "second_popup_title": "Formal Suit"
+          }
+        },
+        "image_text_TJcPBM": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Placeholder.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4298.png",
+            "link": "shopify:\/\/blogs\/all-blogs",
+            "first_popup_image": "shopify:\/\/shop_images\/item.png",
+            "first_popup_title": "Formal Suit",
+            "second_popup_image": "shopify:\/\/shop_images\/item.png",
+            "second_popup_title": "Formal Suit"
+          }
+        }
+      },
+      "block_order": [
+        "image_text_8yEd8B",
+        "image_text_B9bm3n",
+        "image_text_TJcPBM"
+      ],
+      "settings": {
+        "heading": "SHOOP $ THE LOOK",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "park_trending_carousel_JhGKch": {
+      "type": "park-trending-carousel",
+      "blocks": {
+        "image_text_mybLiX": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4265.png",
+            "title": "DREAMY FORMAL",
+            "link": "shopify:\/\/blogs\/news"
+          }
+        },
+        "image_text_GLnw7f": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4265_1.png",
+            "title": "IDEAL CHOICE",
+            "link": "shopify:\/\/blogs\/news"
+          }
+        },
+        "image_text_3aAnYf": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265_2.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4265_2.png",
+            "title": "ILLUSION DRESS",
+            "link": "shopify:\/\/blogs\/news"
+          }
+        }
+      },
+      "block_order": [
+        "image_text_mybLiX",
+        "image_text_GLnw7f",
+        "image_text_3aAnYf"
+      ],
+      "settings": {
+        "heading": "VISIBLE $ CHOICES",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "image_background": "#EDEDED"
+      },
+      "product-grid": {
+        "type": "main-collection-product-grid",
+        "settings": {
+          "products_per_page": 16,
+          "columns_desktop": 4,
+          "color_scheme": "background-1",
+          "image_ratio": "adapt",
+          "image_shape": "default",
+          "show_secondary_image": false,
+          "show_vendor": false,
+          "show_rating": false,
+          "enable_quick_add": false,
+          "enable_filtering": true,
+          "filter_type": "horizontal",
+          "enable_sorting": true,
+          "columns_mobile": "2",
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      }
+    },
+    "order": [
+      "banner",
+      "park_collections_carousel_VTJmi8",
+      "image_text_carousel_fKiyHn",
+      "park_shop_the_looks_yETinB",
+      "park_trending_carousel_JhGKch",
+      "product-grid"
+    ]
+  }
 }

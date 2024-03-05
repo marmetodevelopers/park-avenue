@@ -19,11 +19,11 @@
     {% if section.settings.category_heading != blank %}
       {% render 'text-with-logo', text: section.settings.category_heading, css_class: 'h1 mb-3' %}
     {% endif %}
-    <div class="park_category_carousel_content">
+    <div class="park_collections_carousel_content">
       {% for block in section.blocks %}
         {%- case block.type -%}
           {%- when 'image-text' -%}
-            <div class="carousel_box">
+            <div class="carousel_box image_{{ forloop.index }}">
               <a href="{{ block.settings.category_url }}">
                 <div class="park_category_image_box">
                   {% render 'picture',
@@ -32,9 +32,8 @@
                     desktopSrc: block.settings.desktop_image
                   %}
                 </div>
+                <p class="h2 category_text">{{ block.settings.category_text }}</p>
               </a>
-              <p class="h2 category_text">{{ block.settings.category_text }}</p>
-              <div class="overlay"> </div>
             </div>
         {%- endcase -%}
       {% endfor %}
@@ -43,7 +42,7 @@
 </div>
 {% schema %}
 {
-  "name": "Park categories carousel",
+  "name": "Park collections carousel",
   "tag": "div",
   "settings": [
     {
@@ -102,7 +101,7 @@
   ],
   "presets": [
     {
-      "name": "Park categories carousel"
+      "name": "Park collections carousel"
     }
   ]
 }
