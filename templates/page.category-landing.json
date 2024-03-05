@@ -1,5 +1,35 @@
 {
   "sections": {
+    "image_banner_carousel_GFVY8Q": {
+      "type": "image-banner-carousel",
+      "blocks": {
+        "slide_NdpxbK": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4256_ee0aed95-8594-4390-9dc0-2d4dabe2ee1b.png",
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3_ac05e808-d999-410e-8aa1-f39f33b4f7ba.png",
+            "image_link": "",
+            "title": "CORPORATE SELECTIONS",
+            "title_size": "h2",
+            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
+          }
+        }
+      },
+      "block_order": [
+        "slide_NdpxbK"
+      ],
+      "settings": {
+        "section_color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "splide_height": 600,
+        "banner_content_check": false,
+        "carousel_arrows": false,
+        "heading": "Exclusive $ Collections",
+        "layout": false,
+        "content_position": "top-left"
+      }
+    },
     "park_collections_carousel_VTJmi8": {
       "type": "park-collections-carousel",
       "blocks": {
@@ -251,6 +281,7 @@
     }
   },
   "order": [
+    "image_banner_carousel_GFVY8Q",
     "park_collections_carousel_VTJmi8",
     "image_text_carousel_fKiyHn",
     "park_shop_the_looks_yETinB",
