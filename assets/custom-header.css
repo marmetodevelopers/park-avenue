@@ -103,7 +103,7 @@
 .brands_dropdown details {
 	width: fit-content;
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 989px) {
 	.brands__wrapper{
 		border-top: unset;
 		top: 90px;

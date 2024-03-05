@@ -2414,7 +2414,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
 	fill: black;
 }
 
-@media only screen and (min-width: 749px){
+@media only screen and (min-width: 989px){
 	.header {
 		grid-template-areas: 'left-icons heading icons';
 		grid-template-columns: 1fr 2fr 1fr;
@@ -2504,7 +2504,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
     order: 3
 }
 
-@media only screen and (min-width: 749px){
+@media only screen and (min-width: 989px){
 	.header__heading,
 	.header__heading-link {
 		grid-column: unset;
@@ -2771,11 +2771,6 @@ details[open] .modal-overlay::after {
 
 	.search-modal__content {
 		padding: 0 6rem;
-	}
-	.header__heading,
-	.header__heading-link {
-		grid-column: unset;
-    	order: unset
 	}
 }
 
