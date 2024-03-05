@@ -73,8 +73,8 @@
         "contact_text_9QF7TC"
       ],
       "settings": {
-        "color_scheme": "background-2",
-        "color_scheme_bottom": "",
+        "color_scheme": "accent-1",
+        "color_scheme_bottom": "background-1",
         "footer_logo": "shopify:\/\/shop_images\/footer_logo_0f32d2d3-d3b8-4390-b2a3-09e7e83e942e.png",
         "newsletter_enable": true,
         "newsletter_heading": "Newsletter",
