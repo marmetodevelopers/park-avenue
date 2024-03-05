@@ -322,41 +322,28 @@
   text-align: center;
 }
 
-.park_shop_the_look .hotspot_first_content {
+.park_shop_the_look .hotspot_first_content, .hotspot_second_content {
   position: relative;
   width: 218px;
   height: 303px;
 }
 
-.park_shop_the_look .hotspot_second_content {
-  position: relative;
-  width: 218px;
-  height: 303px;
+.park_shop_the_look .popup_box {
+    position: absolute;
+    top: 0px;
+    padding: 18px 13px 0px 13px;
+    background-color: #FFF;
 }
 
 .park_shop_the_look .first_popup_box {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  padding: 18px 13px 0px 13px;
-  background-color: #FFF;
+  left: 0px;  
 }
 
 .park_shop_the_look .second_popup_box {
-  position: absolute;
-  top: 0px;
   right: 0px;
-  padding: 18px 13px 0px 13px;
-  background-color: #FFF;
 }
 
-.park_shop_the_look .first_popup_pic img {
-  width: 189px;
-  height: auto;
-  aspect-ratio: 0.84;
-}
-
-.park_shop_the_look .second_popup_pic img {
+.park_shop_the_look .first_popup_pic img, .second_popup_pic img {
   width: 189px;
   height: auto;
   aspect-ratio: 0.84;
