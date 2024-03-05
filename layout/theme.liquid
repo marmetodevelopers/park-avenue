@@ -69,8 +69,8 @@
 
       @font-face {
         font-display: swap;
-        font-family: "jost";
-        src: url('{{ 'Jost-font.ttf' | asset_url }}') format("ttf");
+        font-family: "Jost";
+        src: url('https://cdn.shopify.com/s/files/1/0850/0402/6136/files/Jost-Regular.ttf?v=1709212384') format("opentype");
       }
 
       {% for scheme in settings.color_schemes -%}
@@ -138,7 +138,7 @@
       {% endfor %}
 
       {{ scheme_classes | prepend: 'body' }} {
-        color: rgba(var(--color-foreground), 0.75);
+        color: rgba(var(--color-foreground));
         background-color: rgb(var(--color-background));
       }
 
@@ -147,7 +147,6 @@
         --font-body-style: {{ settings.type_body_font.style }};
         --font-body-weight: {{ settings.type_body_font.weight }};
         --font-body-weight-bold: {{ settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
-
         --font-heading-family: jost;
         --font-heading-style: {{ settings.type_header_font.style }};
         --font-heading-weight: {{ settings.type_header_font.weight }};
@@ -308,6 +307,7 @@ body {
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
+    {{ 'custom-header.css' | asset_url | stylesheet_tag }}
     {{ 'custom.css' | asset_url | stylesheet_tag }}
 
 
