@@ -103,6 +103,9 @@
 .brands_dropdown details {
 	width: fit-content;
 }
+
+/* ---- Configured for Mobile & Tablet devices  ---- */
+
 @media screen and (min-width: 989px) {
 	.brands__wrapper{
 		border-top: unset;
