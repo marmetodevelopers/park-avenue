@@ -137,8 +137,8 @@
         "slide_PDb9cF": {
           "type": "slide",
           "settings": {
-            "image_small": "shopify:\/\/shop_images\/Rectangle_4302.png",
-            "image_desktop": "shopify:\/\/shop_images\/Rectangle_4258.png",
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4302_2e17b5f1-0f71-4275-9c48-3679fd27ed6b.png",
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_4258_5e7fffe5-b7c7-4cd0-ae4b-42e4b8d2fa4c.png",
             "image_link": "",
             "title": "BUSINESS SHIRTS",
             "title_size": "h2",
@@ -169,47 +169,6 @@
         "heading": "Exclusive $ Collections",
         "layout": true,
         "content_position": "bottom-center"
-      }
-    },
-    "image_banner_carousel_EVPagW": {
-      "type": "image-banner-carousel",
-      "blocks": {
-        "slide_FVUEXc": {
-          "type": "slide",
-          "settings": {
-            "image_small": "shopify:\/\/shop_images\/Rectangle_4302.png",
-            "image_desktop": "shopify:\/\/shop_images\/Rectangle_4192.png",
-            "image_link": "",
-            "title": "CORPORATE SELECTIONS",
-            "title_size": "h2",
-            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
-          }
-        },
-        "slide_i3xxdi": {
-          "type": "slide",
-          "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3.png",
-            "image_link": "",
-            "title": "CORPORATE SELECTIONS",
-            "title_size": "h2",
-            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
-          }
-        }
-      },
-      "block_order": [
-        "slide_FVUEXc",
-        "slide_i3xxdi"
-      ],
-      "settings": {
-        "section_color_scheme": "background-1",
-        "padding_top": 32,
-        "padding_bottom": 32,
-        "splide_height": 600,
-        "banner_content_check": false,
-        "carousel_arrows": true,
-        "heading": "",
-        "layout": false,
-        "content_position": "top-left"
       }
     },
     "dynamic_grid_BrCNMw": {
@@ -308,6 +267,47 @@
         "media_hover": true
       }
     },
+    "image_banner_carousel_EVPagW": {
+      "type": "image-banner-carousel",
+      "blocks": {
+        "slide_FVUEXc": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4302.png",
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_4192.png",
+            "image_link": "",
+            "title": "CORPORATE SELECTIONS",
+            "title_size": "h2",
+            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
+          }
+        },
+        "slide_i3xxdi": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3.png",
+            "image_link": "",
+            "title": "CORPORATE SELECTIONS",
+            "title_size": "h2",
+            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
+          }
+        }
+      },
+      "block_order": [
+        "slide_FVUEXc",
+        "slide_i3xxdi"
+      ],
+      "settings": {
+        "section_color_scheme": "background-1",
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "splide_height": 600,
+        "banner_content_check": false,
+        "carousel_arrows": true,
+        "heading": "",
+        "layout": false,
+        "content_position": "top-left"
+      }
+    },
     "hotspot_carousel_tcbte9": {
       "type": "hotspot-carousel",
       "blocks": {
@@ -396,8 +396,8 @@
     "image_banner_carousel_x8JDPe",
     "dynamic_grid_pwKUdJ",
     "image_banner_carousel_UymXp9",
-    "image_banner_carousel_EVPagW",
     "dynamic_grid_BrCNMw",
+    "image_banner_carousel_EVPagW",
     "hotspot_carousel_tcbte9",
     "image_text_custom_JAQWH4"
   ]
