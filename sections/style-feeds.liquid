@@ -1,5 +1,5 @@
 {{ 'style-feeds.css' |  asset_url |  stylesheet_tag }}
-{% comment %} {{ 'custom.css' |  asset_url |  stylesheet_tag }} {% endcomment %}
+{{ "custom.css" |  asset_url |  stylesheet_tag }}
 <script src="{{ 'splide-slider.js' |  asset_url }}" defer="defer"></script>
 {% style %}
     .padding-{{ section.id }} {
@@ -24,12 +24,10 @@
                 {% for block in section.blocks %}
                     <li class="splide__slide">
                         {% if block.settings.image != blank and block.settings.mobile_image != blank %}
-                            {% render "picture", class: "media media--16-9 desktop-image", desktopSrc: block.settings.image %}
-                            {% render "picture", class: "media media--portrait mobile-image", mobileSrc: block.settings.mobile_image %}
+                            {% render "picture", class: "media style-feed-custom-image", mobileSrc: block.settings.mobile_image, desktopSrc: block.settings.image %}
                         {%elsif block.settings.video != blank %}
                             <div class="video_container">
                                 {{ block.settings.video | video_tag: autoplay: false, loop: true, muted: true, controls: true }}
-                                <button class="play-pause-button"> </button>
                             </div>
                         {% endif %}
                     </li>
@@ -38,16 +36,16 @@
         </div>
     </div>
 
-    <div class="page-width main-style-feed-thumbnail-slider splide" id="thumbnail-slider">
+    <div class="page-width splide-container main-style-feed-thumbnail-slider splide" id="thumbnail-slider">
+        {% comment %} {% render "splide-arrows" %}     {% endcomment %}
         <div class="splide__track">
-            {% render "splide-arrows" %}
             <ul class="splide__list">
                 {% for block in section.blocks %}
                     <li class="splide__slide">
                         {% if block.settings.image != blank and block.settings.mobile_image != blank %}
-                            {% render "picture", class: "media media--square", mobileSrc: block.settings.image, desktopSrc: block.settings.image  %}
+                            {% render "picture", class: "media style-feed-thumbnail-image", mobileSrc: block.settings.image, desktopSrc: block.settings.image  %}
                         {% elsif block.settings.video != blank %}
-                            {% render "picture", class: "media media--square", mobileSrc: block.settings.video_cover_image, desktopSrc: block.settings.video_cover_image %}
+                            {% render "picture", class: "media style-feed-thumbnail-image", mobileSrc: block.settings.video_cover_image, desktopSrc: block.settings.video_cover_image %}
                         {% endif %}
                     </li>
                 {% endfor %}

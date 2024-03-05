@@ -75,7 +75,8 @@
         "slide_media_twMkAY": {
           "type": "slide-media",
           "settings": {
-            "video": "shopify:\/\/files\/videos\/Nature Beautiful short video 720p HD.mp4"
+            "video": "shopify:\/\/files\/videos\/Nature Beautiful short video 720p HD.mp4",
+            "video_cover_image": "shopify:\/\/shop_images\/thumbnail2.png"
           }
         }
       },
@@ -142,7 +143,7 @@
             "content_layout": "no-overlap",
             "heading": "",
             "heading_size": "h1",
-            "caption": "Add a tagline",
+            "caption": "",
             "caption_text_style": "caption-with-letter-spacing",
             "text_size": "medium",
             "text": "<p>The record  is my all-time favourite. It's really amazing. I discovered that the crosswalk's stripes could be readily raised to resemble stripes, which gave me the idea to replicate a crossing. The guys had to be positioned carefully so that it appeared as though they were strolling across your clothes.<br\/><br\/>-Creative Director  Arun Deepak<\/p>",
@@ -207,7 +208,7 @@
       "type": "offer-timer",
       "settings": {
         "banner_image": "shopify:\/\/shop_images\/timer.png",
-        "date": "31\/12\/2025",
+        "date": "31\/3\/2024",
         "color_scheme": "",
         "mobile-padding-top": 48,
         "mobile-padding-bottom": 0,

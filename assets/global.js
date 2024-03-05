@@ -1304,11 +1304,12 @@ const thumbnailCarousel = document.querySelector(".main-style-feed-thumbnail-sli
             isNavigation: true,
             gap: 10,
             focus: 'left',
-            pagination: false,
+            pagination: true,
             breakpoints: {
                 750: {
                     fixedWidth: 103,
                     fixedHeight: 100,
+                    pagination: false
                 },
             },
             cover: true,
@@ -1332,7 +1333,7 @@ if(imageWithTextCarousel){
         breakpoints: {
             750: {
                 perPage: 1,
-                pagination: true,
+                pagination: false
             }
         }
     });
