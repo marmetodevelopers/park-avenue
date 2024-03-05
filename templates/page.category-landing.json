@@ -214,6 +214,32 @@
     },
     "image_text_custom_MiYcA3": {
       "type": "image-text-custom",
+      "blocks": {
+        "title_R8dUqH": {
+          "type": "title",
+          "settings": {
+            "title": "Find Your Store"
+          }
+        },
+        "description_YkjnEL": {
+          "type": "description",
+          "settings": {
+            "subtitle": "<ul><li>The store locator helps customers easily find their nearest Raymond retail store or shop-in-shop.<\/li><li>It allows users to search by city, pincode or current location to pull up results on a map.<\/li><li>Users can input the city or pincode in the search bar to view all Raymond outlets within that location.<\/li><li>When accessing from a mobile device, it automatically detects the user's current location for nearby stores.<\/li><\/ul>"
+          }
+        },
+        "button_kPPirN": {
+          "type": "button",
+          "settings": {
+            "button_text": "View Store",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_R8dUqH",
+        "description_YkjnEL",
+        "button_kPPirN"
+      ],
       "settings": {
         "heading": "STORE $ LOCATOR",
         "section_color_scheme": "",
