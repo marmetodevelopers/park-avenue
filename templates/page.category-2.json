@@ -89,7 +89,7 @@
         "slide_79UYMm"
       ],
       "settings": {
-        "section_color_scheme": "background-1",
+        "section_color_scheme": "accent-1",
         "padding_top": 64,
         "padding_bottom": 32,
         "splide_height": 550,
@@ -162,8 +162,8 @@
       ],
       "settings": {
         "heading": "",
-        "padding_top": 30,
-        "padding_bottom": 30,
+        "padding_top": 32,
+        "padding_bottom": 32,
         "desktop_height": 610,
         "mobile_height": 720,
         "row_mobile": 2,
@@ -347,8 +347,8 @@
       ],
       "settings": {
         "heading": "Exclusive $ Collections",
-        "padding_top": 30,
-        "padding_bottom": 30,
+        "padding_top": 32,
+        "padding_bottom": 32,
         "desktop_height": 295,
         "mobile_height": 200,
         "row_mobile": 4,
