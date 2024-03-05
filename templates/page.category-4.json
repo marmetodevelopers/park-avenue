@@ -148,8 +148,8 @@
       ],
       "settings": {
         "heading": "Exclusive $ Collections",
-        "padding_top": 40,
-        "padding_bottom": 40,
+        "padding_top": 65,
+        "padding_bottom": 30,
         "desktop_height": 295,
         "mobile_height": 200,
         "row_mobile": 4,
