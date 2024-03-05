@@ -2426,12 +2426,35 @@ details[open] > .header__submenu {
 	color: rgb(var(--color-foreground));
 }
 .header__menu-item span {
-	transition: text-decoration var(--duration-short) ease;
+	position: relative;
+	transition: all var(--duration-long) ease;
 }
-.header__menu-item:hover span {
+.header__menu-item span::after{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	will-change: transform;
+	height: 2px;
+	transform: scaleX(0);
+	transform-origin: left center;
+	transition: all .25s cubic-bezier(.104,.204,.492,1);
+	background: rgba(0, 0, 0, 0.45);
+}
+
+.header__menu-item:hover span::after, 
+.header__menu-item:focus span::after{
+	transform: scale(1, 1);
+}
+
+/* ---- This is DAWN's default hover effect! So to use this uncommment the lines ---- */
+/* .header__menu-item:hover span {
 	text-decoration: underline;
 	text-underline-offset: 0.3rem;
-}
+} */
+
 details[open] > .header__menu-item {
 	text-decoration: underline;
 }
@@ -2442,10 +2465,9 @@ details[open] > .header__menu-item .icon-caret {
 	transform: rotate(180deg);
 }
 .header__active-menu-item {
-	transition: text-decoration-thickness var(--duration-short) ease;
+	transition: all var(--duration-long) ease;
 	color: rgb(var(--color-foreground));
-	text-decoration: underline;
-	text-underline-offset: 0.3rem;
+	border-bottom: 2px solid #8c8c8c;
 }
 .header__menu-item:hover .header__active-menu-item {
 	text-decoration-thickness: 0.2rem;

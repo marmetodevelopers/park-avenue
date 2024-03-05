@@ -148,7 +148,26 @@ details[open].menu-opening > .menu-drawer__submenu {
   right: 3rem;
 }
 
-.menu-drawer__menu-item--active,
+/* ---- Custom Code for active class---- */
+
+.menu-drawer__menu-item--active span{
+  position: relative;
+}
+
+.menu-drawer__menu-item--active span::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+
+/* ---- These styles are from DAWN's default hamburger menu Commented for "FUTURE" Reference ---- */
+
+/* .menu-drawer__menu-item--active,
 .menu-drawer__menu-item:focus,
 .menu-drawer__close-button:focus,
 .menu-drawer__menu-item:hover,
@@ -159,7 +178,9 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 .menu-drawer__menu-item--active:hover {
   background-color: rgba(var(--color-foreground), 0.08);
-}
+} */
+
+/* ------------------------------- END --------------------------------- */
 
 .js .menu-drawer__menu-item .icon-caret,
 .no-js .menu-drawer .icon-arrow {
