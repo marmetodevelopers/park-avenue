@@ -22,10 +22,11 @@
             "subtitle": ""
           }
         },
-        "slide_jwiMer": {
+        "slide_6iUBYH": {
           "type": "slide",
           "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/Rectangle_4192.png",
+            "image_small": "shopify:\/\/shop_images\/Frame_1000005354.png",
+            "image_desktop": "shopify:\/\/shop_images\/Frame_1000004958.png",
             "image_link": "",
             "title": "",
             "title_size": "h2",
@@ -44,7 +45,7 @@
       },
       "block_order": [
         "slide_RWVLfi",
-        "slide_jwiMer",
+        "slide_6iUBYH",
         "slide_jVdQp7"
       ],
       "settings": {
@@ -66,7 +67,7 @@
           "type": "slide",
           "settings": {
             "image_small": "shopify:\/\/shop_images\/Rectangle_4302.png",
-            "image_desktop": "shopify:\/\/shop_images\/Rectangle_4258.png",
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_4258_2493a7d3-28c1-4435-bbdd-cf256e381e61.png",
             "image_link": "",
             "title": "BUSINESS SHIRTS",
             "title_size": "h2",
