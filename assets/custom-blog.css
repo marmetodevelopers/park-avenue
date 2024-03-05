@@ -186,8 +186,13 @@ p {
 }
 
 @media screen and (max-width: 749px) {
+
+  .blog-heading{
+    padding-top: 3.2rem;
+
+  }
   .blog-content {
-    padding-bottom: 8.5rem;
+    padding-bottom: 3.2rem;
     max-width: 100%;
     text-align: center;
     padding-left: 1.7rem;
