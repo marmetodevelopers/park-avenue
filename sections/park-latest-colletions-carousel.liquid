@@ -1,0 +1,145 @@
+{{ 'home-custom.css' | asset_url | stylesheet_tag }}
+
+<style>
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+</style>
+
+<div class="section-{{ section.id }}-padding">
+  <div class="page-width">
+    <div class="park_latest_collection_image_text_carousel">
+      {% if section.settings.heading != blank %}
+        {% render 'text-with-logo', text: section.settings.heading, css_class: 'h1 mb-3' %}
+      {% endif %}
+
+      <splide-carousel 
+        class="splide" 
+        id="{{ section.id }}"
+        data-desktop-per-page="3"
+        data-mobile-per-page="1"
+        data-gap="29"
+        data-desktop-arrow="true"
+        data-mobile-arrow="true"
+        data-desktop-pagination="true"
+        data-mobile-pagination="true"
+      >
+        <div class="splide__arrows img_txt_carousel_arrows park_latest_pd_il">
+          <button class="splide__arrow splide__arrow--prev">
+            {% render 'splide-left-arrow' %}
+          </button>
+          <button class="splide__arrow splide__arrow--next">
+            {% render 'splide-right-arrow' %}
+          </button>
+        </div>
+        <div class="splide__track">
+          <div class="splide__list">
+            {% for block in section.blocks %}
+              {%- case block.type -%}
+                {%- when 'image_text' -%}
+                  <div class="splide__slide">
+                    <a href="{{ block.settings.link }}">
+                      <div class="park_latest_collection_image_box">
+                        {% render 'picture',
+                          class: '',
+                          mobileSrc: block.settings.mobile_image,
+                          desktopSrc: block.settings.desktop_image
+                        %}
+                      </div>
+                      <div class="park_latest_collection_title_box">
+                        <p class="h2 park_latest_collection_title">{{ block.settings.title }}</p>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="24"
+                          viewBox="0 0 25 24"
+                          fill="none"
+                          style="background: black;"
+                        >
+                          <path d="M18.4453 12.7969L10.9453 20.2969C10.734 20.5082 10.4473 20.627 10.1484 20.627C9.84955 20.627 9.56291 20.5082 9.35156 20.2969C9.14022 20.0855 9.02148 19.7989 9.02148 19.5C9.02148 19.2011 9.14022 18.9145 9.35156 18.7031L16.0556 12.0009L9.35344 5.29687C9.24879 5.19223 9.16578 5.06799 9.10914 4.93126C9.05251 4.79454 9.02336 4.64799 9.02336 4.5C9.02336 4.35201 9.05251 4.20546 9.10914 4.06873C9.16578 3.932 9.24879 3.80777 9.35344 3.70312C9.45808 3.59848 9.58232 3.51547 9.71905 3.45883C9.85577 3.4022 10.0023 3.37305 10.1503 3.37305C10.2983 3.37305 10.4448 3.4022 10.5816 3.45883C10.7183 3.51547 10.8425 3.59848 10.9472 3.70312L18.4472 11.2031C18.5519 11.3078 18.635 11.4321 18.6916 11.5689C18.7483 11.7057 18.7773 11.8523 18.7771 12.0004C18.777 12.1485 18.7476 12.295 18.6906 12.4317C18.6337 12.5684 18.5503 12.6925 18.4453 12.7969Z" fill="white"/>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+              {%- endcase -%}
+            {% endfor %}
+          </div>
+        </div>
+      </splide-carousel>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Park latest collections",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Enter heading text"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "name": "image text",
+      "type": "image_text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "desktop_image",
+          "label": "Select desktop image"
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile_image",
+          "label": "Select mobile image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Enter title"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Choose url"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Park latest collections"
+    }
+  ]
+}
+{% endschema %}
