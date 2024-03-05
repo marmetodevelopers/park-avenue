@@ -120,6 +120,7 @@ textarea#ContactForm-body{
 .information-contact{
     padding-bottom: 1.6rem;
     display: flex;
+    gap: 2.8px;
 }
 .informatiion-first-address{
     max-width: 331px;
@@ -200,6 +201,10 @@ textarea#ContactForm-body{
     }
     .contact-information-subcontainer{
         max-width: 100%;
+    }
+    .information-contact{
+        gap: 1.6rem;
+
     }
     
 }

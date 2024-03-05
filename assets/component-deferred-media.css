@@ -122,3 +122,16 @@
   }
   
  }
+
+ @media screen and (min-width: 750px) and (max-width: 989px){
+  .cover-text{
+    font-size: 12px;
+    line-height: 21.44px;
+
+  }
+  #cover-container svg{
+    height: 30px;
+    width: 30px;
+  }
+
+ }
