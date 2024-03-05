@@ -162,7 +162,11 @@
       "settings": {
         "heading": "SHOOP $ THE LOOK",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "first_hotspot_top": 20,
+        "first_hotspot_left": 20,
+        "second_hotspot_top": 20,
+        "second_hotspot_right": 70
       }
     },
     "park_trending_carousel_JhGKch": {
@@ -207,12 +211,24 @@
         "padding_bottom": 36,
         "image_background": "#EDEDED"
       }
+    },
+    "image_text_custom_MiYcA3": {
+      "type": "image-text-custom",
+      "settings": {
+        "heading": "STORE $ LOCATOR",
+        "section_color_scheme": "",
+        "padding_top": 32,
+        "padding_bottom": 64,
+        "image_small": "shopify:\/\/shop_images\/Vector.png",
+        "image_desktop": "shopify:\/\/shop_images\/Vector.png"
+      }
     }
   },
   "order": [
     "park_collections_carousel_VTJmi8",
     "image_text_carousel_fKiyHn",
     "park_shop_the_looks_yETinB",
-    "park_trending_carousel_JhGKch"
+    "park_trending_carousel_JhGKch",
+    "image_text_custom_MiYcA3"
   ]
 }
