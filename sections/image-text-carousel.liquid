@@ -15,7 +15,7 @@
 </style>
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
-  <div class="page-width">
+  <div class="image_text_carousel-main" id="image_text_carousel-main">
     <div class="image_text_carousel">
       {% if section.settings.heading != blank %}
         {% render 'text-with-logo', text: section.settings.heading, css_class: 'h1 mb-3' %}
@@ -45,7 +45,7 @@
             {% for block in section.blocks %}
               {%- case block.type -%}
                 {%- when 'image_text' -%}
-                  <div class="splide__slide">
+                  <div class="splide__slide splide-box">
                     <a href="{{ block.settings.link }}">
                       <div class="image_box">
                         {% render 'picture',

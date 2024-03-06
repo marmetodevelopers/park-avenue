@@ -9,14 +9,49 @@
 .image_text_carousel .title {
     text-align: center;
 }
+.splide-box {
+    border: 1px solid #000;
+}
+.image_text_carousel-main{
+    padding-left: 12.2rem;
+}
+.image_text_carousel .splide__pagination{
+    padding-right: 12.2rem;
+}
+
+@media screen and (max-width:749px){
+    .image_text_carousel-main{
+        padding-left: 1.5rem;
+    }
+    .image_text_carousel .splide__pagination{
+        padding-right: 1.5rem;
+    }
+
+}
+
 
 /* To override the splide default style important required */
 
 .image_text_carousel .image_text_pd_il {
     padding: 0 !important;
+    padding-right: 12.2rem !important;
+}
+@media screen and (max-width:749px){
+    .image_text_carousel .image_text_pd_il {
+        padding-right: 1.5rem !important;
+    }
+
 }
 
 /* Park categories carousel style */
+.park_category_carousel_content-top{
+    padding: 0 12.2rem;
+}
+@media screen and (max-width:749px){
+    .park_category_carousel_content-top{
+        padding: 0;
+    }
+}
 
 .park_category_carousel_content {
     display: grid;
@@ -37,6 +72,9 @@
 .park_category_carousel_content .carousel_box {
     position: relative;
 }
+ .park_category_carousel_content p{
+    margin: 0;
+ }
 
 .park_category_carousel_content .category_text {
     position: absolute;
@@ -46,6 +84,7 @@
     z-index: 2;
     text-align: center;
     color: #FFF;
+    width: 100%;
 }
 
 .carousel_box .overlay {
@@ -75,6 +114,7 @@
 
     .park_category_carousel_content .category_text {
         bottom: 57px;
+        width: 100%;
     }
 
 }
