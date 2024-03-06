@@ -283,21 +283,12 @@
     "park_trending_carousel_zpaQxH": {
       "type": "park-trending-carousel",
       "blocks": {
-        "image_text_PqKJd3": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265_1.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4265_1.png",
-            "title": "",
-            "link": ""
-          }
-        },
         "image_text_JLTKhV": {
           "type": "image_text",
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265_1.png",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4265_1.png",
-            "title": "Shirts",
+            "title": "Dreamy Formal",
             "link": ""
           }
         },
@@ -306,7 +297,7 @@
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265.png",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4265.png",
-            "title": "Suits",
+            "title": "Ideal Choice",
             "link": ""
           }
         },
@@ -315,22 +306,21 @@
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265_2.png",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4265_2.png",
-            "title": "Styles",
+            "title": "Illusion Dress",
             "link": ""
           }
         }
       },
       "block_order": [
-        "image_text_PqKJd3",
         "image_text_JLTKhV",
         "image_text_VFGQD6",
         "image_text_QpfmpR"
       ],
       "settings": {
-        "heading": "Park $ trending",
+        "heading": "Visible $ Choices",
         "padding_top": 36,
         "padding_bottom": 36,
-        "image_background": ""
+        "image_background": "#ededed"
       }
     },
     "image_text_custom_JULYPf": {
