@@ -152,18 +152,6 @@
     aspect-ratio: 0.68;
 }
 
-.park_trending_image_text_carousel .park_trending_image_box {
-    position: relative;
-    bottom: 20px;
-}
-
-/* .park_trending_image_text_carousel .park_trending_overflow_image {
-    margin-top: 20px;
-    padding: 0px 20px 0px 20px;
-    border: 1px solid gray;
-    border-bottom: none;
-} */
-
 .park_trending_image_text_carousel .park_trending_title {
     padding: 16px;
     border: 1px solid gray;

@@ -7,11 +7,11 @@
   }
 
   {% if section.settings.image_flow %}
-    <!-- HTML to display when the checkbox is checked -->
     .park_trending_image_text_carousel .park_trending_image_box {
       position: relative;
       bottom: 20px;
     }
+
     .park_trending_image_text_carousel .park_trending_overflow_image {
       margin-top: 20px;
       padding: 0px 20px 0px 20px;
@@ -19,11 +19,11 @@
       border-bottom: none;
     }
   {% else %}
-    <!-- HTML to display when the checkbox is not checked -->
     .park_trending_image_text_carousel .park_trending_image_box {
       position: relative;
       bottom: 0px;
     }
+    
     .park_trending_image_text_carousel .park_trending_overflow_image {
       margin-top: 0px;
       padding: 0px 0px 0px 0px;
@@ -31,7 +31,7 @@
       border-bottom: none;
     }
   {% endif %}
-  
+
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
@@ -49,7 +49,7 @@
       {% endif %}
 
       <splide-carousel
-        class="splide" 
+        class="splide"
         id="{{ section.id }}"
         data-desktop-per-page="3"
         data-mobile-per-page="1"
@@ -74,7 +74,10 @@
                 {%- when 'image_text' -%}
                   <div class="splide__slide trending_slides">
                     <a href="{{ block.settings.link }}">
-                      <div class="park_trending_overflow_image" style="background: {{ section.settings.image_background }}">
+                      <div
+                        class="park_trending_overflow_image"
+                        style="background: {{ section.settings.image_background }}"
+                      >
                         <div class="park_trending_image_box">
                           {% render 'picture',
                             class: '',
@@ -134,7 +137,7 @@
       "id": "image_flow",
       "label": "Image overflow",
       "default": true
-    }        
+    }
   ],
   "blocks": [
     {

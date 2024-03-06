@@ -17,6 +17,7 @@ class SplideCarousel extends HTMLElement {
             rewindSpeed: 1000,
             start: 1,
             perMove:1,
+            autoplay: true,
             perPage: this.perPageDesktop,
             gap: `${this.gapValue}px`,
             arrows: this.arrowDesktop,
@@ -53,8 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         element.addEventListener('mouseleave', (event) => {
-            event.target.nextElementSibling.style.display = 'none';
-            event.target.nextElementSibling.nextElementSibling.style.display = 'none';
+            event.currentTarget.nextElementSibling.style.display = 'none';
+            event.currentTarget.nextElementSibling.nextElementSibling.style.display = 'none';
         });
     });
 });
