@@ -162,7 +162,11 @@
       "settings": {
         "heading": "SHOOP $ THE LOOK",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "first_hotspot_top": 20,
+        "first_hotspot_left": 20,
+        "second_hotspot_top": 20,
+        "second_hotspot_right": 70
       }
     },
     "park_trending_carousel_JhGKch": {
@@ -205,7 +209,8 @@
         "heading": "VISIBLE $ CHOICES",
         "padding_top": 36,
         "padding_bottom": 36,
-        "image_background": "#EDEDED"
+        "image_background": "#EDEDED",
+        "image_flow": false
       }
     }
   },

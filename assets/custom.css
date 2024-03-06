@@ -59,6 +59,10 @@ a {
 
 .ibc_pagination {
 	position: initial;
+	gap: 8px;
+	@media  screen and (min-width: 750px) {
+		gap: 14px;		
+	}
 }
 
 .splide__track {

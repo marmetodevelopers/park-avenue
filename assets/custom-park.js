@@ -16,6 +16,7 @@ class SplideCarousel extends HTMLElement {
             rewind: true,
             rewindSpeed: 1000,
             start: 1,
+            perMove:1,
             perPage: this.perPageDesktop,
             gap: `${this.gapValue}px`,
             arrows: this.arrowDesktop,
@@ -36,3 +37,24 @@ class SplideCarousel extends HTMLElement {
 }
 
 customElements.define('splide-carousel', SplideCarousel);
+
+document.addEventListener('DOMContentLoaded', () => {
+    const allCircles = document.querySelectorAll('.hotspot_circle');
+    allCircles.forEach((element) => {
+        element.nextElementSibling.style.display = 'none';
+        element.nextElementSibling.nextElementSibling.style.display = 'none';
+
+        element.addEventListener('mouseover', (event) => {
+            let target = event.currentTarget;
+            if (target.nextElementSibling && target.nextElementSibling.nextElementSibling) {
+                target.nextElementSibling.style.display = 'block';
+                target.nextElementSibling.nextElementSibling.style.display = 'block';
+            }
+        });
+
+        element.addEventListener('mouseleave', (event) => {
+            event.target.nextElementSibling.style.display = 'none';
+            event.target.nextElementSibling.nextElementSibling.style.display = 'none';
+        });
+    });
+});
