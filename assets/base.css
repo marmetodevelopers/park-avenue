@@ -94,7 +94,7 @@ html.no-js .no-js-hidden {
 }
 
 .page-width {
-	max-width: var(--page-width);
+	/* max-width: var(--page-width); */
 	margin: 0 auto;
 	padding: 0 1.5rem;
 }
@@ -117,10 +117,12 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 	padding-right: 3rem;
 }
 
+
 @media screen and (min-width: 750px) {
 	.page-width {
-		padding: 0 5rem;
+		padding: 0 12.2rem;
 	}
+
 
 	.header.page-width,
 	.utility-bar__grid.page-width {
@@ -137,6 +139,11 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 	}
 
 	.page-width-tablet {
+		padding: 0 5rem;
+	}
+}
+@media screen and (min-width: 750px) and (max-width: 989px) {
+	.page-width{
 		padding: 0 5rem;
 	}
 }
@@ -320,8 +327,11 @@ h2,
 .h2 {
   font-size: calc(var(--font-heading-scale) * 2.8rem);
   letter-spacing: 2px;
-  font-weight: 600;
+  font-weight: 700;
   color: #0E0E10;
+}
+.h2{
+  color: rgb(var(--color-foreground));
 }
 
 @media only screen and (min-width: 750px) {
