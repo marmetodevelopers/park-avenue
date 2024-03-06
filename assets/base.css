@@ -404,7 +404,7 @@ blockquote {
 .caption {
   font-size: 1.4rem;
   font-weight: 400;
-  color: #231F20;
+  color: #fff;
 }
 .caption-with-letter-spacing {
   font-size: 1.4rem;
@@ -1678,7 +1678,6 @@ details[open] > .share-button__fallback {
 .customer .field:hover.field:after,
 .customer select:hover.select:after,
 .localization-form__select:hover.localization-form__select:after {
-	box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var(--color-foreground), var(--inputs-border-opacity));
 	outline: 0;
 	border-radius: var(--inputs-radius);
 }
@@ -1763,9 +1762,9 @@ details[open] > .share-button__fallback {
 
 .field__label,
 .customer .field label {
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	left: calc(var(--inputs-border-width) + 2rem);
-	top: calc(1rem + var(--inputs-border-width));
+	top: calc(1.2rem + var(--inputs-border-width));
 	margin-bottom: 0;
 	pointer-events: none;
 	position: absolute;
@@ -2406,11 +2405,24 @@ product-info .loading__spinner:not(.hidden) ~ *,
 	border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
 
-.header {
+.header{
 	display: grid;
-	grid-template-areas: 'left-icons heading icons';
-	grid-template-columns: 1fr 2fr 1fr;
 	align-items: center;
+	grid-template-columns: repeat(5, 1fr);
+}
+.header--top-center header-drawer svg path{
+	fill: black;
+}
+
+@media only screen and (min-width: 989px){
+	.header {
+		grid-template-areas: 'left-icons heading icons';
+		grid-template-columns: 1fr 2fr 1fr;
+	}
+	.header--top-center header-drawer {
+		order: unset;
+		grid-column: unset;
+	}
 }
 
 @media screen and (max-width: 749px) {
@@ -2488,6 +2500,16 @@ product-info .loading__spinner:not(.hidden) ~ *,
 .header__heading-link {
 	grid-area: heading;
 	justify-self: center;
+	grid-column: span 3;
+    order: 3
+}
+
+@media only screen and (min-width: 989px){
+	.header__heading,
+	.header__heading-link {
+		grid-column: unset;
+    	order: unset;
+	}
 }
 
 .header__heading-link {
@@ -2635,8 +2657,9 @@ menu-drawer + .header__search {
 }
 
 .header > .header__search {
-	grid-area: left-icons;
-	justify-self: start;
+	grid-area: icons;
+	justify-self: end;
+	margin-right: 4.4rem;
 }
 
 .header--top-center.drawer-menu > .header__search {
@@ -2644,6 +2667,9 @@ menu-drawer + .header__search {
 }
 
 .header--top-center header-drawer {
+	grid-column: span 1 !important;
+    order: 2;
+
 	grid-area: left-icons;
 }
 
@@ -3528,9 +3554,6 @@ details-disclosure > details {
   .animate--hover-vertical-lift .button:not([disabled]).button--secondary:hover:after {
     --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
   }
-<<<<<<< HEAD
-}
-=======
 }
 .justify-start{
   justify-content: flex-start;
