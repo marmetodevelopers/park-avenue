@@ -123,6 +123,9 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
     padding-left: 3.2rem;
     padding-right: 3.2rem;
   }
+  .page-width{
+    padding: 2rem;
+  }
 
   .page-width--narrow {
     padding: 0 9rem;
@@ -153,7 +156,11 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
     padding: 0 5rem;
   }
 }
-
+@media screen and (min-width: 1300px){
+  .page-width{
+    padding: 0;
+  }
+}
 .isolate {
   position: relative;
   z-index: 0;
@@ -317,7 +324,6 @@ h2,
   font-size: calc(var(--font-heading-scale) * 2.8rem);
   letter-spacing: 2px;
   font-weight: 600;
-  color: #0E0E10;
 }
 
 @media only screen and (min-width: 750px) {
@@ -1354,7 +1360,6 @@ button.shopify-payment-button__button--unbranded {
 .button-label,
 .shopify-challenge__button,
 .customer button {
-  font-size: 1.5rem;
   letter-spacing: 0.1rem;
   line-height: calc(1 + 0.2 / var(--font-body-scale));
 }
@@ -2739,6 +2744,9 @@ details[open] .modal-overlay::after {
 }
 
 @media screen and (min-width: 750px) {
+  .button{
+    font-size: 2rem;
+  }
   .search-modal__close-button {
     right: 1rem;
   }

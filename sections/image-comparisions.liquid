@@ -1,10 +1,17 @@
 {{ "image-comparision.css" | asset_url | stylesheet_tag }}
 <script src="{{ 'image-comparision.js' | asset_url }}" defer="defer"></script>
 
-<style>
-
-</style>
-<div style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
+{% style %}
+  .padding-{{ section.id }} {
+      padding-top: {{ section.settings.mobile-padding-top }}px;
+      padding-bottom: {{ section.settings.mobile-padding-bottom  }}px;
+      @media screen and (min-width: 750px){
+          padding-top: {{ section.settings.padding-top }}px;
+          padding-bottom: {{ section.settings.padding-bottom  }}px;
+      }
+  }
+{% endstyle %}
+<div class="padding-{{ section.id }}">
   <div class="page-width">
     <div>
       {% if section.settings.title != blank %}
@@ -54,24 +61,6 @@
         "default": "<p>OUTFIT $ INSPO</p>"
       },
       {
-        "type": "range",
-        "id": "padding_top",
-        "min": 0,
-        "max": 120,
-        "step": 5,
-        "label": "Select top padding",
-        "default": 0
-      },
-      {
-        "type": "range",
-        "id": "padding_bottom",
-        "min": 0,
-        "max": 120,
-        "step": 5,
-        "label": "Select top padding",
-        "default": 0
-      },
-      {
         "type": "image_picker",
         "id": "first_image",
         "label": "Select first comparision image"
@@ -80,6 +69,54 @@
         "type": "image_picker",
         "id": "second_image",
         "label": "Select second comparision image"
+      },
+      {
+          "type": "header",
+          "content": "Mobile padding settings"
+      },
+      {
+          "type": "range",
+          "id": "mobile-padding-top",
+          "label": "Top padding",
+          "min": 0,
+          "max": 96,
+          "step": 4,
+          "unit": "px",
+          "default": 0
+      },
+      {
+          "type": "range",
+          "id": "mobile-padding-bottom",
+          "label": "Bottom padding",
+          "min": 0,
+          "max": 96,
+          "step": 4,
+          "unit": "px",
+          "default": 48
+      },
+      {
+          "type": "header",
+          "content": "Desktop padding settings"
+      },
+      {
+          "type": "range",
+          "id": "padding-top",
+          "label": "Top padding",
+          "min": 0,
+          "max": 96,
+          "step": 4,
+          "unit": "px",
+          "default": 0
+      },
+      {
+          "type": "range",
+          "id": "padding-bottom",
+          "label": "Bottom padding",
+          "min": 0,
+          "max": 96,
+          "step": 4,
+          "unit": "px",
+          "default": 64
       }
     ],
     "presets": [
@@ -89,9 +126,3 @@
     ]
   }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}

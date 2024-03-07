@@ -11,17 +11,38 @@
     padding-left: 1.7rem;
     padding-right: 2rem;
     align-items: center;
-    @media screen and (min-width: 750px) {
-        justify-content: center;
-    }
 }
 .media--custom-gift{
     padding-bottom: 93.5%;
-    @media screen and (min-width: 750px){
-        padding-bottom: 18.8%;
-    }
 }
 .git-banner-content__text{
-    max-width: 100.1rem;
+
     margin-bottom: 2.4rem;
+}
+.git-banner-content-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+.git-banner-content-container svg{
+    margin-left: 1.6rem;
+}
+@media screen and (min-width: 750px){
+    .media--custom-gift{
+        padding-bottom: 35.6%;
+    }
+    .git-banner-content{
+        justify-content: center;
+    }
+    .git-banner-content__text{
+        max-width: 75rem;
+    }
+}
+@media screen and (min-width: 1300px){
+    .media--custom-gift{
+        padding-bottom: 18.8%;
+    }
+    .git-banner-content__text{
+        max-width: 100.1rem;
+    }
 }

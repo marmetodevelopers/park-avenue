@@ -57,9 +57,9 @@
       "settings": {
         "title": "<p>TREND $ FORECAST<\/p>",
         "mobile-padding-top": 48,
-        "mobile-padding-bottom": 0,
+        "mobile-padding-bottom": 48,
         "padding-top": 44,
-        "padding-bottom": 0
+        "padding-bottom": 64
       }
     },
     "style_feeds_4NcKBp": {
@@ -76,7 +76,7 @@
           "type": "slide-media",
           "settings": {
             "video": "shopify:\/\/files\/videos\/Nature Beautiful short video 720p HD.mp4",
-            "video_cover_image": "shopify:\/\/shop_images\/thumbnail2.png"
+            "thumbnail_cover_image": "shopify:\/\/shop_images\/Image_Placeholder_mobile.png"
           }
         }
       },
@@ -86,9 +86,9 @@
       ],
       "settings": {
         "title": "<p>STYLE $ FEEDS<\/p>",
-        "mobile-padding-top": 48,
+        "mobile-padding-top": 0,
         "mobile-padding-bottom": 48,
-        "padding-top": 64,
+        "padding-top": 0,
         "padding-bottom": 64
       }
     },
@@ -96,10 +96,12 @@
       "type": "image-comparisions",
       "settings": {
         "title": "<p>OUTFIT $ INSPO<\/p>",
-        "padding_top": 0,
-        "padding_bottom": 0,
         "first_image": "shopify:\/\/shop_images\/Rectangle_841_cea65cce-a7bb-4322-bef9-a1e8de8c9143.png",
-        "second_image": "shopify:\/\/shop_images\/Rectangle_22.jpg"
+        "second_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+        "mobile-padding-top": 0,
+        "mobile-padding-bottom": 48,
+        "padding-top": 0,
+        "padding-bottom": 64
       }
     },
     "image_with_text_slider_FMXiwU": {
@@ -112,15 +114,15 @@
             "height": "adapt",
             "desktop_image_width": "medium",
             "layout": "image_first",
-            "desktop_content_position": "top",
+            "desktop_content_position": "middle",
             "desktop_content_alignment": "left",
             "image_behavior": "none",
             "mobile_content_alignment": "left",
             "content_layout": "no-overlap",
             "heading": "Influencers Voice",
-            "heading_size": "h1",
+            "heading_size": "h3",
             "caption": "",
-            "caption_text_style": "caption-with-letter-spacing",
+            "caption_text_style": "caption",
             "text_size": "medium",
             "text": "<p>The record  is my all-time favourite. It's really amazing. I discovered that the crosswalk's stripes could be readily raised to resemble stripes, which gave me the idea to replicate a crossing. The guys had to be positioned carefully so that it appeared as though they were strolling across your clothes.<br\/><br\/>-Creative Director  Arun Deepak<\/p>",
             "text_style": "body",
@@ -136,17 +138,17 @@
             "height": "adapt",
             "desktop_image_width": "medium",
             "layout": "image_first",
-            "desktop_content_position": "top",
+            "desktop_content_position": "middle",
             "desktop_content_alignment": "left",
             "image_behavior": "none",
             "mobile_content_alignment": "left",
             "content_layout": "no-overlap",
-            "heading": "",
-            "heading_size": "h1",
+            "heading": "Influencers Voice",
+            "heading_size": "h3",
             "caption": "",
-            "caption_text_style": "caption-with-letter-spacing",
-            "text_size": "medium",
-            "text": "<p>The record  is my all-time favourite. It's really amazing. I discovered that the crosswalk's stripes could be readily raised to resemble stripes, which gave me the idea to replicate a crossing. The guys had to be positioned carefully so that it appeared as though they were strolling across your clothes.<br\/><br\/>-Creative Director  Arun Deepak<\/p>",
+            "caption_text_style": "caption",
+            "text_size": "small",
+            "text": "<p>The record  is my all-time favourite. It's really amazing. I discovered that the crosswalk's stripes could be readily raised to resemble stripes, which gave me the idea to replicate a crossing. The guys had to be positioned carefully so that it appeared as though they were strolling across your clothes.<br\/><\/p><p><br\/>-Creative Director  Arun Deepak<\/p>",
             "text_style": "body",
             "button_label": "",
             "button_link": "",
@@ -160,9 +162,11 @@
       ],
       "settings": {
         "title": "<p>GUEST $ EDITORIALS<\/p>",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "color_scheme": "background-1",
+        "mobile-padding-top": 0,
+        "mobile-padding-bottom": 48,
+        "padding-top": 0,
+        "padding-bottom": 64
       }
     },
     "gift_card_banner_X4DYXM": {
@@ -172,21 +176,21 @@
           "type": "heading",
           "settings": {
             "heading": "Gift cards",
-            "heading_size": "h1"
+            "heading_size": "h2"
           }
         },
         "text_KNqzwQ": {
           "type": "text",
           "settings": {
             "text": "<p>The store locator helps customers easily find their nearest Raymond retail store or shop-in-shop. The store locator helps customers easily find their nearest Raymond retail store or shop-in-shop.<\/p>",
-            "text_style": "body"
+            "text_style": "h5"
           }
         },
         "button_8mMwzF": {
           "type": "button",
           "settings": {
             "button_label": "Gift Now",
-            "button_link": "",
+            "button_link": "shopify:\/\/collections",
             "button_style_secondary": false
           }
         }

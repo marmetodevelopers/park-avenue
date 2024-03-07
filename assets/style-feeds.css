@@ -1,10 +1,9 @@
-.main-style-feed-slider{
-    margin-bottom: 2.4rem;
+.main-style-feed-slider-container{
+    margin-bottom: 2rem;
 }
-@media screen and (max-width: 749px){
-    .main-style-feed-slider.page-width{
-        padding: 0;
-    }
+.main-style-feed-slider{
+    margin-top: 2.3rem;
+    margin-bottom: 2.4rem;
 }
 .main-style-feed-thumbnail-slider .splide__arrow{
     border-radius: 0;
@@ -14,13 +13,16 @@
     left: 0;
 }
 .main-style-feed-thumbnail-slider .splide__arrow--next{
-    right: 0;
+    right: 1.6rem;
 }
 .splide__track--nav>.splide__list>.splide__slide{
     border: none;
 }
 .splide__track--nav>.splide__list>.splide__slide.is-active {
     border: 1px solid #000;
+}
+.video_container{
+    height: 100%;
 }
 .video_container video{
     width: 100%;
@@ -32,8 +34,46 @@
 .style-feed-thumbnail-image{
     aspect-ratio: 103/100;
 }
+.main-style-feed-thumbnail-slider .splide__slide{
+    width: 10.5rem;
+    height: auto;
+}
+.main-style-feed-thumbnail-slider .splide__arrows button{
+    border-radius: 0;
+    background: transparent;
+    width: auto;
+    height: auto;
+    opacity: 1;
+}
+.video_container .mobile_video{
+    display: block;
+}
+.video_container .desktop_video{
+    display: none;
+}
+@media screen and (max-width: 749px){
+    .main-style-feed-slider.page-width{
+        padding: 0;
+    }
+    .main-style-feed-thumbnail-slider.splide:not(.is-overflow) .splide__pagination{
+        display: block;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+}
 @media screen and (min-width: 750px){
+    .main-style-feed-thumbnail-slider.splide-container .splide__arrows{
+        bottom: 13rem;
+    }
+    .main-style-feed-thumbnail-slider .splide__arrows button{
+        background: #000;
+        border: none;
+    }
+    .main-style-feed-thumbnail-slider.splide-container .splide__arrows path{
+        fill: #fff;
+    }
     .main-style-feed-slider{
+        margin-top: 3rem;
         margin-bottom: 1.65rem;
     }
     .style-feed-custom-image{
@@ -41,5 +81,11 @@
     } 
     .style-feed-thumbnail-image{
         aspect-ratio: 223/150;
+    }
+    .video_container .mobile_video{
+        display: none;
+    }
+    .video_container .desktop_video{
+        display: block;
     }
 }

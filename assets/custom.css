@@ -18,7 +18,7 @@
     transform: translateY(50%);
 }
 .splide-container .splide__pagination__page {
-    width: 61px;
+    width: 4.5rem;
     height: 4.27px;
     border-radius: 0;
     background: transparent;
@@ -30,4 +30,9 @@
 }
 .splide-container .splide__pagination__page.is-active {
     background-image: linear-gradient(to right, black 50%, black 0%, transparent 50%);
+}
+@media screen and (min-width: 750px){
+    .splide-container .splide__pagination__page{
+        width: 6.1rem;
+    }
 }

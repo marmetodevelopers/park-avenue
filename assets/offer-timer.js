@@ -32,7 +32,7 @@ class CountdownTimer extends HTMLElement{
         this.hoursElement.innerText = String(hours).length == 1 ? `0${hours}` : hours
   
         const minutes = String(remainingMinutes)
-        this.minutesElement.innerText = minutes
+        this.minutesElement.innerText = String(minutes).length == 1 ? `0${minutes}` : minutes
       }
     }
     startTimer(){

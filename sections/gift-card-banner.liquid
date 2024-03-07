@@ -39,7 +39,7 @@
                   </p>
                 {%- when 'text' -%}
                   <div class="git-banner-content__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
-                    {{ block.settings.text }}
+                    {{ block.settings.text |  strip_html }}
                   </div>
                 {%- when 'button' -%}
                   {%- if block.settings.button_label != blank -%}
@@ -54,6 +54,7 @@
                         {{ block.shopify_attributes }}
                       >
                         {{ block.settings.button_label | escape }}
+                        {% render "button-arrow" %}
                       </a>
                     </div>
                   {%- endif -%}
@@ -126,15 +127,15 @@
                 "id": "heading_size",
                 "options": [
                     {
-                    "value": "h2",
+                    "value": "h3",
                     "label": "t:sections.all.heading_size.options__1.label"
                     },
                     {
-                    "value": "h1",
+                    "value": "h2",
                     "label": "t:sections.all.heading_size.options__2.label"
                     },
                     {
-                    "value": "h0",
+                    "value": "h1",
                     "label": "t:sections.all.heading_size.options__3.label"
                     }
                 ],
@@ -208,7 +209,7 @@
                         "id": "text_style",
                         "options": [
                             {
-                            "value": "body",
+                            "value": "h5",
                             "label": "t:sections.image-with-text.blocks.text.settings.text_style.options__1.label"
                             },
                             {
@@ -216,7 +217,7 @@
                             "label": "t:sections.image-with-text.blocks.text.settings.text_style.options__2.label"
                             }
                         ],
-                        "default": "body",
+                        "default": "h5",
                         "label": "t:sections.image-with-text.blocks.text.settings.text_style.label"
                     }
                 ]

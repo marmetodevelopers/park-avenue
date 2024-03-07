@@ -1,6 +1,6 @@
 {{ 'style-feeds.css' |  asset_url |  stylesheet_tag }}
 {{ "custom.css" |  asset_url |  stylesheet_tag }}
-<script src="{{ 'splide-slider.js' |  asset_url }}" defer="defer"></script>
+<script src="{{ 'custom.js' |  asset_url }}" defer="defer"></script>
 {% style %}
     .padding-{{ section.id }} {
         padding-top: {{ section.settings.mobile-padding-top }}px;
@@ -12,13 +12,13 @@
     }
 {% endstyle %}
 
-<div class="padding-{{ section.id }}">
+<div class="padding-{{ section.id }} main-style-feed-slider-container">
     <div class="page-width">
         {% if section.settings.title != blank %}
             {% render "section-heading", text: section.settings.title, css_class: "h2" %}
         {% endif %}
     </div>
-    <div class="page-width main-style-feed-slider splide mt-3" id="main-slider">
+    <div class="page-width main-style-feed-slider splide" id="main-slider">
         <div class="splide__track">
             <ul class="splide__list">
                 {% for block in section.blocks %}
@@ -27,7 +27,12 @@
                             {% render "picture", class: "media style-feed-custom-image", mobileSrc: block.settings.mobile_image, desktopSrc: block.settings.image %}
                         {%elsif block.settings.video != blank %}
                             <div class="video_container">
-                                {{ block.settings.video | video_tag: autoplay: false, loop: true, muted: true, controls: true }}
+                                <div class="mobile_video">
+                                    {{ block.settings.mobile_video | video_tag: autoplay: block.settings.autoplay, loop: block.settings.loop, muted: block.settings.mute, controls: block.settings.controls }}
+                                </div>
+                                <div class="desktop_video">
+                                    {{ block.settings.video | video_tag: autoplay: block.settings.autoplay, loop: block.settings.loop, muted: block.settings.mute, controls: block.settings.controls }}
+                                </div>
                             </div>
                         {% endif %}
                     </li>
@@ -36,16 +41,20 @@
         </div>
     </div>
 
-    <div class="page-width splide-container main-style-feed-thumbnail-slider splide" id="thumbnail-slider">
-        {% comment %} {% render "splide-arrows" %}     {% endcomment %}
+    <div class="page-width splide-container main-style-feed-thumbnail-slider splide is-overflow" id="thumbnail-slider">
+        {% render "splide-arrows" %}
         <div class="splide__track">
             <ul class="splide__list">
                 {% for block in section.blocks %}
                     <li class="splide__slide">
-                        {% if block.settings.image != blank and block.settings.mobile_image != blank %}
-                            {% render "picture", class: "media style-feed-thumbnail-image", mobileSrc: block.settings.image, desktopSrc: block.settings.image  %}
+                        {% if block.settings.thumbnail_cover_image or block.settings.image != blank %}
+                            {% if block.settings.thumbnail_cover_image != blank %}
+                                {% render "picture", class: "media style-feed-thumbnail-image", mobileSrc: block.settings.thumbnail_cover_image, desktopSrc: block.settings.thumbnail_cover_image  %}
+                            {% elsif block.settings.image %}
+                                {% render "picture", class: "media style-feed-thumbnail-image", mobileSrc: block.settings.image, desktopSrc: block.settings.image  %}
+                            {% endif %}
                         {% elsif block.settings.video != blank %}
-                            {% render "picture", class: "media style-feed-thumbnail-image", mobileSrc: block.settings.video_cover_image, desktopSrc: block.settings.video_cover_image %}
+                            {% render "picture", class: "media style-feed-thumbnail-image", mobileSrc: block.settings.thumbnail_cover_image, desktopSrc: block.settings.thumbnail_cover_image %}
                         {% endif %}
                     </li>
                 {% endfor %}
@@ -55,7 +64,7 @@
 </div>
 {% schema %}
     {
-        "name": "Trend forecast",
+        "name": "Style feeds",
         "settings": [
             {
                 "type": "richtext",
@@ -76,8 +85,8 @@
                 "step": 4,
                 "unit": "px",
                 "default": 48
-                },
-                {
+            },
+            {
                 "type": "range",
                 "id": "mobile-padding-bottom",
                 "label": "Bottom padding",
@@ -100,8 +109,8 @@
                 "step": 4,
                 "unit": "px",
                 "default": 64
-                },
-                {
+            },
+            {
                 "type": "range",
                 "id": "padding-bottom",
                 "label": "Bottom padding",
@@ -118,6 +127,10 @@
                 "name": "Slide media",
                 "settings": [
                     {
+                        "type": "header",
+                        "content": "Main slide image"
+                    },
+                    {
                         "type": "image_picker",
                         "id": "image",
                         "label": "Select image"
@@ -128,15 +141,57 @@
                         "label": "Select image for mobile"
                     },
                     {
+                        "type": "header",
+                        "content": "Main slide video"
+                    },
+                    {
                         "type": "video",
                         "id": "video",
-                        "label": "Select video",
+                        "label": "Select desktop video",
                         "info": "If image is already selected, based on priority image will be shown"
                     },
                     {
+                        "type": "video",
+                        "id": "mobile_video",
+                        "label": "Select mobile video",
+                        "info": "If image is already selected, based on priority image will be shown"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Video controls"
+                    },
+                    {
+                        "type": "checkbox",
+                        "id": "mute",
+                        "label": "Mute the video",
+                        "default": true
+                    },
+                    {
+                        "type": "checkbox",
+                        "id": "loop",
+                        "label": "Loop through the video while playing",
+                        "default": true
+                    },
+                    {
+                        "type": "checkbox",
+                        "id": "autoplay",
+                        "label": "Autoplay the video",
+                        "default": false
+                    },
+                    {
+                        "type": "checkbox",
+                        "id": "controls",
+                        "label": "Show controls on video",
+                        "default": true
+                    },
+                    {
+                        "type": "header",
+                        "content": "Thumbnail image for Main slide"
+                    },
+                    {
                         "type": "image_picker",
-                        "id": "video_cover_image",
-                        "label": "Select cover thumbnail image for image"
+                        "id": "thumbnail_cover_image",
+                        "label": "Select thumbnail cover image"
                     }
                 ]
             }

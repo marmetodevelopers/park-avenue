@@ -4,11 +4,11 @@
 .countdown-timer-container{
     position: absolute;
     top: 50%;
-    left: 45%;
+    left: 43%;
     transform: translateY(-50%);
 }
 .media--countdown{
-    padding-bottom: 36.6%;
+    padding-bottom: 36.8%;
 }
 .countdown-timer-container .timer{
     display: flex;
@@ -19,13 +19,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.6rem;
+    gap: 0.4rem;
 }
 .countdown-timer-container .timer-digits .time{
     background: #fff;
     padding: 0.89rem 0.71rem 1.02rem 0.64rem;
     font-size: 3rem;
-    line-height: 1;
+    line-height: 1.43;
     width: fit-content;
     font-weight: 700;
 }
@@ -34,9 +34,21 @@
     line-height: 1;
 }
 @media screen and (min-width: 750px){
-    .media--countdown{
-        padding-bottom: 36.8%;
+    .countdown-timer-container .timer{
+        gap: 4.4rem;
     }
+    .countdown-timer-container .timer-digits .time{
+        font-size: 7rem;
+        padding: 2.9rem 2.1rem 2.8rem 2.1rem;
+    }
+    .countdown-timer-container .timer-digits{
+        gap: 1.6rem;
+    }
+    .countdown-timer-container .timer-digits .text{
+        font-size: 3.5rem;
+    }
+}
+@media screen and (min-width: 1300px){
     .countdown-timer-container .timer{
         gap: 6.4rem;
     }
