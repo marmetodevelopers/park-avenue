@@ -1264,3 +1264,19 @@ class ProductRecommendations extends HTMLElement {
 }
 
 customElements.define('product-recommendations', ProductRecommendations);
+
+document.querySelectorAll('.video_container').forEach(container => {
+  container.querySelector(".video_state_container").addEventListener('click', () => {
+      const video_container = container.querySelector(".video_state_container svg")
+      const video = container.querySelector('video');
+      if (video.paused) {
+        video_container.classList.remove("inactive-video")
+        video_container.classList.add("active-video")
+        video.play();
+      } else {
+        video_container.classList.remove("active-video")
+        video_container.classList.add("inactive-video")
+        video.pause();
+      }
+  });
+});

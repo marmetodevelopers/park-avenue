@@ -1,6 +1,6 @@
 .splide-container {
     position: relative;
-    padding-bottom: 53px;
+    padding-bottom: 5.3rem;
 }
 .splide-container .splide__arrows {
     position: absolute;
@@ -32,6 +32,9 @@
     background-image: linear-gradient(to right, black 50%, black 0%, transparent 50%);
 }
 @media screen and (min-width: 750px){
+    .splide-container{
+        padding-bottom: 0;
+    }
     .splide-container .splide__pagination__page{
         width: 6.1rem;
     }

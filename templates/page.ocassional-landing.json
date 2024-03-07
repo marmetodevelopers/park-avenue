@@ -69,13 +69,20 @@
           "type": "slide-media",
           "settings": {
             "image": "shopify:\/\/shop_images\/c6bd703ef51650b96947a3ee3efd0f83.png",
-            "mobile_image": "shopify:\/\/shop_images\/40df26294a60afeee9bce95cd84da054.png"
+            "mobile_image": "shopify:\/\/shop_images\/40df26294a60afeee9bce95cd84da054.png",
+            "loop": true,
+            "autoplay": false,
+            "controls": true
           }
         },
         "slide_media_twMkAY": {
           "type": "slide-media",
           "settings": {
             "video": "shopify:\/\/files\/videos\/Nature Beautiful short video 720p HD.mp4",
+            "mobile_video": "shopify:\/\/files\/videos\/Nature Beautiful short video 720p HD.mp4",
+            "loop": true,
+            "autoplay": false,
+            "controls": false,
             "thumbnail_cover_image": "shopify:\/\/shop_images\/Image_Placeholder_mobile.png"
           }
         }
@@ -98,6 +105,8 @@
         "title": "<p>OUTFIT $ INSPO<\/p>",
         "first_image": "shopify:\/\/shop_images\/Rectangle_841_cea65cce-a7bb-4322-bef9-a1e8de8c9143.png",
         "second_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+        "desktop_first_image": "shopify:\/\/shop_images\/Rectangle_4192_ed362d36-992e-4765-bcdb-afa417aefdeb.png",
+        "desktop_second_image": "shopify:\/\/shop_images\/Rectangle_4244_e880eb1e-0bd2-4b78-acba-7f2f78433c58.png",
         "mobile-padding-top": 0,
         "mobile-padding-bottom": 48,
         "padding-top": 0,
@@ -121,10 +130,10 @@
             "content_layout": "no-overlap",
             "heading": "Influencers Voice",
             "heading_size": "h3",
-            "caption": "",
+            "caption": "The record  is my all-time favourite. It's really amazing. I discovered that the crosswalk's stripes could be readily raised to resemble stripes, which gave me the idea to replicate a crossing. The guys had to be positioned carefully so that it appeared as though they were strolling across your clothes.",
             "caption_text_style": "caption",
             "text_size": "medium",
-            "text": "<p>The record  is my all-time favourite. It's really amazing. I discovered that the crosswalk's stripes could be readily raised to resemble stripes, which gave me the idea to replicate a crossing. The guys had to be positioned carefully so that it appeared as though they were strolling across your clothes.<br\/><br\/>-Creative Director  Arun Deepak<\/p>",
+            "text": "<p>-Creative Director  Arun Deepak<\/p>",
             "text_style": "body",
             "button_label": "",
             "button_link": "",
@@ -145,10 +154,10 @@
             "content_layout": "no-overlap",
             "heading": "Influencers Voice",
             "heading_size": "h3",
-            "caption": "",
+            "caption": "The record  is my all-time favourite. It's really amazing. I discovered that the crosswalk's stripes could be readily raised to resemble stripes, which gave me the idea to replicate a crossing. The guys had to be positioned carefully so that it appeared as though they were strolling across your clothes.",
             "caption_text_style": "caption",
             "text_size": "small",
-            "text": "<p>The record  is my all-time favourite. It's really amazing. I discovered that the crosswalk's stripes could be readily raised to resemble stripes, which gave me the idea to replicate a crossing. The guys had to be positioned carefully so that it appeared as though they were strolling across your clothes.<br\/><\/p><p><br\/>-Creative Director  Arun Deepak<\/p>",
+            "text": "<p>-Creative Director  Arun Deepak<\/p>",
             "text_style": "body",
             "button_label": "",
             "button_link": "",

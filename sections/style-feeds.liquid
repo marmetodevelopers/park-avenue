@@ -26,12 +26,15 @@
                         {% if block.settings.image != blank and block.settings.mobile_image != blank %}
                             {% render "picture", class: "media style-feed-custom-image", mobileSrc: block.settings.mobile_image, desktopSrc: block.settings.image %}
                         {%elsif block.settings.video != blank %}
-                            <div class="video_container">
-                                <div class="mobile_video">
-                                    {{ block.settings.mobile_video | video_tag: autoplay: block.settings.autoplay, loop: block.settings.loop, muted: block.settings.mute, controls: block.settings.controls }}
-                                </div>
+                            <div class="video_container {% if block.settings.autoplay %}autoplay{% endif %}">
                                 <div class="desktop_video">
-                                    {{ block.settings.video | video_tag: autoplay: block.settings.autoplay, loop: block.settings.loop, muted: block.settings.mute, controls: block.settings.controls }}
+                                    {{ block.settings.video | video_tag: autoplay: block.settings.autoplay, loop: block.settings.loop, muted: true, controls: block.settings.controls }}
+                                </div>
+                                <div class="mobile_video">
+                                    {{ block.settings.mobile_video | video_tag: autoplay: block.settings.autoplay, loop: block.settings.loop, muted: true, controls: block.settings.controls }}
+                                </div>
+                                <div class="video_state_container">
+                                    {% render "video_icon" %}
                                 </div>
                             </div>
                         {% endif %}
@@ -133,7 +136,7 @@
                     {
                         "type": "image_picker",
                         "id": "image",
-                        "label": "Select image"
+                        "label": "Select image for desktop"
                     },
                     {
                         "type": "image_picker",
@@ -162,12 +165,6 @@
                     },
                     {
                         "type": "checkbox",
-                        "id": "mute",
-                        "label": "Mute the video",
-                        "default": true
-                    },
-                    {
-                        "type": "checkbox",
                         "id": "loop",
                         "label": "Loop through the video while playing",
                         "default": true
@@ -182,7 +179,7 @@
                         "type": "checkbox",
                         "id": "controls",
                         "label": "Show controls on video",
-                        "default": true
+                        "default": false
                     },
                     {
                         "type": "header",
