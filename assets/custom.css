@@ -19,6 +19,15 @@ a {
 	gap: .8rem;
 }
 
+@media screen and (max-width:749px){
+.custom-heading{
+	display: block;
+	
+
+}
+
+}
+
 .custom-btn-text{
 	font-size: 20px;
 }
