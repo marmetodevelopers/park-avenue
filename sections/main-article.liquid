@@ -11,7 +11,7 @@
     <div class="article-top-container">
 
       <div class="date-container h5">
-        Posted on {{ article.published_at | date: '%d %b %Y' }}
+        <span class="small-hide">Posted on </span> {{ article.published_at | date: '%d %b %Y' }}
       </div>
       <div class="h2 article-title-heading">{{ article.title }}</div>
       <div class="blog-information h5">
@@ -47,6 +47,9 @@
       </div>
       <div class="svg-icons-container">
         {% for block in section.blocks %}
+          <a href="{{ block.settings.url4 }}">
+            {% render 'facebook-icon' %}
+          </a>
           <a href="{{ block.settings.url }}">
             {% render 'instagram-icon' %}
           </a>
@@ -56,6 +59,8 @@
           <a href="{{ block.settings.url3 }}">
             {% render 'twitter-icon' %}
           </a>
+
+
 
 
         {% endfor %}
@@ -175,6 +180,11 @@
             "type": "url",
             "id": "url3",
             "label": "add Twitter url"
+          },
+          {
+            "type": "url",
+            "id": "url4",
+            "label": "add Facebook url"
           }
 
         ]
