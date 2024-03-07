@@ -18,6 +18,7 @@ class SplideCarousel extends HTMLElement {
             start: 1,
             perMove:1,
             autoplay: true,
+            drag: true,
             perPage: this.perPageDesktop,
             gap: `${this.gapValue}px`,
             arrows: this.arrowDesktop,

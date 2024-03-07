@@ -154,10 +154,13 @@
 
 .park_trending_image_text_carousel .park_trending_title {
     padding: 16px;
-    border: 1px solid gray;
-    border-top: none;
+    border: 1px solid #0E0E10;
     margin: 0px;
     text-align: center;
+}
+
+.park_trending_image_text_carousel .park_trending_overflow_image {
+  border: none;
 }
 
 /* To override the splide default style important required */
@@ -176,8 +179,13 @@
 
     .park_trending_image_text_carousel .park_trending_title {
         padding: 27px;
-        border: 1px solid gray;
+        border: 1px solid #828282;
         border-top: none;
+    }
+
+    .park_trending_image_text_carousel .park_trending_overflow_image {
+      border: 1px solid #828282;
+      border-bottom: none;
     }
 
 }
