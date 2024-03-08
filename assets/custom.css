@@ -76,6 +76,7 @@ a {
 	background: linear-gradient(90deg, rgba(0, 0, 0, 1) 60%, rgba(255, 255, 255, 1) 60%);
 	transform: scale(1);
 }
+  
 
 .splide__arrow--prev svg {
 	transform: rotate(0deg);
@@ -130,7 +131,7 @@ a {
 	gap: 1.6rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 749px) {
 	.splide__arrows.splide__arrows--ltr {
 		bottom: -1.5rem;
 		padding-inline: 1.5rem;
@@ -229,7 +230,7 @@ a {
 .image_text_container {
 	display: flex;
 	gap: 3.2rem;
-	max-height: 46.1rem;
+	max-height: 100%;
 }
 .image_text_container .button {
 	width: fit-content;
@@ -261,7 +262,6 @@ a {
 		width: 100%;
 	}
 	.it_img_container {
-		max-height: 18.1rem;
 		overflow: hidden;
 	}
 	.image_text_container .button {
