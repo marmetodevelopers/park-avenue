@@ -1,0 +1,53 @@
+{{ 'about-banner.css' | asset_url | stylesheet_tag }}
+<div class="about-banner-maincontainer">
+    <div class="about-image-container">
+        {% render 'image-snippet',
+        mobileSrc: section.settings.add_image_for_mobile,
+        desktopSrc: section.settings.add_image_for_desktop
+      %}
+
+    </div>
+
+    <div class="about-image-textcontainer">
+        <p class="caption about-heading">{{ section.settings.heading_text }}</p>
+        <p class="h2 about-para">{{ section.settings.heading_para }}</p>
+    </div>
+</div>
+
+
+{% schema %}
+    {
+      "name": "about-image-banner",
+      "tag": "section",
+      "settings": [
+        {
+          "type": "image_picker",
+          "label": "Add Image for Desktop",
+          "id": "add_image_for_desktop"
+        },
+        {
+          "type": "image_picker",
+          "label": "Add Image For Mobile",
+          "id": "add_image_for_mobile"
+        },
+        {
+          "type": "text",
+          "label": "Heading Text",
+          "id": "heading_text"
+        },
+        {
+          "type": "text",
+          "label": "Heading Para",
+          "id": "heading_para"
+        }
+      ],
+      "blocks": [],
+      "presets": [
+        {
+          "name": "about-banner"
+        }
+      ]
+    }
+    {% endschema %}
+    
+  
