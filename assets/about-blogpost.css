@@ -28,6 +28,7 @@
   letter-spacing: 0.07px;
   text-transform: uppercase;
   opacity: .6;
+  padding-top: 1.2rem;
 }
 .main-article-data{
     display: flex;
@@ -55,5 +56,12 @@
 }
 .mb-3{
  margin-bottom: 2.4rem;
+}
+.date-container{
+  padding-top: 0;
+}
+.main-blog-title{
+  padding: 6px 0 5px 0;
+
 }
 }
