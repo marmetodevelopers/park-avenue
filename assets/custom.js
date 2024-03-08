@@ -13,6 +13,7 @@ class MySplide extends HTMLElement {
         this.slider = new Splide('#' + this.id, {
             type: 'loop',
             perPage: 1,
+            drag:'true',
             perMove: 1,
             arrows: this.arrows === "false" ? false : true, // Set arrows to false if this.arrows is "0", true otherwise
             pagination: this.pagination,
