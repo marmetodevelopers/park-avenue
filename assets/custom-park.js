@@ -24,12 +24,13 @@ class SplideCarousel extends HTMLElement {
             gap: `${this.gapValue}px`,
             arrows: this.arrowDesktop,
             pagination: this.paginationDesktop,
+            autoplay: true,
+            interval: 3000,
             classes: {
                 pagination: 'splide__pagination ibc_pagination',
                 page: 'splide__pagination__page ibc_page',
             },
             breakpoints: {
-               
                 749: {
                     perPage: this.perpageMobile,
                     arrows: this.arrowMobile,

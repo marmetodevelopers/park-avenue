@@ -11,15 +11,15 @@ class MySplide extends HTMLElement {
         this.fixedHeight = this.dataset.fixedHeight;
 		
         this.slider = new Splide('#' + this.id, {
-            type: 'slide',
+            type: 'loop',
             perPage: 1,
             perMove: 1,
             arrows: this.arrows === "false" ? false : true, // Set arrows to false if this.arrows is "0", true otherwise
             pagination: this.pagination,
-            focus: 'left',
+            focus: 'center',
             fixedHeight: this.fixedHeight,
             autoplay: true,
-            interval: 2000,
+            interval: 3000,
             classes: {
                 pagination: 'splide__pagination ibc_pagination',
                 page: 'splide__pagination__page ibc_page',
