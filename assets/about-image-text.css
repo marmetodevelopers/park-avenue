@@ -31,6 +31,7 @@
   .about-text_image_container img{
     height: auto;
     width: 100%;
+    display: block;
 
   }
   .image-text_para{
