@@ -42,7 +42,7 @@
   <div class="page-width">
     <div class="park_shop_image_text_carousel">
       {% if section.settings.heading != blank %}
-        {% render 'text-with-logo', text: section.settings.heading, css_class: 'h1 mb-3' %}
+        {% render 'text-with-logo', text: section.settings.heading, css_class: 'h2 mb-3' %}
       {% endif %}
 
       <splide-carousel
@@ -159,28 +159,6 @@
   </div>
 </div>
 
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const allCircles = document.querySelectorAll('.hotspot_circle');
-
-    allCircles.forEach((element) => {
-
-      element.nextElementSibling.style.display = 'none';
-      element.nextElementSibling.nextElementSibling.style.display = 'none';
-
-      element.addEventListener('mouseover', (event) => {
-        event.target.nextElementSibling.style.display = 'block';
-        event.target.nextElementSibling.nextElementSibling.style.display = 'block';
-      });
-
-      element.addEventListener('mouseleave', (event) => {
-        event.target.nextElementSibling.style.display = 'none';
-        event.target.nextElementSibling.nextElementSibling.style.display = 'none';
-      });
-
-    });
-  });
-</script>
 {% schema %}
 {
   "name": "Park shop the looks",

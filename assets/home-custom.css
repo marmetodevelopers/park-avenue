@@ -8,6 +8,14 @@
 
 .image_text_carousel .title {
     text-align: center;
+    margin: 20px 0px 16px 0px;
+    @media  screen and (min-width: 750px) {
+        margin: 24px 0px 20px 0px;        
+    }
+}
+
+.image_text_carousel .splide__slide {
+    border: 1px solid black;
 }
 
 /* To override the splide default style important required */
@@ -130,10 +138,6 @@
         margin: 19px 16px 19px 0px;
     }
 
-    .park_latest_collection_image_text_carousel .splide__arrow:disabled {
-        opacity: 1;
-        border: 1px solid black;
-    }
 }
 
 /* Park trending carousel style */
@@ -148,24 +152,15 @@
     aspect-ratio: 0.68;
 }
 
-.park_trending_image_text_carousel .park_trending_image_box {
-    position: relative;
-    bottom: 20px;
+.park_trending_image_text_carousel .park_trending_title {
+    padding: 16px;
+    border: 1px solid #0E0E10;
+    margin: 0px;
+    text-align: center;
 }
 
 .park_trending_image_text_carousel .park_trending_overflow_image {
-    margin-top: 20px;
-    padding: 0px 20px 0px 20px;
-    border: 1px solid gray;
-    border-bottom: none;
-}
-
-.park_trending_image_text_carousel .park_trending_title {
-    padding: 16px;
-    border: 1px solid gray;
-    border-top: none;
-    margin: 0px;
-    text-align: center;
+  border: none;
 }
 
 /* To override the splide default style important required */
@@ -184,8 +179,13 @@
 
     .park_trending_image_text_carousel .park_trending_title {
         padding: 27px;
-        border: 1px solid gray;
+        border: 1px solid #828282;
         border-top: none;
+    }
+
+    .park_trending_image_text_carousel .park_trending_overflow_image {
+      border: 1px solid #828282;
+      border-bottom: none;
     }
 
 }
@@ -216,10 +216,6 @@
         aspect-ratio: 2.39;
     }
 
-    .park_shop_image_text_carousel .splide__arrow:disabled {
-        opacity: 1;
-        border: 1px solid black;
-    }
 }
 
 /* Park collections carousel style */
@@ -239,13 +235,12 @@
 
 .park_collections_carousel_content .carousel_box {
     position: relative;
-    line-height: 0;
 }
 
 .park_collections_carousel_content .category_text {
     position: absolute;
     left: 8px;
-    bottom: -11px;
+    bottom: -2px;
     padding: 5px 20px;
     background-color: #FFF;
 }
@@ -305,7 +300,7 @@
 
     .park_collections_carousel_content .category_text {
         left: 16px;
-        bottom: -7px;
+        bottom: 0px;
         padding: 16px 20px;
         background-color: #FFF;
     }
