@@ -3,8 +3,8 @@
 
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top1}}px;
+    padding-bottom: {{ section.settings.padding_bottom1 }}px;
   }
 
   @media screen and (min-width: 750px) {
@@ -103,9 +103,14 @@
         {%- else -%}
           {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
         {%- endif -%}
-        <span class="deferred-media__poster-button motion-reduce">
+        <div id="cover-container">
+
+        <span class=" motion-reduce">
           {%- render 'icon-play' -%}
         </span>
+        <div class="cover-text">{{ section.settings.cover_text }}</div>
+        </div>
+
       </button>
       <template>
         {%- if section.settings.video == null and section.settings.video_url != null -%}
@@ -221,6 +226,12 @@
     },
     {
       "type": "text",
+      "id": "cover_text",
+      "label": " Enter Cover Text"
+
+    },
+    {
+      "type": "text",
       "id": "description",
       "label": "t:sections.video.settings.description.label",
       "info": "t:sections.video.settings.description.info"
@@ -263,6 +274,26 @@
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_top1",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Mobile Padding Top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom1",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Mobile Padding Bottom",
       "default": 36
     }
   ],
