@@ -1,0 +1,127 @@
+
+{{ 'about-image-text.css' | asset_url | stylesheet_tag }}
+
+{% for block in section.blocks %}
+<div class="image-text image-align-{{ block.settings.image_alignment }}">
+
+  <div class="about-text_image_container">
+
+    {% render 'image-snippet'
+
+    mobileSrc: block.settings.select_image
+    ,
+    desktopSrc: block.settings.select_image
+    %}
+
+  </div>
+  <div class="image-text-text-container text-alignment-{{ block.settings.text_alignment }}">
+    <div class="text-wrapper">
+
+    
+    <div class="image-text-heading h2">
+      {{ block.settings.text }}
+    </div>
+    <div class="image-text_para h5">
+      {{ block.settings.paragraph }}
+    </div>
+    {% if block.settings.name != blank %}
+    <div class="name-position-wrapper">
+    <div class="h4">{{ block.settings.name }}</div>
+    <div class="h5">{{ block.settings.position }}</div>
+    </div>
+  {% endif %}
+    <a href="{{ block.settings.link }}" class="h5 readmore-btn">{{ block.settings.readmore }}</a>
+
+    </div>
+  </div>
+</div>
+
+{% endfor %}
+
+{% schema %}
+{
+"name": "about-image-text",
+"tag": "section",
+"settings": [],
+"blocks": [
+{
+"type": "image-text",
+"name": "image-text",
+"settings": [
+{
+"type": "text",
+"label": "Enter Text",
+"id": "text"
+},
+{
+"type": "richtext",
+"label": "Enter Paragraph",
+"id": "paragraph"
+},
+{
+"type": "text",
+"label": "Enter Name Of Chairman",
+"id": "name"
+},
+{
+"type": "text",
+"label": "Enter Position",
+"id": "position"
+},
+{
+"type": "text",
+"label": "readmore text",
+"id": "readmore"
+},
+{
+"type": "url",
+"label": "Enter LInk",
+"id": "link"
+},
+{
+"type": "select",
+"id": "text_alignment",
+"label": "Text Alignment",
+"options": [
+{
+"value": "left",
+"label": "Left"
+},
+{
+"value": "right",
+"label": "Right"
+}
+],
+"default": "right"
+},
+{
+"type": "image_picker",
+"label": "select image",
+"id": "select_image"
+},
+{
+"type": "select",
+"id": "image_alignment",
+"label": "Image Alignment",
+"options": [
+{
+"value": "row",
+"label": "Left"
+},
+{
+"value": "row-reverse",
+"label": "Right"
+}
+],
+"default": "row"
+}
+]
+}
+],
+"presets": [
+{
+"name": "about-image-text"
+}
+]
+}
+{% endschema %}

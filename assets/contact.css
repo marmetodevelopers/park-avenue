@@ -1,0 +1,210 @@
+.contact-page-width ,.contact-information{
+    padding: 0 12.2rem;
+}
+.contact-main-container{
+    margin-top: 6.4rem;
+}
+
+.contact-image-container img{
+    width: 100%;
+    height: auto;
+
+}
+.contact-heading{
+    padding-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    
+}
+.contact-text-container{
+    padding-bottom: 3rem;
+    max-width: 63.6rem;
+    text-align: center;
+}
+.contact-heading-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.field__input:focus ~ .contact-msg-icon{
+    top: -1rem;
+
+}
+
+
+/* contact form css */
+
+.telephone-input{
+    display: none;
+}
+.form-width{
+    max-width: 95.4rem;
+    margin: 0 auto;
+    padding: 6.4rem 0 0 0;
+}
+input#ContactForm-name, input#ContactForm-email {
+    height: 48px;
+} 
+textarea#ContactForm-body{
+    height: 16rem;
+
+}
+.message-field label{
+    top: 0;
+    padding-top: 2.1rem;
+
+}
+
+.form-input-heading , .contact .field{
+    margin-bottom: 2.4rem;
+}
+.contact__button{
+    text-align: center;
+}
+.contact__button{
+    margin-top: 0;
+}
+.contact .form-status{
+    margin-bottom: 1.6rem;
+    margin-top: 3.6rem;
+    align-items: center;
+    gap: 2.3rem;
+}
+.message-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sucess-msg{
+    text-align: center;
+}
+.msg-heading{
+    color: #5DB63E;
+}
+.form-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* information */
+.contact-information{
+    display: flex;
+}
+.contactmap-container{
+    width: 61%;
+    height: 514px;
+}
+.contactmap-container iframe{
+    width: 100%;
+    height: 100%;
+}
+.contact-information-container{
+    width: 39%;
+    display: flex;
+    align-items: center;
+}
+.contact-information-subcontainer{
+    max-width: 37.1rem;
+    margin: 0 auto;
+}
+.information-heading{
+    padding-bottom: 1.6rem;
+}
+.information-address{
+    padding-bottom: 3.6rem;
+}
+.information-contact{
+    padding-bottom: 1.6rem;
+    display: flex;
+    gap: 2.8px;
+}
+.informatiion-first-address{
+    max-width: 331px;
+}
+
+
+@media screen and (max-width:749px){
+    .contact-main-container{
+        margin-top: 4.6rem;
+    }
+    .contact-page-width{
+        padding: 0 1.6rem;
+    }
+    .contact-heading{
+        padding-bottom: 2.8rem;
+        display: inline-block;
+        width: 60%;
+    }
+    .contact-text-container{
+        padding-bottom: 2.8rem;
+    }
+    .contact-heading-wrapper{
+        align-items: flex-start;
+    }
+    .svg-container{
+        position: relative;
+        top: -7px;
+    }
+    .contact-heading span svg{
+        margin-left: 8px;
+        width: 24px;
+        height: 6px;
+    }
+
+
+
+
+/* 
+    form css */
+
+    textarea#ContactForm-body{
+        height: 14.8rem;
+    
+    }
+    .message-field label{
+        padding-top: 1.9rem;
+    }
+    
+    .form-input-heading , .contact .field{
+        margin-bottom: 1.9rem;
+    }
+    .form-width{
+        padding: 3.6rem 1.6rem 0 1.6rem;
+    }
+    .contact-btn{
+        width: 100%;
+    }
+    .form-heading{
+        display: block;
+    }
+
+
+
+    /* information */
+    .contact-information{
+        padding: 0;
+        flex-direction: column;
+    }
+    .contact-information-container, .contactmap-container{
+        width: 100%;
+    }
+    .contactmap-container{
+        max-height: 32rem;
+    }
+    .contact-information-subcontainer{
+        padding: 0 2.1rem;
+        margin-bottom: 2rem;
+    }
+    .contact-information-subcontainer{
+        max-width: 100%;
+    }
+    .information-contact{
+        gap: 1.6rem;
+
+    }
+    
+}
