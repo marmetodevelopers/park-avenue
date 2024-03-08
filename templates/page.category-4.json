@@ -1,0 +1,398 @@
+{
+  "sections": {
+    "image_banner_carousel_x8JDPe": {
+      "type": "image-banner-carousel",
+      "blocks": {
+        "slide_RWVLfi": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Frame_1000005354_d6438d0d-8813-4eb5-93f8-7e31b3fe6466.png",
+            "image_desktop": "shopify:\/\/shop_images\/Frame_1000004958_d9bf0dac-57cf-41ed-b9a5-15a3ecff534e.png",
+            "image_link": "",
+            "title": "",
+            "title_size": "h2",
+            "subtitle": ""
+          }
+        },
+        "slide_jwiMer": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_4192.png",
+            "image_link": "",
+            "title": "",
+            "title_size": "h2",
+            "subtitle": ""
+          }
+        },
+        "slide_jVdQp7": {
+          "type": "slide",
+          "settings": {
+            "image_link": "",
+            "title": "CORPORATE SELECTIONS",
+            "title_size": "h2",
+            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
+          }
+        }
+      },
+      "block_order": [
+        "slide_RWVLfi",
+        "slide_jwiMer",
+        "slide_jVdQp7"
+      ],
+      "settings": {
+        "section_color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "splide_height": 600,
+        "banner_content_check": false,
+        "carousel_arrows": false,
+        "heading": "",
+        "layout": false,
+        "content_position": "top-left"
+      }
+    },
+    "dynamic_grid_BrCNMw": {
+      "type": "dynamic-grid",
+      "blocks": {
+        "image_with_text_overlay_NQneQd": {
+          "type": "image-with-text-overlay",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_Placeholder_eb3c8e9c-fd43-4d23-9e1a-358809edb2c0.png",
+            "image_small": "shopify:\/\/shop_images\/Image_Placeholder_eb3c8e9c-fd43-4d23-9e1a-358809edb2c0.png",
+            "block_link": "",
+            "background_video": false,
+            "autoplay_video": true,
+            "col_count": 4,
+            "row_count": 2,
+            "border_radius": 0,
+            "subheading": "",
+            "heading": "",
+            "heading_size": "36",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "top-left",
+            "content_align": "left",
+            "content_width": "360",
+            "background_color": "#69679c",
+            "background_gradient": "",
+            "body_text_color": "#ffffff",
+            "button_link_color": "#ffffff",
+            "overlay_color": "#ffffff"
+          }
+        },
+        "image_with_text_overlay_QdRBbX": {
+          "type": "image-with-text-overlay",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_Placeholder_2_2fba5cb3-1e75-415d-a12c-9e801227c6b2.png",
+            "image_small": "shopify:\/\/shop_images\/Image_Placeholder_2_2fba5cb3-1e75-415d-a12c-9e801227c6b2.png",
+            "block_link": "",
+            "background_video": false,
+            "autoplay_video": true,
+            "col_count": 6,
+            "row_count": 1,
+            "border_radius": 0,
+            "subheading": "",
+            "heading": "",
+            "heading_size": "36",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "top-left",
+            "content_align": "left",
+            "content_width": "360",
+            "background_color": "#69679c",
+            "background_gradient": "",
+            "body_text_color": "#ffffff",
+            "button_link_color": "#ffffff",
+            "overlay_color": "#ffffff"
+          }
+        },
+        "image_with_text_overlay_Kh9UGz": {
+          "type": "image-with-text-overlay",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_Placeholder_3_a1402029-8c7d-4eaf-b350-5b4f2382958c.png",
+            "image_small": "shopify:\/\/shop_images\/Image_Placeholder_3_a1402029-8c7d-4eaf-b350-5b4f2382958c.png",
+            "block_link": "",
+            "background_video": false,
+            "autoplay_video": true,
+            "col_count": 6,
+            "row_count": 1,
+            "border_radius": 0,
+            "subheading": "",
+            "heading": "",
+            "heading_size": "36",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "top-left",
+            "content_align": "left",
+            "content_width": "360",
+            "background_color": "#69679c",
+            "background_gradient": "",
+            "body_text_color": "#ffffff",
+            "button_link_color": "#ffffff",
+            "overlay_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_overlay_NQneQd",
+        "image_with_text_overlay_QdRBbX",
+        "image_with_text_overlay_Kh9UGz"
+      ],
+      "settings": {
+        "heading": "Exclusive $ Collections",
+        "padding_top": 64,
+        "padding_bottom": 32,
+        "desktop_height": 295,
+        "mobile_height": 200,
+        "row_mobile": 4,
+        "col_spacing": "17.5",
+        "row_spacing": "16",
+        "media_hover": true
+      }
+    },
+    "dynamic_grid_pwKUdJ": {
+      "type": "dynamic-grid",
+      "blocks": {
+        "image_with_text_overlay_bmzqzt": {
+          "type": "image-with-text-overlay",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4304_6e5b9c74-1a9c-4b4b-a63d-93dc4ec67b0c.png",
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4304_c3cdf8d1-831b-4c55-b447-d991b6393602.png",
+            "block_link": "",
+            "background_video": false,
+            "autoplay_video": true,
+            "col_count": 5,
+            "row_count": 1,
+            "border_radius": 0,
+            "subheading": "",
+            "heading": "COTTON",
+            "heading_size": "36",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "bottom-center",
+            "content_align": "left",
+            "content_width": "360",
+            "background_color": "#69679c",
+            "background_gradient": "",
+            "body_text_color": "#ffffff",
+            "button_link_color": "#ffffff",
+            "overlay_color": "#ffffff"
+          }
+        },
+        "image_with_text_overlay_7Axe4x": {
+          "type": "image-with-text-overlay",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4305_7c782336-e800-447a-b9f8-6421830fca94.png",
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4305.png",
+            "block_link": "",
+            "background_video": false,
+            "autoplay_video": true,
+            "col_count": 5,
+            "row_count": 1,
+            "border_radius": 0,
+            "subheading": "",
+            "heading": "KNIT",
+            "heading_size": "36",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "bottom-center",
+            "content_align": "center",
+            "content_width": "360",
+            "background_color": "#69679c",
+            "background_gradient": "",
+            "body_text_color": "#ffffff",
+            "button_link_color": "#ffffff",
+            "overlay_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_overlay_bmzqzt",
+        "image_with_text_overlay_7Axe4x"
+      ],
+      "settings": {
+        "heading": "",
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "desktop_height": 610,
+        "mobile_height": 720,
+        "row_mobile": 2,
+        "col_spacing": "17.5",
+        "row_spacing": "32",
+        "media_hover": true
+      }
+    },
+    "image_banner_carousel_UymXp9": {
+      "type": "image-banner-carousel",
+      "blocks": {
+        "slide_PDb9cF": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4302_3e0d340b-b6ae-4774-a251-35d8722bf685.png",
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_4302_ea42691a-09aa-43bb-bf87-7f18ef3f3462.png",
+            "image_link": "",
+            "title": "CASUAL BLAZERS",
+            "title_size": "h2",
+            "subtitle": ""
+          }
+        },
+        "slide_79UYMm": {
+          "type": "slide",
+          "settings": {
+            "image_link": "",
+            "title": "CORPORATE SELECTIONS",
+            "title_size": "h2",
+            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
+          }
+        }
+      },
+      "block_order": [
+        "slide_PDb9cF",
+        "slide_79UYMm"
+      ],
+      "settings": {
+        "section_color_scheme": "accent-1",
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "splide_height": 550,
+        "banner_content_check": false,
+        "carousel_arrows": true,
+        "heading": "Exclusive $ Collections",
+        "layout": true,
+        "content_position": "bottom-center"
+      }
+    },
+    "hotspot_carousel_tcbte9": {
+      "type": "hotspot-carousel",
+      "blocks": {
+        "slide_KgNceM": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4293_5ffb86c1-36cb-40f9-ac5c-e6546d36aa8c.png",
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_4293_76fea695-c2cb-47cf-87af-2da4d8dc0b26.png",
+            "image_link": "",
+            "title": "Classic Shirts",
+            "title_size": "h2",
+            "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+          }
+        },
+        "slide_3LMcTm": {
+          "type": "slide",
+          "settings": {
+            "image_link": "",
+            "title": "CORPORATE SELECTIONS",
+            "title_size": "h2",
+            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
+          }
+        },
+        "slide_A7V7JE": {
+          "type": "slide",
+          "settings": {
+            "image_link": "",
+            "title": "CORPORATE SELECTIONS",
+            "title_size": "h2",
+            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
+          }
+        }
+      },
+      "block_order": [
+        "slide_KgNceM",
+        "slide_3LMcTm",
+        "slide_A7V7JE"
+      ],
+      "settings": {
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "carousel_arrows": true,
+        "heading": "LOOK $ BOOK"
+      }
+    },
+    "image_banner_carousel_EVPagW": {
+      "type": "image-banner-carousel",
+      "blocks": {
+        "slide_FVUEXc": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4192_35420127-3f12-4315-a70c-ec7c7352bd2e.png",
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_4192_ed362d36-992e-4765-bcdb-afa417aefdeb.png",
+            "image_link": "",
+            "title": "TEXTURE - TWEETED",
+            "title_size": "h2",
+            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
+          }
+        },
+        "slide_i3xxdi": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3.png",
+            "image_link": "",
+            "title": "CORPORATE SELECTIONS",
+            "title_size": "h2",
+            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
+          }
+        }
+      },
+      "block_order": [
+        "slide_FVUEXc",
+        "slide_i3xxdi"
+      ],
+      "settings": {
+        "section_color_scheme": "background-1",
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "splide_height": 600,
+        "banner_content_check": false,
+        "carousel_arrows": true,
+        "heading": "",
+        "layout": false,
+        "content_position": "top-left"
+      }
+    },
+    "image_text_custom_JAQWH4": {
+      "type": "image-text-custom",
+      "blocks": {
+        "title_DRDT7V": {
+          "type": "title",
+          "settings": {
+            "title": "Find Your Store"
+          }
+        },
+        "description_gVPy7L": {
+          "type": "description",
+          "settings": {
+            "subtitle": "<ul><li>The store locator helps customers easily find their nearest Raymond retail store or shop-in-shop.<\/li><li>It allows users to search by city, pincode or current location to pull up results on a map.<\/li><li>Users can input the city or pincode in the search bar to view all Raymond outlets within that location.<\/li><li>When accessing from a mobile device, it automatically detects the user's current location for nearby stores.<\/li><\/ul>"
+          }
+        },
+        "button_WwtCik": {
+          "type": "button",
+          "settings": {
+            "button_text": "View Store",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_DRDT7V",
+        "description_gVPy7L",
+        "button_WwtCik"
+      ],
+      "settings": {
+        "heading": "STORE $ LOCATOR",
+        "section_color_scheme": "",
+        "padding_top": 32,
+        "padding_bottom": 64,
+        "image_small": "shopify:\/\/shop_images\/Group_1000003007.png",
+        "image_desktop": "shopify:\/\/shop_images\/Vector_d851ce7c-979a-403c-a521-55ef42ba8f71.png"
+      }
+    }
+  },
+  "order": [
+    "image_banner_carousel_x8JDPe",
+    "dynamic_grid_BrCNMw",
+    "dynamic_grid_pwKUdJ",
+    "image_banner_carousel_UymXp9",
+    "hotspot_carousel_tcbte9",
+    "image_banner_carousel_EVPagW",
+    "image_text_custom_JAQWH4"
+  ]
+}

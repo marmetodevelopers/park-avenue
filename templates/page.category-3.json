@@ -1,21 +1,13 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
-      }
-    },
     "image_banner_carousel_x8JDPe": {
       "type": "image-banner-carousel",
       "blocks": {
         "slide_RWVLfi": {
           "type": "slide",
           "settings": {
-            "image_small": "shopify:\/\/shop_images\/frame1000005354.png",
-            "image_desktop": "shopify:\/\/shop_images\/frame1000004958.png",
+            "image_small": "shopify:\/\/shop_images\/Frame_1000005354_0eab6c4f-44b0-44dc-860d-4926097936b0.png",
+            "image_desktop": "shopify:\/\/shop_images\/Frame_1000004958_1d158efa-53f8-44ac-9353-2423abc13c22.png",
             "image_link": "",
             "title": "",
             "title_size": "h2",
@@ -49,8 +41,8 @@
       ],
       "settings": {
         "section_color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "splide_height": 600,
         "banner_content_check": false,
         "carousel_arrows": false,
@@ -59,14 +51,86 @@
         "content_position": "top-left"
       }
     },
+    "dynamic_grid_pwKUdJ": {
+      "type": "dynamic-grid",
+      "blocks": {
+        "image_with_text_overlay_bmzqzt": {
+          "type": "image-with-text-overlay",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4259_3c9883ba-6932-439c-9657-635928ff977b.png",
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4259_3c9883ba-6932-439c-9657-635928ff977b.png",
+            "block_link": "",
+            "background_video": false,
+            "autoplay_video": true,
+            "col_count": 5,
+            "row_count": 1,
+            "border_radius": 0,
+            "subheading": "",
+            "heading": "CORPORATE CASUAL",
+            "heading_size": "36",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "bottom-center",
+            "content_align": "left",
+            "content_width": "360",
+            "background_color": "#69679c",
+            "background_gradient": "",
+            "body_text_color": "#ffffff",
+            "button_link_color": "#ffffff",
+            "overlay_color": "#ffffff"
+          }
+        },
+        "image_with_text_overlay_7Axe4x": {
+          "type": "image-with-text-overlay",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4260_78ad7441-2150-4d05-9da7-fb7ad577bac7.png",
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4260_78ad7441-2150-4d05-9da7-fb7ad577bac7.png",
+            "block_link": "",
+            "background_video": false,
+            "autoplay_video": true,
+            "col_count": 5,
+            "row_count": 1,
+            "border_radius": 0,
+            "subheading": "",
+            "heading": "REFFERED CASUALS",
+            "heading_size": "36",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "bottom-center",
+            "content_align": "center",
+            "content_width": "360",
+            "background_color": "#69679c",
+            "background_gradient": "",
+            "body_text_color": "#ffffff",
+            "button_link_color": "#ffffff",
+            "overlay_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_overlay_bmzqzt",
+        "image_with_text_overlay_7Axe4x"
+      ],
+      "settings": {
+        "heading": "",
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "desktop_height": 610,
+        "mobile_height": 720,
+        "row_mobile": 2,
+        "col_spacing": "17.5",
+        "row_spacing": "32",
+        "media_hover": true
+      }
+    },
     "image_banner_carousel_UymXp9": {
       "type": "image-banner-carousel",
       "blocks": {
         "slide_PDb9cF": {
           "type": "slide",
           "settings": {
-            "image_small": "shopify:\/\/shop_images\/Rectangle_4302.png",
-            "image_desktop": "shopify:\/\/shop_images\/Rectangle_4258.png",
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4302_2e17b5f1-0f71-4275-9c48-3679fd27ed6b.png",
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_4258_5e7fffe5-b7c7-4cd0-ae4b-42e4b8d2fa4c.png",
             "image_link": "",
             "title": "BUSINESS SHIRTS",
             "title_size": "h2",
@@ -88,9 +152,9 @@
         "slide_79UYMm"
       ],
       "settings": {
-        "section_color_scheme": "scheme-d6a838de-8ff4-448b-b1fa-8f30b0e95f1f",
-        "padding_top": 36,
-        "padding_bottom": 36,
+        "section_color_scheme": "accent-1",
+        "padding_top": 64,
+        "padding_bottom": 32,
         "splide_height": 550,
         "banner_content_check": false,
         "carousel_arrows": true,
@@ -99,125 +163,14 @@
         "content_position": "bottom-center"
       }
     },
-    "image_banner_carousel_EVPagW": {
-      "type": "image-banner-carousel",
-      "blocks": {
-        "slide_FVUEXc": {
-          "type": "slide",
-          "settings": {
-            "image_small": "shopify:\/\/shop_images\/Rectangle_4302.png",
-            "image_desktop": "shopify:\/\/shop_images\/Rectangle_4192.png",
-            "image_link": "",
-            "title": "CORPORATE SELECTIONS",
-            "title_size": "h2",
-            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
-          }
-        },
-        "slide_i3xxdi": {
-          "type": "slide",
-          "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3.png",
-            "image_link": "",
-            "title": "CORPORATE SELECTIONS",
-            "title_size": "h2",
-            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
-          }
-        }
-      },
-      "block_order": [
-        "slide_FVUEXc",
-        "slide_i3xxdi"
-      ],
-      "settings": {
-        "section_color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "splide_height": 600,
-        "banner_content_check": false,
-        "carousel_arrows": true,
-        "heading": "",
-        "layout": false,
-        "content_position": "top-left"
-      }
-    },
-    "dynamic_grid_pwKUdJ": {
-      "type": "dynamic-grid",
-      "blocks": {
-        "image_with_text_overlay_bmzqzt": {
-          "type": "image-with-text-overlay",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_4259_2754d64f-0f19-4a65-ae9a-9dc7f3fa2388.png",
-            "block_link": "",
-            "background_video": false,
-            "autoplay_video": true,
-            "col_count": 5,
-            "row_count": 1,
-            "border_radius": 0,
-            "subheading": "",
-            "heading": "BUSINESS FORMAL",
-            "heading_size": "36",
-            "button_text": "",
-            "button_link": "",
-            "content_position": "bottom-center",
-            "content_align": "left",
-            "content_width": "360",
-            "background_color": "#69679c",
-            "background_gradient": "",
-            "body_text_color": "#ffffff",
-            "button_link_color": "#ffffff",
-            "overlay_color": "#ffffff"
-          }
-        },
-        "image_with_text_overlay_7Axe4x": {
-          "type": "image-with-text-overlay",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_4259.png",
-            "image_small": "shopify:\/\/shop_images\/Rectangle_4304.png",
-            "block_link": "",
-            "background_video": false,
-            "autoplay_video": true,
-            "col_count": 5,
-            "row_count": 1,
-            "border_radius": 0,
-            "subheading": "",
-            "heading": "SEMI - FORMAL",
-            "heading_size": "36",
-            "button_text": "",
-            "button_link": "",
-            "content_position": "bottom-center",
-            "content_align": "center",
-            "content_width": "360",
-            "background_color": "#69679c",
-            "background_gradient": "",
-            "body_text_color": "#ffffff",
-            "button_link_color": "#ffffff",
-            "overlay_color": "#ffffff"
-          }
-        }
-      },
-      "block_order": [
-        "image_with_text_overlay_bmzqzt",
-        "image_with_text_overlay_7Axe4x"
-      ],
-      "settings": {
-        "heading": "",
-        "padding_top": 40,
-        "padding_bottom": 40,
-        "desktop_height": 610,
-        "mobile_height": 720,
-        "row_mobile": 2,
-        "col_spacing": "17.5",
-        "row_spacing": "32",
-        "media_hover": true
-      }
-    },
     "dynamic_grid_BrCNMw": {
       "type": "dynamic-grid",
       "blocks": {
         "image_with_text_overlay_NQneQd": {
           "type": "image-with-text-overlay",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Image_Placeholder.png",
+            "image": "shopify:\/\/shop_images\/Image_Placeholder_67f9296e-31a3-42e5-b6d9-01cd9dc15e70.png",
+            "image_small": "shopify:\/\/shop_images\/Image_Placeholder_mobile.png",
             "block_link": "",
             "background_video": false,
             "autoplay_video": true,
@@ -242,7 +195,8 @@
         "image_with_text_overlay_QdRBbX": {
           "type": "image-with-text-overlay",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Image_Placeholder_1.png",
+            "image": "shopify:\/\/shop_images\/Image_Placeholder_2_a4e792f4-409e-4251-9f66-f32f122e3142.png",
+            "image_small": "shopify:\/\/shop_images\/Image_Placeholder_mobile_2.png",
             "block_link": "",
             "background_video": false,
             "autoplay_video": true,
@@ -267,7 +221,8 @@
         "image_with_text_overlay_Kh9UGz": {
           "type": "image-with-text-overlay",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Image_Placeholder_2.png",
+            "image": "shopify:\/\/shop_images\/Image_Placeholder_3.png",
+            "image_small": "shopify:\/\/shop_images\/Image_Placeholder_mobile_3.png",
             "block_link": "",
             "background_video": false,
             "autoplay_video": true,
@@ -297,8 +252,8 @@
       ],
       "settings": {
         "heading": "Exclusive $ Collections",
-        "padding_top": 40,
-        "padding_bottom": 40,
+        "padding_top": 32,
+        "padding_bottom": 32,
         "desktop_height": 295,
         "mobile_height": 200,
         "row_mobile": 4,
@@ -307,14 +262,55 @@
         "media_hover": true
       }
     },
+    "image_banner_carousel_EVPagW": {
+      "type": "image-banner-carousel",
+      "blocks": {
+        "slide_FVUEXc": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4194.png",
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_4192_02c80080-07cb-418c-a1fd-c1521b800e03.png",
+            "image_link": "",
+            "title": "CASUAL OF PROFESSION",
+            "title_size": "h2",
+            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
+          }
+        },
+        "slide_i3xxdi": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3.png",
+            "image_link": "",
+            "title": "CORPORATE SELECTIONS",
+            "title_size": "h2",
+            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
+          }
+        }
+      },
+      "block_order": [
+        "slide_FVUEXc",
+        "slide_i3xxdi"
+      ],
+      "settings": {
+        "section_color_scheme": "background-1",
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "splide_height": 600,
+        "banner_content_check": false,
+        "carousel_arrows": true,
+        "heading": "",
+        "layout": false,
+        "content_position": "top-left"
+      }
+    },
     "hotspot_carousel_tcbte9": {
       "type": "hotspot-carousel",
       "blocks": {
         "slide_KgNceM": {
           "type": "slide",
           "settings": {
-            "image_small": "shopify:\/\/shop_images\/Rectangle_4293.png",
-            "image_desktop": "shopify:\/\/shop_images\/Rectangle_841.png",
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4293_4f689b73-7c61-49ee-9705-8e2297c9a900.png",
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_841_5cddde51-8ecd-4304-85b5-904a3d34cb5d.png",
             "image_link": "",
             "title": "Classic Shirts",
             "title_size": "h2",
@@ -346,8 +342,8 @@
         "slide_A7V7JE"
       ],
       "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36,
+        "padding_top": 32,
+        "padding_bottom": 32,
         "carousel_arrows": true,
         "heading": "LOOK $ BOOK"
       }
@@ -383,20 +379,19 @@
       "settings": {
         "heading": "STORE $ LOCATOR",
         "section_color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36,
+        "padding_top": 32,
+        "padding_bottom": 64,
         "image_small": "shopify:\/\/shop_images\/Group_1000003007.png",
         "image_desktop": "shopify:\/\/shop_images\/Vector_d851ce7c-979a-403c-a521-55ef42ba8f71.png"
       }
     }
   },
   "order": [
-    "main",
     "image_banner_carousel_x8JDPe",
-    "image_banner_carousel_UymXp9",
-    "image_banner_carousel_EVPagW",
     "dynamic_grid_pwKUdJ",
+    "image_banner_carousel_UymXp9",
     "dynamic_grid_BrCNMw",
+    "image_banner_carousel_EVPagW",
     "hotspot_carousel_tcbte9",
     "image_text_custom_JAQWH4"
   ]
