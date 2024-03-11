@@ -49,6 +49,7 @@
         padding: 1.4rem;
     }
     .label-container{
-        padding: 1.8rem 7.8rem;
+        padding: 1.8rem 0;
+		text-align: center;
     }
 }

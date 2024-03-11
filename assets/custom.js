@@ -68,6 +68,10 @@ if (trendForecastElement.length > 0) {
             autoplay: false,
             pagination: false,
             arrows: false,
+            classes: {
+                pagination: 'splide__pagination ibc_pagination',
+                page: 'splide__pagination__page ibc_page',
+            },
             breakpoints: {
                 749: {
                     perPage: 1,
