@@ -1,0 +1,146 @@
+{{ "trend-forecast.css" |  asset_url |  stylesheet_tag }}
+{% style %}
+    .padding-{{ section.id }} {
+        padding-top: {{ section.settings.mobile-padding-top }}px;
+        padding-bottom: {{ section.settings.mobile-padding-bottom  }}px;
+        @media screen and (min-width: 750px){
+            padding-top: {{ section.settings.padding-top }}px;
+            padding-bottom: {{ section.settings.padding-bottom  }}px;
+        }
+    }
+{% endstyle %}
+
+<div class="page-width padding-{{ section.id }} trend-forecast-main-container">
+    {% if section.settings.title != blank %}
+        {% render "section-heading", text: section.settings.title, css_class: "h2" %}
+    {% endif %}
+    <div class="splide-container trend-forecast-container splide mt-3">
+        {% render "splide-arrows" %}
+        <div class="splide__track">
+            <ul class="splide__list">
+                {% for block in section.blocks %}
+                    <li class="splide__slide" style="background-color: {{ block.settings.card-background-color  }}; width: 83%">
+                        <div class="image-container">
+                            {% render "picture", class: "media media--portrait", mobileSrc: block.settings.image, desktopSrc: block.settings.image %}
+                        </div>
+                        <div class="body label-container" style="background-color: {{ block.settings.background-color  }};">
+                            <a href="{{ block.settings.button_url }}" style="color: {{ block.settings.text-color }}">
+                                {{ block.settings.text }}
+                            </a>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "Trend forecast",
+        "settings": [
+            {
+                "type": "richtext",
+                "id": "title",
+                "label": "Enter section title",
+                "info": "Enter $ symbol wherever you want to include brand logo"
+            },
+            {
+                "type": "header",
+                "content": "Mobile padding settings"
+            },
+            {
+                "type": "range",
+                "id": "mobile-padding-top",
+                "label": "Top padding",
+                "min": 0,
+                "max": 100,
+                "step": 4,
+                "unit": "px",
+                "default": 48
+                },
+                {
+                "type": "range",
+                "id": "mobile-padding-bottom",
+                "label": "Bottom padding",
+                "min": 0,
+                "max": 100,
+                "step": 4,
+                "unit": "px",
+                "default": 0
+            },
+            {
+                "type": "header",
+                "content": "Desktop padding settings"
+            },
+            {
+                "type": "range",
+                "id": "padding-top",
+                "label": "Top padding",
+                "min": 0,
+                "max": 100,
+                "step": 4,
+                "unit": "px",
+                "default": 64
+                },
+                {
+                "type": "range",
+                "id": "padding-bottom",
+                "label": "Bottom padding",
+                "min": 0,
+                "max": 100,
+                "step": 4,
+                "unit": "px",
+                "default": 0
+            }
+        ],
+        "blocks": [
+            {
+                "type": "image-width-text",
+                "name": "Image and text",
+                "limit": 4,
+                "settings": [
+                    {
+                        "type": "color",
+                        "id": "card-background-color",
+                        "label": "Select card background color",
+                        "default": "#D0EAFF"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "Select image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text",
+                        "label": "Enter text",
+                        "default": "Blue Formal Shirt"
+                    },
+                    {
+                        "type": "color",
+                        "id": "background-color",
+                        "label": "Select text background color",
+                        "default": "#005AA5"
+                    },
+                    {
+                        "type": "color",
+                        "id": "text-color",
+                        "label": "Select text color",
+                        "default": "#fff"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_url",
+                        "label": "Enter url"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "Trend forecast"
+            }
+        ]
+    }
+{% endschema %}

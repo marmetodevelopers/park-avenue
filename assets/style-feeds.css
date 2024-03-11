@@ -1,0 +1,120 @@
+.main-style-feed-slider-container{
+    margin-bottom: 2rem;
+}
+.main-style-feed-slider{
+    margin-top: 2.3rem;
+    margin-bottom: 2.4rem;
+}
+.main-style-feed-thumbnail-slider .splide__arrow{
+    border-radius: 0;
+    border: 1px solid;
+}
+.main-style-feed-thumbnail-slider .splide__arrow--prev{
+    left: 0;
+}
+.main-style-feed-thumbnail-slider .splide__arrow--next{
+    right: 1.6rem;
+}
+.splide__track--nav>.splide__list>.splide__slide{
+    border: none;
+}
+.splide__track--nav>.splide__list>.splide__slide.is-active {
+    border: 2px solid #000;
+}
+.video_container{
+    height: 100%;
+}
+.video_container video{
+    width: 100%;
+    height: 100%;
+}
+.style-feed-custom-image{
+    padding-bottom: 133.5%;
+}
+.style-feed-thumbnail-image{
+    aspect-ratio: 103/100;
+}
+.main-style-feed-thumbnail-slider .splide__slide{
+    width: 10.5rem;
+    height: auto;
+}
+.main-style-feed-thumbnail-slider .splide__arrows button{
+    border-radius: 0;
+    background: transparent;
+    width: auto;
+    height: auto;
+    opacity: 1;
+}
+.video_container{
+    position: relative;
+    max-height: 50rem;
+}
+.video_state_container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.active-video{
+    opacity: 0;
+}
+.inactive-video{
+    opacity: 1;
+}
+.video_container .mobile_video{
+    display: block;
+    height: 100%;
+}
+.video_container .desktop_video{
+    display: none;
+}
+@media screen and (max-width: 749px){
+    .main-style-feed-slider.page-width{
+        padding: 0;
+    }
+    .main-style-feed-thumbnail-slider.splide:not(.is-overflow) .splide__pagination{
+        display: block;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+}
+@media screen and (min-width: 750px){
+    .main-style-feed-slider-container{
+        margin-bottom: 0;
+    }
+    .video_container{
+        max-height: 45rem;
+    }
+    .main-style-feed-thumbnail-slider.splide-container .splide__arrows{
+        bottom: 8rem;
+    }
+    .main-style-feed-thumbnail-slider .splide__arrows button{
+        background: #000;
+        border: none;
+    }
+    .main-style-feed-thumbnail-slider.splide-container .splide__arrows path{
+        fill: #fff;
+    }
+    .main-style-feed-slider{
+        margin-top: 3rem;
+        margin-bottom: 1.65rem;
+    }
+    .style-feed-custom-image{
+        padding-bottom: 37.5%;
+    } 
+    .style-feed-thumbnail-image{
+        aspect-ratio: 223/150;
+    }
+    .video_container .mobile_video{
+        display: none;
+    }
+    .video_container .desktop_video{
+        display: block;
+        height: 100%;
+    }
+}

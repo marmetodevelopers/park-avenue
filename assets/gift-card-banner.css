@@ -1,0 +1,48 @@
+.git-banner-container{
+    position: relative;
+}
+.git-banner-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-left: 1.7rem;
+    padding-right: 2rem;
+    align-items: center;
+}
+.media--custom-gift{
+    padding-bottom: 93.5%;
+}
+.git-banner-content__text{
+
+    margin-bottom: 2.4rem;
+}
+.git-banner-content-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+.git-banner-content-container svg{
+    margin-left: 1.6rem;
+}
+@media screen and (min-width: 750px){
+    .media--custom-gift{
+        padding-bottom: 35.6%;
+    }
+    .git-banner-content{
+        justify-content: center;
+    }
+    .git-banner-content__text{
+        max-width: 75rem;
+    }
+}
+@media screen and (min-width: 1300px){
+    .media--custom-gift{
+        padding-bottom: 18.8%;
+    }
+    .git-banner-content__text{
+        max-width: 100.1rem;
+    }
+}
