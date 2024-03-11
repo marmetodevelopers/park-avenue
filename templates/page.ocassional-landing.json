@@ -191,6 +191,8 @@
         "slide_media_9CRDgg": {
           "type": "slide-media",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1000005469.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Frame_1000005396.jpg",
             "loop": true,
             "autoplay": false,
             "controls": false,
