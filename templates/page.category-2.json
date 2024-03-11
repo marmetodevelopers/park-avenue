@@ -62,7 +62,7 @@
             "image_desktop": "shopify:\/\/shop_images\/Rectangle_4258_2493a7d3-28c1-4435-bbdd-cf256e381e61.png",
             "image_link": "",
             "title": "SEMI-FORMAL",
-            "title_size": "h2",
+            "title_size": "h4",
             "subtitle": ""
           }
         },
@@ -81,13 +81,13 @@
         "slide_79UYMm"
       ],
       "settings": {
-        "section_color_scheme": "accent-1",
+        "section_color_scheme": "scheme-335dc927-1616-448e-8fc3-a51874a4ed24",
         "padding_top": 64,
         "padding_bottom": 32,
         "splide_height": 550,
         "banner_content_check": false,
         "carousel_arrows": true,
-        "heading": "Exclusive $ Collections",
+        "heading": "EXCLUSIVE $ COLLECTIONS",
         "layout": true,
         "content_position": "bottom-center"
       }
@@ -107,7 +107,7 @@
             "row_count": 1,
             "border_radius": 0,
             "subheading": "",
-            "heading": "BUSINESS FORMAL",
+            "heading": "SEASONAL SEMI",
             "heading_size": "36",
             "button_text": "",
             "button_link": "",
@@ -133,7 +133,7 @@
             "row_count": 1,
             "border_radius": 0,
             "subheading": "",
-            "heading": "SEMI - FORMAL",
+            "heading": "REFFERED CASUALS",
             "heading_size": "36",
             "button_text": "",
             "button_link": "",

@@ -16,7 +16,7 @@
       {% if section.settings.heading != blank %}
         {% render "text-with-logo"
           , text: section.settings.heading
-          , css_class: "h2 page-width mb-3" %}
+          , css_class: "h2  mb-3 custom-heading" %}
       {% endif %}
       <div class="image_text_container">
         <div class="it_img_container">
@@ -38,8 +38,8 @@
                 </div>
 
               {% when 'button' %}
-                <a href="{{ block.settings.button_url }}" class="button button--primary">
-                  <span>
+                <a href="{{ block.settings.button_url }}" class=" button button--primary">
+                  <span class="custom-btn-text">
                     {{ block.settings.button_text }}
                   </span>
                   <span>
