@@ -48,7 +48,7 @@
         "padding_bottom": 0,
         "splide_height": 600,
         "banner_content_check": false,
-        "carousel_arrows": true,
+        "carousel_arrows": false,
         "heading": "",
         "layout": false,
         "content_position": "top-left"
@@ -261,9 +261,9 @@
       ],
       "settings": {
         "heading": "VISIBLE $ CHOICES",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "image_background": "#EDEDED",
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "image_background": "#ededed",
         "image_flow": true
       }
     },

@@ -1,7 +1,8 @@
 /* Image text carousel style */
 .splide__list {
     transition: all 350ms linear;
- }
+}
+
 .image_text_carousel .image_box img {
     width: 100%;
     height: auto;
@@ -11,47 +12,58 @@
 .image_text_carousel .title {
     text-align: center;
     margin: 20px 0px 16px 0px;
-    @media  screen and (min-width: 750px) {
-        margin: 24px 0px 20px 0px;        
+
+    @media screen and (min-width: 750px) {
+        margin: 24px 0px 20px 0px;
     }
 }
 
 .image_text_carousel .splide__slide {
     border: 1px solid black;
     font-weight: 500;
-    line-height: 140%;
+    line-height: 130%;
 }
+
 .splide-box {
     border: 1px solid #000;
 }
-.image_text_carousel-main{
+
+.image_text_carousel-main {
     padding-left: 12.2rem;
 }
-.image_text_carousel .splide__pagination{
+
+.image_text_carousel .splide__pagination {
     padding-right: 12.2rem;
 }
 
 /* here i wrote css of park letest collection  */
 
-@media screen and (max-width:749px){
-    .image_text_carousel-main{
+@media screen and (max-width:749px) {
+    .image_text_carousel-main {
         padding-left: 1.5rem;
     }
-    .image_text_carousel .splide__pagination{
+
+    .image_text_carousel .splide__pagination {
         padding-right: 1.5rem;
     }
-    .image_text_carousel .splide__pagination,.park_latest_collection_image_text_carousel .splide__pagination{
+
+    .image_text_carousel .splide__pagination,
+    .park_latest_collection_image_text_carousel .splide__pagination {
         max-width: 80%;
         margin: 0 auto;
     }
+
     .image_text_carousel .splide__pagination li {
         width: calc(100% / 5 - 5px);
     }
-    .park_latest_collection_image_text_carousel .splide__pagination li{
+
+    .park_latest_collection_image_text_carousel .splide__pagination li {
         width: calc(100% / 9 - 5px);
 
     }
-    .image_text_carousel .splide__pagination li .splide__pagination__page.ibc_page, .park_latest_collection_image_text_carousel .splide__pagination li .splide__pagination__page.ibc_page{
+
+    .image_text_carousel .splide__pagination li .splide__pagination__page.ibc_page,
+    .park_latest_collection_image_text_carousel .splide__pagination li .splide__pagination__page.ibc_page {
         width: 80%;
     }
 }
@@ -63,7 +75,8 @@
     padding: 0 !important;
     padding-right: 12.2rem !important;
 }
-@media screen and (max-width:749px){
+
+@media screen and (max-width:749px) {
     .image_text_carousel .image_text_pd_il {
         padding-right: 1.5rem !important;
     }
@@ -71,20 +84,23 @@
 }
 
 /* Park categories carousel style */
-.park_category_carousel_content-top{
+.park_category_carousel_content-top {
     padding: 0 12.2rem;
 }
-@media screen and (min-width: 750px) and (max-width: 989px){
-    .park_category_carousel_content-top{
+
+@media screen and (min-width: 750px) and (max-width: 989px) {
+    .park_category_carousel_content-top {
         padding: 0 5rem;
     }
-    
+
 }
-@media screen and (max-width:749px){
-    .park_category_carousel_content-top{
+
+@media screen and (max-width:749px) {
+    .park_category_carousel_content-top {
         padding: 0;
     }
-    .category-item-heading{
+
+    .category-item-heading {
         padding-left: 2.4rem;
     }
 }
@@ -103,14 +119,16 @@
     width: 100%;
     height: auto;
     aspect-ratio: 0.52;
+    display: block;
 }
 
 .park_category_carousel_content .carousel_box {
     position: relative;
 }
- .park_category_carousel_content p{
+
+.park_category_carousel_content p {
     margin: 0;
- }
+}
 
 .park_category_carousel_content .category_text {
     position: absolute;
@@ -122,7 +140,7 @@
     color: #FFF;
     width: 100%;
     font-weight: 700;
-    line-height: 140%;
+    line-height: 130%;
 }
 
 .carousel_box .overlay {
@@ -148,6 +166,7 @@
         width: 100%;
         height: auto;
         aspect-ratio: 0.968;
+        display: block;
     }
 
     .park_category_carousel_content .category_text {
@@ -246,15 +265,14 @@
 }
 
 
-@media screen and (max-width:749px){
-.park_trending_image_text_carousel .park_trending_overflow_image{
-    border: none;
-    
- }
- .park_trending_image_text_carousel .park_trending_title{
-    border:1px solid #0E0E10;
+@media screen and (max-width:749px) {
+    .park_trending_image_text_carousel .park_trending_overflow_image {
+        border: none;
+    }
 
- }
+    .park_trending_image_text_carousel .park_trending_title {
+        border: 1px solid #0E0E10;
+    }
 
 }
 
@@ -277,13 +295,13 @@
         border: 1px solid #828282;
         border-top: none;
         font-weight: 500;
-        line-height: 160%; 
+        line-height: 160%;
         text-transform: uppercase;
     }
 
     .park_trending_image_text_carousel .park_trending_overflow_image {
-      border: 1px solid #828282;
-      border-bottom: none;
+        border: 1px solid #828282;
+        border-bottom: none;
     }
 
 }
@@ -329,6 +347,7 @@
     width: 100%;
     height: auto;
     aspect-ratio: 1;
+    display: block;
 }
 
 .park_collections_carousel_content .carousel_box {
@@ -338,7 +357,7 @@
 .park_collections_carousel_content .category_text {
     position: absolute;
     left: 8px;
-    bottom: -2px;
+    bottom: -12px;
     padding: 5px 20px;
     background-color: #FFF;
 }
@@ -398,7 +417,7 @@
 
     .park_collections_carousel_content .category_text {
         left: 16px;
-        bottom: 0px;
+        bottom: -6px;
         padding: 16px 20px;
         background-color: #FFF;
     }
@@ -408,17 +427,18 @@
 /* Park shop the look style */
 
 .park_shop_the_look {
-  position: relative;
+    position: relative;
 }
 
 .park_shop_the_look .body {
-  text-align: center;
+    text-align: center;
 }
 
-.park_shop_the_look .hotspot_first_content, .hotspot_second_content {
-  position: relative;
-  width: 218px;
-  height: 303px;
+.park_shop_the_look .hotspot_first_content,
+.hotspot_second_content {
+    position: relative;
+    width: 218px;
+    height: 303px;
 }
 
 .park_shop_the_look .popup_box {
@@ -429,43 +449,44 @@
 }
 
 .park_shop_the_look .first_popup_box {
-  left: 0px;  
+    left: 0px;
 }
 
 .park_shop_the_look .second_popup_box {
-  right: 0px;
+    right: 0px;
 }
 
-.park_shop_the_look .first_popup_pic img, .second_popup_pic img {
-  width: 189px;
-  height: auto;
-  aspect-ratio: 0.84;
+.park_shop_the_look .first_popup_pic img,
+.second_popup_pic img {
+    width: 189px;
+    height: auto;
+    aspect-ratio: 0.84;
 }
 
 .park_shop_the_look .svg_first {
-  position: absolute;
-  top: 140px;
-  left: 236px;
+    position: absolute;
+    top: 140px;
+    left: 234px;
 }
 
 .park_shop_the_look .svg_third {
-  position: absolute;
-  top: 148px;
-  left: 213px;
-  cursor: pointer;
-  fill: white;
+    position: absolute;
+    top: 148px;
+    left: 211px;
+    cursor: pointer;
+    fill: white;
 }
 
 .park_shop_the_look .svg_second {
-  position: absolute;
-  top: 126px;
-  right: -64px;
+    position: absolute;
+    top: 126px;
+    right: -62px;
 }
 
 .park_shop_the_look .svg_fourth {
-  position: absolute;
-  top: 134px;
-  right: -23px;
-  cursor: pointer;
-  fill: white;
+    position: absolute;
+    top: 134px;
+    right: -21px;
+    cursor: pointer;
+    fill: white;
 }

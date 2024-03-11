@@ -24,17 +24,17 @@
         {%- case block.type -%}
           {%- when 'image-text' -%}
             <div class="carousel_box">
+              <div class="park_category_image_box">
+                {% render 'picture',
+                  class: '',
+                  mobileSrc: block.settings.mobile_image,
+                  desktopSrc: block.settings.desktop_image
+                %}
+              </div>
               <a href="{{ block.settings.category_url }}">
-                <div class="park_category_image_box">
-                  {% render 'picture',
-                    class: '',
-                    mobileSrc: block.settings.mobile_image,
-                    desktopSrc: block.settings.desktop_image
-                  %}
-                </div>
+                <p class="h3 category_text ">{{ block.settings.category_text }}</p>
+                <div class="overlay"></div>
               </a>
-              <p class="h3 category_text ">{{ block.settings.category_text }}</p>
-              <div class="overlay"></div>
             </div>
         {%- endcase -%}
       {% endfor %}
@@ -59,7 +59,7 @@
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_top",
-      "default": 36
+      "default": 32
     },
     {
       "type": "range",
@@ -69,13 +69,14 @@
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
-      "default": 36
+      "default": 32
     }
   ],
   "blocks": [
     {
       "type": "image-text",
       "name": "Image-text",
+      "limit": 4,
       "settings": [
         {
           "type": "image_picker",
