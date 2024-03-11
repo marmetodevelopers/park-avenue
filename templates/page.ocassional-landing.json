@@ -413,6 +413,43 @@
         "padding-top": 64,
         "padding-bottom": 0
       }
+    },
+    "image_text_custom_UUmpMk": {
+      "type": "image-text-custom",
+      "blocks": {
+        "title_tcgA8g": {
+          "type": "title",
+          "settings": {
+            "title": "Find Your Store"
+          }
+        },
+        "description_6KRRHQ": {
+          "type": "description",
+          "settings": {
+            "subtitle": "<ul><li>The store locator helps customers easily find their nearest Raymond retail store or shop-in-shop.<\/li><li>It allows users to search by city, pincode or current location to pull up results on a map.<\/li><li>Users can input the city or pincode in the search bar to view all Raymond outlets within that location<\/li><li>When accessing from a mobile device, it automatically detects the user's current location for nearby stores.<\/li><\/ul><p><\/p>"
+          }
+        },
+        "button_WxqpAk": {
+          "type": "button",
+          "settings": {
+            "button_text": "View Store",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_tcgA8g",
+        "description_6KRRHQ",
+        "button_WxqpAk"
+      ],
+      "settings": {
+        "heading": "STORE $ LOCATOR",
+        "section_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "image_small": "shopify:\/\/shop_images\/Vector_1.jpg",
+        "image_desktop": "shopify:\/\/shop_images\/Vector_1.jpg"
+      }
     }
   },
   "order": [
@@ -424,6 +461,7 @@
     "image_comparisions_nahq9q",
     "image_with_text_slider_FMXiwU",
     "gift_card_banner_X4DYXM",
-    "offer_timer_q4AabV"
+    "offer_timer_q4AabV",
+    "image_text_custom_UUmpMk"
   ]
 }
