@@ -1,7 +1,17 @@
 {
   "sections": {
+    "contact_image_banner_yzy9Ve": {
+      "type": "contact-image-banner",
+      "settings": {
+        "show_heading": true,
+        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
+        "add_image_banner": "shopify:\/\/shop_images\/Rectangle_4240.jpg",
+        "add_image_banner2": "shopify:\/\/shop_images\/Rectangle_4241.png"
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 36,
         "padding_bottom": 36
@@ -16,10 +26,23 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "contact_information_rePhD6": {
+      "type": "contact-information",
+      "settings": {
+        "heading": "Contact Us",
+        "Information1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+        "Information2": "New Hind House, N Morarji Rd, Ballard Estate, Fort, Mumbai, Maharashtra 400001",
+        "mobile_number": 911234567890,
+        "email_address": "example@raymonds.com",
+        "map": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d24235.86412816026!2d72.86540009504705!3d19.081853691397395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c85099bd2947%3A0x1ecc1a60c474a8ae!2sChhatrapati%20Shivaji%20Maharaj%20International%20Airport!5e0!3m2!1sen!2sin!4v1709215416128!5m2!1sen!2sin\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"><\/iframe>"
+      }
     }
   },
   "order": [
+    "contact_image_banner_yzy9Ve",
     "main",
-    "form"
+    "form",
+    "contact_information_rePhD6"
   ]
 }

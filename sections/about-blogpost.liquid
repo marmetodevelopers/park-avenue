@@ -1,0 +1,128 @@
+{{ 'about-blogpost.css' | asset_url | stylesheet_tag }}
+<style>
+  .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top2 }}px;
+      padding-bottom: {{ section.settings.padding_bottom2}}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+</style>
+
+<div class="section-{{ section.id }}-padding">
+  <div class="blog-page-width">
+    {% if section.settings.enter_text1 != blank %}
+      {% render 'text-with-logo'
+        , text: section.settings.enter_text1
+        , css_class: 'h2 mb-3 ' %}
+    {% endif %}
+
+    <div class="grid grid--1-col grid--3-col-desktop grid--2-col-tablet ">
+      {% assign all_posts_except_recent = blog.articles | sort: 'published_at' | reverse %}
+      {% for block in section.blocks %}
+        {% assign article = block.settings.add_your_article %}
+        <div class="grid__item blog-article-container">
+          <div class="recent-article-image-container">
+            {% render 'image-snippet'
+              , mobileSrc: article.image
+              , desktopSrc: article.image %}
+          </div>
+          <div class="main-article-data">
+            <div>
+              <div class="date-container caption">{{ article.published_at | date: '%d %b %y' }}</div>
+              <div class=" main-blog-title h4">
+                <a href="{{article.url}}" class="main-blog-title h4 ">
+                  {{ article.title }}
+
+                </a>
+              </div>
+              <div class="article-desc h5">{{ article.content | truncatewords: 9, "..." }}</div>
+            </div>
+            <a href="{{ article.url }}" class="blog-arrow">
+              {% render 'blog-arrow' %}
+            </a>
+          </div>
+
+
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "about-blogpost",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "label": "enter Heading",
+        "id": "enter_text1"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 2,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 2,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_top2",
+        "min": 0,
+        "max": 100,
+        "step": 2,
+        "unit": "px",
+        "label": "Top Padding Mobile",
+        "default": 36
+      }, {
+        "type": "range",
+        "id": "padding_bottom2",
+        "min": 0,
+        "max": 100,
+        "step": 2,
+        "unit": "px",
+        "label": "Bottom Padding Mobile",
+        "default": 36
+      }
+    ],
+    "blocks": [
+      {
+        "type": "blogpost",
+        "name": "article",
+        "limit": 3,
+        "settings": [
+          {
+            "type": "article",
+            "label": "Add Your Article",
+            "id": "add_your_article"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "article"
+      }
+    ]
+  }
+{% endschema %}
