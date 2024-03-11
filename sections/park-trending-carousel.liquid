@@ -35,6 +35,11 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+  @media screen and (max-width:749px){
+    .park_trending_overflow_image{
+      background-color:{{ section.settings.image_background }};
+    }
+  }
 </style>
 
 <div class="section-{{ section.id }}-padding">
@@ -49,7 +54,8 @@
         id="{{ section.id }}"
         data-desktop-per-page="3"
         data-mobile-per-page="1"
-        data-gap="79"
+        data-gap="59"
+        data-gaptab="20"
         data-desktop-arrow=""
         data-mobile-arrow="true"
         data-desktop-pagination=""
@@ -70,10 +76,7 @@
                 {%- when 'image_text' -%}
                   <div class="splide__slide trending_slides">
                     <a href="{{ block.settings.link }}">
-                      <div
-                        class="park_trending_overflow_image"
-                        style="background: {{ section.settings.image_background }}"
-                      >
+                      <div class="park_trending_overflow_image" style="background: {{ section.settings.image_background }}">
                         <div class="park_trending_image_box">
                           {% render 'picture',
                             class: '',
@@ -124,7 +127,7 @@
       "default": 36
     },
     {
-      "type": "color_background",
+      "type": "color",
       "id": "image_background",
       "label": "Background color"
     },

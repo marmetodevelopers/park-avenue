@@ -1,13 +1,5 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
-      }
-    },
     "image_banner_carousel_x8JDPe": {
       "type": "image-banner-carousel",
       "blocks": {
@@ -147,7 +139,7 @@
         "image_with_text_overlay_Kh9UGz"
       ],
       "settings": {
-        "heading": "Exclusive $ Collections",
+        "heading": "SEASONAL $ Wear",
         "padding_top": 64,
         "padding_bottom": 32,
         "desktop_height": 295,
@@ -240,7 +232,7 @@
             "image_desktop": "shopify:\/\/shop_images\/Rectangle_4302_ea42691a-09aa-43bb-bf87-7f18ef3f3462.png",
             "image_link": "",
             "title": "CASUAL BLAZERS",
-            "title_size": "h2",
+            "title_size": "h4",
             "subtitle": ""
           }
         },
@@ -265,7 +257,7 @@
         "splide_height": 550,
         "banner_content_check": false,
         "carousel_arrows": true,
-        "heading": "Exclusive $ Collections",
+        "heading": "EXCLUSIVE $ COLLECTIONS",
         "layout": true,
         "content_position": "bottom-center"
       }
@@ -395,7 +387,6 @@
     }
   },
   "order": [
-    "main",
     "image_banner_carousel_x8JDPe",
     "dynamic_grid_BrCNMw",
     "dynamic_grid_pwKUdJ",

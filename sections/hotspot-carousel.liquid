@@ -16,7 +16,7 @@
     {% if section.settings.heading != blank %}
       {% render "text-with-logo"
         , text: section.settings.heading
-        , css_class: "h2 page-width mb-3" %}
+        , css_class: "h2 page-width mb-3 custom-heading" %}
     {% endif %}
     <my-splide
       class="splide"
@@ -43,7 +43,7 @@
                   <div class="banner_text_inner">
                     {% if block.settings.title != blank %}
                       <div class="banner_title flex custom_center pos_custom_top {{ block.settings.title_size }}">
-                        <div class="banner_title_inner">
+                        <div class="banner_title_inner h4">
                           {{ block.settings.title }}
                         </div>
                       </div>

@@ -1,13 +1,5 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
-      }
-    },
     "image_banner_carousel_x8JDPe": {
       "type": "image-banner-carousel",
       "blocks": {
@@ -141,7 +133,7 @@
             "image_desktop": "shopify:\/\/shop_images\/Rectangle_4258_5e7fffe5-b7c7-4cd0-ae4b-42e4b8d2fa4c.png",
             "image_link": "",
             "title": "BUSINESS SHIRTS",
-            "title_size": "h2",
+            "title_size": "h4",
             "subtitle": ""
           }
         },
@@ -160,13 +152,13 @@
         "slide_79UYMm"
       ],
       "settings": {
-        "section_color_scheme": "accent-1",
+        "section_color_scheme": "scheme-335dc927-1616-448e-8fc3-a51874a4ed24",
         "padding_top": 64,
         "padding_bottom": 32,
         "splide_height": 550,
         "banner_content_check": false,
         "carousel_arrows": true,
-        "heading": "Exclusive $ Collections",
+        "heading": "BUSINESS $ Wear",
         "layout": true,
         "content_position": "bottom-center"
       }
@@ -395,7 +387,6 @@
     }
   },
   "order": [
-    "main",
     "image_banner_carousel_x8JDPe",
     "dynamic_grid_pwKUdJ",
     "image_banner_carousel_UymXp9",

@@ -1,5 +1,59 @@
 {
   "sections": {
+    "image_banner_carousel_txnTCH": {
+      "type": "image-banner-carousel",
+      "blocks": {
+        "slide_w7HqG9": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4256.jpg",
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3_2.jpg",
+            "image_link": "",
+            "title": "",
+            "title_size": "h2",
+            "subtitle": ""
+          }
+        },
+        "slide_na9XBT": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4256.jpg",
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3_2.jpg",
+            "image_link": "",
+            "title": "",
+            "title_size": "h2",
+            "subtitle": ""
+          }
+        },
+        "slide_Cj7caT": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4256.jpg",
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3_2.jpg",
+            "image_link": "",
+            "title": "",
+            "title_size": "h2",
+            "subtitle": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_w7HqG9",
+        "slide_na9XBT",
+        "slide_Cj7caT"
+      ],
+      "settings": {
+        "section_color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "splide_height": 600,
+        "banner_content_check": false,
+        "carousel_arrows": false,
+        "heading": "",
+        "layout": false,
+        "content_position": "top-left"
+      }
+    },
     "image_text_carousel_igph46": {
       "type": "image-text-carousel",
       "blocks": {
@@ -8,16 +62,7 @@
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
-            "title": "Time to express",
-            "link": "shopify:\/\/blogs\/all-blogs"
-          }
-        },
-        "image_text_F9XDnK": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
-            "title": "Time to express",
+            "title": "Time to Express",
             "link": "shopify:\/\/blogs\/all-blogs"
           }
         },
@@ -26,7 +71,16 @@
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
-            "title": "Time to express",
+            "title": "Time to Express",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_F9XDnK": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22_1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Celebrate the Style",
             "link": "shopify:\/\/blogs\/all-blogs"
           }
         },
@@ -60,8 +114,8 @@
       },
       "block_order": [
         "image_text_9GLbXw",
-        "image_text_F9XDnK",
         "image_text_UnQY8M",
+        "image_text_F9XDnK",
         "image_text_GCFitm",
         "image_text_DAM73K",
         "image_text_kwgEqj"
@@ -89,7 +143,7 @@
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4259desktop.png",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4304mob.png",
-            "category_text": "BUSINESS FORMALS",
+            "category_text": "SEMI - FORMAL",
             "category_url": "shopify:\/\/blogs\/all-blogs"
           }
         },
@@ -98,7 +152,7 @@
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4259desktop.png",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4304mob.png",
-            "category_text": "BUSINESS CAUSAL",
+            "category_text": "BUSINESS CASUAL",
             "category_url": "shopify:\/\/blogs\/all-blogs"
           }
         },
@@ -229,21 +283,12 @@
     "park_trending_carousel_zpaQxH": {
       "type": "park-trending-carousel",
       "blocks": {
-        "image_text_PqKJd3": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265_1.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4265_1.png",
-            "title": "",
-            "link": ""
-          }
-        },
         "image_text_JLTKhV": {
           "type": "image_text",
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265_1.png",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4265_1.png",
-            "title": "Shirts",
+            "title": "Dreamy Formal",
             "link": ""
           }
         },
@@ -252,7 +297,7 @@
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265.png",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4265.png",
-            "title": "Suits",
+            "title": "Ideal Choice",
             "link": ""
           }
         },
@@ -261,22 +306,58 @@
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265_2.png",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4265_2.png",
-            "title": "Styles",
+            "title": "Illusion Dress",
             "link": ""
           }
         }
       },
       "block_order": [
-        "image_text_PqKJd3",
         "image_text_JLTKhV",
         "image_text_VFGQD6",
         "image_text_QpfmpR"
       ],
       "settings": {
-        "heading": "Park $ trending",
+        "heading": "Visible $ Choices",
         "padding_top": 36,
         "padding_bottom": 36,
-        "image_background": ""
+        "image_background": "#ededed"
+      }
+    },
+    "image_text_custom_JULYPf": {
+      "type": "image-text-custom",
+      "blocks": {
+        "title_NNgeiG": {
+          "type": "title",
+          "settings": {
+            "title": "Find Your Store"
+          }
+        },
+        "description_jFibem": {
+          "type": "description",
+          "settings": {
+            "subtitle": "<ul><li>The store locator helps customers easily find their nearest Raymond retail store or shop-in-shop.<\/li><li>It allows users to search by city, pincode or current location to pull up results on a map.<\/li><li>Users can input the city or pincode in the search bar to view all Raymond outlets within that location.<\/li><li>When accessing from a mobile device, it automatically detects the user's current location for nearby stores.<\/li><\/ul>"
+          }
+        },
+        "button_tUkK8h": {
+          "type": "button",
+          "settings": {
+            "button_text": "View Store",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_NNgeiG",
+        "description_jFibem",
+        "button_tUkK8h"
+      ],
+      "settings": {
+        "heading": "STORE $ LOCATOR",
+        "section_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "image_small": "shopify:\/\/shop_images\/Group_1000003007.png",
+        "image_desktop": "shopify:\/\/shop_images\/Vector.jpg"
       }
     },
     "image_banner_carousel_hVDFeT": {
@@ -311,10 +392,12 @@
     }
   },
   "order": [
+    "image_banner_carousel_txnTCH",
     "image_text_carousel_igph46",
     "park_categories_carousel_P3DmhU",
     "park_latest_colletions_carousel_gaz8Me",
     "park_trending_carousel_zpaQxH",
     "image_banner_carousel_hVDFeT"
+    "image_text_custom_JULYPf"
   ]
 }

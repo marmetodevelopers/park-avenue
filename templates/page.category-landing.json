@@ -1,5 +1,59 @@
 {
   "sections": {
+    "image_banner_carousel_GFVY8Q": {
+      "type": "image-banner-carousel",
+      "blocks": {
+        "slide_NdpxbK": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4256_ee0aed95-8594-4390-9dc0-2d4dabe2ee1b.png",
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3_ac05e808-d999-410e-8aa1-f39f33b4f7ba.png",
+            "image_link": "",
+            "title": "",
+            "title_size": "h2",
+            "subtitle": ""
+          }
+        },
+        "slide_qaiFbg": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4256_ee0aed95-8594-4390-9dc0-2d4dabe2ee1b.png",
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3_ac05e808-d999-410e-8aa1-f39f33b4f7ba.png",
+            "image_link": "",
+            "title": "",
+            "title_size": "h2",
+            "subtitle": ""
+          }
+        },
+        "slide_mp9ha7": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4256_ee0aed95-8594-4390-9dc0-2d4dabe2ee1b.png",
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3_ac05e808-d999-410e-8aa1-f39f33b4f7ba.png",
+            "image_link": "",
+            "title": "",
+            "title_size": "h2",
+            "subtitle": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_NdpxbK",
+        "slide_qaiFbg",
+        "slide_mp9ha7"
+      ],
+      "settings": {
+        "section_color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "splide_height": 600,
+        "banner_content_check": false,
+        "carousel_arrows": true,
+        "heading": "",
+        "layout": false,
+        "content_position": "top-left"
+      }
+    },
     "park_collections_carousel_VTJmi8": {
       "type": "park-collections-carousel",
       "blocks": {
@@ -48,8 +102,8 @@
       ],
       "settings": {
         "category_heading": "PARK $ COLLECTION'S",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 32,
+        "padding_bottom": 32
       }
     },
     "image_text_carousel_fKiyHn": {
@@ -109,9 +163,9 @@
         "image_text_ekbqpC"
       ],
       "settings": {
-        "heading": "New $ news",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "heading": "NEW $ ARRIVAL",
+        "padding_top": 32,
+        "padding_bottom": 32
       }
     },
     "park_shop_the_looks_yETinB": {
@@ -160,9 +214,9 @@
         "image_text_TJcPBM"
       ],
       "settings": {
-        "heading": "SHOOP $ THE LOOK",
-        "padding_top": 36,
-        "padding_bottom": 36,
+        "heading": "NEW $ ARRIVALS",
+        "padding_top": 32,
+        "padding_bottom": 32,
         "first_hotspot_top": 20,
         "first_hotspot_left": 20,
         "second_hotspot_top": 20,
@@ -212,12 +266,51 @@
         "image_background": "#EDEDED",
         "image_flow": true
       }
+    },
+    "image_text_custom_MiYcA3": {
+      "type": "image-text-custom",
+      "blocks": {
+        "title_R8dUqH": {
+          "type": "title",
+          "settings": {
+            "title": "Find Your Store"
+          }
+        },
+        "description_YkjnEL": {
+          "type": "description",
+          "settings": {
+            "subtitle": "<ul><li>The store locator helps customers easily find their nearest Raymond retail store or shop-in-shop.<\/li><li>It allows users to search by city, pincode or current location to pull up results on a map.<\/li><li>Users can input the city or pincode in the search bar to view all Raymond outlets within that location.<\/li><li>When accessing from a mobile device, it automatically detects the user's current location for nearby stores.<\/li><\/ul>"
+          }
+        },
+        "button_kPPirN": {
+          "type": "button",
+          "settings": {
+            "button_text": "View Store",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_R8dUqH",
+        "description_YkjnEL",
+        "button_kPPirN"
+      ],
+      "settings": {
+        "heading": "STORE $ LOCATOR",
+        "section_color_scheme": "",
+        "padding_top": 32,
+        "padding_bottom": 64,
+        "image_small": "shopify:\/\/shop_images\/Vector.png",
+        "image_desktop": "shopify:\/\/shop_images\/Vector.png"
+      }
     }
   },
   "order": [
+    "image_banner_carousel_GFVY8Q",
     "park_collections_carousel_VTJmi8",
     "image_text_carousel_fKiyHn",
     "park_shop_the_looks_yETinB",
-    "park_trending_carousel_JhGKch"
+    "park_trending_carousel_JhGKch",
+    "image_text_custom_MiYcA3"
   ]
 }

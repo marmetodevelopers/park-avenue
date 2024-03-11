@@ -16,7 +16,7 @@
     {% if section.settings.heading != blank %}
       {% render "text-with-logo"
         , text: section.settings.heading
-        , css_class: "h2 page-width mb-3" %}
+        , css_class: "h2 page-width mb-3 custom-heading" %}
     {% endif %}
     {% assign blocksCount = section.blocks | size %}
     <my-splide
@@ -42,8 +42,8 @@
                   <div class="banner_text {% if section.settings.layout == true %} pos_absolute flex p_32 height_96 {{ section.settings.content_position }} {% endif %}">
                     <div class="banner_text_inner">
                       {% if block.settings.title != blank %}
-                        <div class="banner_title flex custom_center {{ block.settings.title_size }}">
-                          <div class="banner_title_inner">
+                        <div class="banner_title flex custom_center ">
+                          <div class="banner_title_inner {{ block.settings.title_size }}">
                             {{ block.settings.title }}
                           </div>
                         </div>
@@ -118,7 +118,7 @@
         "type": "checkbox",
         "label": "Carousel Arrows",
         "id": "carousel_arrows",
-        "default": false,
+        "default":false,
         "info": "check if carousel arrow buttons are required to be visible"
       }, {
         "type": "text",

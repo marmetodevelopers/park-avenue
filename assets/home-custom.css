@@ -1,5 +1,7 @@
 /* Image text carousel style */
-
+.splide__list {
+    transition: all 350ms linear;
+ }
 .image_text_carousel .image_box img {
     width: 100%;
     height: auto;
@@ -16,15 +18,76 @@
 
 .image_text_carousel .splide__slide {
     border: 1px solid black;
+    font-weight: 500;
+    line-height: 140%;
 }
+.splide-box {
+    border: 1px solid #000;
+}
+.image_text_carousel-main{
+    padding-left: 12.2rem;
+}
+.image_text_carousel .splide__pagination{
+    padding-right: 12.2rem;
+}
+
+/* here i wrote css of park letest collection  */
+
+@media screen and (max-width:749px){
+    .image_text_carousel-main{
+        padding-left: 1.5rem;
+    }
+    .image_text_carousel .splide__pagination{
+        padding-right: 1.5rem;
+    }
+    .image_text_carousel .splide__pagination,.park_latest_collection_image_text_carousel .splide__pagination{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .image_text_carousel .splide__pagination li {
+        width: calc(100% / 5 - 5px);
+    }
+    .park_latest_collection_image_text_carousel .splide__pagination li{
+        width: calc(100% / 9 - 5px);
+
+    }
+    .image_text_carousel .splide__pagination li .splide__pagination__page.ibc_page, .park_latest_collection_image_text_carousel .splide__pagination li .splide__pagination__page.ibc_page{
+        width: 80%;
+    }
+}
+
 
 /* To override the splide default style important required */
 
 .image_text_carousel .image_text_pd_il {
     padding: 0 !important;
+    padding-right: 12.2rem !important;
+}
+@media screen and (max-width:749px){
+    .image_text_carousel .image_text_pd_il {
+        padding-right: 1.5rem !important;
+    }
+
 }
 
 /* Park categories carousel style */
+.park_category_carousel_content-top{
+    padding: 0 12.2rem;
+}
+@media screen and (min-width: 750px) and (max-width: 989px){
+    .park_category_carousel_content-top{
+        padding: 0 5rem;
+    }
+    
+}
+@media screen and (max-width:749px){
+    .park_category_carousel_content-top{
+        padding: 0;
+    }
+    .category-item-heading{
+        padding-left: 2.4rem;
+    }
+}
 
 .park_category_carousel_content {
     display: grid;
@@ -45,6 +108,9 @@
 .park_category_carousel_content .carousel_box {
     position: relative;
 }
+ .park_category_carousel_content p{
+    margin: 0;
+ }
 
 .park_category_carousel_content .category_text {
     position: absolute;
@@ -54,6 +120,9 @@
     z-index: 2;
     text-align: center;
     color: #FFF;
+    width: 100%;
+    font-weight: 700;
+    line-height: 140%;
 }
 
 .carousel_box .overlay {
@@ -83,6 +152,7 @@
 
     .park_category_carousel_content .category_text {
         bottom: 57px;
+        width: 100%;
     }
 
 }
@@ -110,6 +180,8 @@
     color: #FFF;
     text-align: left;
     margin: 14px 16px 14px 0px;
+    font-weight: 500;
+    line-height: 160%;
 }
 
 /* To override the splide default style important required */
@@ -152,15 +224,38 @@
     aspect-ratio: 0.68;
 }
 
+
+.park_trending_image_text_carousel .park_trending_image_box {
+    position: relative;
+    bottom: 20px;
+}
+
+.park_trending_image_text_carousel .park_trending_overflow_image {
+    margin-top: 20px;
+    padding: 0px 20px 0px 20px;
+    border: 1px solid #828282;
+    border-bottom: none;
+}
+
 .park_trending_image_text_carousel .park_trending_title {
     padding: 16px;
-    border: 1px solid #0E0E10;
+    border: 1px solid #828282;
+    border-top: none;
     margin: 0px;
     text-align: center;
 }
 
-.park_trending_image_text_carousel .park_trending_overflow_image {
-  border: none;
+
+@media screen and (max-width:749px){
+.park_trending_image_text_carousel .park_trending_overflow_image{
+    border: none;
+    
+ }
+ .park_trending_image_text_carousel .park_trending_title{
+    border:1px solid #0E0E10;
+
+ }
+
 }
 
 /* To override the splide default style important required */
@@ -181,6 +276,9 @@
         padding: 27px;
         border: 1px solid #828282;
         border-top: none;
+        font-weight: 500;
+        line-height: 160%; 
+        text-transform: uppercase;
     }
 
     .park_trending_image_text_carousel .park_trending_overflow_image {

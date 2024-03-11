@@ -1,13 +1,5 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
-      }
-    },
     "image_banner_carousel_x8JDPe": {
       "type": "image-banner-carousel",
       "blocks": {
@@ -69,7 +61,7 @@
             "image_desktop": "shopify:\/\/shop_images\/Rectangle_4258.png",
             "image_link": "",
             "title": "BUSINESS SHIRTS",
-            "title_size": "h2",
+            "title_size": "h4",
             "subtitle": ""
           }
         },
@@ -88,13 +80,13 @@
         "slide_79UYMm"
       ],
       "settings": {
-        "section_color_scheme": "accent-1",
+        "section_color_scheme": "scheme-335dc927-1616-448e-8fc3-a51874a4ed24",
         "padding_top": 64,
         "padding_bottom": 32,
         "splide_height": 550,
         "banner_content_check": false,
         "carousel_arrows": true,
-        "heading": "Exclusive $ Collections",
+        "heading": "EXCLUSIVE $ COLLECTION",
         "layout": true,
         "content_position": "bottom-center"
       }
@@ -296,9 +288,9 @@
         "image_with_text_overlay_Kh9UGz"
       ],
       "settings": {
-        "heading": "Exclusive $ Collections",
-        "padding_top": 32,
-        "padding_bottom": 32,
+        "heading": "OFFICE $ WEAR",
+        "padding_top": 30,
+        "padding_bottom": 30,
         "desktop_height": 295,
         "mobile_height": 200,
         "row_mobile": 4,
@@ -391,7 +383,6 @@
     }
   },
   "order": [
-    "main",
     "image_banner_carousel_x8JDPe",
     "image_banner_carousel_UymXp9",
     "image_banner_carousel_EVPagW",

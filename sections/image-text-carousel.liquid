@@ -15,7 +15,7 @@
 </style>
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
-  <div class="page-width">
+  <div class="image_text_carousel-main" id="image_text_carousel-main">
     <div class="image_text_carousel">
       {% if section.settings.heading != blank %}
         {% render 'text-with-logo', text: section.settings.heading, css_class: 'h2 mb-3' %}
@@ -24,13 +24,19 @@
       <splide-carousel
         class="splide" 
         id="{{ section.id }}"
-        data-desktop-per-page="2.2"
-        data-mobile-per-page="1.2"
+        data-mobilePaddingLeft="{{ section.settings.mobile_padding_left | append: '%' }}"
+        data-mobilePaddingRight="12%"
+        data-desktopPaddingLeft="{{ section.settings.mobile_padding_left | append: '%' }}"
+        data-desktopPaddingRight="9%"
+        data-desktop-per-page="2"
+        data-mobile-per-page="1"
         data-gap="20"
         data-desktop-arrow="true"
         data-mobile-arrow="true"
         data-desktop-pagination="true"
         data-mobile-pagination="true"
+        data-autoplay="true"
+        
       >
         <div class="splide__arrows img_txt_carousel_arrows image_text_pd_il">
           <button class="splide__arrow splide__arrow--prev">
@@ -45,7 +51,7 @@
             {% for block in section.blocks %}
               {%- case block.type -%}
                 {%- when 'image_text' -%}
-                  <div class="splide__slide">
+                  <div class="splide__slide splide-box">
                     <a href="{{ block.settings.link }}">
                       <div class="image_box">
                         {% render 'picture',
