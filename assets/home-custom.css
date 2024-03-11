@@ -45,7 +45,7 @@
         margin: 0 auto;
     }
     .image_text_carousel .splide__pagination li {
-        width: calc(100% / 5 - 5px);
+        width: calc(100% / 7 - 5px);
     }
     .park_latest_collection_image_text_carousel .splide__pagination li{
         width: calc(100% / 9 - 5px);

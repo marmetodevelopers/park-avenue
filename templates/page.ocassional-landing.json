@@ -162,7 +162,8 @@
             "mobile_image": "shopify:\/\/shop_images\/40df26294a60afeee9bce95cd84da054.png",
             "loop": true,
             "autoplay": false,
-            "controls": true
+            "controls": true,
+            "thumbnail_cover_image": "shopify:\/\/shop_images\/Rectangle_4194.jpg"
           }
         },
         "slide_media_twMkAY": {
@@ -209,6 +210,78 @@
         "mobile-padding-bottom": 48,
         "padding-top": 0,
         "padding-bottom": 64
+      }
+    },
+    "image_text_carousel_K4DKi9": {
+      "type": "image-text-carousel",
+      "blocks": {
+        "image_text_bFMRxV": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22_2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156_1.jpg",
+            "title": "Time to Express",
+            "link": ""
+          }
+        },
+        "image_text_hXdYLh": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22_3.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156_1_4791f2bc-b3e5-4083-8aa4-aeafc04b47e1.jpg",
+            "title": "Time to Express",
+            "link": ""
+          }
+        },
+        "image_text_D6PMUq": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22_2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156_1.jpg",
+            "title": "Time to Express",
+            "link": ""
+          }
+        },
+        "image_text_JEi79t": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22_2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156_1.jpg",
+            "title": "Time to Express",
+            "link": ""
+          }
+        },
+        "image_text_WgBJxW": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22_2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156_1.jpg",
+            "title": "Time to Express",
+            "link": ""
+          }
+        },
+        "image_text_mhRP8T": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22_2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156_1.jpg",
+            "title": "Time to Express",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_text_bFMRxV",
+        "image_text_hXdYLh",
+        "image_text_D6PMUq",
+        "image_text_JEi79t",
+        "image_text_WgBJxW",
+        "image_text_mhRP8T"
+      ],
+      "settings": {
+        "heading": "New $ ARRIVALS",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "image_comparisions_nahq9q": {
@@ -347,6 +420,7 @@
     "park_latest_colletions_carousel_bmz7tL",
     "trend-forecast",
     "style_feeds_4NcKBp",
+    "image_text_carousel_K4DKi9",
     "image_comparisions_nahq9q",
     "image_with_text_slider_FMXiwU",
     "gift_card_banner_X4DYXM",
