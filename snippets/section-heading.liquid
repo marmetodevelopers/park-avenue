@@ -1,0 +1,21 @@
+{%capture logo%}
+    {% render "pa-brand-logo" %}
+{% endcapture %}
+
+<div class="text-with-logo {{ css_class }}">
+    {{ text | strip_html | replace: "$", logo }}
+</div>
+
+<style>
+.text-with-logo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 749px) {
+    .text-with-logo svg{
+        width: 2.4rem;
+    }
+}
+</style>

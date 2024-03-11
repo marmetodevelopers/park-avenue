@@ -1,0 +1,201 @@
+{{ 'style-feeds.css' |  asset_url |  stylesheet_tag }}
+{{ "custom.css" |  asset_url |  stylesheet_tag }}
+{% style %}
+    .padding-{{ section.id }} {
+        padding-top: {{ section.settings.mobile-padding-top }}px;
+        padding-bottom: {{ section.settings.mobile-padding-bottom  }}px;
+        @media screen and (min-width: 750px){
+            padding-top: {{ section.settings.padding-top }}px;
+            padding-bottom: {{ section.settings.padding-bottom  }}px;
+        }
+    }
+{% endstyle %}
+
+<div class="padding-{{ section.id }} main-style-feed-slider-container">
+    <div class="page-width">
+        {% if section.settings.title != blank %}
+            {% render "section-heading", text: section.settings.title, css_class: "h2" %}
+        {% endif %}
+    </div>
+    <div class="page-width main-style-feed-slider splide" id="main-slider">
+        <div class="splide__track">
+            <ul class="splide__list">
+                {% for block in section.blocks %}
+                    <li class="splide__slide">
+                        {% if block.settings.image != blank and block.settings.mobile_image != blank %}
+                            {% render "picture", class: "media style-feed-custom-image", mobileSrc: block.settings.mobile_image, desktopSrc: block.settings.image %}
+                        {%elsif block.settings.video != blank %}
+                            <div class="video_container {% if block.settings.autoplay %}autoplay{% endif %}">
+                                <div class="desktop_video">
+                                    {{ block.settings.video | video_tag: autoplay: block.settings.autoplay, loop: block.settings.loop, muted: true, controls: block.settings.controls }}
+                                </div>
+                                <div class="mobile_video">
+                                    {{ block.settings.mobile_video | video_tag: autoplay: block.settings.autoplay, loop: block.settings.loop, muted: true, controls: block.settings.controls }}
+                                </div>
+                                <div class="video_state_container">
+                                    {% render "video_icon" %}
+                                </div>
+                            </div>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-width splide-container main-style-feed-thumbnail-slider splide is-overflow" id="thumbnail-slider">
+        {% render "splide-arrows" %}
+        <div class="splide__track">
+            <ul class="splide__list">
+                {% for block in section.blocks %}
+                    <li class="splide__slide">
+                        {% if block.settings.thumbnail_cover_image or block.settings.image != blank %}
+                            {% if block.settings.thumbnail_cover_image != blank %}
+                                {% render "picture", class: "media style-feed-thumbnail-image", mobileSrc: block.settings.thumbnail_cover_image, desktopSrc: block.settings.thumbnail_cover_image  %}
+                            {% elsif block.settings.image %}
+                                {% render "picture", class: "media style-feed-thumbnail-image", mobileSrc: block.settings.image, desktopSrc: block.settings.image  %}
+                            {% endif %}
+                        {% elsif block.settings.video != blank %}
+                            {% render "picture", class: "media style-feed-thumbnail-image", mobileSrc: block.settings.thumbnail_cover_image, desktopSrc: block.settings.thumbnail_cover_image %}
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>   
+</div>
+{% schema %}
+    {
+        "name": "Style feeds",
+        "settings": [
+            {
+                "type": "richtext",
+                "id": "title",
+                "label": "Enter section title",
+                "info": "Enter $ symbol wherever you want to include brand logo"
+            },
+            {
+                "type": "header",
+                "content": "Mobile padding settings"
+            },
+            {
+                "type": "range",
+                "id": "mobile-padding-top",
+                "label": "Top padding",
+                "min": 0,
+                "max": 100,
+                "step": 4,
+                "unit": "px",
+                "default": 48
+            },
+            {
+                "type": "range",
+                "id": "mobile-padding-bottom",
+                "label": "Bottom padding",
+                "min": 0,
+                "max": 100,
+                "step": 4,
+                "unit": "px",
+                "default": 0
+            },
+            {
+                "type": "header",
+                "content": "Desktop padding settings"
+            },
+            {
+                "type": "range",
+                "id": "padding-top",
+                "label": "Top padding",
+                "min": 0,
+                "max": 100,
+                "step": 4,
+                "unit": "px",
+                "default": 64
+            },
+            {
+                "type": "range",
+                "id": "padding-bottom",
+                "label": "Bottom padding",
+                "min": 0,
+                "max": 100,
+                "step": 4,
+                "unit": "px",
+                "default": 0
+            }
+        ],
+        "blocks": [
+            {
+                "type": "slide-media",
+                "name": "Slide media",
+                "settings": [
+                    {
+                        "type": "header",
+                        "content": "Main slide image"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "Select image for desktop"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "mobile_image",
+                        "label": "Select image for mobile"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Main slide video"
+                    },
+                    {
+                        "type": "video",
+                        "id": "video",
+                        "label": "Select desktop video",
+                        "info": "If image is already selected, based on priority image will be shown"
+                    },
+                    {
+                        "type": "video",
+                        "id": "mobile_video",
+                        "label": "Select mobile video",
+                        "info": "If image is already selected, based on priority image will be shown"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Video controls"
+                    },
+                    {
+                        "type": "checkbox",
+                        "id": "loop",
+                        "label": "Loop through the video while playing",
+                        "default": true
+                    },
+                    {
+                        "type": "checkbox",
+                        "id": "autoplay",
+                        "label": "Autoplay the video",
+                        "default": false
+                    },
+                    {
+                        "type": "checkbox",
+                        "id": "controls",
+                        "label": "Show controls on video",
+                        "default": false
+                    },
+                    {
+                        "type": "header",
+                        "content": "Thumbnail image for Main slide"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "thumbnail_cover_image",
+                        "label": "Select thumbnail cover image"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "Style feeds"
+            }
+        ]
+    }
+{% endschema %}

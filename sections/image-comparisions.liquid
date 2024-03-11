@@ -1,0 +1,146 @@
+{{ "image-comparision.css" | asset_url | stylesheet_tag }}
+<script src="{{ 'image-comparision.js' | asset_url }}" defer="defer"></script>
+
+{% style %}
+  .padding-{{ section.id }} {
+      padding-top: {{ section.settings.mobile-padding-top }}px;
+      padding-bottom: {{ section.settings.mobile-padding-bottom  }}px;
+      @media screen and (min-width: 750px){
+          padding-top: {{ section.settings.padding-top }}px;
+          padding-bottom: {{ section.settings.padding-bottom  }}px;
+      }
+  }
+{% endstyle %}
+<div class="padding-{{ section.id }}">
+  <div class="page-width">
+    <div>
+      {% if section.settings.title != blank %}
+        {% render "section-heading", text: section.settings.title, css_class: "h2" %}
+    {% endif %}
+    </div>
+    <div class="mt-3">
+      <image-comparison class="image-comparison" data-layout="horizontal" style="animate --percent: 3%">
+        <span class="image-comparison__animate"></span>
+        <div class="image-comparison__before image-comparison__item-start">
+          <div class="image-comparision-product-container">
+            {% if section.settings.first_image != blank %}
+                {% render "picture", class: "media media--custom", mobileSrc: section.settings.first_image, desktopSrc: section.settings.desktop_first_image %}
+            {% endif %}
+          </div>
+        </div>
+        <div class="image-comparison__after image-comparison__item--start">
+          <div class="image-comparision-product-container">
+            {% if section.settings.second_image != blank %}
+              {% render "picture", class: "media media--custom", mobileSrc: section.settings.second_image, desktopSrc: section.settings.desktop_second_image %}
+            {% endif %}
+          </div>
+        </div>
+            <button type="button" class="image-comparison__button">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="33" viewBox="0 0 24 33" fill="none">
+                  <rect x="0.00183105" y="0.489502" width="23.2769" height="32.1061" fill="white"/>
+                  <line x1="4.81824" y1="7.71419" x2="19.266" y2="7.71419" stroke="black" stroke-width="1.60531"/>
+                  <line x1="4.81824" y1="15.7396" x2="19.266" y2="15.7396" stroke="black" stroke-width="1.60531"/>
+                  <line x1="4.81824" y1="23.7669" x2="19.266" y2="23.7669" stroke="black" stroke-width="1.60531"/>
+              </svg>
+             </span>
+          </button>
+      </image-comparison>
+    </div>
+  </div>
+</div>
+  
+{% schema %}
+  {
+    "name": "Image comparision",
+    "settings": [
+      {
+        "type": "richtext",
+        "id": "title",
+        "label": "Enter heading",
+        "default": "<p>OUTFIT $ INSPO</p>"
+      },
+      {
+        "type": "header",
+        "content": "Mobile images"
+      },
+      {
+        "type": "image_picker",
+        "id": "first_image",
+        "label": "Select first comparision image"
+      },
+      {
+        "type": "image_picker",
+        "id": "second_image",
+        "label": "Select second comparision image"
+      },
+      {
+        "type": "header",
+        "content": "Desktop images"
+      },
+      {
+        "type": "image_picker",
+        "id": "desktop_first_image",
+        "label": "Select first comparision image"
+      },
+      {
+        "type": "image_picker",
+        "id": "desktop_second_image",
+        "label": "Select second comparision image"
+      },
+      {
+          "type": "header",
+          "content": "Mobile padding settings"
+      },
+      {
+          "type": "range",
+          "id": "mobile-padding-top",
+          "label": "Top padding",
+          "min": 0,
+          "max": 96,
+          "step": 4,
+          "unit": "px",
+          "default": 0
+      },
+      {
+          "type": "range",
+          "id": "mobile-padding-bottom",
+          "label": "Bottom padding",
+          "min": 0,
+          "max": 96,
+          "step": 4,
+          "unit": "px",
+          "default": 48
+      },
+      {
+          "type": "header",
+          "content": "Desktop padding settings"
+      },
+      {
+          "type": "range",
+          "id": "padding-top",
+          "label": "Top padding",
+          "min": 0,
+          "max": 96,
+          "step": 4,
+          "unit": "px",
+          "default": 0
+      },
+      {
+          "type": "range",
+          "id": "padding-bottom",
+          "label": "Bottom padding",
+          "min": 0,
+          "max": 96,
+          "step": 4,
+          "unit": "px",
+          "default": 64
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image comparision"
+      }
+    ]
+  }
+{% endschema %}

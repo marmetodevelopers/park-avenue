@@ -1,14 +1,241 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
+    "trend-forecast": {
+      "type": "trend-forecast",
+      "blocks": {
+        "image_width_text_bgAGhh": {
+          "type": "image-width-text",
+          "settings": {
+            "card-background-color": "#d0eaff",
+            "image": "shopify:\/\/shop_images\/Rectangle_4170.png",
+            "text": "Blue Formal Shirt",
+            "background-color": "#005aa5",
+            "text-color": "#ffffff",
+            "button_url": ""
+          }
+        },
+        "image_width_text_mBpmNL": {
+          "type": "image-width-text",
+          "settings": {
+            "card-background-color": "#ffd2d2",
+            "image": "shopify:\/\/shop_images\/image_8.png",
+            "text": "Blue Formal Shirt",
+            "background-color": "#db5353",
+            "text-color": "#ffffff",
+            "button_url": ""
+          }
+        },
+        "image_width_text_nnFXLy": {
+          "type": "image-width-text",
+          "settings": {
+            "card-background-color": "#fffdcd",
+            "image": "shopify:\/\/shop_images\/Rectangle_4172.png",
+            "text": "Blue Formal Shirt",
+            "background-color": "#e2dc3e",
+            "text-color": "#000000",
+            "button_url": ""
+          }
+        },
+        "image_width_text_HtCmTQ": {
+          "type": "image-width-text",
+          "settings": {
+            "card-background-color": "#ffe9c9",
+            "image": "shopify:\/\/shop_images\/Rectangle_4173.png",
+            "text": "Blue Formal Shirt",
+            "background-color": "#ffc163",
+            "text-color": "#000000",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_width_text_bgAGhh",
+        "image_width_text_mBpmNL",
+        "image_width_text_nnFXLy",
+        "image_width_text_HtCmTQ"
+      ],
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
+        "title": "<p>TREND $ FORECAST<\/p>",
+        "mobile-padding-top": 48,
+        "mobile-padding-bottom": 48,
+        "padding-top": 44,
+        "padding-bottom": 64
+      }
+    },
+    "style_feeds_4NcKBp": {
+      "type": "style-feeds",
+      "blocks": {
+        "slide_media_4T9j9h": {
+          "type": "slide-media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/c6bd703ef51650b96947a3ee3efd0f83.png",
+            "mobile_image": "shopify:\/\/shop_images\/40df26294a60afeee9bce95cd84da054.png",
+            "loop": true,
+            "autoplay": false,
+            "controls": true
+          }
+        },
+        "slide_media_twMkAY": {
+          "type": "slide-media",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/Nature Beautiful short video 720p HD.mp4",
+            "mobile_video": "shopify:\/\/files\/videos\/Nature Beautiful short video 720p HD.mp4",
+            "loop": true,
+            "autoplay": false,
+            "controls": false,
+            "thumbnail_cover_image": "shopify:\/\/shop_images\/Image_Placeholder_mobile.png"
+          }
+        }
+      },
+      "block_order": [
+        "slide_media_4T9j9h",
+        "slide_media_twMkAY"
+      ],
+      "settings": {
+        "title": "<p>STYLE $ FEEDS<\/p>",
+        "mobile-padding-top": 0,
+        "mobile-padding-bottom": 48,
+        "padding-top": 0,
+        "padding-bottom": 64
+      }
+    },
+    "image_comparisions_nahq9q": {
+      "type": "image-comparisions",
+      "settings": {
+        "title": "<p>OUTFIT $ INSPO<\/p>",
+        "first_image": "shopify:\/\/shop_images\/Rectangle_841_cea65cce-a7bb-4322-bef9-a1e8de8c9143.png",
+        "second_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+        "desktop_first_image": "shopify:\/\/shop_images\/Rectangle_4192_ed362d36-992e-4765-bcdb-afa417aefdeb.png",
+        "desktop_second_image": "shopify:\/\/shop_images\/Rectangle_4244_e880eb1e-0bd2-4b78-acba-7f2f78433c58.png",
+        "mobile-padding-top": 0,
+        "mobile-padding-bottom": 48,
+        "padding-top": 0,
+        "padding-bottom": 64
+      }
+    },
+    "image_with_text_slider_FMXiwU": {
+      "type": "image-with-text-slider",
+      "blocks": {
+        "image_text_slide_gbkxRJ": {
+          "type": "image-text-slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/361d437693201c5e44703073dee73168.png",
+            "height": "adapt",
+            "desktop_image_width": "medium",
+            "layout": "image_first",
+            "desktop_content_position": "middle",
+            "desktop_content_alignment": "left",
+            "image_behavior": "none",
+            "mobile_content_alignment": "left",
+            "content_layout": "no-overlap",
+            "heading": "Influencers Voice",
+            "heading_size": "h3",
+            "caption": "The record  is my all-time favourite. It's really amazing. I discovered that the crosswalk's stripes could be readily raised to resemble stripes, which gave me the idea to replicate a crossing. The guys had to be positioned carefully so that it appeared as though they were strolling across your clothes.",
+            "caption_text_style": "caption",
+            "text_size": "medium",
+            "text": "<p>-Creative Director  Arun Deepak<\/p>",
+            "text_style": "body",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "image_text_slide_nVt6T8": {
+          "type": "image-text-slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/361d437693201c5e44703073dee73168.png",
+            "height": "adapt",
+            "desktop_image_width": "medium",
+            "layout": "image_first",
+            "desktop_content_position": "middle",
+            "desktop_content_alignment": "left",
+            "image_behavior": "none",
+            "mobile_content_alignment": "left",
+            "content_layout": "no-overlap",
+            "heading": "Influencers Voice",
+            "heading_size": "h3",
+            "caption": "The record  is my all-time favourite. It's really amazing. I discovered that the crosswalk's stripes could be readily raised to resemble stripes, which gave me the idea to replicate a crossing. The guys had to be positioned carefully so that it appeared as though they were strolling across your clothes.",
+            "caption_text_style": "caption",
+            "text_size": "small",
+            "text": "<p>-Creative Director  Arun Deepak<\/p>",
+            "text_style": "body",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "image_text_slide_gbkxRJ",
+        "image_text_slide_nVt6T8"
+      ],
+      "settings": {
+        "title": "<p>GUEST $ EDITORIALS<\/p>",
+        "color_scheme": "background-1",
+        "mobile-padding-top": 0,
+        "mobile-padding-bottom": 48,
+        "padding-top": 0,
+        "padding-bottom": 64
+      }
+    },
+    "gift_card_banner_X4DYXM": {
+      "type": "gift-card-banner",
+      "blocks": {
+        "heading_C4D8wm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Gift cards",
+            "heading_size": "h2"
+          }
+        },
+        "text_KNqzwQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The store locator helps customers easily find their nearest Raymond retail store or shop-in-shop. The store locator helps customers easily find their nearest Raymond retail store or shop-in-shop.<\/p>",
+            "text_style": "h5"
+          }
+        },
+        "button_8mMwzF": {
+          "type": "button",
+          "settings": {
+            "button_label": "Gift Now",
+            "button_link": "shopify:\/\/collections",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_C4D8wm",
+        "text_KNqzwQ",
+        "button_8mMwzF"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/gift.png",
+        "mobile_image": "shopify:\/\/shop_images\/gift-mobile.jpg",
+        "color_scheme": "background-2",
+        "padding-top": 40,
+        "padding-bottom": 40
+      }
+    },
+    "offer_timer_q4AabV": {
+      "type": "offer-timer",
+      "settings": {
+        "banner_image": "shopify:\/\/shop_images\/timer.png",
+        "date": "31\/3\/2024",
+        "color_scheme": "",
+        "mobile-padding-top": 48,
+        "mobile-padding-bottom": 0,
+        "padding-top": 64,
+        "padding-bottom": 0
       }
     }
   },
   "order": [
-    "main"
+    "trend-forecast",
+    "style_feeds_4NcKBp",
+    "image_comparisions_nahq9q",
+    "image_with_text_slider_FMXiwU",
+    "gift_card_banner_X4DYXM",
+    "offer_timer_q4AabV"
   ]
 }
