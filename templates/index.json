@@ -320,7 +320,38 @@
         "heading": "Visible $ Choices",
         "padding_top": 36,
         "padding_bottom": 36,
-        "image_background": "#ededed"
+        "image_background": "#ededed",
+        "image_flow": true
+      }
+    },
+    "image_banner_carousel_hVDFeT": {
+      "type": "image-banner-carousel",
+      "blocks": {
+        "slide_EjNRE4": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4256.jpg",
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3_3.jpg",
+            "image_link": "",
+            "title": "CORPORATE SELECTIONS",
+            "title_size": "h2",
+            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
+          }
+        }
+      },
+      "block_order": [
+        "slide_EjNRE4"
+      ],
+      "settings": {
+        "section_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "splide_height": 600,
+        "banner_content_check": false,
+        "carousel_arrows": false,
+        "heading": "Exclusive $ Collections",
+        "layout": false,
+        "content_position": "top-left"
       }
     },
     "image_text_custom_JULYPf": {
@@ -358,36 +389,6 @@
         "padding_bottom": 36,
         "image_small": "shopify:\/\/shop_images\/Group_1000003007.png",
         "image_desktop": "shopify:\/\/shop_images\/Vector.jpg"
-      }
-    },
-    "image_banner_carousel_hVDFeT": {
-      "type": "image-banner-carousel",
-      "blocks": {
-        "slide_EjNRE4": {
-          "type": "slide",
-          "settings": {
-            "image_small": "shopify:\/\/shop_images\/Rectangle_4256.jpg",
-            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3_3.jpg",
-            "image_link": "",
-            "title": "CORPORATE SELECTIONS",
-            "title_size": "h2",
-            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
-          }
-        }
-      },
-      "block_order": [
-        "slide_EjNRE4"
-      ],
-      "settings": {
-        "section_color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "splide_height": 600,
-        "banner_content_check": false,
-        "carousel_arrows": false,
-        "heading": "Exclusive $ Collections",
-        "layout": false,
-        "content_position": "top-left"
       }
     }
   },
