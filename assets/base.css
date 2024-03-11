@@ -107,7 +107,6 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 		padding: 0 12.2rem;
 	}
 
-
 	.header.page-width,
 	.utility-bar__grid.page-width {
 		padding-left: 3.2rem;
@@ -123,6 +122,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 		padding: 0 5rem;
 	}
 }
+
 @media screen and (min-width: 750px) and (max-width: 989px) {
 	.page-width{
 		padding: 0 5rem;
