@@ -113,6 +113,13 @@
 		width: 80%;
 	
 	}
+    .main-style-feed-thumbnail-slider #thumbnail-slider-list{
+        margin-bottom: 2.4rem !important;
+    }
+    .main-style-feed-slider-container .splide__arrow svg {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
 }
 @media screen and (min-width: 750px){
     .main-style-feed-slider-container{
@@ -122,7 +129,7 @@
         max-height: 45rem;
     }
     .main-style-feed-thumbnail-slider.splide-container .splide__arrows{
-        bottom: 8rem;
+        bottom: 5rem;
         left: 0;
     }
     .main-style-feed-thumbnail-slider .splide__arrows button{
