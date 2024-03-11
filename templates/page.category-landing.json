@@ -263,7 +263,8 @@
         "heading": "VISIBLE $ CHOICES",
         "padding_top": 36,
         "padding_bottom": 36,
-        "image_background": "#EDEDED"
+        "image_background": "#EDEDED",
+        "image_flow": true
       }
     },
     "image_text_custom_MiYcA3": {

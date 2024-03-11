@@ -10,6 +10,14 @@
 
 .image_text_carousel .title {
     text-align: center;
+    margin: 20px 0px 16px 0px;
+    @media  screen and (min-width: 750px) {
+        margin: 24px 0px 20px 0px;        
+    }
+}
+
+.image_text_carousel .splide__slide {
+    border: 1px solid black;
     font-weight: 500;
     line-height: 140%;
 }
@@ -22,7 +30,9 @@
 .image_text_carousel .splide__pagination{
     padding-right: 12.2rem;
 }
+
 /* here i wrote css of park letest collection  */
+
 @media screen and (max-width:749px){
     .image_text_carousel-main{
         padding-left: 1.5rem;
@@ -44,9 +54,6 @@
     .image_text_carousel .splide__pagination li .splide__pagination__page.ibc_page, .park_latest_collection_image_text_carousel .splide__pagination li .splide__pagination__page.ibc_page{
         width: 80%;
     }
-    
-    
-
 }
 
 
@@ -203,10 +210,6 @@
         margin: 19px 16px 19px 0px;
     }
 
-    .park_latest_collection_image_text_carousel .splide__arrow:disabled {
-        opacity: 1;
-        border: 1px solid black;
-    }
 }
 
 /* Park trending carousel style */
@@ -220,6 +223,7 @@
     height: auto;
     aspect-ratio: 0.68;
 }
+
 
 .park_trending_image_text_carousel .park_trending_image_box {
     position: relative;
@@ -241,6 +245,7 @@
     text-align: center;
 }
 
+
 @media screen and (max-width:749px){
 .park_trending_image_text_carousel .park_trending_overflow_image{
     border: none;
@@ -250,6 +255,7 @@
     border:1px solid #0E0E10;
 
  }
+
 }
 
 /* To override the splide default style important required */
@@ -268,11 +274,16 @@
 
     .park_trending_image_text_carousel .park_trending_title {
         padding: 27px;
-        border: 1px solid#828282;
+        border: 1px solid #828282;
         border-top: none;
         font-weight: 500;
         line-height: 160%; 
         text-transform: uppercase;
+    }
+
+    .park_trending_image_text_carousel .park_trending_overflow_image {
+      border: 1px solid #828282;
+      border-bottom: none;
     }
 
 }
@@ -303,10 +314,6 @@
         aspect-ratio: 2.39;
     }
 
-    .park_shop_image_text_carousel .splide__arrow:disabled {
-        opacity: 1;
-        border: 1px solid black;
-    }
 }
 
 /* Park collections carousel style */
@@ -326,13 +333,12 @@
 
 .park_collections_carousel_content .carousel_box {
     position: relative;
-    line-height: 0;
 }
 
 .park_collections_carousel_content .category_text {
     position: absolute;
     left: 8px;
-    bottom: -11px;
+    bottom: -2px;
     padding: 5px 20px;
     background-color: #FFF;
 }
@@ -392,7 +398,7 @@
 
     .park_collections_carousel_content .category_text {
         left: 16px;
-        bottom: -7px;
+        bottom: 0px;
         padding: 16px 20px;
         background-color: #FFF;
     }

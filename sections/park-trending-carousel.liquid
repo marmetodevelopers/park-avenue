@@ -6,6 +6,29 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
+  {% if section.settings.image_flow %}
+    .park_trending_image_text_carousel .park_trending_image_box {
+      position: relative;
+      bottom: 20px;
+    }
+
+    .park_trending_image_text_carousel .park_trending_overflow_image {
+      margin-top: 20px;
+      padding: 0px 20px 0px 20px;
+    }
+  {% else %}
+    .park_trending_image_text_carousel .park_trending_image_box {
+      position: relative;
+      bottom: 0px;
+    }
+    
+    .park_trending_image_text_carousel .park_trending_overflow_image {
+      margin-top: 0px;
+      padding: 0px 0px 0px 0px;
+    }
+  {% endif %}
+
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -23,11 +46,11 @@
   <div class="page-width">
     <div class="park_trending_image_text_carousel">
       {% if section.settings.heading != blank %}
-        {% render 'text-with-logo', text: section.settings.heading, css_class: 'h1 mb-3' %}
+        {% render 'text-with-logo', text: section.settings.heading, css_class: 'h2 mb-3' %}
       {% endif %}
 
       <splide-carousel
-        class="splide" 
+        class="splide"
         id="{{ section.id }}"
         data-desktop-per-page="3"
         data-mobile-per-page="1"
@@ -53,7 +76,7 @@
                 {%- when 'image_text' -%}
                   <div class="splide__slide trending_slides">
                     <a href="{{ block.settings.link }}">
-                      <div class="park_trending_overflow_image">
+                      <div class="park_trending_overflow_image" style="background: {{ section.settings.image_background }}">
                         <div class="park_trending_image_box">
                           {% render 'picture',
                             class: '',
@@ -107,7 +130,13 @@
       "type": "color",
       "id": "image_background",
       "label": "Background color"
-    }    
+    },
+    {
+      "type": "checkbox",
+      "id": "image_flow",
+      "label": "Image overflow",
+      "default": true
+    }
   ],
   "blocks": [
     {
