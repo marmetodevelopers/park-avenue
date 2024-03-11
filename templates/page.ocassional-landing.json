@@ -315,7 +315,7 @@
             "content_layout": "no-overlap",
             "heading": "Influencers Voice",
             "heading_size": "h3",
-            "caption": "The record  is my all-time favourite. It's really amazing. I discovered that the crosswalk's stripes could be readily raised to resemble stripes, which gave me the idea to replicate a crossing. The guys had to be positioned carefully so that it appeared as though they were strolling across your clothes.",
+            "caption": "\"The record  is my all-time favourite. It's really amazing. I discovered that the crosswalk's stripes could be readily raised to resemble stripes, which gave me the idea to replicate a crossing. The guys had to be positioned carefully so that it appeared as though they were strolling across your clothes.",
             "caption_text_style": "caption",
             "text_size": "medium",
             "text": "<p>-Creative Director  Arun Deepak<\/p>",
@@ -397,7 +397,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/gift.png",
         "mobile_image": "shopify:\/\/shop_images\/gift-mobile.jpg",
-        "color_scheme": "background-2",
+        "color_scheme": "scheme-335dc927-1616-448e-8fc3-a51874a4ed24",
         "padding-top": 40,
         "padding-bottom": 40
       }
