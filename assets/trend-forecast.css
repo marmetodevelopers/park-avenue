@@ -20,17 +20,16 @@
 .splide-container .splide__arrow--prev svg{
     transform: scale(1);
 }
-.splide-container .splide__arrows .splide__arrow--next svg{
-    transform: rotate(180deg);
-}
+
 @media screen and (max-width: 749px) {
 	.trend-forecast-container .splide__slide{
 		width: 83% !important;
 		/* A default width value 100 is adding as inline styling from splide. Without !important it couldn't be overided. */
 	}
-	.splide__arrows.splide__arrows--ltr {
+	.trend-forecast-container .splide__arrows.splide__arrows--ltr {
 		bottom: -1.5rem;
 		padding-inline: 1.5rem;
+		padding: 0;
 	}
 	button.splide__pagination__page.ibc_page {
 		width: 6.1rem;
@@ -42,6 +41,17 @@
 		padding: 0.8rem;
 		border: 1px solid #000;
 		background: transparent;
+	}
+	.trend-forecast-container .splide__pagination {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.trend-forecast-container .splide__pagination li {
+		width: calc(100% / 4 - 10px);
+	}
+	.trend-forecast-container .splide__pagination li .splide__pagination__page.ibc_page {
+		width: 80%;
+	
 	}
 }
 @media screen and (min-width: 750px){

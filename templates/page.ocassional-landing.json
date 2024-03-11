@@ -175,11 +175,33 @@
             "controls": false,
             "thumbnail_cover_image": "shopify:\/\/shop_images\/Image_Placeholder_mobile.png"
           }
+        },
+        "slide_media_K8HcU9": {
+          "type": "slide-media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1000005469.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Frame_1000005396.jpg",
+            "loop": true,
+            "autoplay": false,
+            "controls": false,
+            "thumbnail_cover_image": "shopify:\/\/shop_images\/Rectangle_4195.jpg"
+          }
+        },
+        "slide_media_9CRDgg": {
+          "type": "slide-media",
+          "settings": {
+            "loop": true,
+            "autoplay": false,
+            "controls": false,
+            "thumbnail_cover_image": "shopify:\/\/shop_images\/Rectangle_4195.jpg"
+          }
         }
       },
       "block_order": [
         "slide_media_4T9j9h",
-        "slide_media_twMkAY"
+        "slide_media_twMkAY",
+        "slide_media_K8HcU9",
+        "slide_media_9CRDgg"
       ],
       "settings": {
         "title": "<p>STYLE $ FEEDS<\/p>",

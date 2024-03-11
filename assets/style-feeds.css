@@ -1,6 +1,14 @@
 .main-style-feed-slider-container{
     margin-bottom: 2rem;
 }
+.style-feedimg-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.style-feedimg-container{
+    height: 100%;
+}
 .main-style-feed-slider{
     margin-top: 2.3rem;
     margin-bottom: 2.4rem;
@@ -73,15 +81,38 @@
 .video_container .desktop_video{
     display: none;
 }
+.main-style-feed-slider-container .splide__arrow svg {
+    width: 4rem;
+    height:4rem;
+}
+@media screen and (min-width: 750px) and (max-width: 989px){
+    .main-style-feed-thumbnail-slider.splide-container .splide__arrows{
+        padding-inline: 5rem;
+    }
+}
 @media screen and (max-width: 749px){
     .main-style-feed-slider.page-width{
         padding: 0;
+    }
+    .main-style-feed-thumbnail-slider.splide-container .splide__arrows{
+        left: 0;
     }
     .main-style-feed-thumbnail-slider.splide:not(.is-overflow) .splide__pagination{
         display: block;
         left: 50%;
         transform: translate(-50%, 50%);
     }
+    .main-style-feed-thumbnail-slider .splide__pagination {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.main-style-feed-thumbnail-slider .splide__pagination li {
+		width: calc(100% / 5 - 10px);
+	}
+	.main-style-feed-thumbnail-slider .splide__pagination li .splide__pagination__page.ibc_page {
+		width: 80%;
+	
+	}
 }
 @media screen and (min-width: 750px){
     .main-style-feed-slider-container{
@@ -92,6 +123,7 @@
     }
     .main-style-feed-thumbnail-slider.splide-container .splide__arrows{
         bottom: 8rem;
+        left: 0;
     }
     .main-style-feed-thumbnail-slider .splide__arrows button{
         background: #000;
