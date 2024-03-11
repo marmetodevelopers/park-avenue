@@ -12,10 +12,34 @@ a {
 		font-weight: 500;
 	}
 }
+/* these custom i created */
+.custom-heading{
+	display: flex;
+	align-items: center;
+	gap: .8rem;
+}
 
+@media screen and (max-width:749px){
+.custom-heading{
+	display: block;
+	
+
+}
+
+}
+
+.custom-btn-text{
+	font-size: 20px;
+}
+@media screen and (max-width:749px){
+.custom-btn-text{
+	font-size: 20px;
+}
+}
 .flex {
 	display: flex;
 }
+
 
 /* overlay classes */
 .pos_relative {
@@ -110,6 +134,7 @@ a {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	text-transform: capitalize;
 }
 .pos_absolute_alt {
 	position: absolute;
