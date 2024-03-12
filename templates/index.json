@@ -6,8 +6,8 @@
         "slide_w7HqG9": {
           "type": "slide",
           "settings": {
-            "image_small": "shopify:\/\/shop_images\/Rectangle_4256.jpg",
-            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3_2.jpg",
+            "image_small": "shopify:\/\/shop_images\/Hero_Banner_carousel_1_73c7eae2-01fd-4b01-a131-4b64c076e569.png",
+            "image_desktop": "shopify:\/\/shop_images\/Hero_Banner_carousel_1.png",
             "image_link": "",
             "title": "",
             "title_size": "h2",
@@ -17,8 +17,8 @@
         "slide_na9XBT": {
           "type": "slide",
           "settings": {
-            "image_small": "shopify:\/\/shop_images\/Rectangle_4256.jpg",
-            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3_2.jpg",
+            "image_small": "shopify:\/\/shop_images\/Hero_Banner_carousel_2_b4804a78-d3a1-438c-8c2c-ead50325eab6.png",
+            "image_desktop": "shopify:\/\/shop_images\/Hero_Banner_carousel_2.png",
             "image_link": "",
             "title": "",
             "title_size": "h2",
@@ -28,8 +28,8 @@
         "slide_Cj7caT": {
           "type": "slide",
           "settings": {
-            "image_small": "shopify:\/\/shop_images\/Rectangle_4256.jpg",
-            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3_2.jpg",
+            "image_small": "shopify:\/\/shop_images\/Hero_Banner_carousel_3_38e6ca08-bf02-4b96-917d-fb46e20321ef.png",
+            "image_desktop": "shopify:\/\/shop_images\/Hero_Banner_carousel_3.png",
             "image_link": "",
             "title": "",
             "title_size": "h2",
@@ -320,7 +320,38 @@
         "heading": "Visible $ Choices",
         "padding_top": 36,
         "padding_bottom": 36,
-        "image_background": "#ededed"
+        "image_background": "#ededed",
+        "image_flow": true
+      }
+    },
+    "image_banner_carousel_hVDFeT": {
+      "type": "image-banner-carousel",
+      "blocks": {
+        "slide_EjNRE4": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4256.jpg",
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3_3.jpg",
+            "image_link": "",
+            "title": "CORPORATE SELECTIONS",
+            "title_size": "h2",
+            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
+          }
+        }
+      },
+      "block_order": [
+        "slide_EjNRE4"
+      ],
+      "settings": {
+        "section_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "splide_height": 600,
+        "banner_content_check": false,
+        "carousel_arrows": false,
+        "heading": "Exclusive $ Collections",
+        "layout": false,
+        "content_position": "top-left"
       }
     },
     "image_text_custom_JULYPf": {
@@ -358,36 +389,6 @@
         "padding_bottom": 36,
         "image_small": "shopify:\/\/shop_images\/Group_1000003007.png",
         "image_desktop": "shopify:\/\/shop_images\/Vector.jpg"
-      }
-    },
-    "image_banner_carousel_hVDFeT": {
-      "type": "image-banner-carousel",
-      "blocks": {
-        "slide_EjNRE4": {
-          "type": "slide",
-          "settings": {
-            "image_small": "shopify:\/\/shop_images\/Rectangle_4256.jpg",
-            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3_3.jpg",
-            "image_link": "",
-            "title": "CORPORATE SELECTIONS",
-            "title_size": "h2",
-            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
-          }
-        }
-      },
-      "block_order": [
-        "slide_EjNRE4"
-      ],
-      "settings": {
-        "section_color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "splide_height": 600,
-        "banner_content_check": false,
-        "carousel_arrows": false,
-        "heading": "Exclusive $ Collections",
-        "layout": false,
-        "content_position": "top-left"
       }
     }
   },
