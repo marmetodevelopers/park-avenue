@@ -46,6 +46,8 @@
             name="contact[{{ 'templates.contact.form.name' | t }}]"
             value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
             placeholder="{{ 'templates.contact.form.name' | t }}"
+            required
+            oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '');"
           >
           <label class="field__label caption form-placeholder" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
         </div>
@@ -64,6 +66,7 @@
             spellcheck="false"
             autocapitalize="off"
             value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+            required
             aria-required="true"
             {% if form.errors contains 'email' %}
               aria-invalid="true"

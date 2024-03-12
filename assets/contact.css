@@ -99,6 +99,9 @@ button.button.contact-btn.button--medium.contact-send-btn {
     font-weight: 500;
     line-height: 140%;
 }
+.text-area:not(:placeholder-shown) ~ .field__label{
+    top: -1rem;
+}
 
 /* information */
 .contact-information{
