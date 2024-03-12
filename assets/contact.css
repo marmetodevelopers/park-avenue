@@ -89,7 +89,16 @@ textarea#ContactForm-body{
     align-items: center;
     justify-content: center;
 }
-
+.field .form-placeholder{
+    color: #231F20;
+    font-weight: 400;
+    line-height: 160%;
+}
+button.button.contact-btn.button--medium.contact-send-btn {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%;
+}
 
 /* information */
 .contact-information{
@@ -181,6 +190,11 @@ textarea#ContactForm-body{
     }
     .form-heading{
         display: block;
+    }
+    button.button.contact-btn.button--medium.contact-send-btn {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 140%;
     }
 
 
