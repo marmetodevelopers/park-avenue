@@ -23,7 +23,7 @@ class SplideCarousel extends HTMLElement {
             type: 'loop',
             rewind: true,
             rewindSpeed: 1000,
-            start: 1,
+            
             perMove:1,
             autoplay: true,
             drag: true,
