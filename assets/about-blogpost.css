@@ -2,6 +2,7 @@
   width: 100%;
   object-fit: cover;
   height: auto;
+  display: block;
 }
 .blog-page-width {
   padding: 0 12.2rem;
