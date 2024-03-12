@@ -37,12 +37,50 @@
         "email_address": "example@raymonds.com",
         "map": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d24235.86412816026!2d72.86540009504705!3d19.081853691397395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c85099bd2947%3A0x1ecc1a60c474a8ae!2sChhatrapati%20Shivaji%20Maharaj%20International%20Airport!5e0!3m2!1sen!2sin!4v1709215416128!5m2!1sen!2sin\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"><\/iframe>"
       }
+    },
+    "image_text_custom_VV7GkG": {
+      "type": "image-text-custom",
+      "blocks": {
+        "title_hYUpzw": {
+          "type": "title",
+          "settings": {
+            "title": "Find Your Store"
+          }
+        },
+        "description_dN37Rb": {
+          "type": "description",
+          "settings": {
+            "subtitle": "<ul><li>The store locator helps customers easily find their nearest Raymond retail store or shop-in-shop.<\/li><li>It allows users to search by city, pincode or current location to pull up results on a map.<\/li><li>Users can input the city or pincode in the search bar to view all Raymond outlets within that location.<\/li><li>When accessing from a mobile device, it automatically detects the user's current location for nearby stores.<\/li><\/ul>"
+          }
+        },
+        "button_ViKhVg": {
+          "type": "button",
+          "settings": {
+            "button_text": "View Store",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_hYUpzw",
+        "description_dN37Rb",
+        "button_ViKhVg"
+      ],
+      "settings": {
+        "heading": "STORE $ LOCATOR",
+        "section_color_scheme": "",
+        "padding_top": 64,
+        "padding_bottom": 36,
+        "image_small": "shopify:\/\/shop_images\/Vector_1.jpg",
+        "image_desktop": "shopify:\/\/shop_images\/Group_1000003007.png"
+      }
     }
   },
   "order": [
     "contact_image_banner_yzy9Ve",
     "main",
     "form",
-    "contact_information_rePhD6"
+    "contact_information_rePhD6",
+    "image_text_custom_VV7GkG"
   ]
 }
