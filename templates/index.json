@@ -13,14 +13,38 @@
             "title_size": "h2",
             "subtitle": ""
           }
+        },
+        "slide_LwiGGh": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4256.jpg",
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3_3.jpg",
+            "image_link": "shopify:\/\/blogs\/all-blogs",
+            "title": "",
+            "title_size": "h2",
+            "subtitle": ""
+          }
+        },
+        "slide_RAwChJ": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4256.jpg",
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3_3.jpg",
+            "image_link": "shopify:\/\/blogs\/all-blogs",
+            "title": "",
+            "title_size": "h2",
+            "subtitle": ""
+          }
         }
       },
       "block_order": [
-        "slide_EjNRE4"
+        "slide_EjNRE4",
+        "slide_LwiGGh",
+        "slide_RAwChJ"
       ],
       "settings": {
         "section_color_scheme": "",
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 36,
         "splide_height": 600,
         "banner_content_check": false,
@@ -71,6 +95,7 @@
         },
         "image_text_DAM73K": {
           "type": "image_text",
+          "disabled": true,
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
@@ -80,6 +105,7 @@
         },
         "image_text_kwgEqj": {
           "type": "image_text",
+          "disabled": true,
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
@@ -97,9 +123,9 @@
         "image_text_kwgEqj"
       ],
       "settings": {
-        "heading": "New $ news",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "heading": "NEW $ NEWS",
+        "padding_top": 32,
+        "padding_bottom": 32
       }
     },
     "park_categories_carousel_P3DmhU": {
@@ -132,13 +158,13 @@
             "category_url": "shopify:\/\/collections"
           }
         },
-        "image_text_YmtfTb": {
+        "image_text_zzCWyk": {
           "type": "image-text",
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4259desktop.png",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4304mob.png",
-            "category_text": "ELITE CASUAL",
-            "category_url": "shopify:\/\/collections"
+            "category_text": "",
+            "category_url": ""
           }
         }
       },
@@ -146,12 +172,12 @@
         "image_text_XFJAgF",
         "image_text_cbGN3W",
         "image_text_ByGBen",
-        "image_text_YmtfTb"
+        "image_text_zzCWyk"
       ],
       "settings": {
-        "category_heading": "Park $ categories",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "category_heading": "PARK $ CATEGORIES",
+        "padding_top": 32,
+        "padding_bottom": 32
       }
     },
     "park_latest_colletions_carousel_gaz8Me": {
@@ -195,6 +221,7 @@
         },
         "image_text_pPcjxh": {
           "type": "image_text",
+          "disabled": true,
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
@@ -204,6 +231,7 @@
         },
         "image_text_GQwCqC": {
           "type": "image_text",
+          "disabled": true,
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
@@ -213,6 +241,7 @@
         },
         "image_text_QXynpR": {
           "type": "image_text",
+          "disabled": true,
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145.jpg",
@@ -231,7 +260,7 @@
         "image_text_QXynpR"
       ],
       "settings": {
-        "heading": "Latest $ collection's",
+        "heading": "LATEST $ COLLECTION'S",
         "padding_top": 32,
         "padding_bottom": 32
       }
@@ -273,7 +302,7 @@
         "image_text_QpfmpR"
       ],
       "settings": {
-        "heading": "Visible $ Choices",
+        "heading": "VISIBLE $ CHOICES",
         "padding_top": 36,
         "padding_bottom": 36,
         "image_background": "#ededed",

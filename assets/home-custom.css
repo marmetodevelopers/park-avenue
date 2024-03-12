@@ -21,7 +21,7 @@
 .image_text_carousel .splide__slide {
     border: 1px solid black;
     font-weight: 500;
-    line-height: 130%;
+    line-height: 140%;
 }
 
 .splide-box {
@@ -112,7 +112,7 @@
 }
 
 .park_category_carousel_content .park_category_image_box {
-    line-height: 0;
+    margin-bottom: -2px;
 }
 
 .park_category_carousel_content .park_category_image_box img {
@@ -467,6 +467,7 @@
     position: absolute;
     top: 140px;
     left: 234px;
+    z-index: 3;
 }
 
 .park_shop_the_look .svg_third {
@@ -481,6 +482,7 @@
     position: absolute;
     top: 126px;
     right: -62px;
+    z-index: 3;
 }
 
 .park_shop_the_look .svg_fourth {
