@@ -1,0 +1,7 @@
+{% capture logo %}
+    {% render "pa-brand-logo" %}
+{% endcapture %}
+
+  <div class="{{ css_class }}">
+    {{ mobile_text | strip_html | replace: '$', logo }}
+  </div>

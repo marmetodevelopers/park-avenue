@@ -260,7 +260,8 @@
         "image_text_3aAnYf"
       ],
       "settings": {
-        "heading": "VISIBLE $ CHOICES",
+        "desktop_heading": "VISIBLE $ CHOICES",
+        "mobile_heading": "VISIBLE $ CHOICES",
         "padding_top": 32,
         "padding_bottom": 32,
         "image_background": "#ededed",

@@ -12,15 +12,16 @@
 .image_text_carousel .title {
     text-align: center;
     margin: 20px 0px 16px 0px;
+    font-weight: 400;
 
     @media screen and (min-width: 750px) {
         margin: 24px 0px 20px 0px;
+        font-weight: 500;
     }
 }
 
 .image_text_carousel .splide__slide {
     border: 1px solid black;
-    font-weight: 500;
     line-height: 140%;
 }
 
@@ -58,7 +59,7 @@
     }
 
     .park_latest_collection_image_text_carousel .splide__pagination li {
-        width: calc(100% / 9 - 5px);
+        width: calc(100% / 9 - 15px);
 
     }
 

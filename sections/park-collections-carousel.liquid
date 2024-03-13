@@ -17,7 +17,7 @@
 <div class="section-{{ section.id }}-padding">
   <div class="page-width">
     {% if section.settings.category_heading != blank %}
-      {% render 'text-with-logo', text: section.settings.category_heading, css_class: 'h2 mb-3' %}
+      {% render 'text-with-logo', text: section.settings.category_heading, css_class: 'h2 mb-3 custom-heading' %}
     {% endif %}
     <div class="park_collections_carousel_content">
       {% for block in section.blocks %}

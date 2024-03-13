@@ -95,7 +95,6 @@
         },
         "image_text_DAM73K": {
           "type": "image_text",
-          "disabled": true,
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
@@ -221,7 +220,6 @@
         },
         "image_text_pPcjxh": {
           "type": "image_text",
-          "disabled": true,
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
@@ -231,7 +229,6 @@
         },
         "image_text_GQwCqC": {
           "type": "image_text",
-          "disabled": true,
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
@@ -241,7 +238,6 @@
         },
         "image_text_QXynpR": {
           "type": "image_text",
-          "disabled": true,
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145.jpg",
@@ -302,9 +298,10 @@
         "image_text_QpfmpR"
       ],
       "settings": {
-        "heading": "VISIBLE $ CHOICES",
-        "padding_top": 36,
-        "padding_bottom": 36,
+        "mobile_heading": "VISIBLE $ CHOICES",
+        "desktop_heading": "TRENDING $ WEEK",
+        "padding_top": 32,
+        "padding_bottom": 32,
         "image_background": "#ededed",
         "image_flow": true
       }
@@ -340,8 +337,8 @@
       "settings": {
         "heading": "STORE $ LOCATOR",
         "section_color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36,
+        "padding_top": 32,
+        "padding_bottom": 32,
         "image_small": "shopify:\/\/shop_images\/Group_1000003007.png",
         "image_desktop": "shopify:\/\/shop_images\/Vector.jpg"
       }
