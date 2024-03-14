@@ -49,15 +49,17 @@
             <ul class="splide__list">
                 {% for block in section.blocks %}
                     <li class="splide__slide">
+                     <div class="style-feedimg-container">
                         {% if block.settings.thumbnail_cover_image or block.settings.image != blank %}
                             {% if block.settings.thumbnail_cover_image != blank %}
-                                {% render "picture", class: "media style-feed-thumbnail-image", mobileSrc: block.settings.thumbnail_cover_image, desktopSrc: block.settings.thumbnail_cover_image  %}
+                                {% render "picture", class: "", mobileSrc: block.settings.thumbnail_cover_image, desktopSrc: block.settings.thumbnail_cover_image  %}
                             {% elsif block.settings.image %}
-                                {% render "picture", class: "media style-feed-thumbnail-image", mobileSrc: block.settings.image, desktopSrc: block.settings.image  %}
+                                {% render "picture", class: "", mobileSrc: block.settings.image, desktopSrc: block.settings.image  %}
                             {% endif %}
                         {% elsif block.settings.video != blank %}
-                            {% render "picture", class: "media style-feed-thumbnail-image", mobileSrc: block.settings.thumbnail_cover_image, desktopSrc: block.settings.thumbnail_cover_image %}
+                            {% render "picture", class: "", mobileSrc: block.settings.thumbnail_cover_image, desktopSrc: block.settings.thumbnail_cover_image %}
                         {% endif %}
+                     </div>
                     </li>
                 {% endfor %}
             </ul>
