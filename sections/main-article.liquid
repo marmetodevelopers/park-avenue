@@ -11,7 +11,7 @@
     <div class="article-top-container">
 
       <div class="date-container h5">
-        Posted on {{ article.published_at | date: '%d %b %Y' }}
+        <span class="small-hide">Posted on </span> {{ article.published_at | date: '%d %b %Y' }}
       </div>
       <div class="h2 article-title-heading">{{ article.title }}</div>
       <div class="blog-information h5">
@@ -47,6 +47,9 @@
       </div>
       <div class="svg-icons-container">
         {% for block in section.blocks %}
+          <a href="{{ block.settings.url4 }}">
+            {% render 'facebook-icon' %}
+          </a>
           <a href="{{ block.settings.url }}">
             {% render 'instagram-icon' %}
           </a>
@@ -58,6 +61,8 @@
           </a>
 
 
+
+
         {% endfor %}
 
       </div>
@@ -65,61 +70,75 @@
   </div>
 
   {% assign current_tags = article.tags %}
-  {% assign related_articles = '' %}
+  {% assign related_articles_exist = false %}
 
-
-  <div class="article-related-heading">
-    <span class="h2">RELATED</span>
-    <span>
-      {% render 'park-icon' %}</span>
-    <span class="h2">BLOGS</span>
-  </div>
-
-
-  <div class="grid grid--1-col grid--2-col-tablet grid--3-col-desktop article-grid">
-
-    {% for post in blog.articles %}
-
-      {% if post.id != article.id %}
-        {% assign is_related = false %}
-        {% for post_tag in post.tags %}
-          {% assign post_value = post_tag | split: '__' | last %}
-          {% for current_tag in current_tags %}
-            {% assign current_value = current_tag | split: '__' | last %}
-            {% if post_value == current_value %}
-              {% assign is_related = true %}
-            {% endif %}
-          {% endfor %}
+  {% for post in blog.articles %}
+    {% if post.id != article.id %}
+      {% assign is_related = false %}
+      {% for post_tag in post.tags %}
+        {% assign post_value = post_tag | split: '__' | last %}
+        {% for current_tag in current_tags %}
+          {% assign current_value = current_tag | split: '__' | last %}
+          {% if post_value == current_value %}
+            {% assign is_related = true %}
+          {% endif %}
         {% endfor %}
-        {% if is_related %}
-
-          <div class="grid__item related-items">
-            <div class="recent-article-image-container">
-              {% render 'image-snippet'
-                , mobileSrc: post.image
-                , desktopSrc: post.image %}
-            </div>
-            <div class="main-article-data">
-              <div class="article-date-container">
-                <span class="date caption">{{ post.published_at | date: '%d %b %Y' }}</span>
-                <span class="blog-arrow">
-                  {% render 'blog-arrow' %}
-                </span>
-              </div>
-              <div class="related-article-title">
-                <a href="{{post.url}}" class="main-blog-title ">
-                  {{ post.title }}
-
-                </a>
-              </div>
-              <div class="article-desc">{{ post.content | truncatewords: 9, "..." }}</div>
-
-            </div>
-          </div>
-        {% endif %}
+      {% endfor %}
+      {% if is_related %}
+        {% assign related_articles_exist = true %}
+        {% break %}
       {% endif %}
-    {% endfor %}
-  </div>
+    {% endif %}
+  {% endfor %}
+
+  {% if related_articles_exist %}
+    <div class="article-related-heading">
+      <span class="h2">RELATED</span>
+      <span>{% render 'park-icon' %}</span>
+      <span class="h2">BLOGS</span>
+    </div>
+
+    <div class="grid grid--1-col grid--2-col-tablet grid--3-col-desktop article-grid">
+      {% for post in blog.articles %}
+        {% if post.id != article.id %}
+          {% assign is_related = false %}
+          {% for post_tag in post.tags %}
+            {% assign post_value = post_tag | split: '__' | last %}
+            {% for current_tag in current_tags %}
+              {% assign current_value = current_tag | split: '__' | last %}
+              {% if post_value == current_value %}
+                {% assign is_related = true %}
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+          {% if is_related %}
+            <div class="grid__item related-items">
+              <div class="recent-article-image-container">
+                {% render 'image-snippet'
+                  , mobileSrc: post.image
+                  , desktopSrc: post.image %}
+              </div>
+              <div class="main-article-data">
+                <div class="article-date-container">
+                  <span class="date caption">{{ post.published_at | date: '%d %b %Y' }}</span>
+                  <span class="blog-arrow">
+                    {% render 'blog-arrow' %}
+                  </span>
+                </div>
+                <div class="related-article-title">
+                  <a href="{{post.url}}" class="main-blog-title ">
+                    {{ post.title }}
+                  </a>
+                </div>
+                <div class="article-desc">{{ post.content | truncatewords: 9, "..." }}</div>
+              </div>
+            </div>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+
 
 
 </article>
@@ -175,6 +194,11 @@
             "type": "url",
             "id": "url3",
             "label": "add Twitter url"
+          },
+          {
+            "type": "url",
+            "id": "url4",
+            "label": "add Facebook url"
           }
 
         ]
