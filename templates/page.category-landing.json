@@ -45,10 +45,10 @@
       "settings": {
         "section_color_scheme": "",
         "padding_top": 0,
-        "padding_bottom": 0,
+        "padding_bottom": 32,
         "splide_height": 600,
         "banner_content_check": false,
-        "carousel_arrows": true,
+        "carousel_arrows": false,
         "heading": "",
         "layout": false,
         "content_position": "top-left"
