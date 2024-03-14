@@ -68,6 +68,10 @@ if (trendForecastElement.length > 0) {
             autoplay: false,
             pagination: false,
             arrows: false,
+            classes: {
+                pagination: 'splide__pagination ibc_pagination',
+                page: 'splide__pagination__page ibc_page',
+            },
             breakpoints: {
                 749: {
                     perPage: 1,
@@ -98,21 +102,26 @@ if (mainElement.length > 0 && thumbnailCarousel.length > 0) {
         }).mount();
 
         const thumbnailSlider = new Splide(thumbnailCarousel[index], {
-            fixedWidth: 223,
             fixedHeight: 150,
             isNavigation: true,
-            gap: 10,
+            gap: 20,
             focus: 'left',
             cover: true,
             lazyLoad: 'sequential',
-            pagination: true,
+            pagination: false,
             arrows: true,
+            perPage:5,
+            classes: {
+                pagination: 'splide__pagination ibc_pagination',
+                page: 'splide__pagination__page ibc_page',
+            },
             breakpoints: {
                 750: {
-                    fixedWidth: 103,
                     fixedHeight: 100,
                     pagination: true,
-                    arrows: true
+                    arrows: true,
+                    gap:10,
+                    perPage:3
                 },
             }
         }).mount();
