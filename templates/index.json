@@ -321,6 +321,40 @@
     },
     "image_banner_carousel_pcXdiV": {
       "type": "image-banner-carousel",
+      "blocks": {
+        "slide_f9MPp4": {
+          "type": "slide",
+          "settings": {
+            "image_link": "",
+            "title": "CORPORATE SELECTIONS",
+            "title_size": "h3",
+            "subtitle": ""
+          }
+        },
+        "slide_xPfWUV": {
+          "type": "slide",
+          "settings": {
+            "image_link": "",
+            "title": "CORPORATE SELECTIONS",
+            "title_size": "h2",
+            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
+          }
+        },
+        "slide_dc4FLf": {
+          "type": "slide",
+          "settings": {
+            "image_link": "",
+            "title": "CORPORATE SELECTIONS",
+            "title_size": "h2",
+            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
+          }
+        }
+      },
+      "block_order": [
+        "slide_f9MPp4",
+        "slide_xPfWUV",
+        "slide_dc4FLf"
+      ],
       "settings": {
         "section_color_scheme": "",
         "padding_top": 0,
