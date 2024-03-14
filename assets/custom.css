@@ -104,7 +104,8 @@ a {
 	opacity: 1;
 }
 .ibc_page.is-active {
-	background: linear-gradient(90deg, rgba(0, 0, 0, 1) 60%, rgba(255, 255, 255, 1) 60%);
+	/* background: linear-gradient(90deg, rgba(0, 0, 0, 1) 60%, rgba(255, 255, 255, 1) 60%); */
+	background: #000;
 	transform: scale(1);
 }
   
@@ -257,6 +258,7 @@ a {
 .it_img_container img {
 	height: 100%;
 	width: 100%;
+	object-fit: cover;
 }
 
 .image_text_container {
