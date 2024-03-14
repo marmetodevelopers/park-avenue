@@ -1,32 +1,55 @@
 {
   "sections": {
-    "image_banner_carousel_hVDFeT": {
+    "image_banner_carousel_txnTCH": {
       "type": "image-banner-carousel",
       "blocks": {
-        "slide_EjNRE4": {
+        "slide_w7HqG9": {
           "type": "slide",
           "settings": {
             "image_small": "shopify:\/\/shop_images\/Rectangle_4256.jpg",
-            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3_3.jpg",
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3_2.jpg",
             "image_link": "",
-            "title": "CORPORATE SELECTIONS",
+            "title": "",
             "title_size": "h2",
-            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
+            "subtitle": ""
+          }
+        },
+        "slide_na9XBT": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4256.jpg",
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3_2.jpg",
+            "image_link": "",
+            "title": "",
+            "title_size": "h2",
+            "subtitle": ""
+          }
+        },
+        "slide_Cj7caT": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4256.jpg",
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3_2.jpg",
+            "image_link": "",
+            "title": "",
+            "title_size": "h2",
+            "subtitle": ""
           }
         }
       },
       "block_order": [
-        "slide_EjNRE4"
+        "slide_w7HqG9",
+        "slide_na9XBT",
+        "slide_Cj7caT"
       ],
-      "disabled": true,
       "settings": {
         "section_color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "splide_height": 600,
         "banner_content_check": false,
         "carousel_arrows": false,
-        "heading": "Exclusive $ Collections",
+        "heading": "",
         "layout": false,
         "content_position": "top-left"
       }
@@ -81,7 +104,6 @@
         },
         "image_text_kwgEqj": {
           "type": "image_text",
-          "disabled": true,
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
@@ -99,9 +121,9 @@
         "image_text_kwgEqj"
       ],
       "settings": {
-        "heading": "NEW $ NEWS",
-        "padding_top": 32,
-        "padding_bottom": 32
+        "heading": "New $ news",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "park_categories_carousel_P3DmhU": {
@@ -113,7 +135,7 @@
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4259desktop.png",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4304mob.png",
             "category_text": "BUSINESS FORMAL",
-            "category_url": "shopify:\/\/collections"
+            "category_url": "shopify:\/\/blogs\/all-blogs"
           }
         },
         "image_text_cbGN3W": {
@@ -122,7 +144,7 @@
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4259desktop.png",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4304mob.png",
             "category_text": "SEMI - FORMAL",
-            "category_url": "shopify:\/\/collections"
+            "category_url": "shopify:\/\/blogs\/all-blogs"
           }
         },
         "image_text_ByGBen": {
@@ -131,16 +153,16 @@
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4259desktop.png",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4304mob.png",
             "category_text": "BUSINESS CASUAL",
-            "category_url": "shopify:\/\/collections"
+            "category_url": "shopify:\/\/blogs\/all-blogs"
           }
         },
-        "image_text_zzCWyk": {
+        "image_text_YmtfTb": {
           "type": "image-text",
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4259desktop.png",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4304mob.png",
-            "category_text": "",
-            "category_url": ""
+            "category_text": "ELITE CASUAL",
+            "category_url": "shopify:\/\/blogs\/all-blogs"
           }
         }
       },
@@ -148,12 +170,12 @@
         "image_text_XFJAgF",
         "image_text_cbGN3W",
         "image_text_ByGBen",
-        "image_text_zzCWyk"
+        "image_text_YmtfTb"
       ],
       "settings": {
-        "category_heading": "PARK $ CATEGORIES",
-        "padding_top": 32,
-        "padding_bottom": 32
+        "category_heading": "Park $ categories",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "park_latest_colletions_carousel_gaz8Me": {
@@ -213,12 +235,12 @@
             "link": "shopify:\/\/collections\/all"
           }
         },
-        "image_text_QXynpR": {
+        "image_text_TMLNYM": {
           "type": "image_text",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145.jpg",
-            "title": "Jeans",
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
+            "title": "Suits",
             "link": "shopify:\/\/blogs\/all-blogs"
           }
         }
@@ -230,12 +252,12 @@
         "image_text_PXH3nM",
         "image_text_pPcjxh",
         "image_text_GQwCqC",
-        "image_text_QXynpR"
+        "image_text_TMLNYM"
       ],
       "settings": {
-        "heading": "LATEST $ COLLECTION'S",
-        "padding_top": 32,
-        "padding_bottom": 32
+        "heading": "Latest $ collection's",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "park_trending_carousel_zpaQxH": {
@@ -282,6 +304,37 @@
         "image_flow": true
       }
     },
+    "image_banner_carousel_hVDFeT": {
+      "type": "image-banner-carousel",
+      "blocks": {
+        "slide_EjNRE4": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4256.jpg",
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3_3.jpg",
+            "image_link": "",
+            "title": "CORPORATE SELECTIONS",
+            "title_size": "h2",
+            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
+          }
+        }
+      },
+      "block_order": [
+        "slide_EjNRE4"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "splide_height": 600,
+        "banner_content_check": false,
+        "carousel_arrows": false,
+        "heading": "Exclusive $ Collections",
+        "layout": false,
+        "content_position": "top-left"
+      }
+    },
     "image_text_custom_JULYPf": {
       "type": "image-text-custom",
       "blocks": {
@@ -313,68 +366,20 @@
       "settings": {
         "heading": "STORE $ LOCATOR",
         "section_color_scheme": "",
-        "padding_top": 32,
-        "padding_bottom": 32,
+        "padding_top": 36,
+        "padding_bottom": 36,
         "image_small": "shopify:\/\/shop_images\/Group_1000003007.png",
         "image_desktop": "shopify:\/\/shop_images\/Vector.jpg"
-      }
-    },
-    "image_banner_carousel_pcXdiV": {
-      "type": "image-banner-carousel",
-      "blocks": {
-        "slide_f9MPp4": {
-          "type": "slide",
-          "settings": {
-            "image_link": "",
-            "title": "CORPORATE SELECTIONS",
-            "title_size": "h3",
-            "subtitle": ""
-          }
-        },
-        "slide_xPfWUV": {
-          "type": "slide",
-          "settings": {
-            "image_link": "",
-            "title": "CORPORATE SELECTIONS",
-            "title_size": "h2",
-            "subtitle": ""
-          }
-        },
-        "slide_dc4FLf": {
-          "type": "slide",
-          "settings": {
-            "image_link": "",
-            "title": "CORPORATE SELECTIONS",
-            "title_size": "h2",
-            "subtitle": ""
-          }
-        }
-      },
-      "block_order": [
-        "slide_f9MPp4",
-        "slide_xPfWUV",
-        "slide_dc4FLf"
-      ],
-      "settings": {
-        "section_color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 36,
-        "splide_height": 600,
-        "banner_content_check": false,
-        "carousel_arrows": false,
-        "heading": "",
-        "layout": false,
-        "content_position": "top-left"
       }
     }
   },
   "order": [
-    "image_banner_carousel_hVDFeT",
+    "image_banner_carousel_txnTCH",
     "image_text_carousel_igph46",
     "park_categories_carousel_P3DmhU",
     "park_latest_colletions_carousel_gaz8Me",
     "park_trending_carousel_zpaQxH",
-    "image_text_custom_JULYPf",
-    "image_banner_carousel_pcXdiV"
+    "image_banner_carousel_hVDFeT",
+    "image_text_custom_JULYPf"
   ]
 }
