@@ -1,6 +1,12 @@
 .header__icon--menu {
   position: initial;
 }
+.header-follow{
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  padding-left: 1.6rem;
+}
 
 .js menu-drawer > details > summary::before,
 .js menu-drawer > details[open]:not(.menu-opening) > summary::before {
@@ -121,7 +127,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer__menu-item {
-  padding: 1.1rem 3rem;
+  padding: 1.1rem 1.6rem;
   text-decoration: none;
   font-size: 1.6rem;
   font-weight: 400;
@@ -240,7 +246,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .header--has-social .menu-drawer__utility-links {
-  padding: 2rem 3rem;
+  padding: 2rem 1.6rem;
 }
 
 @media screen and (max-width: 749px) {
