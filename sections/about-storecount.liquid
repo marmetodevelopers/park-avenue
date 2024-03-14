@@ -20,10 +20,10 @@
     {% if section.settings.enter_text1 != blank %}
       {% render 'text-with-logo'
         , text: section.settings.enter_text1
-        , css_class: 'h1 store-count-heading' %}
+        , css_class: 'h2 custom-heading store-count-heading' %}
     {% endif %}
     <div class="caption counter-section-text">{{ section.settings.enter_text }}</div>
-    <div class="grid grid--1-col grid--3-col-desktop grid--2-col-tablet ">
+    <div class="grid grid--1-col grid--3-col-desktop grid--2-col-tablet store-gap ">
       {% for block in section.blocks %}
         <div class="grid__item counter-main">
           <div class="count-image-container">

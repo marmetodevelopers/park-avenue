@@ -357,10 +357,7 @@ blockquote {
 		letter-spacing: 0;
 	}
 }
-.caption {
-	font-size: 1.4rem;
-	font-weight: 400;
-}
+
 .color-accent-1 .caption {
 	color: #fff;
 }
@@ -1524,6 +1521,11 @@ details[open] > .share-button__fallback {
 	color: rgba(var(--color-foreground), 0.75);
 	letter-spacing: 0.1rem;
 	line-height: 1.5;
+}
+ /* added caption class here because other classnames overtake this */
+.caption {
+	font-size: 1.4rem;
+	font-weight: 400;
 }
 .field__input:focus ~ .field__label,
 .field__input:not(:placeholder-shown) ~ .field__label,

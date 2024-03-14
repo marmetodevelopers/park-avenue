@@ -4,6 +4,7 @@
 .about-image-container img {
   width: 100%;
   height: auto;
+  display: block;
 }
 .about-banner-maincontainer {
   position: relative;
@@ -32,4 +33,5 @@
   line-height: 130%;
   letter-spacing: 2px;
   text-transform: uppercase;
+  max-width: 60.6rem;
 }
