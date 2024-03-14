@@ -15,12 +15,17 @@
     display: flex;
     align-items: center;
     gap: 1.6rem;
+    color: #0E0E10;
     
 }
 .contact-text-container{
+    color: #231F20;
     padding-bottom: 3rem;
     max-width: 63.6rem;
     text-align: center;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 1px;
 }
 .contact-heading-wrapper{
     display: flex;
@@ -88,6 +93,19 @@ textarea#ContactForm-body{
     align-items: center;
     justify-content: center;
 }
+.field .form-placeholder{
+    color: #231F20;
+    font-weight: 400;
+    line-height: 160%;
+}
+button.button.contact-btn.button--medium.contact-send-btn {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%;
+}
+.text-area:not(:placeholder-shown) ~ .field__label{
+    top: -1rem;
+}
 
 
 /* information */
@@ -141,6 +159,8 @@ textarea#ContactForm-body{
     }
     .contact-text-container{
         padding-bottom: 2.8rem;
+        text-align: left;
+        line-height: 150%;
     }
     .contact-heading-wrapper{
         align-items: flex-start;
@@ -180,6 +200,15 @@ textarea#ContactForm-body{
     }
     .form-heading{
         display: block;
+    }
+    button.button.contact-btn.button--medium.contact-send-btn {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 140%;
+    }
+    .field .form-placeholder {
+        font-weight: 500;
+        line-height: 160%;
     }
 
 

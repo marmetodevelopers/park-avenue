@@ -46,8 +46,10 @@
             name="contact[{{ 'templates.contact.form.name' | t }}]"
             value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
             placeholder="{{ 'templates.contact.form.name' | t }}"
+            required
+            oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '');"
           >
-          <label class="field__label caption" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
+          <label class="field__label caption form-placeholder" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
         </div>
       </div>
       <div>
@@ -64,6 +66,7 @@
             spellcheck="false"
             autocapitalize="off"
             value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+            required
             aria-required="true"
             {% if form.errors contains 'email' %}
               aria-invalid="true"
@@ -71,7 +74,7 @@
             {% endif %}
             placeholder="{{ 'templates.contact.form.email' | t }}"
           >
-          <label class="field__label caption" for="ContactForm-email">
+          <label class="field__label caption form-placeholder" for="ContactForm-email">
             {{- 'templates.contact.form.email' | t }}
             <span aria-hidden="true"></span></label
           >
@@ -116,13 +119,13 @@
         >
           {{- form.body -}}
         </textarea>
-        <label class="form__label contact-msg-icon field__label" for="ContactForm-body">
+        <label class="form__label contact-msg-icon field__label caption form-placeholder" for="ContactForm-body">
           {{- 'templates.contact.form.comment' | t -}}
         </label>
       </div>
       </div>
       <div class="contact__button ">
-        <button type="submit" class="button contact-btn button--medium">
+        <button type="submit" class="button contact-btn button--medium contact-send-btn">
           {{ 'templates.contact.form.send' | t }}
         </button>
       </div>
