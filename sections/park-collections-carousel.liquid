@@ -17,7 +17,7 @@
 <div class="section-{{ section.id }}-padding">
   <div class="page-width">
     {% if section.settings.category_heading != blank %}
-      {% render 'text-with-logo', text: section.settings.category_heading, css_class: 'h2 mb-3' %}
+      {% render 'text-with-logo', text: section.settings.category_heading, css_class: 'h2 mb-3 custom-heading' %}
     {% endif %}
     <div class="park_collections_carousel_content">
       {% for block in section.blocks %}
@@ -58,7 +58,7 @@
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_top",
-      "default": 36
+      "default": 32
     },
     {
       "type": "range",
@@ -68,13 +68,14 @@
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
-      "default": 36
+      "default": 32
     }
   ],
   "blocks": [
     {
       "type": "image-text",
       "name": "Image-text",
+      "limit": 4,
       "settings": [
         {
           "type": "image_picker",
