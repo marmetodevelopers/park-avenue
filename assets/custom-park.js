@@ -20,10 +20,10 @@ class SplideCarousel extends HTMLElement {
     }
     connectedCallback() {
         new Splide(`#${this.id}`, {
-            type: 'loop',
+            type: 'slide',
             rewind: true,
             rewindSpeed: 1000,
-            start: 1,
+            start: 0,
             perMove:1,
             autoplay: true,
             drag: true,
