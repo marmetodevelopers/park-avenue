@@ -200,7 +200,7 @@
               <div class="footer-block__newsletter flex_column gap_2">
                 <div class="flex_column gap_1 gap_16">
                   {%- if section.settings.newsletter_heading != blank -%}
-                    <div class="h3">{{ section.settings.newsletter_heading }}</div>
+                    <div class="h5">{{ section.settings.newsletter_heading }}</div>
                   {%- endif -%}
                   {%- if section.settings.newsletter_subheading != blank -%}
                     <div class="caption">{{ section.settings.newsletter_subheading }}</div>
@@ -274,7 +274,7 @@
                 {% case block.type %}
                   {% when 'contact-text' %}
                     <div class="contact_container flex_column gap_16">
-                      <div class="h3">
+                      <div class="h5">
                         {{ block.settings.contact_heading }}
                       </div>
                       <div class="caption">
@@ -290,7 +290,7 @@
     {%- endunless -%}
   {%- endif -%}
 
-  <div class="page-width">
+  <div class="page-width footer-information">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when 'text' -%}

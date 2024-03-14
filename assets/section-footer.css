@@ -30,6 +30,12 @@
 	.footer-block.grid__item:first-child {
 		margin-top: 0;
 	}
+	.footer__content-top{
+        padding-bottom: 0;
+	}
+	.custom_footer_bdr_pd:first-of-type {
+		padding-top: 0;
+	}
 }
 
 @media screen and (min-width: 750px) {

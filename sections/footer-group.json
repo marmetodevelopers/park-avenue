@@ -58,7 +58,7 @@
           "type": "contact-text",
           "settings": {
             "contact_heading": "Call us on",
-            "contact_subtext": "<p>+1800 222 001Monday To Saturday - 9:30AM To 6:30PM<\/p>"
+            "contact_subtext": "<p>+1800 222 001<\/p><p>Monday To Saturday - 9:30AM To 6:30PM<\/p>"
           }
         }
       },
