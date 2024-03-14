@@ -298,8 +298,7 @@
         "image_text_QpfmpR"
       ],
       "settings": {
-        "mobile_heading": "VISIBLE $ CHOICES",
-        "desktop_heading": "TRENDING $ WEEK",
+        "heading": "VISIBLE $ CHOICES",
         "padding_top": 32,
         "padding_bottom": 32,
         "image_background": "#ededed",

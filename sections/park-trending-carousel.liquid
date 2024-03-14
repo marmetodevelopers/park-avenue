@@ -42,21 +42,11 @@
   }
 </style>
 
-<script>
-  var viewportWidth = window.innerWidth;
-  document.cookie = 'screenWidth=' + viewportWidth;
-</script>
-
-{% assign screenWidth = request.cookies.screenWidth | default: '' %}
-{% assign screenWidthNumber = screenWidth | plus: 0 %}
-
 <div class="section-{{ section.id }}-padding">
   <div class="page-width">
     <div class="park_trending_image_text_carousel">
-      {% if screenWidthNumber < 750 %}
-        {% render 'mobile-text-with-logo', mobile_text: section.settings.mobile_heading, css_class: 'h2 mb-3 custom-heading' %}
-      {% else %}
-        {% render 'text-with-logo', text: section.settings.desktop_heading, css_class: 'h2 mb-3 custom-heading' %}
+      {% if section.settings.heading != blank %}
+        {% render 'text-with-logo', text: section.settings.heading, css_class: 'h2 mb-3 custom-heading' %}
       {% endif %}
       <splide-carousel
         class="splide"
@@ -115,13 +105,8 @@
   "settings": [
     {
       "type": "text",
-      "id": "desktop_heading",
-      "label": "Desktop heading text"
-    },
-    {
-      "type": "text",
-      "id": "mobile_heading",
-      "label": "Mobile heading text"
+      "id": "heading",
+      "label": "Enter heading text"
     },
     {
       "type": "range",
