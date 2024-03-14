@@ -2121,7 +2121,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
 		grid-template-columns: 1fr auto 1fr;
 	}
 	.header:not(.header--middle-left, .header--middle-center) .header__inline-menu {
-		margin-top: 1.05rem;
+		margin-top: 2rem;
 	}
 }
 .header *[tabindex='-1']:focus {
@@ -2167,6 +2167,13 @@ product-info .loading__spinner:not(.hidden) ~ *,
 	@media screen and (min-width: 990px) {
 		max-width: var(--desktop-logo-width);
 	}
+}
+@media screen and (max-width:749px){
+	.header__heading-logo{
+      width: 15.3rem;
+	}
+	
+
 }
 .header__heading-logo-wrapper {
 	width: 100%;

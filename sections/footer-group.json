@@ -47,6 +47,27 @@
             "subtext": "<p>Donec dictum tristique porta. Etiam convallis lorem lobortis nulla molestie, nec tincidunt ex ullamcorper. Quisque ultrices lobortis elit sed euismod. Duis in ultrices dolor, ac rhoncus odio. Suspendisse tempor sollicitudin dui sed lacinia. Nulla quis enim posuere, congue libero quis, commodo purus. Cras iaculis massa ut elit tempor malesuada. Pellentesque dictum elit quis diam tristique, sed tincidunt velit ullamcorper. Suspendisse potenti. Nam varius varius erat. Aliquam pulvinar elit ut orci egestas tincidunt. Morbi ornare orci ante, mollis posuere lacus accumsan sit amet. Cras ut dignissim ipsum.<\/p>"
           }
         },
+        "text_pjdBkF": {
+          "type": "text",
+          "settings": {
+            "heading": "Your one-stop-shop for all things PARK AVENUE Online",
+            "subtext": "<p>Vestibulum tempus imperdiet sem ac porttitor. Vivamus pulvinar commodo orci, suscipit porttitor velit elementum non. Fusce nec pellentesque erat, id lobortis nunc. Donec dui leo, ultrices quis turpis nec, sollicitudin sodales tortor. Aenean dapibus magna quam, id tincidunt quam placerat consequat. Nulla eu laoreet ex. Vestibulum nec vulputate turpis, id euismod orci. Phasellus consectetur tortor est. Donec lectus ex, rhoncus ac consequat at, viverra sit amet sem. Aliquam sed vestibulum nibh. Phasellus ut lorem pharetra, placerat urna id, tincidunt quam. Praesent non ex congue, tristique risus quis, blandit purus. Sed tristique sapien ut vehicula pretium. Donec purus metus, vulputate sit amet ullamcorper vel, aliquet ac lectus.<\/p>"
+          }
+        },
+        "text_mhrmwn": {
+          "type": "text",
+          "settings": {
+            "heading": "Why you should stay PARK AVENUE",
+            "subtext": "<p>Donec vitae mi vulputate, suscipit urna in, malesuada nisl. Pellentesque laoreet pretium nisl, et pulvinar massa eleifend sed. Curabitur maximus mollis diam, vel varius sapien suscipit eget. Cras sollicitudin ligula at volutpat ultrices. Nunc arcu enim, rhoncus eu maximus id, malesuada eu neque. Nunc aliquet cursus tortor id pellentesque. Quisque tempus arcu sed felis tempus, vel rutrum diam egestas. Suspendisse non magna nisi. Duis quis risus mi. Morbi velit leo, pellentesque nec odio sit amet, fringilla sollicitudin nulla. Sed consectetur eu leo sed sodales. Quisque porta, ante vitae auctor pellentesque, dolor neque vestibulum urna, sit amet consectetur ex lectus vel enim. Maecenas tellus erat, interdum vel tristique ac, rhoncus id ante.<\/p>"
+          }
+        },
+        "text_3D4F3y": {
+          "type": "text",
+          "settings": {
+            "heading": "Start shopping the Virat Kohli clothing brand",
+            "subtext": "<p>Aliquam a dui vel justo fringilla euismod id id enim. Nunc non semper tellus. Pellentesque vitae tellus non dui fermentum hendrerit. In vel imperdiet mi. Aliquam erat volutpat. Cras dapibus orci eu eros tempus efficitur. Nulla rhoncus arcu nec dictum condimentum. Aenean sapien leo, maximus nec magna vel, gravida auctor quam. Cras congue massa massa, id luctus elit ultricies at. Maecenas in neque justo. Ut ac tincidunt lorem, non posuere metus. Sed vulputate pellentesque lectus, id luctus turpis interdum vel. Fusce aliquet condimentum arcu id elementum.<\/p>"
+          }
+        },
         "contact_text_6ifQxb": {
           "type": "contact-text",
           "settings": {
@@ -69,6 +90,9 @@
         "text_naRNq4",
         "text_JLxz8b",
         "text_ggrzMF",
+        "text_pjdBkF",
+        "text_mhrmwn",
+        "text_3D4F3y",
         "contact_text_6ifQxb",
         "contact_text_9QF7TC"
       ],
