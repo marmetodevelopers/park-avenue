@@ -296,6 +296,7 @@
         "image_text_VFGQD6",
         "image_text_QpfmpR"
       ],
+      "disabled": true,
       "settings": {
         "heading": "VISIBLE $ CHOICES",
         "padding_top": 36,
