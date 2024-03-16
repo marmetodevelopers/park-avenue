@@ -7,7 +7,7 @@
           "type": "slide",
           "settings": {
             "image_small": "shopify:\/\/shop_images\/Rectangle_4256.jpg",
-            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3_2.jpg",
+            "image_desktop": "shopify:\/\/shop_images\/Hero_Banner_carousel_3.png",
             "image_link": "https:\/\/parkavenue-india.myshopify.com\/pages\/collections#section_name",
             "title": "",
             "title_size": "h2",
@@ -254,6 +254,7 @@
         "image_text_GQwCqC",
         "image_text_TMLNYM"
       ],
+      "disabled": true,
       "settings": {
         "heading": "LATEST $ COLLECTION'S",
         "padding_top": 36,

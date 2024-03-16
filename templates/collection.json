@@ -27,10 +27,66 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "multirow_NjTUK8": {
+      "type": "multirow",
+      "blocks": {
+        "row_DENKMf": {
+          "type": "row",
+          "settings": {
+            "caption": "FlexTech",
+            "heading": "The Ultimate Stretch",
+            "text": "<p>Embrace the \"The Ultimate Stretch” with FlexTech Suits, featuring bi-stretch material for maximum flexibility and an ergonomic design for a perfect fit.<\/p>",
+            "button_label": "Visit Store",
+            "button_link": ""
+          }
+        },
+        "row_dKxrVJ": {
+          "type": "row",
+          "settings": {
+            "caption": "Airlite",
+            "heading": "Lightweight Suits",
+            "text": "<p>Crafted from lightweight, wrinkle-resistant fabric, these suits are designed to effortlessly combine style and convenience. With a subtle stretch for comfort, stay sharp on the go and don’t let your style weigh you down.<\/p>",
+            "button_label": "Visit Store",
+            "button_link": ""
+          }
+        },
+        "row_3qAf86": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_DENKMf",
+        "row_dKxrVJ",
+        "row_3qAf86"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h0",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "multirow_NjTUK8"
   ]
 }
