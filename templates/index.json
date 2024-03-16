@@ -121,7 +121,7 @@
         "image_text_kwgEqj"
       ],
       "settings": {
-        "heading": "NEW $ NEWS",
+        "heading": "The Ultimate Flex",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -134,8 +134,8 @@
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4259desktop.png",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4304mob.png",
-            "category_text": "BUSINESS FORMAL",
-            "category_url": "shopify:\/\/blogs\/all-blogs"
+            "category_text": "Airlite",
+            "category_url": "shopify:\/\/pages\/collections"
           }
         },
         "image_text_cbGN3W": {
@@ -143,8 +143,8 @@
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4259desktop.png",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4304mob.png",
-            "category_text": "SEMI - FORMAL",
-            "category_url": "shopify:\/\/blogs\/all-blogs"
+            "category_text": "Flextech",
+            "category_url": "shopify:\/\/pages\/collections"
           }
         },
         "image_text_ByGBen": {
@@ -152,8 +152,8 @@
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4259desktop.png",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4304mob.png",
-            "category_text": "BUSINESS CASUAL",
-            "category_url": "shopify:\/\/blogs\/all-blogs"
+            "category_text": "Uncrushed",
+            "category_url": "shopify:\/\/pages\/collections"
           }
         },
         "image_text_YmtfTb": {
@@ -161,8 +161,8 @@
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4259desktop.png",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4304mob.png",
-            "category_text": "ELITE CASUAL",
-            "category_url": "shopify:\/\/blogs\/all-blogs"
+            "category_text": "City Casual",
+            "category_url": "shopify:\/\/pages\/collections"
           }
         }
       },
@@ -173,7 +173,7 @@
         "image_text_YmtfTb"
       ],
       "settings": {
-        "category_heading": "PARK $ CATEGORIES",
+        "category_heading": "New Arrivals",
         "padding_top": 36,
         "padding_bottom": 36
       }
