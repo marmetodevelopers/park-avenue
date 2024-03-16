@@ -8,6 +8,7 @@
           "settings": {
             "image_small": "shopify:\/\/shop_images\/Hero_Banner_carousel_1_73c7eae2-01fd-4b01-a131-4b64c076e569.png",
             "image_desktop": "shopify:\/\/shop_images\/Hero_Banner_carousel_1.png",
+            "button-label": "",
             "image_link": "",
             "title": "",
             "title_size": "h2",
@@ -19,6 +20,7 @@
           "settings": {
             "image_small": "shopify:\/\/shop_images\/Hero_Banner_carousel_2_b4804a78-d3a1-438c-8c2c-ead50325eab6.png",
             "image_desktop": "shopify:\/\/shop_images\/Hero_Banner_carousel_2.png",
+            "button-label": "",
             "image_link": "",
             "title": "",
             "title_size": "h2",
@@ -30,6 +32,7 @@
           "settings": {
             "image_small": "shopify:\/\/shop_images\/Hero_Banner_carousel_3_38e6ca08-bf02-4b96-917d-fb46e20321ef.png",
             "image_desktop": "shopify:\/\/shop_images\/Hero_Banner_carousel_3.png",
+            "button-label": "",
             "image_link": "",
             "title": "",
             "title_size": "h2",
@@ -54,128 +57,66 @@
         "content_position": "top-left"
       }
     },
-    "image_text_carousel_igph46": {
-      "type": "image-text-carousel",
-      "blocks": {
-        "image_text_9GLbXw": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
-            "title": "Time to Express",
-            "link": "shopify:\/\/blogs\/all-blogs"
-          }
-        },
-        "image_text_UnQY8M": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
-            "title": "Time to Express",
-            "link": "shopify:\/\/blogs\/all-blogs"
-          }
-        },
-        "image_text_F9XDnK": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22_1.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
-            "title": "Celebrate the Style",
-            "link": "shopify:\/\/blogs\/all-blogs"
-          }
-        },
-        "image_text_GCFitm": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
-            "title": "Time to express",
-            "link": "shopify:\/\/blogs\/all-blogs"
-          }
-        },
-        "image_text_DAM73K": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
-            "title": "Time to express",
-            "link": "shopify:\/\/blogs\/all-blogs"
-          }
-        },
-        "image_text_kwgEqj": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
-            "title": "Time to express",
-            "link": "shopify:\/\/blogs\/all-blogs"
-          }
-        }
-      },
-      "block_order": [
-        "image_text_9GLbXw",
-        "image_text_UnQY8M",
-        "image_text_F9XDnK",
-        "image_text_GCFitm",
-        "image_text_DAM73K",
-        "image_text_kwgEqj"
-      ],
+    "video_tXeUHr": {
+      "type": "video",
       "settings": {
-        "heading": "New $ news",
+        "heading": "Video",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video": "shopify:\/\/files\/videos\/16x9_PA FLEXTECH 20SEC.mp4",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "cover_text": "",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "padding_top1": 36,
+        "padding_bottom1": 36
       }
     },
-    "park_categories_carousel_P3DmhU": {
-      "type": "park-categories-carousel",
+    "image_banner_carousel_6A36Nh": {
+      "type": "image-banner-carousel",
       "blocks": {
-        "image_text_XFJAgF": {
-          "type": "image-text",
+        "slide_tmze7i": {
+          "type": "slide",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Categories_images_1.png",
-            "mobile_image": "shopify:\/\/shop_images\/Categories_images_1_d994c918-f261-4550-a289-5bf937c7cedc.png",
-            "category_text": "BUSINESS FORMAL",
-            "category_url": "shopify:\/\/blogs\/all-blogs"
+            "image_small": "shopify:\/\/shop_images\/Hero_Banner_carousel_2_b4804a78-d3a1-438c-8c2c-ead50325eab6.png",
+            "image_desktop": "shopify:\/\/shop_images\/Hero_Banner_carousel_2.png",
+            "button-label": "Discover more",
+            "image_link": "https:\/\/parkavenue-india.myshopify.com\/pages\/collections#bussiness-collections",
+            "title": "BUSINESS FORMAL",
+            "title_size": "h2",
+            "subtitle": ""
           }
         },
-        "image_text_cbGN3W": {
-          "type": "image-text",
+        "slide_KGNXeD": {
+          "type": "slide",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Categories_images_2.png",
-            "mobile_image": "shopify:\/\/shop_images\/Categories_images_2_7edf60a6-080c-4e89-81cb-d021256faf6a.png",
-            "category_text": "SEMI - FORMAL",
-            "category_url": "shopify:\/\/blogs\/all-blogs"
-          }
-        },
-        "image_text_ByGBen": {
-          "type": "image-text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Categories_images_3.png",
-            "mobile_image": "shopify:\/\/shop_images\/Categories_images_3_f7b8e166-250a-4412-b812-77e9623d0d91.png",
-            "category_text": "BUSINESS CASUAL",
-            "category_url": "shopify:\/\/blogs\/all-blogs"
-          }
-        },
-        "image_text_YmtfTb": {
-          "type": "image-text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4259desktop.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4304mob.png",
-            "category_text": "ELITE CASUAL",
-            "category_url": "shopify:\/\/blogs\/all-blogs"
+            "image_small": "shopify:\/\/shop_images\/Hero_Banner_carousel_1_73c7eae2-01fd-4b01-a131-4b64c076e569.png",
+            "image_desktop": "shopify:\/\/shop_images\/Hero_Banner_carousel_3.png",
+            "button-label": "",
+            "image_link": "https:\/\/parkavenue-india.myshopify.com\/pages\/collections#formal-collections",
+            "title": "SEMI - FORMAL",
+            "title_size": "h2",
+            "subtitle": ""
           }
         }
       },
       "block_order": [
-        "image_text_XFJAgF",
-        "image_text_cbGN3W",
-        "image_text_ByGBen",
-        "image_text_YmtfTb"
+        "slide_tmze7i",
+        "slide_KGNXeD"
       ],
       "settings": {
-        "category_heading": "Park $ categories",
+        "section_color_scheme": "",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "splide_height": 600,
+        "banner_content_check": false,
+        "carousel_arrows": false,
+        "heading": "Exclusive $ Collections",
+        "layout": false,
+        "content_position": "top-left"
       }
     },
     "park_latest_colletions_carousel_gaz8Me": {
@@ -184,98 +125,43 @@
         "image_text_MPfH6d": {
           "type": "image_text",
           "settings": {
+            "video": "shopify:\/\/files\/videos\/1.mp4",
             "desktop_image": "shopify:\/\/shop_images\/Latest_collection_images_1.png",
             "mobile_image": "shopify:\/\/shop_images\/Latest_collection_images_1_bea49fad-69e7-426c-b0fa-70faa6c62a1b.png",
-            "title": "Suits",
+            "title": "Reel 1",
             "link": "shopify:\/\/collections"
           }
         },
         "image_text_C9dCtC": {
           "type": "image_text",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Latest_collection_images_2.png",
-            "mobile_image": "shopify:\/\/shop_images\/Latest_collection_images_2_cd15ec73-05ad-4877-9a5b-289c4c17a326.png",
-            "title": "Shirts",
+            "desktop_image": "shopify:\/\/shop_images\/trending-mob-3.jpg",
+            "title": "Reel2",
             "link": "shopify:\/\/collections"
           }
         },
-        "image_text_jP4WX6": {
+        "image_text_4r6dGd": {
           "type": "image_text",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/uncrushed-latest-web.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/uncrushed-latest-mob.jpg",
-            "title": "T-shirts & polos",
-            "link": "shopify:\/\/collections"
-          }
-        },
-        "image_text_PXH3nM": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "title": "Jeans",
-            "link": "shopify:\/\/pages\/style-guide"
-          }
-        },
-        "image_text_pPcjxh": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "title": "Parks",
-            "link": "shopify:\/\/pages\/contact"
-          }
-        },
-        "image_text_GQwCqC": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "title": "Shirts",
-            "link": "shopify:\/\/collections\/all"
-          }
-        },
-        "image_text_TMLNYM": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "title": "Suits",
-            "link": "shopify:\/\/blogs\/all-blogs"
-          }
-        },
-        "image_text_KKRbRx": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "title": "Polos",
-            "link": "shopify:\/\/collections\/all"
-          }
-        },
-        "image_text_aVgbx3": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "title": "Avenues",
-            "link": "shopify:\/\/collections\/all"
+            "video": "shopify:\/\/files\/videos\/3.mp4",
+            "title": "",
+            "link": ""
           }
         }
       },
       "block_order": [
         "image_text_MPfH6d",
         "image_text_C9dCtC",
-        "image_text_jP4WX6",
-        "image_text_PXH3nM",
-        "image_text_pPcjxh",
-        "image_text_GQwCqC",
-        "image_text_TMLNYM",
-        "image_text_KKRbRx",
-        "image_text_aVgbx3"
+        "image_text_4r6dGd"
       ],
       "settings": {
-        "heading": "Latest $ collection's",
+        "heading": "Park $ Social",
+        "mobile-arrow": false,
+        "mobile-autoplay": false,
+        "mobile-pagination": false,
+        "desktop-arrow": false,
+        "desktop-autoplay": false,
+        "desktop-pagination": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -360,14 +246,142 @@
         "image_small": "shopify:\/\/shop_images\/Group_1000003007.png",
         "image_desktop": "shopify:\/\/shop_images\/Vector.jpg"
       }
+    },
+    "image_text_carousel_igph46": {
+      "type": "image-text-carousel",
+      "blocks": {
+        "image_text_9GLbXw": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to Express",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_UnQY8M": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to Express",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_F9XDnK": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22_1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Celebrate the Style",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_GCFitm": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to express",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_DAM73K": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to express",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_kwgEqj": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
+            "title": "Time to express",
+            "link": "shopify:\/\/blogs\/all-blogs"
+          }
+        }
+      },
+      "block_order": [
+        "image_text_9GLbXw",
+        "image_text_UnQY8M",
+        "image_text_F9XDnK",
+        "image_text_GCFitm",
+        "image_text_DAM73K",
+        "image_text_kwgEqj"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "New $ news",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "park_categories_carousel_P3DmhU": {
+      "type": "park-categories-carousel",
+      "blocks": {
+        "image_text_XFJAgF": {
+          "type": "image-text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Categories_images_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/Categories_images_1_d994c918-f261-4550-a289-5bf937c7cedc.png",
+            "category_text": "BUSINESS FORMAL",
+            "category_url": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_cbGN3W": {
+          "type": "image-text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Categories_images_2.png",
+            "mobile_image": "shopify:\/\/shop_images\/Categories_images_2_7edf60a6-080c-4e89-81cb-d021256faf6a.png",
+            "category_text": "SEMI - FORMAL",
+            "category_url": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_ByGBen": {
+          "type": "image-text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Categories_images_3.png",
+            "mobile_image": "shopify:\/\/shop_images\/Categories_images_3_f7b8e166-250a-4412-b812-77e9623d0d91.png",
+            "category_text": "BUSINESS CASUAL",
+            "category_url": "shopify:\/\/blogs\/all-blogs"
+          }
+        },
+        "image_text_YmtfTb": {
+          "type": "image-text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4259desktop.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4304mob.png",
+            "category_text": "ELITE CASUAL",
+            "category_url": "shopify:\/\/blogs\/all-blogs"
+          }
+        }
+      },
+      "block_order": [
+        "image_text_XFJAgF",
+        "image_text_cbGN3W",
+        "image_text_ByGBen",
+        "image_text_YmtfTb"
+      ],
+      "disabled": true,
+      "settings": {
+        "category_heading": "Park $ categories",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner_carousel_txnTCH",
-    "image_text_carousel_igph46",
-    "park_categories_carousel_P3DmhU",
+    "video_tXeUHr",
+    "image_banner_carousel_6A36Nh",
     "park_latest_colletions_carousel_gaz8Me",
     "park_trending_carousel_zpaQxH",
-    "image_text_custom_JULYPf"
+    "image_text_custom_JULYPf",
+    "image_text_carousel_igph46",
+    "park_categories_carousel_P3DmhU"
   ]
 }

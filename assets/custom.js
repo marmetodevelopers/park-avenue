@@ -19,7 +19,8 @@ class MySplide extends HTMLElement {
             pagination: this.pagination,
             focus: 'center',
             fixedHeight: this.fixedHeight,
-            autoplay: true,
+            autoplay: false,
+            loop: true,
             interval: 3000,
             classes: {
                 pagination: 'splide__pagination ibc_pagination',

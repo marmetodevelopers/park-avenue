@@ -31,12 +31,15 @@
         <ul class="splide__list">
           {% for block in section.blocks %}
             <li class="splide__slide">
-              <a href="{{block.settings.image_link}}" class="pos_relative">
+              <div class="pos_relative">
                 <div class="ibc_image_container {% if section.settings.banner_content_check == true %} height_100 {% endif %}">
                   {% render 'picture'
                     , class: ''
                     , mobileSrc: block.settings.image_small
                     , desktopSrc: block.settings.image_desktop %}
+                  {% if block.settings.button-label != blank%}
+                    <a class="button overlay-button" href="{{block.settings.image_link}}">{{ block.settings.button-label }}</a>
+                  {% endif %}
                 </div>
                 {% if block.settings.title != blank or block.settings.subtitle != blank %}
                   <div class="banner_text {% if section.settings.layout == true %} pos_absolute flex p_32 height_96 {{ section.settings.content_position }} {% endif %}">
@@ -56,7 +59,7 @@
                     </div>
                   </div>
                 {% endif %}
-              </a>
+              </div>
             </li>
           {% endfor %}
         </ul>
@@ -189,8 +192,13 @@
             "id": "image_desktop"
           },
           {
+            "type": "text",
+            "id": "button-label",
+            "label": "Enter button label"
+          },
+          {
             "type": "url",
-            "label": "Image Link",
+            "label": "Button Link",
             "id": "image_link"
           },
           {

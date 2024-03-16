@@ -1,0 +1,111 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "brand_collection_AnVKHt": {
+      "type": "brand-collection",
+      "blocks": {
+        "slide_BcidC3": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Hero_Banner_carousel_1_73c7eae2-01fd-4b01-a131-4b64c076e569.png",
+            "image_desktop": "shopify:\/\/shop_images\/Hero_Banner_carousel_3.png",
+            "title": "",
+            "title_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "slide_BcidC3"
+      ],
+      "settings": {
+        "banner_content_check": false,
+        "carousel_arrows": false,
+        "heading": "Bussiness $ Collections",
+        "layout": false,
+        "content_position": "top-left",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "full_width": true,
+        "main-heading": "Talk about your brand",
+        "main-heading_size": "h1",
+        "caption": "",
+        "text_style": "caption-with-letter-spacing",
+        "text_size": "medium",
+        "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+        "button_label": "Button label",
+        "button_link": "",
+        "button_style_secondary": true,
+        "button_label_2": "",
+        "button_link_2": "",
+        "button_style_secondary_2": true,
+        "section_color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "splide_height": 600
+      }
+    },
+    "brand_collection_iCKizH": {
+      "type": "brand-collection",
+      "blocks": {
+        "slide_Rxbtjb": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/Hero_Banner_carousel_1.png",
+            "title": "",
+            "title_size": "h2"
+          }
+        },
+        "slide_pxmCbx": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/Hero_Banner_carousel_2.png",
+            "title": "CORPORATE SELECTIONS",
+            "title_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "slide_Rxbtjb",
+        "slide_pxmCbx"
+      ],
+      "settings": {
+        "banner_content_check": false,
+        "carousel_arrows": false,
+        "heading": "Semi Formal $ Collections",
+        "layout": true,
+        "content_position": "top-left",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "full_width": true,
+        "main-heading": "Talk about your brand",
+        "main-heading_size": "h1",
+        "caption": "",
+        "text_style": "caption-with-letter-spacing",
+        "text_size": "medium",
+        "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+        "button_label": "Discover more",
+        "button_link": "shopify:\/\/collections\/frontpage",
+        "button_style_secondary": true,
+        "button_label_2": "Locate store",
+        "button_link_2": "",
+        "button_style_secondary_2": true,
+        "section_color_scheme": "scheme-335dc927-1616-448e-8fc3-a51874a4ed24",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "splide_height": 600
+      }
+    }
+  },
+  "order": [
+    "main",
+    "brand_collection_AnVKHt",
+    "brand_collection_iCKizH"
+  ]
+}
