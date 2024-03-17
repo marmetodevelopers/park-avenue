@@ -135,6 +135,7 @@
         "image_text_C9dCtC": {
           "type": "image_text",
           "settings": {
+            "video": "shopify:\/\/files\/videos\/2.mp4",
             "desktop_image": "shopify:\/\/shop_images\/trending-mob-3.jpg",
             "title": "Reel2",
             "link": "shopify:\/\/collections"
@@ -144,6 +145,15 @@
           "type": "image_text",
           "settings": {
             "video": "shopify:\/\/files\/videos\/3.mp4",
+            "title": "Reel 3",
+            "link": ""
+          }
+        },
+        "image_text_VHnBRB": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Categories_images_1_d994c918-f261-4550-a289-5bf937c7cedc.png",
+            "mobile_image": "shopify:\/\/shop_images\/Categories_images_1_d994c918-f261-4550-a289-5bf937c7cedc.png",
             "title": "",
             "link": ""
           }
@@ -152,7 +162,8 @@
       "block_order": [
         "image_text_MPfH6d",
         "image_text_C9dCtC",
-        "image_text_4r6dGd"
+        "image_text_4r6dGd",
+        "image_text_VHnBRB"
       ],
       "settings": {
         "heading": "Park $ Social",

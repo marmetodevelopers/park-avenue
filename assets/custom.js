@@ -19,7 +19,7 @@ class MySplide extends HTMLElement {
             pagination: this.pagination,
             focus: 'center',
             fixedHeight: this.fixedHeight,
-            autoplay: false,
+            autoplay: true,
             loop: true,
             interval: 3000,
             classes: {
