@@ -140,6 +140,14 @@
             "link": "shopify:\/\/collections"
           }
         },
+        "image_text_aFTwKN": {
+          "type": "image_text",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/3.mp4",
+            "title": "Reel 3",
+            "link": ""
+          }
+        },
         "image_text_4r6dGd": {
           "type": "image_text",
           "settings": {
@@ -152,6 +160,7 @@
       "block_order": [
         "image_text_MPfH6d",
         "image_text_C9dCtC",
+        "image_text_aFTwKN",
         "image_text_4r6dGd"
       ],
       "settings": {
