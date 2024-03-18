@@ -183,6 +183,7 @@
       "block_order": [
         "slide_8KYytA"
       ],
+      "disabled": true,
       "settings": {
         "banner_content_check": false,
         "carousel_arrows": false,
