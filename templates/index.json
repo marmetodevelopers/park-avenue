@@ -60,7 +60,7 @@
     "video_section_LXbTW6": {
       "type": "video-section",
       "settings": {
-        "heading": "",
+        "heading": "<p>The Ultimate Flex<\/p>",
         "title_decor": false,
         "margin_bottom": 40,
         "heading_size": "h1",
@@ -113,7 +113,7 @@
         "splide_height": 600,
         "banner_content_check": false,
         "carousel_arrows": false,
-        "heading": "Exclusive $ Collections",
+        "heading": "New Arrivals",
         "layout": false,
         "content_position": "top-left"
       }
