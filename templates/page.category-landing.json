@@ -8,6 +8,7 @@
           "settings": {
             "image_small": "shopify:\/\/shop_images\/Rectangle_4256_ee0aed95-8594-4390-9dc0-2d4dabe2ee1b.png",
             "image_desktop": "shopify:\/\/shop_images\/Rectangle_3_ac05e808-d999-410e-8aa1-f39f33b4f7ba.png",
+            "button-label": "",
             "image_link": "",
             "title": "",
             "title_size": "h2",
@@ -19,6 +20,7 @@
           "settings": {
             "image_small": "shopify:\/\/shop_images\/Rectangle_4256_ee0aed95-8594-4390-9dc0-2d4dabe2ee1b.png",
             "image_desktop": "shopify:\/\/shop_images\/Rectangle_3_ac05e808-d999-410e-8aa1-f39f33b4f7ba.png",
+            "button-label": "",
             "image_link": "",
             "title": "",
             "title_size": "h2",
@@ -30,6 +32,7 @@
           "settings": {
             "image_small": "shopify:\/\/shop_images\/Rectangle_4256_ee0aed95-8594-4390-9dc0-2d4dabe2ee1b.png",
             "image_desktop": "shopify:\/\/shop_images\/Rectangle_3_ac05e808-d999-410e-8aa1-f39f33b4f7ba.png",
+            "button-label": "",
             "image_link": "",
             "title": "",
             "title_size": "h2",
@@ -101,7 +104,7 @@
         "image_text_YFTYPA"
       ],
       "settings": {
-        "category_heading": "PARK $ COLLECTION'S",
+        "category_heading": "PARK COLLECTION'S",
         "padding_top": 32,
         "padding_bottom": 32
       }
@@ -163,7 +166,7 @@
         "image_text_ekbqpC"
       ],
       "settings": {
-        "heading": "NEW $ ARRIVAL",
+        "heading": "NEW ARRIVAL",
         "padding_top": 32,
         "padding_bottom": 32
       }
@@ -214,7 +217,7 @@
         "image_text_TJcPBM"
       ],
       "settings": {
-        "heading": "NEW $ ARRIVALS",
+        "heading": "NEW ARRIVALS",
         "padding_top": 32,
         "padding_bottom": 32,
         "first_hotspot_top": 20,
@@ -260,7 +263,7 @@
         "image_text_3aAnYf"
       ],
       "settings": {
-        "heading": "VISIBLE $ CHOICES",
+        "heading": "VISIBLE CHOICES",
         "padding_top": 36,
         "padding_bottom": 36,
         "image_background": "#ededed",
@@ -296,7 +299,7 @@
         "button_kPPirN"
       ],
       "settings": {
-        "heading": "STORE $ LOCATOR",
+        "heading": "STORE LOCATOR",
         "section_color_scheme": "",
         "padding_top": 32,
         "padding_bottom": 64,
