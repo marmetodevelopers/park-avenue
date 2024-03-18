@@ -110,12 +110,25 @@
             "title_size": "h2",
             "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
           }
+        },
+        "slide_JRYAg6": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Categories_images_3.png",
+            "image_desktop": "shopify:\/\/shop_images\/Hero_Banner_carousel_2.png",
+            "button-label": "",
+            "image_link": "https:\/\/parkavenue-india.myshopify.com\/pages\/collections#city-casuals",
+            "title": "UNCRUSHED",
+            "title_size": "h2",
+            "subtitle": "Tailored to sartorial perfection from premium quality fabric, it assures a soft and soothing touch against the skin"
+          }
         }
       },
       "block_order": [
         "slide_tmze7i",
         "slide_KGNXeD",
-        "slide_UHktJT"
+        "slide_UHktJT",
+        "slide_JRYAg6"
       ],
       "settings": {
         "section_color_scheme": "",
