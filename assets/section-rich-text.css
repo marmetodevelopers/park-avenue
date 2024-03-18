@@ -104,4 +104,5 @@
 }
 .button-labels-container .button.button--secondary:hover {
   background-color: rgba(255,255,255, 0.3);
+  color: rgba(0,0,0,1)
 }
