@@ -92,7 +92,7 @@
   padding-bottom: 1.5rem;
 }
 .button-labels-container .button--secondary {
-  background-color: transparent;
+  background-color: rgba(0,0,0,0.3);
   border: 1px solid #fff;
   border-radius: 20px;
   color: #fff;
@@ -104,5 +104,6 @@
 }
 .button-labels-container .button.button--secondary:hover {
   background-color: rgba(255,255,255, 0.3);
-  color: rgba(0,0,0,1)
+  color: rgba(0,0,0,1);
+  border: 1px solid #000;
 }
