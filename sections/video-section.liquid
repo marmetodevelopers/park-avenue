@@ -17,9 +17,10 @@
 
 <div class="section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}{% if section.settings.full_width == false %} page-width{% endif %}" >
    {% if section.settings.heading != blank %}
-    {% render "text-with-logo"
-      , text: section.settings.heading
-      , css_class: "h1 page-width mb-3 custom-heading" %}
+    {% render "text-with-logo", 
+      text: section.settings.heading,
+      css_class: "h1 page-width mb-3 custom-heading" 
+    %}
   {% endif %}
   <video-container class="video-items-container">
         <div class="mobile-video">
