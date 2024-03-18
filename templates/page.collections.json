@@ -19,10 +19,20 @@
             "title": "",
             "title_size": "h2"
           }
+        },
+        "slide_3PMxCV": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Hero_Banner_carousel_1_73c7eae2-01fd-4b01-a131-4b64c076e569.png",
+            "image_desktop": "shopify:\/\/shop_images\/Hero_Banner_carousel_3.png",
+            "title": "",
+            "title_size": "h2"
+          }
         }
       },
       "block_order": [
-        "slide_BcidC3"
+        "slide_BcidC3",
+        "slide_3PMxCV"
       ],
       "settings": {
         "banner_content_check": false,
