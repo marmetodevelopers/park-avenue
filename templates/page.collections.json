@@ -40,7 +40,7 @@
         "text_size": "medium",
         "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
         "button_label": "Button label",
-        "button_link": "",
+        "button_link": "shopify:\/\/pages\/collections",
         "button_style_secondary": true,
         "button_label_2": "",
         "button_link_2": "",
