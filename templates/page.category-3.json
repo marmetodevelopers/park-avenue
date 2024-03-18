@@ -8,6 +8,7 @@
           "settings": {
             "image_small": "shopify:\/\/shop_images\/Frame_1000005354_0eab6c4f-44b0-44dc-860d-4926097936b0.png",
             "image_desktop": "shopify:\/\/shop_images\/Frame_1000004958_1d158efa-53f8-44ac-9353-2423abc13c22.png",
+            "button-label": "",
             "image_link": "",
             "title": "",
             "title_size": "h2",
@@ -18,6 +19,7 @@
           "type": "slide",
           "settings": {
             "image_desktop": "shopify:\/\/shop_images\/Rectangle_4192.png",
+            "button-label": "",
             "image_link": "",
             "title": "",
             "title_size": "h2",
@@ -27,6 +29,7 @@
         "slide_jVdQp7": {
           "type": "slide",
           "settings": {
+            "button-label": "",
             "image_link": "",
             "title": "CORPORATE SELECTIONS",
             "title_size": "h2",
@@ -131,6 +134,7 @@
           "settings": {
             "image_small": "shopify:\/\/shop_images\/Rectangle_4302_2e17b5f1-0f71-4275-9c48-3679fd27ed6b.png",
             "image_desktop": "shopify:\/\/shop_images\/Rectangle_4258_5e7fffe5-b7c7-4cd0-ae4b-42e4b8d2fa4c.png",
+            "button-label": "",
             "image_link": "",
             "title": "BUSINESS SHIRTS",
             "title_size": "h4",
@@ -140,6 +144,7 @@
         "slide_79UYMm": {
           "type": "slide",
           "settings": {
+            "button-label": "",
             "image_link": "",
             "title": "CORPORATE SELECTIONS",
             "title_size": "h2",
@@ -158,7 +163,7 @@
         "splide_height": 550,
         "banner_content_check": false,
         "carousel_arrows": true,
-        "heading": "BUSINESS $ Wear",
+        "heading": "BUSINESS Wear",
         "layout": true,
         "content_position": "bottom-center"
       }
@@ -251,7 +256,7 @@
         "image_with_text_overlay_Kh9UGz"
       ],
       "settings": {
-        "heading": "Exclusive $ Collections",
+        "heading": "Exclusive Collections",
         "padding_top": 32,
         "padding_bottom": 32,
         "desktop_height": 295,
@@ -270,6 +275,7 @@
           "settings": {
             "image_small": "shopify:\/\/shop_images\/Rectangle_4194.png",
             "image_desktop": "shopify:\/\/shop_images\/Rectangle_4192_02c80080-07cb-418c-a1fd-c1521b800e03.png",
+            "button-label": "",
             "image_link": "",
             "title": "CASUAL OF PROFESSION",
             "title_size": "h2",
@@ -280,6 +286,7 @@
           "type": "slide",
           "settings": {
             "image_desktop": "shopify:\/\/shop_images\/Rectangle_3.png",
+            "button-label": "",
             "image_link": "",
             "title": "CORPORATE SELECTIONS",
             "title_size": "h2",
