@@ -343,11 +343,13 @@ a {
 	bottom: 1rem;
 	left: 50%;
 	transform: translateX(-50%);
-	background: rgba(25,17,11,0.2);
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-	border: 1px solid #fff;
-	border-radius: 20px;
-	color: #fff;
-	-webkit-backdrop-filter: blur(15px);
-	backdrop-filter: blur(15px);
+
+	background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    padding: 15px;
+	-webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

@@ -1,0 +1,209 @@
+{{ "video-section.css" |  asset_url |  stylesheet_tag }}
+<script src="{{ 'custom.js' |  asset_url }}" defer="defer"></script> 
+
+{%- style -%}
+.section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+}
+
+@media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+}
+{%- endstyle -%}
+
+<div class="section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}{% if section.settings.full_width == false %} page-width{% endif %}" >
+    <video-container class="video-items-container">
+        <div class="mobile-video">
+            {% if section.settings.mobile_video != blank or section.settings.video != blank %}
+                {% if section.settings.mobile_video != blank %}
+                    <div class="video-wrapper">
+                        {{
+                            section.settings.mobile_video
+                            | video_tag:
+                            image_size: '650x',
+                            autoplay: false,
+                            loop: section.settings.enable_video_looping,
+                            controls: false,
+                            muted: false
+                        }}
+                        <div class="play-button">
+                            <button>{%- render 'icon-play' -%}</button>
+                        </div>
+                    </div>
+                {% else %}
+                    <div class="video-wrapper">
+                        {{
+                            section.settings.video
+                            | video_tag:
+                            image_size: '650x',
+                            autoplay: false,
+                            loop: section.settings.enable_video_looping,
+                            controls: false,
+                            muted: false
+                        }}
+                      <div class="play-button">
+                          <button>{%- render 'icon-play' -%}</button>
+                      </div>
+                    </div>
+                {% endif %}
+            {% endif %}
+        </div>
+        <div class="desktop-video">
+            <div class="video-wrapper">
+                {{
+                    section.settings.video
+                    | video_tag:
+                    image_size: '1100x',
+                    autoplay: false,
+                    loop: section.settings.enable_video_looping,
+                    controls: false,
+                    muted: false
+                }}
+                <div class="play-button">
+                    <button>{%- render 'icon-play' -%}</button>
+                </div>
+            </div>
+        </div>
+    </video-container>
+</div>
+
+{% schema %}
+    {
+      "name": "Video section",
+      "tag": "section",
+      "class": "section",
+      "disabled_on": {
+        "groups": ["header", "footer"]
+      },
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "checkbox",
+          "id": "title_decor",
+          "label": "Title decor",
+          "info": "select the checkbox if title needs decoration",
+          "default": false
+        },
+        {
+          "type": "range",
+          "label": "Margin bottom",
+          "id": "margin_bottom",
+          "default": 40,
+          "info": "bottom margin for the heading ",
+          "min": 0,
+          "max": 60,
+          "step": 1,
+          "unit": "px"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "t:sections.all.heading_size.options__1.label"
+            },
+            {
+              "value": "h1",
+              "label": "t:sections.all.heading_size.options__2.label"
+            },
+            {
+              "value": "h0",
+              "label": "t:sections.all.heading_size.options__3.label"
+            }
+          ],
+          "default": "h1",
+          "label": "t:sections.all.heading_size.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_video_looping",
+          "label": "t:sections.video.settings.enable_video_looping.label",
+          "default": false
+        },
+        {
+          "type": "header",
+          "content": "t:sections.video.settings.header__1.content"
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "t:sections.video.settings.video.label"
+        },
+        {
+          "type": "header",
+          "content": "Mobile video"
+        },
+        {
+          "type": "video",
+          "id": "mobile_video",
+          "label": "Select mobile video",
+          "info": "If not selected desktop video will be shown"
+        },
+        {
+          "type": "image_picker",
+          "id": "cover_image",
+          "label": "t:sections.video.settings.cover_image.label"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "t:sections.video.settings.description.label",
+          "info": "t:sections.video.settings.description.info"
+        },
+        {
+          "type": "header",
+          "content": "t:sections.video.settings.header__3.content"
+        },
+        {
+          "type": "checkbox",
+          "id": "full_width",
+          "label": "t:sections.video.settings.full_width.label",
+          "default": false
+        },
+        {
+          "type": "color_scheme",
+          "id": "color_scheme",
+          "label": "t:sections.all.colors.label",
+          "default": "background-1"
+        },
+        {
+          "type": "header",
+          "content": "t:sections.all.padding.section_padding_heading"
+        },
+        {
+          "type": "range",
+          "id": "padding_top",
+          "min": 0,
+          "max": 100,
+          "step": 4,
+          "unit": "px",
+          "label": "t:sections.all.padding.padding_top",
+          "default": 36
+        },
+        {
+          "type": "range",
+          "id": "padding_bottom",
+          "min": 0,
+          "max": 100,
+          "step": 4,
+          "unit": "px",
+          "label": "t:sections.all.padding.padding_bottom",
+          "default": 36
+        }
+      ],
+      "presets": [
+        {
+          "name": "Video section"
+        }
+      ]
+    }
+    {% endschema %}

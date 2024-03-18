@@ -57,22 +57,21 @@
         "content_position": "top-left"
       }
     },
-    "video_tXeUHr": {
-      "type": "video",
+    "video_section_LXbTW6": {
+      "type": "video-section",
       "settings": {
-        "heading": "Video",
+        "heading": "",
+        "title_decor": false,
+        "margin_bottom": 40,
         "heading_size": "h1",
         "enable_video_looping": false,
         "video": "shopify:\/\/files\/videos\/16x9_PA FLEXTECH 20SEC.mp4",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "cover_text": "",
+        "mobile_video": "shopify:\/\/files\/videos\/9x16_PA FLEXTECH 20SEC-Under 30MB.mp4",
         "description": "",
         "full_width": false,
         "color_scheme": "",
         "padding_top": 36,
-        "padding_bottom": 36,
-        "padding_top1": 36,
-        "padding_bottom1": 36
+        "padding_bottom": 36
       }
     },
     "image_banner_carousel_6A36Nh": {
@@ -387,7 +386,7 @@
   },
   "order": [
     "image_banner_carousel_txnTCH",
-    "video_tXeUHr",
+    "video_section_LXbTW6",
     "image_banner_carousel_6A36Nh",
     "park_latest_colletions_carousel_gaz8Me",
     "park_trending_carousel_zpaQxH",

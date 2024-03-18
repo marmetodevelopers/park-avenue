@@ -46,3 +46,36 @@
 .video-section__media.media-fit-cover video {
   object-fit: cover;
 }
+
+.video-items-container video{
+  object-fit: cover;
+  width: 100%;
+}
+.video-items-container{
+  position: relative;
+}
+.play-button{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.play-button button{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.mobile-video{
+  display: block;
+}
+.desktop-video{
+  display: none;
+}
+@media screen and (min-width: 750px){
+  .mobile-video{
+    display: none;
+  }
+  .desktop-video{
+    display: block;
+  }
+}

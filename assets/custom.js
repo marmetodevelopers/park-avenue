@@ -122,3 +122,46 @@ if (mainElement.length > 0 && thumbnailCarousel.length > 0) {
         thumbnailSlider.mount();
     });
 }
+
+class VideoContainer extends HTMLElement {
+    connectedCallback() {
+      const videoContainer = this.querySelector(".video-items-container");
+      const playButtons = this.querySelectorAll(".play-button button");
+      playButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          this.play(button);
+        });
+      });
+    }
+  
+    play(button) {
+      const video = button.closest(".video-wrapper").querySelector("video");
+      const playButton = button.parentElement;
+      
+      video.controls = true; // Show video controls
+      video.play(); // Play video
+      playButton.style.display = 'none'; // Hide play button
+  
+      // Add event listener to hide play button when video is playing
+      video.addEventListener('play', () => {
+        video.controls = true
+        playButton.style.display = 'none';
+      });
+  
+      // Add event listener to show play button when video is paused
+      video.addEventListener('pause', () => {
+        video.controls = false
+        playButton.style.display = 'block';
+      });
+    }
+  
+    pause() {
+      const video = this.querySelector("video");
+      const playButton = this.querySelector(".play-button");
+      
+      video.pause(); // Pause video
+      playButton.style.display = 'block'; // Show play button
+    }
+  }
+  
+  customElements.define('video-container', VideoContainer);  
