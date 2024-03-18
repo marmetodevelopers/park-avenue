@@ -176,6 +176,43 @@
         "padding_bottom": 36
       }
     },
+    "image_text_custom_JULYPf": {
+      "type": "image-text-custom",
+      "blocks": {
+        "title_NNgeiG": {
+          "type": "title",
+          "settings": {
+            "title": "Find Your Store"
+          }
+        },
+        "description_jFibem": {
+          "type": "description",
+          "settings": {
+            "subtitle": "<ul><li>The store locator helps customers easily find their nearest Raymond retail store or shop-in-shop.<\/li><li>It allows users to search by city, pincode or current location to pull up results on a map.<\/li><li>Users can input the city or pincode in the search bar to view all Raymond outlets within that location.<\/li><li>When accessing from a mobile device, it automatically detects the user's current location for nearby stores.<\/li><\/ul>"
+          }
+        },
+        "button_tUkK8h": {
+          "type": "button",
+          "settings": {
+            "button_text": "View Store",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_NNgeiG",
+        "description_jFibem",
+        "button_tUkK8h"
+      ],
+      "settings": {
+        "heading": "STORE $ LOCATOR",
+        "section_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "image_small": "shopify:\/\/shop_images\/Group_1000003007.png",
+        "image_desktop": "shopify:\/\/shop_images\/Vector.jpg"
+      }
+    },
     "park_trending_carousel_zpaQxH": {
       "type": "park-trending-carousel",
       "blocks": {
@@ -212,49 +249,13 @@
         "image_text_VFGQD6",
         "image_text_QpfmpR"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Visible $ Choices",
         "padding_top": 36,
         "padding_bottom": 36,
         "image_background": "#ededed",
         "image_flow": true
-      }
-    },
-    "image_text_custom_JULYPf": {
-      "type": "image-text-custom",
-      "blocks": {
-        "title_NNgeiG": {
-          "type": "title",
-          "settings": {
-            "title": "Find Your Store"
-          }
-        },
-        "description_jFibem": {
-          "type": "description",
-          "settings": {
-            "subtitle": "<ul><li>The store locator helps customers easily find their nearest Raymond retail store or shop-in-shop.<\/li><li>It allows users to search by city, pincode or current location to pull up results on a map.<\/li><li>Users can input the city or pincode in the search bar to view all Raymond outlets within that location.<\/li><li>When accessing from a mobile device, it automatically detects the user's current location for nearby stores.<\/li><\/ul>"
-          }
-        },
-        "button_tUkK8h": {
-          "type": "button",
-          "settings": {
-            "button_text": "View Store",
-            "button_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "title_NNgeiG",
-        "description_jFibem",
-        "button_tUkK8h"
-      ],
-      "settings": {
-        "heading": "STORE $ LOCATOR",
-        "section_color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "image_small": "shopify:\/\/shop_images\/Group_1000003007.png",
-        "image_desktop": "shopify:\/\/shop_images\/Vector.jpg"
       }
     },
     "image_text_carousel_igph46": {
@@ -389,8 +390,8 @@
     "video_section_LXbTW6",
     "image_banner_carousel_6A36Nh",
     "park_latest_colletions_carousel_gaz8Me",
-    "park_trending_carousel_zpaQxH",
     "image_text_custom_JULYPf",
+    "park_trending_carousel_zpaQxH",
     "image_text_carousel_igph46",
     "park_categories_carousel_P3DmhU"
   ]
