@@ -55,7 +55,7 @@
         "image_width_text_HtCmTQ"
       ],
       "settings": {
-        "title": "<p>TREND $ FORECAST<\/p>",
+        "title": "<p>TREND FORECAST<\/p>",
         "mobile-padding-top": 48,
         "mobile-padding-bottom": 48,
         "padding-top": 44,
@@ -92,7 +92,7 @@
         "slide_media_twMkAY"
       ],
       "settings": {
-        "title": "<p>STYLE $ FEEDS<\/p>",
+        "title": "<p>STYLE FEEDS<\/p>",
         "mobile-padding-top": 0,
         "mobile-padding-bottom": 48,
         "padding-top": 0,
@@ -102,7 +102,7 @@
     "image_comparisions_nahq9q": {
       "type": "image-comparisions",
       "settings": {
-        "title": "<p>OUTFIT $ INSPO<\/p>",
+        "title": "<p>OUTFIT INSPO<\/p>",
         "first_image": "shopify:\/\/shop_images\/Rectangle_841_cea65cce-a7bb-4322-bef9-a1e8de8c9143.png",
         "second_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
         "desktop_first_image": "shopify:\/\/shop_images\/Rectangle_4192_ed362d36-992e-4765-bcdb-afa417aefdeb.png",
@@ -170,7 +170,7 @@
         "image_text_slide_nVt6T8"
       ],
       "settings": {
-        "title": "<p>GUEST $ EDITORIALS<\/p>",
+        "title": "<p>GUEST EDITORIALS<\/p>",
         "color_scheme": "background-1",
         "mobile-padding-top": 0,
         "mobile-padding-bottom": 48,
