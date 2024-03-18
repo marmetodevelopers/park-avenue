@@ -8,6 +8,7 @@
           "settings": {
             "image_small": "shopify:\/\/shop_images\/Frame_1000005354_d6438d0d-8813-4eb5-93f8-7e31b3fe6466.png",
             "image_desktop": "shopify:\/\/shop_images\/Frame_1000004958_d9bf0dac-57cf-41ed-b9a5-15a3ecff534e.png",
+            "button-label": "",
             "image_link": "",
             "title": "",
             "title_size": "h2",
@@ -18,6 +19,7 @@
           "type": "slide",
           "settings": {
             "image_desktop": "shopify:\/\/shop_images\/Rectangle_4192.png",
+            "button-label": "",
             "image_link": "",
             "title": "",
             "title_size": "h2",
@@ -27,6 +29,7 @@
         "slide_jVdQp7": {
           "type": "slide",
           "settings": {
+            "button-label": "",
             "image_link": "",
             "title": "CORPORATE SELECTIONS",
             "title_size": "h2",
@@ -139,7 +142,7 @@
         "image_with_text_overlay_Kh9UGz"
       ],
       "settings": {
-        "heading": "SEASONAL $ Wear",
+        "heading": "SEASONAL Wear",
         "padding_top": 64,
         "padding_bottom": 32,
         "desktop_height": 295,
@@ -230,6 +233,7 @@
           "settings": {
             "image_small": "shopify:\/\/shop_images\/Rectangle_4302_3e0d340b-b6ae-4774-a251-35d8722bf685.png",
             "image_desktop": "shopify:\/\/shop_images\/Rectangle_4302_ea42691a-09aa-43bb-bf87-7f18ef3f3462.png",
+            "button-label": "",
             "image_link": "",
             "title": "CASUAL BLAZERS",
             "title_size": "h4",
@@ -239,6 +243,7 @@
         "slide_79UYMm": {
           "type": "slide",
           "settings": {
+            "button-label": "",
             "image_link": "",
             "title": "CORPORATE SELECTIONS",
             "title_size": "h2",
@@ -257,7 +262,7 @@
         "splide_height": 550,
         "banner_content_check": false,
         "carousel_arrows": true,
-        "heading": "EXCLUSIVE $ COLLECTIONS",
+        "heading": "EXCLUSIVE COLLECTIONS",
         "layout": true,
         "content_position": "bottom-center"
       }
@@ -304,7 +309,7 @@
         "padding_top": 32,
         "padding_bottom": 32,
         "carousel_arrows": true,
-        "heading": "LOOK $ BOOK"
+        "heading": "LOOK BOOK"
       }
     },
     "image_banner_carousel_EVPagW": {
@@ -315,6 +320,7 @@
           "settings": {
             "image_small": "shopify:\/\/shop_images\/Rectangle_4192_35420127-3f12-4315-a70c-ec7c7352bd2e.png",
             "image_desktop": "shopify:\/\/shop_images\/Rectangle_4192_ed362d36-992e-4765-bcdb-afa417aefdeb.png",
+            "button-label": "",
             "image_link": "",
             "title": "TEXTURE - TWEETED",
             "title_size": "h2",
@@ -325,6 +331,7 @@
           "type": "slide",
           "settings": {
             "image_desktop": "shopify:\/\/shop_images\/Rectangle_3.png",
+            "button-label": "",
             "image_link": "",
             "title": "CORPORATE SELECTIONS",
             "title_size": "h2",
@@ -377,7 +384,7 @@
         "button_WwtCik"
       ],
       "settings": {
-        "heading": "STORE $ LOCATOR",
+        "heading": "STORE LOCATOR",
         "section_color_scheme": "",
         "padding_top": 32,
         "padding_bottom": 64,
