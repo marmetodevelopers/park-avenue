@@ -16,7 +16,12 @@
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}{% if section.settings.full_width == false %} page-width{% endif %}" >
-    <video-container class="video-items-container">
+   {% if section.settings.heading != blank %}
+    {% render "text-with-logo"
+      , text: section.settings.heading
+      , css_class: "h1 page-width mb-3 custom-heading" %}
+  {% endif %}
+  <video-container class="video-items-container">
         <div class="mobile-video">
             {% if section.settings.mobile_video != blank or section.settings.video != blank %}
                 {% if section.settings.mobile_video != blank %}
@@ -84,24 +89,6 @@
           "type": "richtext",
           "id": "heading",
           "label": "Heading"
-        },
-        {
-          "type": "checkbox",
-          "id": "title_decor",
-          "label": "Title decor",
-          "info": "select the checkbox if title needs decoration",
-          "default": false
-        },
-        {
-          "type": "range",
-          "label": "Margin bottom",
-          "id": "margin_bottom",
-          "default": 40,
-          "info": "bottom margin for the heading ",
-          "min": 0,
-          "max": 60,
-          "step": 1,
-          "unit": "px"
         },
         {
           "type": "select",
