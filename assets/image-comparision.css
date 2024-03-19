@@ -222,6 +222,9 @@
   .media--custom{
     padding-bottom: 145.7%;
   }
+  .custom-margin-top{
+    margin-top: 1.7rem;
+  }
   @media screen and (min-width: 750px){
     .image-comparison {
       --percent: 98%;
@@ -229,4 +232,9 @@
     .media--custom{
       padding-bottom: 50%;
     }
+    .custom-margin-top{
+      margin-top: 0;
+    }
   }
+
+  

@@ -162,7 +162,7 @@
                   data-cascade
                 {% endif %}
               >
-                <div class="h3">Follow Us</div>
+                <div class="h5">Follow Us</div>
                 {%- if shop.features.follow_on_shop? and section.settings.enable_follow_on_shop -%}
                   <div class="footer__follow-on-shop">
                     {% comment %} TODO: enable theme-check once `login_button` is accepted as valid filter {% endcomment %}
@@ -178,7 +178,7 @@
 
               {% if section.settings.show_downloads %}
                 <div class="flex_column gap_2 gap_12">
-                <div class="h3">Download App</div>
+                <div class="h5">Download App</div>
                 <div class="app_link_images">
                   <a href="">
                     <div class="app_img_container">
@@ -200,7 +200,7 @@
               <div class="footer-block__newsletter flex_column gap_2">
                 <div class="flex_column gap_1 gap_16">
                   {%- if section.settings.newsletter_heading != blank -%}
-                    <div class="h3">{{ section.settings.newsletter_heading }}</div>
+                    <div class="h5">{{ section.settings.newsletter_heading }}</div>
                   {%- endif -%}
                   {%- if section.settings.newsletter_subheading != blank -%}
                     <div class="caption">{{ section.settings.newsletter_subheading }}</div>
@@ -274,7 +274,7 @@
                 {% case block.type %}
                   {% when 'contact-text' %}
                     <div class="contact_container flex_column gap_16">
-                      <div class="h3">
+                      <div class="h5">
                         {{ block.settings.contact_heading }}
                       </div>
                       <div class="caption">
@@ -290,7 +290,7 @@
     {%- endunless -%}
   {%- endif -%}
 
-  <div class="page-width">
+  <div class="page-width footer-information">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when 'text' -%}

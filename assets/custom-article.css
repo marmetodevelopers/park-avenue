@@ -33,6 +33,8 @@
 .date-container {
   padding-bottom: 2.4rem;
   color: #7a7a7a;
+  font-weight: 400;
+  line-height: 160%;
 }
 .article-date-container {
   text-transform: uppercase;
@@ -48,7 +50,9 @@
   text-transform: uppercase;
   color: #0e0e10;
   text-align: center;
+  font-weight: 700;
 }
+
 .blog-information {
   color: #231f20;
   text-align: center;
@@ -61,6 +65,9 @@
   line-height: 120%;
   letter-spacing: 0.07px;
   text-transform: uppercase;
+}
+.article-content-container{
+  padding-top: 4.8rem;
 }
 
 .article-related-heading svg {
@@ -123,6 +130,9 @@
     padding: 0 1.6rem;
     padding-top: 4rem;
   }
+  .article-content-container{
+    padding-top: 1.6rem;
+  }
 
   .content-svg-container {
     flex-direction: column;
@@ -161,6 +171,10 @@
   .popular-tag-container {
     padding-bottom: 2.4rem;
   }
+  .article-title-heading, .blog-information{
+   text-align: left;
+  }
+  
   .date-container {
     padding-bottom: 1.6rem;
   }
@@ -189,5 +203,7 @@
   }
   .popular-tag-container a{
     padding: 1.1rem 2.75rem;
+    border: 1px solid #000;
+    color: #000;
   }
 }

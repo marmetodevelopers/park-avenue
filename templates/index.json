@@ -351,7 +351,7 @@
       ],
       "disabled": true,
       "settings": {
-        "heading": "New $ news",
+        "heading": "The Ultimate Flex",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -391,8 +391,8 @@
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/Rectangle_4259desktop.png",
             "mobile_image": "shopify:\/\/shop_images\/Rectangle_4304mob.png",
-            "category_text": "ELITE CASUAL",
-            "category_url": "shopify:\/\/blogs\/all-blogs"
+            "category_text": "City Casual",
+            "category_url": "shopify:\/\/pages\/collections"
           }
         }
       },
@@ -404,7 +404,7 @@
       ],
       "disabled": true,
       "settings": {
-        "category_heading": "Park $ categories",
+        "category_heading": "New Arrivals",
         "padding_top": 36,
         "padding_bottom": 36
       }

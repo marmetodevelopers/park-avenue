@@ -1,5 +1,95 @@
 {
   "sections": {
+    "image_banner_carousel_Aw4Ua9": {
+      "type": "image-banner-carousel",
+      "blocks": {
+        "slide_tyfWpL": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4257.jpg",
+            "image_desktop": "shopify:\/\/shop_images\/Group_1000002864.jpg",
+            "image_link": "",
+            "title": "",
+            "title_size": "h2",
+            "subtitle": ""
+          }
+        },
+        "slide_6EwjBW": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Rectangle_4257.jpg",
+            "image_desktop": "shopify:\/\/shop_images\/Group_1000002864.jpg",
+            "image_link": "",
+            "title": "",
+            "title_size": "h2",
+            "subtitle": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_tyfWpL",
+        "slide_6EwjBW"
+      ],
+      "settings": {
+        "section_color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 32,
+        "splide_height": 600,
+        "banner_content_check": false,
+        "carousel_arrows": false,
+        "heading": "",
+        "layout": false,
+        "content_position": "top-left"
+      }
+    },
+    "park_latest_colletions_carousel_bmz7tL": {
+      "type": "park-latest-colletions-carousel",
+      "blocks": {
+        "image_text_H96iyL": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145_2.jpg",
+            "title": "T-Shirts & Polos",
+            "link": ""
+          }
+        },
+        "image_text_4KeH6x": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.jpg",
+            "title": "Suits",
+            "link": ""
+          }
+        },
+        "image_text_NFap7b": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145_1.jpg",
+            "title": "Shirts",
+            "link": ""
+          }
+        },
+        "image_text_7NjTrq": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145_2.jpg",
+            "title": "Shirts",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_text_H96iyL",
+        "image_text_4KeH6x",
+        "image_text_NFap7b",
+        "image_text_7NjTrq"
+      ],
+      "settings": {
+        "heading": "LATEST $ COLLECTION'S",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "trend-forecast": {
       "type": "trend-forecast",
       "blocks": {
@@ -72,7 +162,8 @@
             "mobile_image": "shopify:\/\/shop_images\/40df26294a60afeee9bce95cd84da054.png",
             "loop": true,
             "autoplay": false,
-            "controls": true
+            "controls": true,
+            "thumbnail_cover_image": "shopify:\/\/shop_images\/Rectangle_4194.jpg"
           }
         },
         "slide_media_twMkAY": {
@@ -85,11 +176,35 @@
             "controls": false,
             "thumbnail_cover_image": "shopify:\/\/shop_images\/Image_Placeholder_mobile.png"
           }
+        },
+        "slide_media_K8HcU9": {
+          "type": "slide-media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1000005469.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Frame_1000005396.jpg",
+            "loop": true,
+            "autoplay": false,
+            "controls": false,
+            "thumbnail_cover_image": "shopify:\/\/shop_images\/Rectangle_4195.jpg"
+          }
+        },
+        "slide_media_9CRDgg": {
+          "type": "slide-media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1000005469.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Frame_1000005396.jpg",
+            "loop": true,
+            "autoplay": false,
+            "controls": false,
+            "thumbnail_cover_image": "shopify:\/\/shop_images\/Rectangle_4195.jpg"
+          }
         }
       },
       "block_order": [
         "slide_media_4T9j9h",
-        "slide_media_twMkAY"
+        "slide_media_twMkAY",
+        "slide_media_K8HcU9",
+        "slide_media_9CRDgg"
       ],
       "settings": {
         "title": "<p>STYLE FEEDS<\/p>",
@@ -97,6 +212,78 @@
         "mobile-padding-bottom": 48,
         "padding-top": 0,
         "padding-bottom": 64
+      }
+    },
+    "image_text_carousel_K4DKi9": {
+      "type": "image-text-carousel",
+      "blocks": {
+        "image_text_bFMRxV": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22_2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156_1.jpg",
+            "title": "Time to Express",
+            "link": ""
+          }
+        },
+        "image_text_hXdYLh": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22_3.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156_1_4791f2bc-b3e5-4083-8aa4-aeafc04b47e1.jpg",
+            "title": "Time to Express",
+            "link": ""
+          }
+        },
+        "image_text_D6PMUq": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22_2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156_1.jpg",
+            "title": "Time to Express",
+            "link": ""
+          }
+        },
+        "image_text_JEi79t": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22_2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156_1.jpg",
+            "title": "Time to Express",
+            "link": ""
+          }
+        },
+        "image_text_WgBJxW": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22_2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156_1.jpg",
+            "title": "Time to Express",
+            "link": ""
+          }
+        },
+        "image_text_mhRP8T": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22_2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156_1.jpg",
+            "title": "Time to Express",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_text_bFMRxV",
+        "image_text_hXdYLh",
+        "image_text_D6PMUq",
+        "image_text_JEi79t",
+        "image_text_WgBJxW",
+        "image_text_mhRP8T"
+      ],
+      "settings": {
+        "heading": "NEW $ ARRIVALS",
+        "padding_top": 0,
+        "padding_bottom": 64
       }
     },
     "image_comparisions_nahq9q": {
@@ -130,7 +317,7 @@
             "content_layout": "no-overlap",
             "heading": "Influencers Voice",
             "heading_size": "h3",
-            "caption": "The record  is my all-time favourite. It's really amazing. I discovered that the crosswalk's stripes could be readily raised to resemble stripes, which gave me the idea to replicate a crossing. The guys had to be positioned carefully so that it appeared as though they were strolling across your clothes.",
+            "caption": "\"The record  is my all-time favourite. It's really amazing. I discovered that the crosswalk's stripes could be readily raised to resemble stripes, which gave me the idea to replicate a crossing. The guys had to be positioned carefully so that it appeared as though they were strolling across your clothes.",
             "caption_text_style": "caption",
             "text_size": "medium",
             "text": "<p>-Creative Director  Arun Deepak<\/p>",
@@ -212,9 +399,81 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/gift.png",
         "mobile_image": "shopify:\/\/shop_images\/gift-mobile.jpg",
-        "color_scheme": "background-2",
+        "color_scheme": "scheme-335dc927-1616-448e-8fc3-a51874a4ed24",
         "padding-top": 40,
         "padding-bottom": 40
+      }
+    },
+    "image_text_carousel_mHBLCn": {
+      "type": "image-text-carousel",
+      "blocks": {
+        "image_text_XgxfQx": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22_2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156_1.jpg",
+            "title": "Time to Express",
+            "link": ""
+          }
+        },
+        "image_text_BrWN3T": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22_3.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156_1.jpg",
+            "title": "Time to Express",
+            "link": ""
+          }
+        },
+        "image_text_BmTQyN": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22_2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156_1.jpg",
+            "title": "Time to Express",
+            "link": ""
+          }
+        },
+        "image_text_GkgTnb": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22_2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156_1.jpg",
+            "title": "Time to Express",
+            "link": ""
+          }
+        },
+        "image_text_jUYkRn": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22_2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156_1.jpg",
+            "title": "Time to Express",
+            "link": ""
+          }
+        },
+        "image_text_HQqf4n": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22_2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156_1.jpg",
+            "title": "Time to Express",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_text_XgxfQx",
+        "image_text_BrWN3T",
+        "image_text_BmTQyN",
+        "image_text_GkgTnb",
+        "image_text_jUYkRn",
+        "image_text_HQqf4n"
+      ],
+      "settings": {
+        "heading": "NEW $ ARRIVALS",
+        "padding_top": 36,
+        "padding_bottom": 0
       }
     },
     "offer_timer_q4AabV": {
@@ -228,14 +487,56 @@
         "padding-top": 64,
         "padding-bottom": 0
       }
+    },
+    "image_text_custom_UUmpMk": {
+      "type": "image-text-custom",
+      "blocks": {
+        "title_tcgA8g": {
+          "type": "title",
+          "settings": {
+            "title": "Find Your Store"
+          }
+        },
+        "description_6KRRHQ": {
+          "type": "description",
+          "settings": {
+            "subtitle": "<ul><li>The store locator helps customers easily find their nearest Raymond retail store or shop-in-shop.<\/li><li>It allows users to search by city, pincode or current location to pull up results on a map.<\/li><li>Users can input the city or pincode in the search bar to view all Raymond outlets within that location<\/li><li>When accessing from a mobile device, it automatically detects the user's current location for nearby stores.<\/li><\/ul><p><\/p>"
+          }
+        },
+        "button_WxqpAk": {
+          "type": "button",
+          "settings": {
+            "button_text": "View Store",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_tcgA8g",
+        "description_6KRRHQ",
+        "button_WxqpAk"
+      ],
+      "settings": {
+        "heading": "STORE $ LOCATOR",
+        "section_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "image_small": "shopify:\/\/shop_images\/Vector_1.jpg",
+        "image_desktop": "shopify:\/\/shop_images\/Vector_1.jpg"
+      }
     }
   },
   "order": [
+    "image_banner_carousel_Aw4Ua9",
+    "park_latest_colletions_carousel_bmz7tL",
     "trend-forecast",
     "style_feeds_4NcKBp",
+    "image_text_carousel_K4DKi9",
     "image_comparisions_nahq9q",
     "image_with_text_slider_FMXiwU",
     "gift_card_banner_X4DYXM",
-    "offer_timer_q4AabV"
+    "image_text_carousel_mHBLCn",
+    "offer_timer_q4AabV",
+    "image_text_custom_UUmpMk"
   ]
 }

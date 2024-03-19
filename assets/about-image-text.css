@@ -31,10 +31,33 @@
   .about-text_image_container img{
     height: auto;
     width: 100%;
+    display: block;
+
+  }
+  .image-text-heading{
+    color: #0E0E10;
+    font-weight: 700;
+    line-height: 145%; 
+    letter-spacing: -0.2px;
 
   }
   .image-text_para{
     padding-top: 3.2rem;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 1px;
+    color: #231F20;
+  }
+  .chairman-name{
+    font-weight: 500;
+    line-height: 160%; 
+    letter-spacing: 1px;
+  }
+  .chair-position{
+    font-weight: 400;
+    line-height: 160%; 
+    letter-spacing: 1px;
+
   }
   .readmore-btn{
     text-decoration: underline;
