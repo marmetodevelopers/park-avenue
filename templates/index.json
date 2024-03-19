@@ -205,42 +205,6 @@
             "title": "Parks",
             "link": "shopify:\/\/pages\/contact"
           }
-        },
-        "image_text_GQwCqC": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "title": "Shirts",
-            "link": "shopify:\/\/collections\/all"
-          }
-        },
-        "image_text_TMLNYM": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "title": "Suits",
-            "link": "shopify:\/\/blogs\/all-blogs"
-          }
-        },
-        "image_text_KKRbRx": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "title": "Polos",
-            "link": "shopify:\/\/collections\/all"
-          }
-        },
-        "image_text_aVgbx3": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "title": "Avenues",
-            "link": "shopify:\/\/collections\/all"
-          }
         }
       },
       "block_order": [
