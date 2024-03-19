@@ -92,33 +92,13 @@
             "title": "Time to express",
             "link": "shopify:\/\/blogs\/all-blogs"
           }
-        },
-        "image_text_DAM73K": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
-            "title": "Time to express",
-            "link": "shopify:\/\/blogs\/all-blogs"
-          }
-        },
-        "image_text_kwgEqj": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_22.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4156.jpg",
-            "title": "Time to express",
-            "link": "shopify:\/\/blogs\/all-blogs"
-          }
         }
       },
       "block_order": [
         "image_text_9GLbXw",
         "image_text_UnQY8M",
         "image_text_F9XDnK",
-        "image_text_GCFitm",
-        "image_text_DAM73K",
-        "image_text_kwgEqj"
+        "image_text_GCFitm"
       ],
       "settings": {
         "heading": "The Ultimate Flex",
