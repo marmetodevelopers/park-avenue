@@ -1,0 +1,486 @@
+{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    }
+  
+    @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+  {%- endstyle -%}
+  <div class="section-{{ section.id }}-padding" id="{{ section.settings.heading | split: "$" |  handleize }}">
+    <div class="image_banner_carousel_main">
+      {% if section.settings.heading != blank %}
+        {% render "text-with-logo"
+          , text: section.settings.heading
+          , css_class: "h2 page-width mb-3 custom-heading" %}
+      {% endif %}
+      {% assign blocksCount = section.blocks | size %}
+      <my-splide
+        class="splide color-{{ section.settings.section_color_scheme }}"
+        id="{{section.id}}"
+        data-arrows="{{ section.settings.carousel_arrows }}"
+        data-pagination="{% if blocksCount >= 2 %} true  {% else %} false {% endif %}"
+        data-fixed-height="{{ section.settings.splide_height }}"
+        aria-label="Splide Basic HTML Example">
+        {% render 'splide-arrows' %}
+        <div class="splide__track">
+          <ul class="splide__list">
+            {% for block in section.blocks %}
+              <li class="splide__slide">
+                  <div class="ibc_image_container {% if section.settings.banner_content_check == true %} height_100 {% endif %}">
+                    {% render 'picture'
+                      , class: ''
+                      , mobileSrc: block.settings.image_small
+                      , desktopSrc: block.settings.image_desktop %}
+                  </div>
+                  {% if block.settings.title != blank or block.settings.subtitle != blank %}
+                    <div class="banner_text {% if section.settings.layout == true %} pos_absolute flex p_32 height_96 {{ section.settings.content_position }} {% endif %}">
+                      <div class="banner_text_inner">
+                        {% if block.settings.title != blank %}
+                          <div class="banner_title flex custom_center ">
+                            <div class="banner_title_inner {{ block.settings.title_size }}">
+                              {{ block.settings.title }}
+                            </div>
+                          </div>
+                        {% endif %}
+                        {% if block.settings.subtitle != blank %}
+                          <div class="banner_subtitle flex custom_center subtitle">
+                            {{ block.settings.subtitle }}
+                          </div>
+                        {% endif %}
+                      </div>
+                    </div>
+                  {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        <div class="button-labels-container">
+            <div
+                class="rich-text__buttons{% if section.settings.button_label != blank and section.settings.button_label_2 != blank %} rich-text__buttons--multiple{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                {% if settings.animations_reveal_on_scroll %}
+                    data-cascade
+                    style="--animation-order: 0;"
+                {% endif %}
+            >
+            {%- if section.settings.button_label != blank -%}
+                <a
+                    {% if section.settings.button_link == blank %}
+                        role="link" aria-disabled="true"
+                    {% else %}
+                        href="{{ section.settings.button_link }}"
+                    {% endif %}
+                    class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+                    >
+                    {{- section.settings.button_label | escape -}}
+                </a>
+            {%- endif -%}
+            {%- if section.settings.button_label_2 != blank -%}
+                <a
+                    {% if section.settings.button_link_2 == blank %}
+                        role="link" aria-disabled="true"
+                    {% else %}
+                        href="{{ section.settings.button_link_2 }}"
+                    {% endif %}
+                    class="button{% if section.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"
+                    >
+                    {{- section.settings.button_label_2 | escape -}}
+                </a>
+            {%- endif -%}
+            </div>
+        </div>
+        </div>
+      </my-splide>
+    </div>
+    <div class="brand-collection-content">
+      <div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
+        <div class="rich-text content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %}">
+        <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %}">
+            <div class="rich-text__blocks {{ section.settings.content_alignment }}">
+                    <h2
+                        class="rich-text__heading rte inline-richtext {{ section.settings.main-heading }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                        {% if settings.animations_reveal_on_scroll %}
+                            data-cascade
+                            style="--animation-order: 0;"
+                        {% endif %}
+                        >
+                        {{ section.settings.main-heading }}
+                    </h2>
+                    <p
+                        class="rich-text__caption {{ section.settings.text_style }} {{ section.settings.text_style }}--{{ section.settings.text_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                        {% if settings.animations_reveal_on_scroll %}
+                            data-cascade
+                            style="--animation-order: 0;"
+                        {% endif %}
+                        >
+                        {{ section.settings.caption | escape }}
+                    </p>
+                    <div
+                        class="rich-text__text rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                        {% if settings.animations_reveal_on_scroll %}
+                            data-cascade
+                            style="--animation-order: 0;"
+                        {% endif %}
+                        >
+                        {{ section.settings.text }}
+                    </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+  </div>
+  
+  {% schema %}
+    {
+      "name": "Brand Collection",
+      "tag": "section",
+      "settings": [ 
+        {
+          "type": "checkbox",
+          "label": "Banner Text Content",
+          "id": "banner_content_check",
+          "default": false,
+          "info": "check if banner has text content"
+        }, 
+        {
+          "type": "checkbox",
+          "label": "Carousel Arrows",
+          "id": "carousel_arrows",
+          "default":false,
+          "info": "check if carousel arrow buttons are required to be visible"
+        }, 
+        {
+          "type": "text",
+          "label": "Heading",
+          "id": "heading",
+          "default": "Exclusive $ Collections ",
+          "info": "add $ symbol to show Park Avenue logo"
+        }, 
+        {
+          "type": "checkbox",
+          "label": "Content Overlap",
+          "id": "layout",
+          "default": true,
+          "info": "check if text content should overlap image or not."
+        }, 
+        {
+          "type": "select",
+          "id": "content_position",
+          "label": "Content position",
+          "options": [
+            {
+              "value": "top-left",
+              "label": "Top left"
+            },
+            {
+              "value": "top-right",
+              "label": "Top right"
+            },
+            {
+              "value": "top-center",
+              "label": "Top center"
+            },
+            {
+              "value": "middle-left",
+              "label": "Middle left"
+            }, 
+            {
+              "value": "middle-center",
+              "label": "Middle center"
+            }, 
+            {
+              "value": "middle-right",
+              "label": "Middle right"
+            }, 
+            {
+              "value": "bottom-left",
+              "label": "Bottom left"
+            }, 
+            {
+              "value": "bottom-center",
+              "label": "Bottom center"
+            }, 
+            {
+              "value": "bottom-right",
+              "label": "Bottom right"
+            }
+          ],
+          "default": "top-left",
+          "info": "select only if content overlay is checked"
+        },
+        {
+          "type": "header",
+          "content": "t:sections.all.padding.section_padding_heading"
+        }, 
+        {
+          "type": "header",
+          "content": "Brand information"
+        },
+        {
+            "type": "select",
+            "id": "desktop_content_position",
+            "options": [
+                {
+                    "value": "left",
+                    "label": "t:sections.rich-text.settings.desktop_content_position.options__1.label"
+                },
+                {
+                    "value": "center",
+                    "label": "t:sections.rich-text.settings.desktop_content_position.options__2.label"
+                },
+                {
+                    "value": "right",
+                    "label": "t:sections.rich-text.settings.desktop_content_position.options__3.label"
+                }
+            ],
+            "default": "center",
+            "label": "t:sections.rich-text.settings.desktop_content_position.label",
+            "info": "t:sections.rich-text.settings.desktop_content_position.info"
+        },
+        {
+            "type": "select",
+            "id": "content_alignment",
+            "options": [
+                {
+                    "value": "left",
+                    "label": "t:sections.rich-text.settings.content_alignment.options__1.label"
+                },
+                {
+                    "value": "center",
+                    "label": "t:sections.rich-text.settings.content_alignment.options__2.label"
+                },
+                {
+                    "value": "right",
+                    "label": "t:sections.rich-text.settings.content_alignment.options__3.label"
+                }
+            ],
+            "default": "center",
+            "label": "t:sections.rich-text.settings.content_alignment.label"
+        },
+        {
+            "type": "checkbox",
+            "id": "full_width",
+            "default": true,
+            "label": "t:sections.rich-text.settings.full_width.label"
+        },
+        {
+            "type": "header",
+            "content": "Heading"
+        },
+        {
+            "type": "inline_richtext",
+            "id": "main-heading",
+            "default": "Talk about your brand",
+            "label": "t:sections.rich-text.blocks.heading.settings.heading.label"
+        },
+        {
+            "type": "select",
+            "id": "main-heading_size",
+            "options": [
+                {
+                    "value": "h2",
+                    "label": "t:sections.all.heading_size.options__1.label"
+                },
+                {
+                    "value": "h1",
+                    "label": "t:sections.all.heading_size.options__2.label"
+                },
+                {
+                    "value": "h0",
+                    "label": "t:sections.all.heading_size.options__3.label"
+                },
+                {
+                    "value": "hxl",
+                    "label": "t:sections.all.heading_size.options__4.label"
+                }
+            ],
+            "default": "h1",
+            "label": "t:sections.all.heading_size.label"
+        },
+        {
+            "type": "header",
+            "content": "Caption"
+        },     
+        {
+            "type": "text",
+            "id": "caption",
+            "default": "Add a tagline",
+            "label": "t:sections.rich-text.blocks.caption.settings.text.label"
+        },
+        {
+            "type": "select",
+            "id": "text_style",
+            "options": [
+                {
+                    "value": "subtitle",
+                    "label": "t:sections.rich-text.blocks.caption.settings.text_style.options__1.label"
+                },
+                {
+                    "value": "caption-with-letter-spacing",
+                    "label": "t:sections.rich-text.blocks.caption.settings.text_style.options__2.label"
+                }
+            ],
+            "default": "caption-with-letter-spacing",
+            "label": "t:sections.rich-text.blocks.caption.settings.text_style.label"
+        },
+        {
+            "type": "select",
+            "id": "text_size",
+            "options": [
+                {
+                    "value": "small",
+                    "label": "t:sections.rich-text.blocks.caption.settings.caption_size.options__1.label"
+                },
+                {
+                    "value": "medium",
+                    "label": "t:sections.rich-text.blocks.caption.settings.caption_size.options__2.label"
+                },
+                {
+                    "value": "large",
+                    "label": "t:sections.rich-text.blocks.caption.settings.caption_size.options__3.label"
+                }
+            ],
+            "default": "medium",
+            "label": "t:sections.rich-text.blocks.caption.settings.caption_size.label"
+        },
+        {
+            "type": "header",
+            "content": "Text"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+            "label": "t:sections.rich-text.blocks.text.settings.text.label"
+        },
+        {
+            "type": "header",
+            "content": "Buttons"
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "default": "Button label",
+            "label": "t:sections.rich-text.blocks.buttons.settings.button_label_1.label",
+            "info": "t:sections.rich-text.blocks.buttons.settings.button_label_1.info"
+        },
+        {
+            "type": "url",
+            "id": "button_link",
+            "label": "t:sections.rich-text.blocks.buttons.settings.button_link_1.label"
+        },
+        {
+            "type": "checkbox",
+            "id": "button_style_secondary",
+            "default": true,
+            "label": "t:sections.rich-text.blocks.buttons.settings.button_style_secondary_1.label"
+        },
+        {
+            "type": "text",
+            "id": "button_label_2",
+            "label": "t:sections.rich-text.blocks.buttons.settings.button_label_2.label",
+            "info": "t:sections.rich-text.blocks.buttons.settings.button_label_2.info"
+        },
+        {
+            "type": "url",
+            "id": "button_link_2",
+            "label": "t:sections.rich-text.blocks.buttons.settings.button_link_2.label"
+        },
+        {
+            "type": "checkbox",
+            "id": "button_style_secondary_2",
+            "default": true,
+            "label": "t:sections.rich-text.blocks.buttons.settings.button_style_secondary_2.label"
+        },
+        {
+          "type": "color_scheme",
+          "id": "section_color_scheme",
+          "label": "Splide Color Scheme",
+          "default": "background-1"
+        },
+        {
+          "type": "range",
+          "id": "padding_top",
+          "min": 0,
+          "max": 100,
+          "step": 4,
+          "unit": "px",
+          "label": "t:sections.all.padding.padding_top",
+          "default": 36
+        },
+        {
+          "type": "range",
+          "id": "padding_bottom",
+          "min": 0,
+          "max": 100,
+          "step": 4,
+          "unit": "px",
+          "label": "t:sections.all.padding.padding_bottom",
+          "default": 36
+        }, 
+        {
+          "type": "range",
+          "id": "splide_height",
+          "min": 400,
+          "max": 800,
+          "step": 10,
+          "unit": "px",
+          "label": "Carousel Height",
+          "default": 600
+        }
+      ],
+      "blocks": [
+        {
+          "type": "slide",
+          "name": "Slide",
+          "settings": [
+            {
+              "type": "image_picker",
+              "label": "Image (mobile)",
+              "id": "image_small",
+              "info": "Dimensions: 300 x 450 px"
+            },
+            {
+              "type": "image_picker",
+              "label": "Image (desktop)",
+              "id": "image_desktop",
+              "info": "Dimensions: 1024 x 768 px"
+            },
+            {
+              "type": "text",
+              "label": "Title",
+              "id": "title",
+              "default": "CORPORATE SELECTIONS"
+            }, 
+            {
+              "type": "select",
+              "label": "Title size",
+              "id": "title_size",
+              "options": [
+                {
+                  "label": "Large",
+                  "value": "h2"
+                }, {
+                  "label": "Medium",
+                  "value": "h3"
+                }, {
+                  "label": "Small",
+                  "value": "h4"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "Brand Collection"
+        }
+      ]
+    }
+  {% endschema %}

@@ -6,17 +6,16 @@ class SplideCarousel extends HTMLElement {
         this.perpageMobile = this.dataset.mobilePerPage;
         this.gapValue = this.dataset.gap;
         this.tabGap = this.dataset.gaptab;
-        this.arrowDesktop = Boolean(this.dataset.desktopArrow);
-        this.arrowMobile = Boolean(this.dataset.mobileArrow);
-        this.paginationDesktop = Boolean(this.dataset.desktopPagination);
-        this.paginationMobile = Boolean(this.dataset.mobilePagination);
+        this.arrowDesktop = this.dataset.desktopArrow  === 'true' || false;
+        this.arrowMobile = this.dataset.mobileArrow  === 'true' || false;
+        this.paginationDesktop = this.dataset.desktopPagination  === 'true' || false;
+        this.paginationMobile = this.dataset.mobilePagination  === 'true' || false;
         this.mobilePaddingLeft = this.dataset.mobilepaddingleft;
         this.mobilePaddingRight = this.dataset.mobilepaddingright;
         this.desktopPaddingLeft = this.dataset.desktoppaddingleft;
         this.desktopPaddingRight = this.dataset.desktoppaddingright;
-        this.autoplay = this.dataset.autoplay  === 'true' || false;
-        
-        
+        this.mobileAutoplay = this.dataset.mobileAutoplay  === 'true' || false;
+        this.desktopAutoplay  = this.dataset.desktopAutoplay  === 'true' || false;
     }
     connectedCallback() {
         new Splide(`#${this.id}`, {
@@ -25,13 +24,12 @@ class SplideCarousel extends HTMLElement {
             rewindSpeed: 1000,
             start: 0,
             perMove:1,
-            autoplay: true,
             drag: true,
             perPage: this.perPageDesktop,
             gap: `${this.gapValue}px`,
             arrows: this.arrowDesktop,
             pagination: this.paginationDesktop,
-            autoplay: 'true',
+            autoplay: this.autoplay,
             interval: 3000,
             padding: { left: this.desktopPaddingLeft, right: this.desktopPaddingRight },
             classes: {

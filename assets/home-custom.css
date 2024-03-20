@@ -528,3 +528,12 @@
     cursor: pointer;
     fill: white;
 }
+.video-container{
+    position: relative;   
+}
+.video-container video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}

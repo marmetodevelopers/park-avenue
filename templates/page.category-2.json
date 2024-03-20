@@ -8,6 +8,7 @@
           "settings": {
             "image_small": "shopify:\/\/shop_images\/Frame_1000005354.png",
             "image_desktop": "shopify:\/\/shop_images\/Frame_1000004958.png",
+            "button-label": "",
             "image_link": "",
             "title": "",
             "title_size": "h2",
@@ -19,6 +20,7 @@
           "settings": {
             "image_small": "shopify:\/\/shop_images\/Frame_1000005354.png",
             "image_desktop": "shopify:\/\/shop_images\/Frame_1000004958.png",
+            "button-label": "",
             "image_link": "",
             "title": "",
             "title_size": "h2",
@@ -28,6 +30,7 @@
         "slide_jVdQp7": {
           "type": "slide",
           "settings": {
+            "button-label": "",
             "image_link": "",
             "title": "CORPORATE SELECTIONS",
             "title_size": "h2",
@@ -60,6 +63,7 @@
           "settings": {
             "image_small": "shopify:\/\/shop_images\/Rectangle_4302_b35295ae-b1cc-4887-9914-4ac306e7cd80.png",
             "image_desktop": "shopify:\/\/shop_images\/Rectangle_4258_2493a7d3-28c1-4435-bbdd-cf256e381e61.png",
+            "button-label": "",
             "image_link": "",
             "title": "SEMI-FORMAL",
             "title_size": "h4",
@@ -69,6 +73,7 @@
         "slide_79UYMm": {
           "type": "slide",
           "settings": {
+            "button-label": "",
             "image_link": "",
             "title": "CORPORATE SELECTIONS",
             "title_size": "h2",
@@ -87,7 +92,7 @@
         "splide_height": 550,
         "banner_content_check": false,
         "carousel_arrows": true,
-        "heading": "EXCLUSIVE $ COLLECTIONS",
+        "heading": "EXCLUSIVE COLLECTIONS",
         "layout": true,
         "content_position": "bottom-center"
       }
@@ -172,6 +177,7 @@
           "settings": {
             "image_small": "shopify:\/\/shop_images\/Rectangle_4193.png",
             "image_desktop": "shopify:\/\/shop_images\/Rectangle_4192_93408eff-1aa7-4424-8666-f58b7deb32e9.png",
+            "button-label": "",
             "image_link": "",
             "title": "SEMI-FORMALS SELECTIONS",
             "title_size": "h2",
@@ -182,6 +188,7 @@
           "type": "slide",
           "settings": {
             "image_desktop": "shopify:\/\/shop_images\/Rectangle_3.png",
+            "button-label": "",
             "image_link": "",
             "title": "CORPORATE SELECTIONS",
             "title_size": "h2",
@@ -248,7 +255,7 @@
         "padding_top": 32,
         "padding_bottom": 32,
         "carousel_arrows": true,
-        "heading": "LOOK $ BOOK"
+        "heading": "LOOK BOOK"
       }
     },
     "dynamic_grid_BrCNMw": {
@@ -339,7 +346,7 @@
         "image_with_text_overlay_Kh9UGz"
       ],
       "settings": {
-        "heading": "Exclusive $ Collections",
+        "heading": "Exclusive Collections",
         "padding_top": 32,
         "padding_bottom": 32,
         "desktop_height": 295,
@@ -379,7 +386,7 @@
         "button_WwtCik"
       ],
       "settings": {
-        "heading": "STORE $ LOCATOR",
+        "heading": "STORE LOCATOR",
         "section_color_scheme": "",
         "padding_top": 32,
         "padding_bottom": 64,

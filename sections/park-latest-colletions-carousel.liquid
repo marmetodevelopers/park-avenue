@@ -18,7 +18,7 @@
   <div class="page-width">
     <div class="park_latest_collection_image_text_carousel">
       {% if section.settings.heading != blank %}
-        {% render 'text-with-logo', text: section.settings.heading, css_class: 'h2 mb-3 custom-heading' %}
+        {% render 'text-with-logo', text: section.settings.heading, css_class: 'h2 mb-3' %}
       {% endif %}
 
       <splide-carousel 
@@ -27,10 +27,12 @@
         data-desktop-per-page="3"
         data-mobile-per-page="1"
         data-gap="29"
-        data-desktop-arrow="true"
-        data-mobile-arrow="true"
-        data-desktop-pagination="true"
-        data-mobile-pagination="true"
+        data-desktop-arrow={{ section.settings.desktop-arrow }}
+        data-mobile-arrow={{ section.settings.mobile-arrow }}
+        data-desktop-pagination={{ section.settings.desktop-pagination }}
+        data-mobile-pagination={{ section.settings.mobile-pagination }}
+        data-mobile-autoplay={{ section.settings.mobile-autoplay }}
+        data-desktop-autoplay={{ section.settings.desktop-autoplay }}
       >
         <div class="splide__arrows img_txt_carousel_arrows park_latest_pd_il">
           <button class="splide__arrow splide__arrow--prev">
@@ -46,28 +48,32 @@
               {%- case block.type -%}
                 {%- when 'image_text' -%}
                   <div class="splide__slide">
-                    <a href="{{ block.settings.link }}">
-                      <div class="park_latest_collection_image_box">
-                        {% render 'picture',
-                          class: '',
-                          mobileSrc: block.settings.mobile_image,
-                          desktopSrc: block.settings.desktop_image
-                        %}
-                      </div>
-                      <div class="park_latest_collection_title_box">
-                        <p class="h4 park_latest_collection_title">{{ block.settings.title }}</p>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="25"
-                          height="24"
-                          viewBox="0 0 25 24"
-                          fill="none"
-                          style="background: black;"
-                        >
-                          <path d="M18.4453 12.7969L10.9453 20.2969C10.734 20.5082 10.4473 20.627 10.1484 20.627C9.84955 20.627 9.56291 20.5082 9.35156 20.2969C9.14022 20.0855 9.02148 19.7989 9.02148 19.5C9.02148 19.2011 9.14022 18.9145 9.35156 18.7031L16.0556 12.0009L9.35344 5.29687C9.24879 5.19223 9.16578 5.06799 9.10914 4.93126C9.05251 4.79454 9.02336 4.64799 9.02336 4.5C9.02336 4.35201 9.05251 4.20546 9.10914 4.06873C9.16578 3.932 9.24879 3.80777 9.35344 3.70312C9.45808 3.59848 9.58232 3.51547 9.71905 3.45883C9.85577 3.4022 10.0023 3.37305 10.1503 3.37305C10.2983 3.37305 10.4448 3.4022 10.5816 3.45883C10.7183 3.51547 10.8425 3.59848 10.9472 3.70312L18.4472 11.2031C18.5519 11.3078 18.635 11.4321 18.6916 11.5689C18.7483 11.7057 18.7773 11.8523 18.7771 12.0004C18.777 12.1485 18.7476 12.295 18.6906 12.4317C18.6337 12.5684 18.5503 12.6925 18.4453 12.7969Z" fill="white"/>
-                        </svg>
-                      </div>
-                    </a>
+                    {% if block.settings.desktop_image != blank or block.settings.video != blank %}
+                        {% if block.settings.video != blank %}
+                          <div class="video-container">
+                            {{
+                              block.settings.video
+                              | video_tag:
+                                image_size: '100%',
+                                autoplay: true,
+                                loop: true, 
+                                controls: false,
+                                muted: true,
+                                preload: true
+                            }}                      
+                          </div>
+                        {% else %}
+                          <a href="{{ block.settings.link }}">
+                            <div class="park_latest_collection_image_box">
+                              {% render 'picture',
+                                class: '',
+                                mobileSrc: block.settings.mobile_image,
+                                desktopSrc: block.settings.desktop_image
+                              %}
+                            </div>
+                          </a>
+                        {% endif %}
+                    {% endif %}
                   </div>
               {%- endcase -%}
             {% endfor %}
@@ -86,6 +92,50 @@
       "type": "text",
       "id": "heading",
       "label": "Enter heading text"
+    },
+    {
+      "type": "header",
+      "content": "Mobile carousel options"
+    },
+    {
+      "type": "checkbox",
+      "id": "mobile-arrow",
+      "label": "Show arrows",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "mobile-autoplay",
+      "label": "Autoplay slide",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "mobile-pagination",
+      "label": "Show paginations",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Desktop carousel options"
+    },
+    {
+      "type": "checkbox",
+      "id": "desktop-arrow",
+      "label": "Show arrows",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "desktop-autoplay",
+      "label": "Autoplay slide",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "desktop-pagination",
+      "label": "Show paginations",
+      "default": true
     },
     {
       "type": "range",
@@ -115,9 +165,16 @@
       "limit": 7,
       "settings": [
         {
+          "type": "video",
+          "id": "video",
+          "label": "Select desktop video",
+          "info": "Recommended aspect ratio 9:16"
+        },
+        {
           "type": "image_picker",
           "id": "desktop_image",
-          "label": "Select desktop image"
+          "label": "Select desktop image",
+          "info": "Dimensions (1440x600)px"
         },
         {
           "type": "image_picker",

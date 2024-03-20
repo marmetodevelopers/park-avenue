@@ -3083,3 +3083,6 @@ details-disclosure > details {
 		margin-top: 4rem;
 	}
 }
+.main-heading-logo{
+	text-wrap: nowrap;
+}

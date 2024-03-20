@@ -19,24 +19,21 @@ a {
 }
 
 @media screen and (max-width:749px){
-.custom-heading{
-	display: block;
-	
-
-}
-.mb-3{
-	margin-bottom: 2.4rem;
-}
-
+	.custom-heading{
+		display: block;
+	}
+	.mb-3{
+		margin-bottom: 2.4rem;
+	}
 }
 
 .custom-btn-text{
 	font-size: 20px;
 }
 @media screen and (max-width:749px){
-.custom-btn-text{
-	font-size: 20px;
-}
+	.custom-btn-text{
+		font-size: 20px;
+	}
 }
 .flex {
 	display: flex;
@@ -338,4 +335,21 @@ a {
 .bottom-right {
 	justify-content: flex-end;
 	align-items: flex-end;
+}
+.ibc_image_container{
+	position: relative;
+}
+.ibc_image_container .overlay-button{
+	position: absolute;
+	bottom: 1rem;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    padding: 15px;
+	-webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

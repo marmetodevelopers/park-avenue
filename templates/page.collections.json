@@ -2,13 +2,221 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "brand_collection_AnVKHt": {
+      "type": "brand-collection",
+      "blocks": {
+        "slide_BcidC3": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Latest_collection_images_1.png",
+            "image_desktop": "shopify:\/\/shop_images\/Hero_Banner_carousel_1.png",
+            "title": "",
+            "title_size": "h2"
+          }
+        },
+        "slide_qi9cXk": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Latest_collection_images_1.png",
+            "image_desktop": "shopify:\/\/shop_images\/Hero_Banner_carousel_1.png",
+            "title": "",
+            "title_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "slide_BcidC3",
+        "slide_qi9cXk"
+      ],
+      "settings": {
+        "banner_content_check": false,
+        "carousel_arrows": false,
+        "heading": "AIR LITE",
+        "layout": false,
+        "content_position": "top-left",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "full_width": true,
+        "main-heading": "Talk about your brand",
+        "main-heading_size": "h1",
+        "caption": "",
+        "text_style": "caption-with-letter-spacing",
+        "text_size": "medium",
+        "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+        "button_label": "Discover more",
+        "button_link": "shopify:\/\/pages\/collections",
+        "button_style_secondary": true,
+        "button_label_2": "Locate store",
+        "button_link_2": "https:\/\/parkavenue-india.myshopify.com\/apps\/store-locator",
+        "button_style_secondary_2": true,
+        "section_color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "splide_height": 600
+      }
+    },
+    "brand_collection_ddrPhR": {
+      "type": "brand-collection",
+      "blocks": {
+        "slide_BMxbyM": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Hero_Banner_carousel_1_73c7eae2-01fd-4b01-a131-4b64c076e569.png",
+            "image_desktop": "shopify:\/\/shop_images\/Hero_Banner_carousel_3.png",
+            "title": "",
+            "title_size": "h2"
+          }
+        },
+        "slide_AqwL9A": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Hero_Banner_carousel_1_73c7eae2-01fd-4b01-a131-4b64c076e569.png",
+            "image_desktop": "shopify:\/\/shop_images\/Hero_Banner_carousel_3.png",
+            "title": "",
+            "title_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "slide_BMxbyM",
+        "slide_AqwL9A"
+      ],
+      "settings": {
+        "banner_content_check": false,
+        "carousel_arrows": false,
+        "heading": "FLEX TECH",
+        "layout": false,
+        "content_position": "top-left",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "full_width": true,
+        "main-heading": "Talk about your brand",
+        "main-heading_size": "h1",
+        "caption": "",
+        "text_style": "caption-with-letter-spacing",
+        "text_size": "medium",
+        "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+        "button_label": "Discover more",
+        "button_link": "shopify:\/\/pages\/collections",
+        "button_style_secondary": true,
+        "button_label_2": "Locate store",
+        "button_link_2": "https:\/\/parkavenue-india.myshopify.com\/apps\/store-locator",
+        "button_style_secondary_2": true,
+        "section_color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "splide_height": 600
+      }
+    },
+    "brand_collection_iCKizH": {
+      "type": "brand-collection",
+      "blocks": {
+        "slide_Rxbtjb": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Hero_Banner_carousel_3_38e6ca08-bf02-4b96-917d-fb46e20321ef.png",
+            "image_desktop": "shopify:\/\/shop_images\/Hero_Banner_carousel_2.png",
+            "title": "",
+            "title_size": "h2"
+          }
+        },
+        "slide_pxmCbx": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Hero_Banner_carousel_3_38e6ca08-bf02-4b96-917d-fb46e20321ef.png",
+            "image_desktop": "shopify:\/\/shop_images\/Hero_Banner_carousel_2.png",
+            "title": "",
+            "title_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "slide_Rxbtjb",
+        "slide_pxmCbx"
+      ],
+      "settings": {
+        "banner_content_check": false,
+        "carousel_arrows": false,
+        "heading": "CITY CASUALS",
+        "layout": true,
+        "content_position": "top-left",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "full_width": true,
+        "main-heading": "Talk about your brand",
+        "main-heading_size": "h1",
+        "caption": "",
+        "text_style": "caption-with-letter-spacing",
+        "text_size": "medium",
+        "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+        "button_label": "Discover more",
+        "button_link": "shopify:\/\/pages\/collections",
+        "button_style_secondary": true,
+        "button_label_2": "Locate store",
+        "button_link_2": "https:\/\/parkavenue-india.myshopify.com\/apps\/store-locator",
+        "button_style_secondary_2": true,
+        "section_color_scheme": "scheme-335dc927-1616-448e-8fc3-a51874a4ed24",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "splide_height": 600
+      }
+    },
+    "brand_collection_MJAKD4": {
+      "type": "brand-collection",
+      "blocks": {
+        "slide_8KYytA": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/PA-073_Park_Avenue_Uncrushed_Shirt_R3_1x2_53049414-522c-4e79-bd6e-616db5f5c8ee.jpg",
+            "image_desktop": "shopify:\/\/shop_images\/PA-073_Park_Avenue_Uncrushed_Shirt_R3_2x1_762916f9-86fe-4e90-9aac-1314dbde16e6.jpg",
+            "title": "",
+            "title_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "slide_8KYytA"
+      ],
+      "disabled": true,
+      "settings": {
+        "banner_content_check": false,
+        "carousel_arrows": false,
+        "heading": "UNCRUSHED",
+        "layout": true,
+        "content_position": "top-left",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "full_width": true,
+        "main-heading": "Talk about your brand",
+        "main-heading_size": "h1",
+        "caption": "",
+        "text_style": "caption-with-letter-spacing",
+        "text_size": "medium",
+        "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+        "button_label": "Discover more",
+        "button_link": "shopify:\/\/pages\/collections",
+        "button_style_secondary": true,
+        "button_label_2": "Locate store",
+        "button_link_2": "https:\/\/parkavenue-india.myshopify.com\/apps\/store-locator",
+        "button_style_secondary_2": true,
+        "section_color_scheme": "scheme-335dc927-1616-448e-8fc3-a51874a4ed24",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "splide_height": 600
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "brand_collection_AnVKHt",
+    "brand_collection_ddrPhR",
+    "brand_collection_iCKizH",
+    "brand_collection_MJAKD4"
   ]
 }

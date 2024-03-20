@@ -6,9 +6,10 @@
         "slide_w7HqG9": {
           "type": "slide",
           "settings": {
-            "image_small": "shopify:\/\/shop_images\/Rectangle_4256.jpg",
-            "image_desktop": "shopify:\/\/shop_images\/Hero_Banner_carousel_3.png",
-            "image_link": "https:\/\/parkavenue-india.myshopify.com\/pages\/collections#section_name",
+            "image_small": "shopify:\/\/shop_images\/Hero_Banner_carousel_1_73c7eae2-01fd-4b01-a131-4b64c076e569.png",
+            "image_desktop": "shopify:\/\/shop_images\/Hero_Banner_carousel_1.png",
+            "button-label": "",
+            "image_link": "",
             "title": "",
             "title_size": "h2",
             "subtitle": ""
@@ -17,8 +18,9 @@
         "slide_na9XBT": {
           "type": "slide",
           "settings": {
-            "image_small": "shopify:\/\/shop_images\/Rectangle_4256.jpg",
-            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3_2.jpg",
+            "image_small": "shopify:\/\/shop_images\/Hero_Banner_carousel_2_b4804a78-d3a1-438c-8c2c-ead50325eab6.png",
+            "image_desktop": "shopify:\/\/shop_images\/Hero_Banner_carousel_2.png",
+            "button-label": "",
             "image_link": "",
             "title": "",
             "title_size": "h2",
@@ -28,8 +30,9 @@
         "slide_Cj7caT": {
           "type": "slide",
           "settings": {
-            "image_small": "shopify:\/\/shop_images\/Rectangle_4256.jpg",
-            "image_desktop": "shopify:\/\/shop_images\/Rectangle_3_2.jpg",
+            "image_small": "shopify:\/\/shop_images\/Hero_Banner_carousel_3_38e6ca08-bf02-4b96-917d-fb46e20321ef.png",
+            "image_desktop": "shopify:\/\/shop_images\/Hero_Banner_carousel_3.png",
+            "button-label": "",
             "image_link": "",
             "title": "",
             "title_size": "h2",
@@ -52,6 +55,232 @@
         "heading": "",
         "layout": false,
         "content_position": "top-left"
+      }
+    },
+    "video_section_LXbTW6": {
+      "type": "video-section",
+      "settings": {
+        "heading": "<p>The Ultimate Flex<\/p>",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video": "shopify:\/\/files\/videos\/16x9_PA FLEXTECH 20SEC.mp4",
+        "mobile_video": "shopify:\/\/files\/videos\/9x16_PA FLEXTECH 20SEC-Under 30MB.mp4",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_carousel_6A36Nh": {
+      "type": "image-banner-carousel",
+      "blocks": {
+        "slide_tmze7i": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Hero_Banner_carousel_2_b4804a78-d3a1-438c-8c2c-ead50325eab6.png",
+            "image_desktop": "shopify:\/\/shop_images\/Hero_Banner_carousel_1.png",
+            "button-label": "Discover online",
+            "image_link": "https:\/\/parkavenue-india.myshopify.com\/pages\/collections#air-lite",
+            "title": "AIR LITE",
+            "title_size": "h2",
+            "subtitle": ""
+          }
+        },
+        "slide_KGNXeD": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Hero_Banner_carousel_1_73c7eae2-01fd-4b01-a131-4b64c076e569.png",
+            "image_desktop": "shopify:\/\/shop_images\/Hero_Banner_carousel_3.png",
+            "button-label": "Discover online",
+            "image_link": "https:\/\/parkavenue-india.myshopify.com\/pages\/collections#flex-tech",
+            "title": "FLEX TECH",
+            "title_size": "h2",
+            "subtitle": ""
+          }
+        },
+        "slide_UHktJT": {
+          "type": "slide",
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/Hero_Banner_carousel_3_38e6ca08-bf02-4b96-917d-fb46e20321ef.png",
+            "image_desktop": "shopify:\/\/shop_images\/Hero_Banner_carousel_2.png",
+            "button-label": "Discover online",
+            "image_link": "https:\/\/parkavenue-india.myshopify.com\/pages\/collections#city-casuals",
+            "title": "CITY CASULAS",
+            "title_size": "h2",
+            "subtitle": ""
+          }
+        },
+        "slide_JRYAg6": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image_small": "shopify:\/\/shop_images\/PA-073_Park_Avenue_Uncrushed_Shirt_R3_1x2_53049414-522c-4e79-bd6e-616db5f5c8ee.jpg",
+            "image_desktop": "shopify:\/\/shop_images\/PA-073_Park_Avenue_Uncrushed_Shirt_R3_2x1_762916f9-86fe-4e90-9aac-1314dbde16e6.jpg",
+            "button-label": "",
+            "image_link": "https:\/\/parkavenue-india.myshopify.com\/pages\/collections#uncrushed",
+            "title": "UNCRUSHED",
+            "title_size": "h2",
+            "subtitle": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_tmze7i",
+        "slide_KGNXeD",
+        "slide_UHktJT",
+        "slide_JRYAg6"
+      ],
+      "settings": {
+        "section_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "splide_height": 600,
+        "banner_content_check": false,
+        "carousel_arrows": false,
+        "heading": "New Arrivals",
+        "layout": false,
+        "content_position": "top-left"
+      }
+    },
+    "park_latest_colletions_carousel_gaz8Me": {
+      "type": "park-latest-colletions-carousel",
+      "blocks": {
+        "image_text_MPfH6d": {
+          "type": "image_text",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/1.mp4",
+            "desktop_image": "shopify:\/\/shop_images\/Latest_collection_images_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/Latest_collection_images_1_bea49fad-69e7-426c-b0fa-70faa6c62a1b.png",
+            "title": "Reel 1",
+            "link": "shopify:\/\/collections"
+          }
+        },
+        "image_text_C9dCtC": {
+          "type": "image_text",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/2.mp4",
+            "desktop_image": "shopify:\/\/shop_images\/trending-mob-3.jpg",
+            "title": "Reel2",
+            "link": "shopify:\/\/collections"
+          }
+        },
+        "image_text_4r6dGd": {
+          "type": "image_text",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/3.mp4",
+            "title": "Reel 3",
+            "link": ""
+          }
+        },
+        "image_text_VHnBRB": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Categories_images_1_d994c918-f261-4550-a289-5bf937c7cedc.png",
+            "mobile_image": "shopify:\/\/shop_images\/Categories_images_1_d994c918-f261-4550-a289-5bf937c7cedc.png",
+            "title": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_text_MPfH6d",
+        "image_text_C9dCtC",
+        "image_text_4r6dGd",
+        "image_text_VHnBRB"
+      ],
+      "settings": {
+        "heading": "Trend",
+        "mobile-arrow": false,
+        "mobile-autoplay": false,
+        "mobile-pagination": false,
+        "desktop-arrow": false,
+        "desktop-autoplay": false,
+        "desktop-pagination": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_text_custom_JULYPf": {
+      "type": "image-text-custom",
+      "blocks": {
+        "title_NNgeiG": {
+          "type": "title",
+          "settings": {
+            "title": "Find Your Store"
+          }
+        },
+        "description_jFibem": {
+          "type": "description",
+          "settings": {
+            "subtitle": "<ul><li>The store locator helps customers easily find their nearest Raymond retail store or shop-in-shop.<\/li><li>It allows users to search by city, pincode or current location to pull up results on a map.<\/li><li>Users can input the city or pincode in the search bar to view all Raymond outlets within that location.<\/li><li>When accessing from a mobile device, it automatically detects the user's current location for nearby stores.<\/li><\/ul>"
+          }
+        },
+        "button_tUkK8h": {
+          "type": "button",
+          "settings": {
+            "button_text": "View Store",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_NNgeiG",
+        "description_jFibem",
+        "button_tUkK8h"
+      ],
+      "settings": {
+        "heading": "STORE LOCATOR",
+        "section_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "image_small": "shopify:\/\/shop_images\/Group_1000003007.png",
+        "image_desktop": "shopify:\/\/shop_images\/Vector.jpg"
+      }
+    },
+    "park_trending_carousel_zpaQxH": {
+      "type": "park-trending-carousel",
+      "blocks": {
+        "image_text_JLTKhV": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/trending-web-1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/trending-mob-1.jpg",
+            "title": "Dreamy Formal",
+            "link": ""
+          }
+        },
+        "image_text_VFGQD6": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/trending-web-2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/trending-mob-2.jpg",
+            "title": "Ideal Choice",
+            "link": ""
+          }
+        },
+        "image_text_QpfmpR": {
+          "type": "image_text",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/trending-web-3.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/trending-mob-3.jpg",
+            "title": "Illusion Dress",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_text_JLTKhV",
+        "image_text_VFGQD6",
+        "image_text_QpfmpR"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Visible $ Choices",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "image_background": "#ededed",
+        "image_flow": true
       }
     },
     "image_text_carousel_igph46": {
@@ -120,6 +349,7 @@
         "image_text_DAM73K",
         "image_text_kwgEqj"
       ],
+      "disabled": true,
       "settings": {
         "heading": "The Ultimate Flex",
         "padding_top": 36,
@@ -132,28 +362,28 @@
         "image_text_XFJAgF": {
           "type": "image-text",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4259desktop.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4304mob.png",
-            "category_text": "Airlite",
-            "category_url": "shopify:\/\/pages\/collections"
+            "desktop_image": "shopify:\/\/shop_images\/Categories_images_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/Categories_images_1_d994c918-f261-4550-a289-5bf937c7cedc.png",
+            "category_text": "BUSINESS FORMAL",
+            "category_url": "shopify:\/\/blogs\/all-blogs"
           }
         },
         "image_text_cbGN3W": {
           "type": "image-text",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4259desktop.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4304mob.png",
-            "category_text": "Flextech",
-            "category_url": "shopify:\/\/pages\/collections"
+            "desktop_image": "shopify:\/\/shop_images\/Categories_images_2.png",
+            "mobile_image": "shopify:\/\/shop_images\/Categories_images_2_7edf60a6-080c-4e89-81cb-d021256faf6a.png",
+            "category_text": "SEMI - FORMAL",
+            "category_url": "shopify:\/\/blogs\/all-blogs"
           }
         },
         "image_text_ByGBen": {
           "type": "image-text",
           "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4259desktop.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4304mob.png",
-            "category_text": "Uncrushed",
-            "category_url": "shopify:\/\/pages\/collections"
+            "desktop_image": "shopify:\/\/shop_images\/Categories_images_3.png",
+            "mobile_image": "shopify:\/\/shop_images\/Categories_images_3_f7b8e166-250a-4412-b812-77e9623d0d91.png",
+            "category_text": "BUSINESS CASUAL",
+            "category_url": "shopify:\/\/blogs\/all-blogs"
           }
         },
         "image_text_YmtfTb": {
@@ -172,184 +402,22 @@
         "image_text_ByGBen",
         "image_text_YmtfTb"
       ],
+      "disabled": true,
       "settings": {
         "category_heading": "New Arrivals",
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "park_latest_colletions_carousel_gaz8Me": {
-      "type": "park-latest-colletions-carousel",
-      "blocks": {
-        "image_text_MPfH6d": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "title": "Suits",
-            "link": "shopify:\/\/collections"
-          }
-        },
-        "image_text_C9dCtC": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "title": "Shirts",
-            "link": "shopify:\/\/collections"
-          }
-        },
-        "image_text_jP4WX6": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "title": "T-shirts & polos",
-            "link": "shopify:\/\/collections"
-          }
-        },
-        "image_text_PXH3nM": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "title": "Jeans",
-            "link": "shopify:\/\/pages\/style-guide"
-          }
-        },
-        "image_text_pPcjxh": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "title": "Parks",
-            "link": "shopify:\/\/pages\/contact"
-          }
-        },
-        "image_text_GQwCqC": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "title": "Shirts",
-            "link": "shopify:\/\/collections\/all"
-          }
-        },
-        "image_text_TMLNYM": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4145.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4145_1.png",
-            "title": "Suits",
-            "link": "shopify:\/\/blogs\/all-blogs"
-          }
-        }
-      },
-      "block_order": [
-        "image_text_MPfH6d",
-        "image_text_C9dCtC",
-        "image_text_jP4WX6",
-        "image_text_PXH3nM",
-        "image_text_pPcjxh",
-        "image_text_GQwCqC",
-        "image_text_TMLNYM"
-      ],
-      "disabled": true,
-      "settings": {
-        "heading": "LATEST $ COLLECTION'S",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "park_trending_carousel_zpaQxH": {
-      "type": "park-trending-carousel",
-      "blocks": {
-        "image_text_JLTKhV": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265_1.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4265_1.png",
-            "title": "Dreamy Formal",
-            "link": ""
-          }
-        },
-        "image_text_VFGQD6": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4265.png",
-            "title": "Ideal Choice",
-            "link": ""
-          }
-        },
-        "image_text_QpfmpR": {
-          "type": "image_text",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265_2.png",
-            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4265_2.png",
-            "title": "Illusion Dress",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_text_JLTKhV",
-        "image_text_VFGQD6",
-        "image_text_QpfmpR"
-      ],
-      "disabled": true,
-      "settings": {
-        "heading": "VISIBLE $ CHOICES",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "image_background": "#ededed",
-        "image_flow": true
-      }
-    },
-    "image_text_custom_JULYPf": {
-      "type": "image-text-custom",
-      "blocks": {
-        "title_NNgeiG": {
-          "type": "title",
-          "settings": {
-            "title": "Find Your Store"
-          }
-        },
-        "description_jFibem": {
-          "type": "description",
-          "settings": {
-            "subtitle": "<ul><li>The store locator helps customers easily find their nearest Raymond retail store or shop-in-shop.<\/li><li>It allows users to search by city, pincode or current location to pull up results on a map.<\/li><li>Users can input the city or pincode in the search bar to view all Raymond outlets within that location.<\/li><li>When accessing from a mobile device, it automatically detects the user's current location for nearby stores.<\/li><\/ul>"
-          }
-        },
-        "button_tUkK8h": {
-          "type": "button",
-          "settings": {
-            "button_text": "View Store",
-            "button_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "title_NNgeiG",
-        "description_jFibem",
-        "button_tUkK8h"
-      ],
-      "settings": {
-        "heading": "STORE $ LOCATOR",
-        "section_color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "image_small": "shopify:\/\/shop_images\/Group_1000003007.png",
-        "image_desktop": "shopify:\/\/shop_images\/Vector.jpg"
-      }
     }
   },
   "order": [
     "image_banner_carousel_txnTCH",
-    "image_text_carousel_igph46",
-    "park_categories_carousel_P3DmhU",
+    "video_section_LXbTW6",
+    "image_banner_carousel_6A36Nh",
     "park_latest_colletions_carousel_gaz8Me",
+    "image_text_custom_JULYPf",
     "park_trending_carousel_zpaQxH",
-    "image_text_custom_JULYPf"
+    "image_text_carousel_igph46",
+    "park_categories_carousel_P3DmhU"
   ]
 }
