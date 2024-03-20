@@ -3,20 +3,18 @@
 
 <div class="contact-main-container contact-page-width">
     <div class="contact-heading-wrapper">
+      {% if section.settings.show_heading %}
+        <div class="contact-heading">
+          <span class="h2">{{ section.settings.contact_heading }}</span>
+        </div>
+      {% endif %}
 
-   
-     {% if section.settings.show_heading %}
-    <div class="contact-heading">
-        <span class="h2"> HOW CAN WE HELP ?</span>
-    </div>
-    {% endif %}
-
-    <div class="contact-text-container h5">
-        {{ section.settings.text }}
-    </div>
+      <div class="contact-text-container h5">
+          {{ section.settings.text }}
+      </div>
     </div>
     <div class="contact-image-container">
-        {% render 'image-snippet',
+      {% render 'image-snippet',
         mobileSrc: section.settings.add_image_banner2,
         desktopSrc: section.settings.add_image_banner
       %}
@@ -29,10 +27,16 @@
       "tag": "section",
       "settings": [
         {
-        "type": "checkbox",
-        "id": "show_heading",
-        "label": "Show heading",
-        "default": true
+          "type": "checkbox",
+          "id": "show_heading",
+          "label": "Show heading",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "contact_heading",
+          "label": "Enter Heading",
+          "default": "HOW CAN WE HELP ?"
         },
         {
           "type": "text",
@@ -42,12 +46,14 @@
         {
           "type": "image_picker",
           "label": "Add Image Banner",
-          "id": "add_image_banner"
+          "id": "add_image_banner",
+          "info": "Dimensions: 1024x768"
         },
         {
           "type": "image_picker",
           "label": "Add Image Banner For Mobile",
-          "id": "add_image_banner2"
+          "id": "add_image_banner2",
+          "info": "Dimensions: 300x450 px"
         }
       ],
       "blocks": [],
@@ -57,5 +63,5 @@
         }
       ]
     }
-    {% endschema %}
+{% endschema %}
     
