@@ -100,13 +100,10 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 	padding-left: 3rem;
 	padding-right: 3rem;
 }
-
-
 @media screen and (min-width: 750px) {
 	.page-width {
 		padding: 0 12.2rem;
 	}
-
 	.header.page-width,
 	.utility-bar__grid.page-width {
 		padding-left: 3.2rem;
@@ -122,13 +119,11 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 		padding: 0 5rem;
 	}
 }
-
 @media screen and (min-width: 750px) and (max-width: 989px) {
-	.page-width{
+	.page-width {
 		padding: 0 5rem;
 	}
 }
-
 @media screen and (min-width: 990px) {
 	.header:not(.drawer-menu).page-width {
 		padding-left: 5rem;
@@ -278,15 +273,14 @@ h1,
 }
 h2,
 .h2 {
-  font-size: calc(var(--font-heading-scale) * 2.8rem);
-  letter-spacing: 2px;
-  font-weight: 700;
-  color: #0E0E10;
+	font-size: calc(var(--font-heading-scale) * 2.8rem);
+	letter-spacing: 2px;
+	font-weight: 700;
+	color: #0E0E10;
 }
-.h2{
-  color: rgb(var(--color-foreground));
+.h2 {
+	color: rgb(var(--color-foreground));
 }
-
 @media only screen and (min-width: 750px) {
 	h2,
 	.h2 {
@@ -357,12 +351,11 @@ blockquote {
 		letter-spacing: 0;
 	}
 }
-
 .color-accent-1 .caption {
 	color: #fff;
 }
 .color-background-1 .caption {
-  color: #000;
+	color: #000;
 }
 .caption-with-letter-spacing {
 	font-size: 1.4rem;
@@ -1522,7 +1515,7 @@ details[open] > .share-button__fallback {
 	letter-spacing: 0.1rem;
 	line-height: 1.5;
 }
- /* added caption class here because other classnames overtake this */
+/* added caption class here because other classnames overtake this */
 .caption {
 	font-size: 1.4rem;
 	font-weight: 400;
@@ -2164,8 +2157,10 @@ product-info .loading__spinner:not(.hidden) ~ *,
 .header__heading-logo {
 	height: auto;
 	max-width: var(--mobile-logo-width);
+	scale: 0.8;
 	@media screen and (min-width: 990px) {
 		max-width: var(--desktop-logo-width);
+		scale: 1;
 	}
 }
 .header__heading-logo-wrapper {
@@ -2449,7 +2444,7 @@ details[open] > .header__submenu {
 	position: relative;
 	transition: all var(--duration-long) ease;
 }
-.header__menu-item span::after{
+.header__menu-item span::after {
 	content: "";
 	display: block;
 	position: absolute;
@@ -2460,21 +2455,18 @@ details[open] > .header__submenu {
 	height: 2px;
 	transform: scaleX(0);
 	transform-origin: left center;
-	transition: all .25s cubic-bezier(.104,.204,.492,1);
+	transition: all .25s cubic-bezier(.104, .204, .492, 1);
 	background: rgba(0, 0, 0, 0.45);
 }
-
-.header__menu-item:hover span::after, 
-.header__menu-item:focus span::after{
+.header__menu-item:hover span::after,
+.header__menu-item:focus span::after {
 	transform: scale(1, 1);
 }
-
 /* ---- This is DAWN's default hover effect! So to use this uncommment the lines ---- */
 /* .header__menu-item:hover span {
 	text-decoration: underline;
 	text-underline-offset: 0.3rem;
 } */
-
 details[open] > .header__menu-item {
 	text-decoration: underline;
 }
@@ -3083,6 +3075,6 @@ details-disclosure > details {
 		margin-top: 4rem;
 	}
 }
-.main-heading-logo{
+.main-heading-logo {
 	text-wrap: nowrap;
 }

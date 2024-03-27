@@ -31,13 +31,14 @@
                             section.settings.mobile_video
                             | video_tag:
                             image_size: '650x',
-                            autoplay: false,
+                            autoplay: true,
                             loop: section.settings.enable_video_looping,
                             controls: false,
-                            muted: false
+                            muted: true,
+                            class: 'lazy'
                         }}
                         <div class="play-button">
-                            <button>{%- render 'icon-play' -%}</button>
+                            <button class="hidden">{%- render 'icon-play' -%}</button>
                         </div>
                     </div>
                 {% else %}
@@ -46,13 +47,14 @@
                             section.settings.video
                             | video_tag:
                             image_size: '650x',
-                            autoplay: false,
+                            autoplay: true,
                             loop: section.settings.enable_video_looping,
                             controls: false,
-                            muted: false
+                            muted: true,
+                            class: 'lazy'
                         }}
                       <div class="play-button">
-                          <button>{%- render 'icon-play' -%}</button>
+                          <button class="hidden">{%- render 'icon-play' -%}</button>
                       </div>
                     </div>
                 {% endif %}
@@ -64,13 +66,14 @@
                     section.settings.video
                     | video_tag:
                     image_size: '1100x',
-                    autoplay: false,
+                    autoplay: true,
                     loop: section.settings.enable_video_looping,
                     controls: false,
-                    muted: false
+                    muted: true,
+                    class: 'lazy'
                 }}
                 <div class="play-button">
-                    <button>{%- render 'icon-play' -%}</button>
+                    <button class="hidden">{%- render 'icon-play' -%}</button>
                 </div>
             </div>
         </div>
