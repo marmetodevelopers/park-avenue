@@ -1283,18 +1283,56 @@ class ProductRecommendations extends HTMLElement {
 
 customElements.define('product-recommendations', ProductRecommendations);
 
-document.querySelectorAll('.video_container').forEach(container => {
-  container.querySelector(".video_state_container").addEventListener('click', () => {
-      const video_container = container.querySelector(".video_state_container svg")
-      const video = container.querySelector('video');
-      if (video.paused) {
-        video_container.classList.remove("inactive-video")
-        video_container.classList.add("active-video")
-        video.play();
-      } else {
-        video_container.classList.remove("active-video")
-        video_container.classList.add("inactive-video")
-        video.pause();
-      }
+document.querySelectorAll('.video_container').forEach((container) => {
+  container.querySelector('.video_state_container').addEventListener('click', () => {
+    const videoContainer = container.querySelector('.video_state_container svg')
+    const video = container.querySelector('video');
+    if (video.paused) {
+      videoContainer.classList.remove('inactive-video')
+      videoContainer.classList.add('active-video')
+      video.play();
+    } else {
+      videoContainer.classList.remove('active-video')
+      videoContainer.classList.add('inactive-video')
+      video.pause();
+    }
   });
 });
+
+// const lazyVideos = [].slice.call(document.querySelectorAll('video.lazy'));
+
+// if ('IntersectionObserver' in window) {
+//   const lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
+//     entries.forEach(function (entry) {
+//       const video = entry.target;
+//       if (entry.isIntersecting) {
+//         if (!video.hasAttribute('data-played')) {
+//           Array.from(video.children).forEach(function (videoSource) {
+//             if (videoSource.tagName.toLowerCase() === 'source' && videoSource.dataset.src) {
+//               videoSource.src = videoSource.dataset.src;
+//             }
+//           });
+
+//           video.load();
+//           const lastPosition = parseFloat(video.getAttribute('data-last-position')) || 0;
+//           video.currentTime = lastPosition; // Set the current playback position
+//           video.play(); // Autoplay when in viewport
+//           video.muted = false; // unmutes the video
+//           video.setAttribute('data-played', 'true'); // Mark as played
+//         } else {
+//           video.play(); // Resume playback if the video has been played before
+//         }
+//       } else {
+//         // Pause when leaving the viewport and store the current playback position
+//         if (!video.paused) {
+//           video.pause();
+//           video.setAttribute('data-last-position', video.currentTime);
+//         }
+//       }
+//     });
+//   });
+
+//   lazyVideos.forEach(function (lazyVideo) {
+//     lazyVideoObserver.observe(lazyVideo);
+//   });
+// }

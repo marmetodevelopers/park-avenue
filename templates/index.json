@@ -62,7 +62,7 @@
       "settings": {
         "heading": "<p>The Ultimate Flex<\/p>",
         "heading_size": "h1",
-        "enable_video_looping": false,
+        "enable_video_looping": true,
         "video": "shopify:\/\/files\/videos\/16x9_PA FLEXTECH 20SEC.mp4",
         "mobile_video": "shopify:\/\/files\/videos\/9x16_PA FLEXTECH 20SEC-Under 30MB.mp4",
         "description": "",
